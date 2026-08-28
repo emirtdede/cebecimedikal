@@ -3,6 +3,7 @@ import path from "path";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  outputFileTracingRoot: path.join(__dirname, "./"),
   compress: true, // Enable gzip & brotli compression for static and SSR responses
   poweredByHeader: false, // Security: do not reveal Next.js header
   images: {

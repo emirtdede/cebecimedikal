@@ -1,7 +1,6 @@
 import { SignJWT, jwtVerify } from "jose";
 import { cookies } from "next/headers";
-import { db } from "./db";
-import bcrypt from "bcryptjs";
+
 
 if (!process.env.JWT_SECRET && process.env.NODE_ENV === "production") {
   console.error("CRITICAL SECURITY WARNING: JWT_SECRET environment variable is not defined in production!");
