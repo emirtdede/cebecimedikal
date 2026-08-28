@@ -14,6 +14,33 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async rewrites() {
+    return [
+      // English rewrites
+      { source: "/:locale(en|ar|ja|zh)/products", destination: "/:locale/urunler" },
+      { source: "/:locale(en|ar|ja|zh)/products/:slug*", destination: "/:locale/urunler/:slug*" },
+      { source: "/:locale(en|ar|ja|zh)/services", destination: "/:locale/hizmetler" },
+      { source: "/:locale(en|ar|ja|zh)/services/:slug*", destination: "/:locale/hizmetler/:slug*" },
+      { source: "/:locale(en|ar|ja|zh)/about", destination: "/:locale/hakkimizda" },
+      { source: "/:locale(en|ar|ja|zh)/contact", destination: "/:locale/iletisim" },
+      { source: "/:locale(en|ar|ja|zh)/quote", destination: "/:locale/teklif" },
+      { source: "/:locale(en|ar|ja|zh)/catalogs", destination: "/:locale/kataloglar" },
+      { source: "/:locale(en|ar|ja|zh)/references", destination: "/:locale/referanslar" },
+      { source: "/:locale(en|ar|ja|zh)/refurbished-equipment", destination: "/:locale/2-el-tibbi-cihazlar" },
+
+      // German rewrites
+      { source: "/de/produkte", destination: "/de/urunler" },
+      { source: "/de/produkte/:slug*", destination: "/de/urunler/:slug*" },
+      { source: "/de/dienstleistungen", destination: "/de/hizmetler" },
+      { source: "/de/dienstleistungen/:slug*", destination: "/de/hizmetler/:slug*" },
+      { source: "/de/ueber-uns", destination: "/de/hakkimizda" },
+      { source: "/de/kontakt", destination: "/de/iletisim" },
+      { source: "/de/angebot", destination: "/de/teklif" },
+      { source: "/de/kataloge", destination: "/de/kataloglar" },
+      { source: "/de/referenzen", destination: "/de/referanslar" },
+      { source: "/de/gebrauchtgeraete", destination: "/de/2-el-tibbi-cihazlar" },
+    ];
+  },
   async headers() {
     return [
       {

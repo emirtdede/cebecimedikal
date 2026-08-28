@@ -88,7 +88,6 @@ export async function getSiteSettings(): Promise<Record<string, string>> {
     }
     return STATIC_SETTINGS;
   } catch (error) {
-    console.warn("Falling back to static site settings:", error);
     return STATIC_SETTINGS;
   }
 }
@@ -127,7 +126,6 @@ export async function getCategories(locale: string = DEFAULT_LOCALE): Promise<Lo
 
     return getStaticCategories(locale);
   } catch (error) {
-    console.warn("Falling back to static categories:", error);
     return getStaticCategories(locale);
   }
 }
@@ -166,7 +164,6 @@ export async function getCategoryBySlug(
 
     return getStaticCategoryBySlug(slug, locale);
   } catch (error) {
-    console.warn("Falling back to static category by slug:", error);
     return getStaticCategoryBySlug(slug, locale);
   }
 }
@@ -284,7 +281,6 @@ export async function getProducts(
 
     return getStaticProducts(locale, options);
   } catch (error) {
-    console.warn("Falling back to static products:", error);
     return getStaticProducts(locale, options);
   }
 }
@@ -374,7 +370,6 @@ export async function getProductBySlug(
 
     return getStaticProductBySlug(slug, locale);
   } catch (error) {
-    console.warn("Falling back to static product by slug:", error);
     return getStaticProductBySlug(slug, locale);
   }
 }
@@ -490,7 +485,6 @@ export async function getServices(locale: string = DEFAULT_LOCALE): Promise<Loca
 
     return getStaticServices(locale);
   } catch (error) {
-    console.warn("Falling back to static services:", error);
     return getStaticServices(locale);
   }
 }
@@ -532,7 +526,6 @@ export async function getServiceBySlug(
 
     return getStaticServiceBySlug(slug, locale);
   } catch (error) {
-    console.warn("Falling back to static service by slug:", error);
     return getStaticServiceBySlug(slug, locale);
   }
 }
