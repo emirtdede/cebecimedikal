@@ -619,2580 +619,3175 @@ export const STATIC_SERVICES: StaticServiceItem[] = [
 
 export const STATIC_PRODUCTS: StaticProductItem[] = [
   {
-    "id": "prod-1",
-    "slug": "hastabasi-monitoru-cbc-m12",
-    "categorySlug": "fizyolojik-sinyal-izleyiciler",
-    "brand": "Cebeci Medikal",
-    "model": "CBC-M12 Pro",
-    "sku": "CBC-MON-012",
+    "id": "prod-anestezi-drager-julian-plus",
+    "slug": "drager-julian-plus-anestezi-cihazi",
+    "categorySlug": "ameliyathane-cihazlari",
+    "brand": "Dräger",
+    "model": "Julian Plus",
+    "sku": "DRG-JUL-001",
     "condition": "SECOND_HAND",
     "featured": true,
     "sortOrder": 1,
     "images": [
-      "/images/products/hastabasi-monitoru-1.webp",
-      "/images/products/hastabasi-monitoru-2.webp",
-      "/images/products/hastabasi-monitoru-3.webp",
-      "/images/products/hastabasi-monitoru-4.webp",
-      "/images/products/hastabasi-monitoru-5.webp"
+      "/images/products/anestezi-cihazi-1.webp"
     ],
     "technicalSpecs": {
-      "Ekran Boyutu": "12.1 inç Yüksek Çözünürlüklü Renkli TFT LCD",
-      "Standart Parametreler": "EKG (3/5 Derivasyon), SpO2, NIBP, Solunum (RESP), 2-Kanal Sıcaklık (TEMP), Nabız (PR)",
-      "Opsiyonel Modüller": "EtCO2 (Mainstream / Sidestream), 2-Kanal IBP, Kardiyak Çıktı (CO)",
-      "Aritmi & ST Analizi": "23 Farklı Aritmi Tipi Algılama ve Gerçek Zamanlı ST Segment Analizi",
-      "Batarya Ömrü": "Dahili Şarj Edilebilir Li-Ion Batarya (4+ Saat Kesintisiz Çalışma)",
-      "Hafıza & Trend": "120 Saat Grafik ve Tablo Trend Kaydı, 1000 NIBP Ölçüm Hafızası",
-      "Yazıcı": "Entegre 50mm Çift Kanallı Termal Yazıcı"
+      "Ventilasyon Modları": "IPPV, SIMV, PCV, Manüel / Spontan",
+      "Tidal Hacim": "20 - 1400 mL",
+      "Frekans (Solunum Sayısı)": "6 - 60 bpm",
+      "I:E Oranı": "1:4 ile 3:1",
+      "Gaz Girişleri": "O2, N2O, Air (Hava)",
+      "Vaporizatör Yuvası": "Dräger Selectatec Çift Yuva",
+      "Ekran": "Entegre Monitör ve Solunum Parametreleri Takibi",
+      "Garanti Durumu": "Revizyonlu & Kalibrasyonlu, 1 Yıl Cebeci Medikal Garantili"
     },
     "applications": [
-      "Genel ve Cerrahi Yoğun Bakım Üniteleri",
-      "Koroner Yoğun Bakım (KVC)",
-      "Ameliyathane ve Anestezi Ayılma Odaları (PACU)",
-      "Acil Servis Müdahale ve Triyaj Alanları"
+      "Genel Cerrahi Ameliyathaneleri",
+      "Kardiyovasküler Cerrahi",
+      "Kadın Doğum ve Jinekoloji",
+      "Ortopedi ve Travmatoloji",
+      "Günübirlik Cerrahi Merkezleri"
     ],
     "translations": {
       "tr": {
-        "title": "Çok Parametreli Hastabaşı Monitörü (CBC-M12 Pro)",
-        "shortDescription": "Yoğun bakım, ameliyathane ve acil servisler için 12.1 inç yüksek hassasiyetli çok parametreli hasta takip monitörü.",
-        "description": "Cebeci Medikal CBC-M12 Pro, kritik ve yarı kritik hasta takibinde en yüksek hassasiyet standardını sunar. 12.1 inç geniş ekranı, esnek parametre modülleri, gelişmiş aritmi algılama algoritmaları ve dayanıklı tasarımı ile ameliyathanelerden yoğun bakım servislerine kadar kesintisiz klinik güvenilirlik sağlar. Merkezi monitör sistemlerine tam uyumludur."
+        "title": "Dräger Julian Plus Anestezi Cihazı",
+        "shortDescription": "Hassas solutma performansı ve entegre hasta monitörizasyonuna sahip, revizyonlu Dräger anestezi iş istasyonu.",
+        "description": "Dräger Julian Plus, modern ameliyathane koşullarında yetişkin ve pediatrik cerrahilerde yüksek güvenilirlikle kullanılan entegre anestezi iş istasyonudur. Elektronik kontrollü ventilatörü, hassas gaz mikseri ve kompakt ergonomik yapısı sayesinde klinik operasyonlarda optimum kontrol sağlar. Cihaz tüm elektriksel güvenlik testleri, kalibrasyonları ve parça revizyonları tamamlanmış olarak 1 yıl teknik servis garantisi ile sunulmaktadır."
       },
       "en": {
-        "title": "Multi-Parameter Patient Monitor (CBC-M12 Pro)",
-        "shortDescription": "12.1-inch high-precision patient monitor designed for ICU, OR, and emergency departments.",
-        "description": "The CBC-M12 Pro delivers clinical precision for patient monitoring. Features a 12.1-inch TFT display, comprehensive arrhythmia analysis, multi-lead ECG, NIBP, SpO2, and optional EtCO2/IBP modules with full central monitoring compatibility."
-      },
-      "ar": {
-        "title": "شاشة مراقبة المرضى متعددة القياسات (CBC-M12 Pro)",
-        "shortDescription": "شاشة مراقبة متطورة قياس 12.1 بوصة مخصصة للعناية المركزة وغرف العمليات والطوارئ.",
-        "description": "توفر شاشة CBC-M12 Pro دقة سريرية فائقة في متابعة العلامات الحيوية للمرضى، مع شاشة ملونة واضحة وتحليل متقدم لنبضات القلب وتخطيط القلب وضغط الدم ونسبة الأكسجين."
+        "title": "Dräger Julian Plus Anesthesia Workstation",
+        "shortDescription": "Refurbished Dräger anesthesia workstation with high-precision ventilation and integrated patient monitoring.",
+        "description": "The Dräger Julian Plus is a proven and reliable anesthesia workstation suitable for adult and pediatric surgical procedures. Equipped with an electronically controlled ventilator, precision gas mixer, and integrated monitoring interface. Fully refurbished, calibrated, and backed by a 1-year Cebeci Medikal warranty."
       },
       "de": {
-        "title": "Multiparameter-Patientenmonitor (CBC-M12 Pro)",
-        "shortDescription": "12,1-Zoll-Hochpräzisionsmonitor für Intensivstationen, OP-Säle und Notaufnahmen.",
-        "description": "Der CBC-M12 Pro gewährleistet präzise Vitalparameter-Überwachung mit 12,1-Zoll-Display, EKG-, SpO2-, NIBP- und optionalen EtCO2-Modulen für maximale Zuverlässigkeit im klinischen Alltag."
+        "title": "Dräger Julian Plus Cihazı (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Dräger mit 1 Jahr Garantie.",
+        "description": "The Dräger Julian Plus is a proven and reliable anesthesia workstation suitable for adult and pediatric surgical procedures. Equipped with an electronically controlled ventilator, precision gas mixer, and integrated monitoring interface. Fully refurbished, calibrated, and backed by a 1-year Cebeci Medikal warranty. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Dräger Julian Plus (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Dräger مع ضمان لمدة عام كامل.",
+        "description": "Dräger Julian Plus, modern ameliyathane koşullarında yetişkin ve pediatrik cerrahilerde yüksek güvenilirlikle kullanılan entegre anestezi iş istasyonudur. Elektronik kontrollü ventilatörü, hassas gaz mikseri ve kompakt ergonomik yapısı sayesinde klinik operasyonlarda optimum kontrol sağlar. Cihaz tüm elektriksel güvenlik testleri, kalibrasyonları ve parça revizyonları tamamlanmış olarak 1 yıl teknik servis garantisi ile sunulmaktadır. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
       },
       "ja": {
-        "title": "Multiparameter-Patientenmonitor (CBC-M12 Pro)",
-        "shortDescription": "Multiparameter-Patientenmonitor (CBC-M12 Pro) - 高度な医療現場のニーズに応える高精度・高信頼性医療機器。",
-        "description": "Multiparameter-Patientenmonitor (CBC-M12 Pro)は、手術室、集中治療室、一般病棟向けに設計された高性能システムです。厳格な品質管理基準と電気安全性検査をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
+        "title": "Dräger Julian Plus リファービッシュ医療機器",
+        "shortDescription": "Dräger製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "The Dräger Julian Plus is a proven and reliable anesthesia workstation suitable for adult and pediatric surgical procedures. Equipped with an electronically controlled ventilator, precision gas mixer, and integrated monitoring interface. Fully refurbished, calibrated, and backed by a 1-year Cebeci Medikal warranty. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
       },
       "zh": {
-        "title": "Multiparameter-Patientenmonitor (CBC-M12 Pro)",
-        "shortDescription": "Multiparameter-Patientenmonitor (CBC-M12 Pro) - 满足临床高标准要求的专业医疗设备与系统。",
-        "description": "Multiparameter-Patientenmonitor (CBC-M12 Pro) 专为各类医疗机构临床科室量身打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
+        "title": "Dräger Julian Plus 翻新医疗设备",
+        "shortDescription": "Dräger 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "The Dräger Julian Plus is a proven and reliable anesthesia workstation suitable for adult and pediatric surgical procedures. Equipped with an electronically controlled ventilator, precision gas mixer, and integrated monitoring interface. Fully refurbished, calibrated, and backed by a 1-year Cebeci Medikal warranty. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
       }
     }
   },
   {
-    "id": "prod-2",
-    "slug": "ekg-cihazi-cbc-ecg12",
-    "categorySlug": "fizyolojik-sinyal-izleyiciler",
-    "brand": "Cebeci Medikal",
-    "model": "CBC-ECG12 Digital",
-    "sku": "CBC-ECG-012",
+    "id": "prod-anestezi-atese-ans200",
+    "slug": "atese-ans200-anestezi-cihazi",
+    "categorySlug": "ameliyathane-cihazlari",
+    "brand": "Ateşe",
+    "model": "ANS200",
+    "sku": "ATS-ANS-002",
     "condition": "SECOND_HAND",
-    "featured": true,
+    "featured": false,
     "sortOrder": 2,
     "images": [
-      "/images/products/ekg-cihazi-1.webp",
-      "/images/products/ekg-cihazi-2.webp"
+      "/images/products/anestezi-cihazi-2.webp"
     ],
     "technicalSpecs": {
-      "Derivasyon": "12 Eşzamanlı Standart ve Cabrera Derivasyon Kaydı",
-      "Ekran": "7 inç Renkli Dokunmatik LCD Ekran",
-      "Yazıcı": "216mm Yüksek Çözünürlüklü Termal Yazıcı (Rulo ve Z-Katlama Kağıt)",
-      "Otomatik Yorumlama": "Glasgow / CSE Standartlarında Otomatik Aritmi ve İskemi Analiz Raporu",
-      "Filtreler": "Kas (EMG), Şebeke (AC) ve Taban Çizgisi Sürüklenme Filtreleri",
-      "Hafıza": "Dahili 1000 EKG Kayıt Hafızası, USB ve SD Kart ile Veri Aktarımı",
-      "Bağlantı": "DICOM, HL7, PDF ve XML Formatlarında Hastane Bilgi Sistemine (HBYS) Aktarım"
+      "Kullanım Alanı": "Yetişkin ve Pediatrik Ameliyathaneler",
+      "Gaz Sistemi": "O2, N2O, Basınçlı Medikal Hava",
+      "Ventilatör Tipi": "Pnömatik Tahrikli, Elektronik Kontrollü",
+      "Vaporizatör Bağlantısı": "Standart Selectatec Uyumlu",
+      "Güvenlik Sistemi": "Hipoksik Koruma, O2 Kesilme Alarmı, Emniyet Valfi",
+      "Durum": "Test Edilmiş, Revizyonlu 2. El Medikal Cihaz (1 Yıl Garantili)"
     },
     "applications": [
-      "Kardiyoloji Poliklinikleri ve Servisleri",
-      "Acil Servisler ve Ambulanslar",
-      "Aile Sağlığı Merkezleri ve Özel Klinikler",
-      "Ameliyat Öncesi Kardiyovasküler Değerlendirme"
+      "Genel Ameliyathane",
+      "Plastik ve Rekonstrüktif Cerrahi",
+      "Göz ve KBB Klinik Operasyonları",
+      "Hayvan Hastaneleri ve Veteriner Cerrahi Merkezleri"
     ],
     "translations": {
       "tr": {
-        "title": "12 Kanallı Dijital EKG Cihazı (CBC-ECG12)",
-        "shortDescription": "Dokunmatik ekranlı, otomatik yorumlamalı ve 216mm geniş termal yazıcılı 12 kanallı dijital elektrokardiyografi cihazı.",
-        "description": "CBC-ECG12, kardiyovasküler teşhiste yüksek sinyal doğruluğu sağlayan 12 kanallı dijital EKG cihazıdır. Geniş termal yazıcısı, dokunmatik kullanıcı arayüzü, otomatik aritmi teşhis algoritmaları ve HBYS/DICOM entegrasyonu ile klinik muayene hızını ve doğruluğunu en üst düzeye çıkarır."
+        "title": "Ateşe ANS200 Anestezi Cihazı",
+        "shortDescription": "Yerli cerrahi operasyon standartlarına uygun, güvenilir ve ekonomik revizyonlu anestezi cihazı.",
+        "description": "Ateşe ANS200, kliniklerde ve cerrahi merkezlerde genel anestezi uygulamaları için geliştirilmiş sağlam gövdeli anestezi cihazıdır. Mekanik ve pnömatik tüm aksamları Cebeci Medikal biyomedikal laboratuvarlarında test edilmiş, gaz sızdırmazlık kontrolleri yapılmış olup kullanıma hazır durumdadır."
       },
       "en": {
-        "title": "12-Channel Digital ECG Machine (CBC-ECG12)",
-        "shortDescription": "12-lead digital electrocardiograph with 7-inch touch screen and automated diagnostic interpretation.",
-        "description": "The CBC-ECG12 offers simultaneous 12-lead acquisition, advanced diagnostic algorithms, high-resolution 216mm thermal printing, and seamless hospital network integration."
-      },
-      "ar": {
-        "title": "جهاز تخطيط القلب الرقمي 12 قناة (CBC-ECG12)",
-        "shortDescription": "جهاز تخطيط قلب متطور بـ 12 قناة مع شاشة لمس وتقرير تشخيصي تلقائي وطباعة حرارية عريضة.",
-        "description": "يقدم جهاز CBC-ECG12 أعلى مستويات الدقة في تشخيص أمراض القلب مع شاشة ملونة تعمل باللمس، وتفسير آلي دقيق لنتائج التخطيط وإمكانية الربط مع أنظمة المستشفيات."
+        "title": "Ateşe ANS200 Anesthesia Machine",
+        "shortDescription": "Durable and reliable refurbished anesthesia machine designed for clinical and surgical operations.",
+        "description": "The Ateşe ANS200 is a robust anesthesia unit engineered for safe delivery of inhalational anesthetics during surgery. Inspected, pneumatic-leak tested, calibrated, and provided with full warranty."
       },
       "de": {
-        "title": "12-Kanal Digitales EKG-Gerät (CBC-ECG12)",
-        "shortDescription": "12-Kanal-Elektrokardiograph mit Touchscreen und automatischer Interpretationsfunktion.",
-        "description": "Das CBC-ECG12 bietet präzise 12-Kanal-EKG-Aufzeichnung mit automatischer Befundung, breitem Thermodrucker und digitaler Datenübertragung ins Krankenhaus-Informationssystem."
+        "title": "Ateşe ANS200 Cihazı (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Ateşe mit 1 Jahr Garantie.",
+        "description": "The Ateşe ANS200 is a robust anesthesia unit engineered for safe delivery of inhalational anesthetics during surgery. Inspected, pneumatic-leak tested, calibrated, and provided with full warranty. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Ateşe ANS200 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Ateşe مع ضمان لمدة عام كامل.",
+        "description": "Ateşe ANS200, kliniklerde ve cerrahi merkezlerde genel anestezi uygulamaları için geliştirilmiş sağlam gövdeli anestezi cihazıdır. Mekanik ve pnömatik tüm aksamları Cebeci Medikal biyomedikal laboratuvarlarında test edilmiş, gaz sızdırmazlık kontrolleri yapılmış olup kullanıma hazır durumdadır. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
       },
       "ja": {
-        "title": "12-Channel Digital ECG Machine (CBC-ECG12)",
-        "shortDescription": "Cebeci Medikal CBC-ECG12 Digital - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Cebeci Medikal CBC-ECG12 Digitalは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
+        "title": "Ateşe ANS200 リファービッシュ医療機器",
+        "shortDescription": "Ateşe製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "The Ateşe ANS200 is a robust anesthesia unit engineered for safe delivery of inhalational anesthetics during surgery. Inspected, pneumatic-leak tested, calibrated, and provided with full warranty. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
       },
       "zh": {
-        "title": "12-Channel Digital ECG Machine (CBC-ECG12)",
-        "shortDescription": "Cebeci Medikal CBC-ECG12 Digital - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Cebeci Medikal CBC-ECG12 Digital 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
+        "title": "Ateşe ANS200 翻新医疗设备",
+        "shortDescription": "Ateşe 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "The Ateşe ANS200 is a robust anesthesia unit engineered for safe delivery of inhalational anesthetics during surgery. Inspected, pneumatic-leak tested, calibrated, and provided with full warranty. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
       }
     }
   },
   {
-    "id": "prod-3",
-    "slug": "bifazik-defibrilator-cbc-def500",
-    "categorySlug": "yogun-bakim-ve-yasam-destek",
-    "brand": "Cebeci Medikal",
-    "model": "CBC-DEF500 Biphasic",
-    "sku": "CBC-DEF-500",
+    "id": "prod-anestezi-ams-200",
+    "slug": "ams-200-anestezi-cihazi",
+    "categorySlug": "ameliyathane-cihazlari",
+    "brand": "AMS",
+    "model": "200",
+    "sku": "AMS-200-003",
     "condition": "SECOND_HAND",
-    "featured": true,
+    "featured": false,
     "sortOrder": 3,
     "images": [
-      "/images/products/defibrilator-1.webp",
-      "/images/products/defibrilator-2.webp",
-      "/images/products/defibrilator-3.webp"
-    ],
-    "technicalSpecs": {
-      "Dalga Formu": "Bifazik Kesilmiş Üstel Dalga Formu (BTE)",
-      "Enerji Seviyeleri": "Manuel Mod: 1 - 360 Joule Arasında Kademeli Seçim",
-      "Çalışma Modları": "Manuel Defibrilasyon, AED (Otomatik Eksternal), Senkron Kardiyoversiyon, Non-İnvaziv Pacer",
-      "Şarj Süresi": "200 Joule Seviyesine 3 Saniyenin Altında Hızlı Şarj",
-      "Monitörizasyon": "7 inç Renkli Ekran, 3/5 Derivasyon EKG, SpO2 ve NIBP Desteği",
-      "Kaşıklar": "Entegre Yetişkin ve Pediyatrik Dönüştürülebilir Harici Kaşıklar",
-      "Batarya": "Tam Şarj ile 100+ Şok veya 5 Saat Kesintisiz Monitörizasyon"
-    },
-    "applications": [
-      "Hastane Acil Servisleri ve Resüsitasyon Odaları",
-      "Yoğun Bakım Üniteleri ve Koroner Bakım",
-      "Ameliyathaneler ve Kalp Kateterizasyon Laboratuvarları",
-      "Acil Sağlık Ambulansları ve Mobil Müdahale Ekipleri"
-    ],
-    "translations": {
-      "tr": {
-        "title": "Bifazik Defibrilatör & Monitör Sistemi (CBC-DEF500)",
-        "shortDescription": "Manuel, AED, Pacer ve Senkron Kardiyoversiyon özellikli 360J bifazik defibrilatör.",
-        "description": "Kritik kardiyak acillerde hayat kurtaran CBC-DEF500; 360 Joule'e kadar bifazik enerji teknolojisi, ultra hızlı şarj kabiliyeti, entegre pacer ve çok parametreli monitörizasyon özellikleri ile acil servis ve yoğun bakımların vazgeçilmez ekipmanıdır."
-      },
-      "en": {
-        "title": "Biphasic Defibrillator & Monitor (CBC-DEF500)",
-        "shortDescription": "Advanced 360J biphasic defibrillator with Manual, AED, Pacing, and synchronized cardioversion.",
-        "description": "Designed for resuscitation in critical cardiac emergencies. Delivers up to 360J biphasic shocks with sub-3-second charging, adult/pediatric paddles, and comprehensive vital sign monitoring."
-      },
-      "ar": {
-        "title": "جهاز الصدمات الكهربائية ثنائي الطور (CBC-DEF500)",
-        "shortDescription": "جهاز صدمات متقدم ثنائي الطور حتى 360 جول مع وظائف AED ومنظم ضربات القلب والمراقبة.",
-        "description": "يتميز CBC-DEF500 بتقنية شحن فائقة السرعة وأقطاب مدمجة للبالغين والأطفال، مع شاشة مراقبة حيوية ودعم كامل لعمليات الإنعاش القلبي الرئوي."
-      },
-      "de": {
-        "title": "Biphasischer Defibrillator & Monitor (CBC-DEF500)",
-        "shortDescription": "360J biphasischer Defibrillator mit manuellem Modus, AED, Schrittmacher und SpO2/EKG.",
-        "description": "Höchste Zuverlässigkeit in der Notfall- und Intensivmedizin: Biphasische Technologie bis 360 Joule, extrem schnelle Ladezeit und integriertes Vitaldaten-Monitoring."
-      },
-      "ja": {
-        "title": "Biphasic Defibrillator & Monitor (CBC-DEF500)",
-        "shortDescription": "Cebeci Medikal CBC-DEF500 Biphasic - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Cebeci Medikal CBC-DEF500 Biphasicは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
-      },
-      "zh": {
-        "title": "Biphasic Defibrillator & Monitor (CBC-DEF500)",
-        "shortDescription": "Cebeci Medikal CBC-DEF500 Biphasic - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Cebeci Medikal CBC-DEF500 Biphasic 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
-      }
-    }
-  },
-  {
-    "id": "prod-4",
-    "slug": "yogun-bakim-ventilatoru-cbc-vent700",
-    "categorySlug": "yogun-bakim-ve-yasam-destek",
-    "brand": "Cebeci Medikal",
-    "model": "CBC-VENT700",
-    "sku": "CBC-VNT-700",
-    "condition": "SECOND_HAND",
-    "featured": true,
-    "sortOrder": 4,
-    "images": [
-      "/images/products/ventilator-1.webp",
-      "/images/products/ventilator-2.webp",
-      "/images/products/ventilator-3.webp",
-      "/images/products/ventilator-4.webp",
-      "/images/products/ventilator-5.webp"
-    ],
-    "technicalSpecs": {
-      "Hasta Tipleri": "Yetişkin, Pediyatrik ve Yenidoğan (Neonatal) Hastalar",
-      "Ventilasyon Modları": "VCV, PCV, SIMV-V, SIMV-P, CPAP/PSV, PRVC, Bi-Level, APRV, Non-İnvaziv (NIV)",
-      "Tidal Hacim": "20 ml - 2000 ml (Neonatal modda 2 ml'ye kadar)",
-      "Ekran": "15 inç Dokunmatik Renkli HD Grafik Ekran, 3 Dalga Formu ve 2 Döngü (Loop)",
-      "Gaz Kaynağı": "Merkezi Gaz veya Entegre Yüksek Performanslı Sessiz Türbin Teknolojisi",
-      "Ölçülen Parametreler": "Ppeak, Pplat, Pmean, PEEP, FiO2, Vte, Vti, MVe, İns/Eks Direnç ve Kompliyans",
-      "Batarya": "Dahili Çift Batarya ile 6 Saat Kesintisiz Çalışma"
-    },
-    "applications": [
-      "Erişkin, Çocuk ve Yenidoğan Yoğun Bakım Servisleri",
-      "Göğüs Hastalıkları ve Solunum Yetmezliği Merkezleri",
-      "Ameliyat Sonrası Ayılma ve Solunum Desteği",
-      "Acil Transfer ve Kritik Hasta Bakımı"
-    ],
-    "translations": {
-      "tr": {
-        "title": "Yoğun Bakım & Transport Ventilatörü (CBC-VENT700)",
-        "shortDescription": "Yetişkin, çocuk ve yenidoğan uyumlu, türbinli ve dokunmatik ekranlı gelişmiş mekanik ventilatör.",
-        "description": "CBC-VENT700; invaziv ve non-invaziv modlarda üstün solunum senkronizasyonu sunar. Dahili türbin teknolojisi sayesinde merkezi hava hattına bağımlı olmadan çalışabilir. Gelişmiş akciğer koruyucu ventilasyon araçları ve kullanıcı dostu arayüzü ile kritik solunum desteğinde maksimum hasta konforu sağlar."
-      },
-      "en": {
-        "title": "ICU & Transport Mechanical Ventilator (CBC-VENT700)",
-        "shortDescription": "Advanced turbine-driven mechanical ventilator for adult, pediatric, and neonatal respiratory care.",
-        "description": "The CBC-VENT700 offers comprehensive invasive and non-invasive ventilation with high-performance turbine technology, 15-inch touch screen, and advanced lung-protective tools."
-      },
-      "ar": {
-        "title": "جهاز التنفس الاصطناعي للعناية المركزة (CBC-VENT700)",
-        "shortDescription": "جهاز تنفس اصطناعي متطور بتوربين مدمج وشاشة 15 بوصة لجميع الفئات العمرية.",
-        "description": "يوفر CBC-VENT700 تهوية تنفسية دقيقة ومريحة للمرضى في غرف العناية المركزة مع توافق كامل لحديثي الولادة والأطفال والبالغين دون الحاجة لشبكة هواء مضغوط خارجية."
-      },
-      "de": {
-        "title": "Intensivbeatmungsgerät (CBC-VENT700)",
-        "shortDescription": "Modernes turbinenbetriebenes Beatmungsgerät für Erwachsene, Kinder und Neonaten.",
-        "description": "Das CBC-VENT700 vereint invasive und nicht-invasive Beatmungsmodi mit intuitiver 15-Zoll-Bedienung und autarker Turbinentechnologie für den anspruchsvollen Intensivpflegeeinsatz."
-      },
-      "ja": {
-        "title": "ICU & Transport Mechanical Ventilator (CBC-VENT700)",
-        "shortDescription": "Cebeci Medikal CBC-VENT700 - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Cebeci Medikal CBC-VENT700は、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
-      },
-      "zh": {
-        "title": "ICU & Transport Mechanical Ventilator (CBC-VENT700)",
-        "shortDescription": "Cebeci Medikal CBC-VENT700 - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Cebeci Medikal CBC-VENT700 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
-      }
-    }
-  },
-  {
-    "id": "prod-5",
-    "slug": "anestezi-cihazi-cbc-anes900",
-    "categorySlug": "ameliyathane-cihazlari",
-    "brand": "Cebeci Medikal",
-    "model": "CBC-ANES900 Workstation",
-    "sku": "CBC-ANS-900",
-    "condition": "SECOND_HAND",
-    "featured": true,
-    "sortOrder": 5,
-    "images": [
-      "/images/products/anestezi-cihazi-1.webp",
-      "/images/products/anestezi-cihazi-2.webp",
       "/images/products/anestezi-cihazi-3.webp"
     ],
     "technicalSpecs": {
-      "Ventilatör Modları": "VCV, PCV, SIMV, PSV, Manuel / Spontan Anestezi Modları",
-      "Ekran": "12.1 inç Dokunmatik Renkli Entegre Anestezi Ekranı",
-      "Vaporizatör Yuvaları": "Çift Selectatec Uyumlu Kilitlemeli Vaporizatör Yuvası",
-      "Gaz Girişleri": "O2, N2O ve Medikal Hava (Air) Girişleri ile Mekanik/Elektronik Flowmetre",
-      "Absorber Ünitesi": "Otoklavlanabilir Entegre Isıtıcılı CO2 Absorber (Bypass Özellikli)",
-      "Atık Gaz Tahliyesi": "Aktif / Pasif AGSS (Anesthetic Gas Scavenging System) Uyumu"
+      "Tip": "Kompakt Ameliyathane Anestezi Ünitesi",
+      "Akış Ölçer": "Yüksek Hassasiyetli Rotametre Bloğu",
+      "Solunum Devresi": "Otomatik ve Manuel Solutma Anahtarlamalı",
+      "Gaz Giriş Basıncı": "280 - 600 kPa",
+      "Garanti": "1 Yıl Tam Teknik Servis Garantisi"
     },
     "applications": [
-      "Genel Cerrahi ve Kalp-Damar Cerrahisi Ameliyathaneleri",
-      "Kadın Doğum ve Ortopedik Cerrahi Merkezleri",
-      "Günübirlik Cerrahi ve Girişimsel İşlem Odaları"
+      "Ameliyathaneler",
+      "Küçük Cerrahi Müdahale Odaları",
+      "Tıp Merkezleri"
     ],
     "translations": {
       "tr": {
-        "title": "Ameliyathane Anestezi Cihazı & İş İstasyonu (CBC-ANES900)",
-        "shortDescription": "Entegre elektronik ventilatörlü, çift vaporizatör yuvalı yüksek güvenlikli anestezi iş istasyonu.",
-        "description": "CBC-ANES900, cerrahi operasyonlarda anestezi derinliğini ve hasta güvenliğini en yüksek seviyede tutmak için tasarlanmıştır. Düşük akımlı anestezi (low-flow) kabiliyeti, hassas tidal hacim kontrolü ve entegre gaz tahliye sistemiyle modern ameliyathanelerin vazgeçilmezidir."
+        "title": "AMS 200 Anestezi Cihazı",
+        "shortDescription": "Kompakt yapılı, stabil akış ölçerli ve revizyonlu 2. el cerrahi anestezi ünitesi.",
+        "description": "AMS 200 anestezi cihazı, pratik kullanım ve güvenilir gaz dağıtım sistemi sunan bir ameliyathane cihazıdır. Periyodik bakımı yapılmış, emniyet valfleri test edilmiş ve garantili olarak teslim edilmektedir."
       },
       "en": {
-        "title": "Anesthesia Workstation & Ventilator (CBC-ANES900)",
-        "shortDescription": "High-end anesthesia workstation with electronic ventilator and dual-vaporizer manifold.",
-        "description": "The CBC-ANES900 provides safe anesthesia delivery for general and specialized surgical procedures, featuring low-flow capabilities, precision ventilation, and integrated CO2 absorption."
-      },
-      "ar": {
-        "title": "محطة التخدير الجراحي المتكاملة (CBC-ANES900)",
-        "shortDescription": "محطة تخدير متطورة مع جهاز تنفس مدمج ومبخرات مزدوجة لغرف العمليات الحديثة.",
-        "description": "تضمن محطة التخدير CBC-ANES900 دقة متناهية في توزيع الغازات المخدرة مع دعم كامل للتنفس الصناعي ومراقبة المؤشرات الحيوية للمريض أثناء العمليات الجراحية."
+        "title": "AMS 200 Anesthesia Unit",
+        "shortDescription": "Compact, reliable refurbished anesthesia device for general surgical interventions.",
+        "description": "AMS 200 delivers stable gas flow and ventilation control for surgical operating rooms. Fully checked and verified by biomedical engineers."
       },
       "de": {
-        "title": "Anästhesie-Arbeitsplatz & Beatmung (CBC-ANES900)",
-        "shortDescription": "Präzisions-Anästhesiegerät mit integrierter Beatmungseinheit und Doppel-Verdampfer-Aufnahme.",
-        "description": "Der CBC-ANES900 Anästhesie-Arbeitsplatz gewährleistet höchste Patientensicherheit bei operativen Eingriffen durch modernste Niedrigfluss-Anästhesietechnik und integrierte Gasüberwachung."
+        "title": "AMS 200 Cihazı (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von AMS mit 1 Jahr Garantie.",
+        "description": "AMS 200 delivers stable gas flow and ventilation control for surgical operating rooms. Fully checked and verified by biomedical engineers. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "AMS 200 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة AMS مع ضمان لمدة عام كامل.",
+        "description": "AMS 200 anestezi cihazı, pratik kullanım ve güvenilir gaz dağıtım sistemi sunan bir ameliyathane cihazıdır. Periyodik bakımı yapılmış, emniyet valfleri test edilmiş ve garantili olarak teslim edilmektedir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
       },
       "ja": {
-        "title": "Anesthesia Workstation & Ventilator (CBC-ANES900)",
-        "shortDescription": "Cebeci Medikal CBC-ANES900 Workstation - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Cebeci Medikal CBC-ANES900 Workstationは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
+        "title": "AMS 200 リファービッシュ医療機器",
+        "shortDescription": "AMS製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "AMS 200 delivers stable gas flow and ventilation control for surgical operating rooms. Fully checked and verified by biomedical engineers. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
       },
       "zh": {
-        "title": "Anesthesia Workstation & Ventilator (CBC-ANES900)",
-        "shortDescription": "Cebeci Medikal CBC-ANES900 Workstation - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Cebeci Medikal CBC-ANES900 Workstation 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
+        "title": "AMS 200 翻新医疗设备",
+        "shortDescription": "AMS 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "AMS 200 delivers stable gas flow and ventilation control for surgical operating rooms. Fully checked and verified by biomedical engineers. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
       }
     }
   },
   {
-    "id": "prod-6",
-    "slug": "yenidogan-kuvozu-cbc-inc600",
-    "categorySlug": "yogun-bakim-ve-yasam-destek",
-    "brand": "Cebeci Medikal",
-    "model": "CBC-INC600 Neonatal",
-    "sku": "CBC-INC-600",
+    "id": "prod-aspirator-atmos-c161",
+    "slug": "atmos-c161-cerrahi-aspirator",
+    "categorySlug": "ameliyathane-cihazlari",
+    "brand": "Atmos",
+    "model": "C 161",
+    "sku": "ATM-C161-004",
     "condition": "SECOND_HAND",
-    "featured": true,
-    "sortOrder": 6,
+    "featured": false,
+    "sortOrder": 4,
     "images": [
-      "/images/products/kuvoz-1.webp",
-      "/images/products/kuvoz-2.webp",
-      "/images/products/kuvoz-3.webp",
-      "/images/products/kuvoz-4.webp",
-      "/images/products/kuvoz-5.webp",
-      "/images/products/kuvoz-6.webp"
+      "/images/products/aspirator-1.webp"
     ],
     "technicalSpecs": {
-      "Kontrol Modları": "Hava Modu ve Bebek Cilt Sıcaklığı Modu (Servo Kontrollü)",
-      "Sıcaklık Ayar Aralığı": "Hava: 25.0°C - 37.0°C (Yüksek modda 39.0°C), Cilt: 34.0°C - 37.5°C",
-      "Nem Kontrolü": "Ultrasonik Nemlendirme Sistemi (%30 - %95 RH Servo Kontrol)",
-      "Oksijen Modülü": "Entegre Servo Oksijen Kontrol Ünitesi (%21 - %60 O2)",
-      "Kabin Yapısı": "Çift Cidarlı Akrilik Başlık ile Düşük Radyant Isı Kaybı",
-      "Ekstra Özellikler": "Entegre Dijital Bebek Tartısı, Kademesiz Trendelenburg Eğimi, X-Ray Kaset Tepsisi"
+      "Emiş Kapasitesi": "16 L/dakika",
+      "Maksimum Vakum Gücü": "-80 kPa (-800 mbar)",
+      "Kavanoz Sistemi": "Otoseptik & Taşma Korumalı Çift Kavanoz",
+      "Çalışma Prensibi": "Yağsız Membran Pompa, Sürekli Çalışmaya Uygun",
+      "Ses Seviyesi": "Sessiz Çalışma (< 48 dB)",
+      "Garanti": "1 Yıl Cebeci Medikal Garantisi"
     },
     "applications": [
-      "Yenidoğan Yoğun Bakım Üniteleri (NICU Seviye I, II, III)",
-      "Doğumhaneler ve Bebek Bakım Odaları",
-      "Prematüre ve Düşük Doğum Ağırlıklı Bebek Bakımı"
+      "Ameliyathane ve Cerrahi Müdahale",
+      "Kulak Burun Boğaz (KBB) Poliklinikleri",
+      "Endoskopi ve Bronkoskopi Odaları",
+      "Acil Servis ve Yoğun Bakım"
     ],
     "translations": {
       "tr": {
-        "title": "Yenidoğan Yoğun Bakım Küvözü (CBC-INC600)",
-        "shortDescription": "Servo nem ve oksijen kontrollü, çift cidarlı yüksek teknoloji prematüre bebek küvözü.",
-        "description": "Prematüre ve kritik yenidoğan bebeklerin termal dengesini ve gelişimini korumak için tasarlanan CBC-INC600; mikroişlemcili sıcaklık ve nem regülasyonu, sessiz çalışma ortamı, dahili tartı ve çift cidarlı izolasyonu ile anne rahmi konforunu sağlar."
+        "title": "Atmos C 161 Cerrahi Aspiratör",
+        "shortDescription": "Alman Atmos mühendisliği ile üretilmiş yüksek vakum hassasiyetli revizyonlu cerrahi aspiratör.",
+        "description": "Atmos C 161, cerrahi girişimler ve poliklinik aspirasyon ihtiyaçları için tasarlanmış yüksek performanslı aspiratördür. Yağsız pompa mekanizması, hidrostatik taşma emniyeti ve sessiz motoru ile klinik standartları eksiksiz karşılar."
       },
       "en": {
-        "title": "Neonatal Infant Incubator (CBC-INC600)",
-        "shortDescription": "Microprocessor-controlled infant incubator with servo humidity and oxygen management.",
-        "description": "The CBC-INC600 provides a stable microenvironment for premature neonates. Features dual-wall acrylic hood, precise servo-controlled temperature and humidity, and an integrated weighing scale."
-      },
-      "ar": {
-        "title": "حاضنة الأطفال حديثي الولادة (CBC-INC600)",
-        "shortDescription": "حاضنة متطورة للأطفال المبتسرين مع تحكم دقيق في الحرارة والرطوبة والأكسجين.",
-        "description": "توفر حاضنة CBC-INC600 بيئة مثالية لرعاية ونمو الأطفال المبتسرين وحديثي الولادة مع جدران مزدوجة لعزل الحرارة ونظام مدمج لوزن الطفل ومراقبة العلامات الحيوية."
+        "title": "Atmos C 161 Surgical Suction Unit",
+        "shortDescription": "German engineered, high-precision refurbished surgical aspirator for clinical suctioning.",
+        "description": "The Atmos C 161 provides powerful, low-noise suction with overflow safety mechanisms for surgical theaters and outpatient clinics."
       },
       "de": {
-        "title": "Neonatologie-Inkubator (CBC-INC600)",
-        "shortDescription": "Intensiv-Inkubator für Frühgeborene mit Servo-Feuchtigkeits- und Sauerstoffregelung.",
-        "description": "Der CBC-INC600 schafft optimale thermische Bedingungen für Früh- und Neugeborene mit doppelwandiger Haube, präziser Befeuchtung und integrierter Babywaage."
+        "title": "Atmos C 161 Aspiratör (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Atmos mit 1 Jahr Garantie.",
+        "description": "The Atmos C 161 provides powerful, low-noise suction with overflow safety mechanisms for surgical theaters and outpatient clinics. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Atmos C 161 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Atmos مع ضمان لمدة عام كامل.",
+        "description": "Atmos C 161, cerrahi girişimler ve poliklinik aspirasyon ihtiyaçları için tasarlanmış yüksek performanslı aspiratördür. Yağsız pompa mekanizması, hidrostatik taşma emniyeti ve sessiz motoru ile klinik standartları eksiksiz karşılar. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
       },
       "ja": {
-        "title": "Neonatal Infant Incubator (CBC-INC600)",
-        "shortDescription": "Cebeci Medikal CBC-INC600 Neonatal - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Cebeci Medikal CBC-INC600 Neonatalは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
+        "title": "Atmos C 161 リファービッシュ医療機器",
+        "shortDescription": "Atmos製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "The Atmos C 161 provides powerful, low-noise suction with overflow safety mechanisms for surgical theaters and outpatient clinics. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
       },
       "zh": {
-        "title": "Neonatal Infant Incubator (CBC-INC600)",
-        "shortDescription": "Cebeci Medikal CBC-INC600 Neonatal - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Cebeci Medikal CBC-INC600 Neonatal 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
+        "title": "Atmos C 161 翻新医疗设备",
+        "shortDescription": "Atmos 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "The Atmos C 161 provides powerful, low-noise suction with overflow safety mechanisms for surgical theaters and outpatient clinics. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
       }
     }
   },
   {
-    "id": "prod-7",
-    "slug": "renkli-doppler-ultrason-cbc-us7000",
-    "categorySlug": "endovizyon-sistemleri",
-    "brand": "Cebeci Medikal",
-    "model": "CBC-US7000 Expert",
-    "sku": "CBC-US-700",
+    "id": "prod-aspirator-bicakcilar",
+    "slug": "bicakcilar-cerrahi-aspirator",
+    "categorySlug": "ameliyathane-cihazlari",
+    "brand": "Bıçakçılar",
+    "model": "Surgiline Cerrahi Aspiratör",
+    "sku": "BCK-ASP-005",
+    "condition": "SECOND_HAND",
+    "featured": false,
+    "sortOrder": 5,
+    "images": [
+      "/images/products/aspirator-2.webp"
+    ],
+    "technicalSpecs": {
+      "Emiş Debisi": "Yüksek Debi / Yüksek Vakum (50 - 60 L/dk)",
+      "Vakum Aralığı": "0 ile -0.9 bar ayarlanabilir",
+      "Toplama Kavanozları": "2 x 3000 mL veya 2 x 5000 mL Polikarbonat Otoklavlanabilir",
+      "Tekerlek Sistemi": "Kilitlenebilir Antistatik Döner Tekerlekler",
+      "Kondisyon": "Revizyonlu, Pompa ve Filtre Bakımları Yapılmış"
+    },
+    "applications": [
+      "Genel Cerrahi ve Kadın Doğum Ameliyathaneleri",
+      "Liposuction ve Plastik Cerrahi",
+      "Yoğun Bakım Üniteleri",
+      "Acil Servisler"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Bıçakçılar Cerrahi Aspiratör Cihazı",
+        "shortDescription": "Ağır cerrahi ameliyatlar için tasarlanmış, çift kavanozlu yüksek emiş güçlü revizyonlu aspiratör.",
+        "description": "Bıçakçılar cerrahi aspiratör sistemi, ameliyathane ortamında kan, sıvı ve partiküllerin hızla uzaklaştırılmasını sağlayan dayanıklı ve güçlü bir cihazdır. Pompa contaları, vakum göstergeleri ve filtre sistemleri tamamen yenilenmiştir."
+      },
+      "en": {
+        "title": "Bıçakçılar Surgical Suction Aspirator",
+        "shortDescription": "Heavy-duty dual-jar medical aspirator for operating rooms and surgical suction.",
+        "description": "Designed for maximum surgical reliability with high vacuum capacity, autoclavable jars, and mobile trolley construction."
+      },
+      "de": {
+        "title": "Bıçakçılar Surgiline Cerrahi Aspiratör Cihazı (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Bıçakçılar mit 1 Jahr Garantie.",
+        "description": "Designed for maximum surgical reliability with high vacuum capacity, autoclavable jars, and mobile trolley construction. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Bıçakçılar Surgiline Cerrahi Aspiratör (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Bıçakçılar مع ضمان لمدة عام كامل.",
+        "description": "Bıçakçılar cerrahi aspiratör sistemi, ameliyathane ortamında kan, sıvı ve partiküllerin hızla uzaklaştırılmasını sağlayan dayanıklı ve güçlü bir cihazdır. Pompa contaları, vakum göstergeleri ve filtre sistemleri tamamen yenilenmiştir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Bıçakçılar Surgiline Cerrahi Aspiratör リファービッシュ医療機器",
+        "shortDescription": "Bıçakçılar製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Designed for maximum surgical reliability with high vacuum capacity, autoclavable jars, and mobile trolley construction. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Bıçakçılar Surgiline Cerrahi Aspiratör 翻新医疗设备",
+        "shortDescription": "Bıçakçılar 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Designed for maximum surgical reliability with high vacuum capacity, autoclavable jars, and mobile trolley construction. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-aspirator-uzumcu-pa2",
+    "slug": "uzumcu-pa2-cerrahi-aspirator",
+    "categorySlug": "ameliyathane-cihazlari",
+    "brand": "Üzümcü",
+    "model": "PA-2",
+    "sku": "UZM-PA2-006",
+    "condition": "SECOND_HAND",
+    "featured": false,
+    "sortOrder": 6,
+    "images": [
+      "/images/products/aspirator-3.webp"
+    ],
+    "technicalSpecs": {
+      "Vakum Kapasitesi": "60 L/dakika",
+      "Maksimum Vakum": "-0.90 bar (-675 mmHg)",
+      "Kavanozlar": "2 x 5 Litre Polikarbonat, Taşma Valfli",
+      "Pedal Kontrolü": "Var (Ayak Pedalı ile Açma/Kapama)",
+      "Gövde": "Paslanmaz Çelik ve Dayanıklı ABS",
+      "Garanti": "1 Yıl Cebeci Medikal Garantili"
+    },
+    "applications": [
+      "Ameliyathane Operasyonları",
+      "Acil Travma Merkezleri",
+      "Klinik Cerrahi Birimleri"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Üzümcü PA-2 Cerrahi Aspiratör",
+        "shortDescription": "Yüksek emiş debili, ayak pedallı ve çift kavanozlu profesyonel cerrahi aspiratör.",
+        "description": "Üzümcü PA-2, cerrahi müdahalelerde kesintisiz vakum gücü sağlayan yerli standartların öncü aspiratör modelidir. Cebeci Medikal tarafından tüm testleri yapılmış, emiş hortumları ve filtreleri yenilenmiştir."
+      },
+      "en": {
+        "title": "Üzümcü PA-2 Surgical Aspirator",
+        "shortDescription": "Professional high-flow surgical suction unit with foot switch and dual 5L collection jars.",
+        "description": "Reliable mobile surgical aspirator offering up to 60 L/min flow rate, hydrostatic protection, and robust construction."
+      },
+      "de": {
+        "title": "Üzümcü PA-2 Aspiratör (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Üzümcü mit 1 Jahr Garantie.",
+        "description": "Reliable mobile surgical aspirator offering up to 60 L/min flow rate, hydrostatic protection, and robust construction. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Üzümcü PA-2 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Üzümcü مع ضمان لمدة عام كامل.",
+        "description": "Üzümcü PA-2, cerrahi müdahalelerde kesintisiz vakum gücü sağlayan yerli standartların öncü aspiratör modelidir. Cebeci Medikal tarafından tüm testleri yapılmış, emiş hortumları ve filtreleri yenilenmiştir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Üzümcü PA-2 リファービッシュ医療機器",
+        "shortDescription": "Üzümcü製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Reliable mobile surgical aspirator offering up to 60 L/min flow rate, hydrostatic protection, and robust construction. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Üzümcü PA-2 翻新医疗设备",
+        "shortDescription": "Üzümcü 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Reliable mobile surgical aspirator offering up to 60 L/min flow rate, hydrostatic protection, and robust construction. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-defibrilator-nihon-kohden-tec7631k",
+    "slug": "nihon-kohden-cardiolife-tec-7631k-defibrilator",
+    "categorySlug": "yogun-bakim-ve-yasam-destek",
+    "brand": "Nihon Kohden",
+    "model": "Cardiolife TEC-7631K",
+    "sku": "NHK-TEC-007",
     "condition": "SECOND_HAND",
     "featured": true,
     "sortOrder": 7,
     "images": [
-      "/images/products/ultrason-1.webp",
-      "/images/products/ultrason-2.webp",
-      "/images/products/ultrason-3.webp",
-      "/images/products/ultrason-4.webp"
+      "/images/products/defibrilator-1.webp"
     ],
     "technicalSpecs": {
-      "Görüntüleme Modları": "B, 2B, 4B, M, Renkli Doppler (CFM), Power Doppler (PDI), Pulsed Wave (PW), CW Doppler, 3D/4D",
-      "Ekran": "21.5 inç Tıbbi HD LED Monitör + 10.4 inç Dokunmatik Komut Paneli",
-      "Prob Portları": "4 Aktif Yüksek Yoğunluklu Prob Soketi",
-      "Desteklenen Problar": "Konveks, Lineer, Sektör Faz Dizili (Kardiyak), Transvajinal ve 4D Hacimsel Problar",
-      "Gelişmiş Yazılımlar": "Doku Harmonik Görüntüleme (THI), Benek Azaltma (SRI), Elastografi, Otomatik IMT",
-      "Depolama & Bağlantı": "500 GB Dahili SSD, DICOM 3.0, USB 3.0, HDMI Çıkışları"
+      "Dalga Formu": "ActiBiphasic (Bifazik Dalga Teknolojisi)",
+      "Enerji Seçenekleri": "2J ile 270J arası hassas dozlama",
+      "Çalışma Modları": "Manuel Defibrilasyon, AED, Senkronize Kardiyoversiyon, Harici Pacer",
+      "Ekran": "Renkli TFT LCD Monitör (EKG, SpO2, Kalp Tepe Atımı)",
+      "Yazıcı": "Entegre Yüksek Hızlı Termal EKG Yazıcısı",
+      "Batarya": "Yeni Bataryalı, Mobil Kullanıma Uygun",
+      "Garanti": "1 Yıl Cebeci Medikal Güvencesi"
     },
     "applications": [
-      "Radyoloji ve Genel Ultrasonografi Görüntüleme",
-      "Kadın Hastalıkları, Doğum ve Perinatoloji",
-      "Kardiyoloji ve Vasküler Damar İncelemeleri",
-      "Üroloji, Kas-İskelet ve Yüzeyel Doku Muayeneleri"
+      "Acil Servis & Resüsitasyon (Kırmızı Alan)",
+      "Koroner ve Genel Yoğun Bakım",
+      "Ameliyathane ve Anestezi Sonrası Bakım (PACU)",
+      "Ambulans ve Hasta Nakil Ekipleri"
     ],
     "translations": {
       "tr": {
-        "title": "Renkli Doppler Ultrasonografi Cihazı (CBC-US7000 Expert)",
-        "shortDescription": "4 aktif prob portlu, 21.5 inç HD ekranlı ve kardiyo-vasküler/kadın doğum paketli renkli Doppler ultrason.",
-        "description": "CBC-US7000 Expert; üstün görüntü kalitesi, geniş prob ailesi ve gelişmiş vasküler/obstetrik ölçüm paketleri ile klinik tanıda en yüksek doğruluğu sunar. Çok yönlü kullanım imkanıyla polikliniklerden görüntüleme merkezlerine kadar tüm teşhis ihtiyaçlarını karşılar."
+        "title": "Nihon Kohden Cardiolife TEC-7631K Defibrilatör",
+        "shortDescription": "ActiBiphasic teknolojili, renkli ekranlı ve pacer özellikli Japon teknolojisi profesyonel defibrilatör.",
+        "description": "Nihon Kohden TEC-7631K Cardiolife serisi, kritik kardiyak resüsitasyon anlarında en hızlı şarj süresi (3 saniyede 200J) ve yüksek doğruluklu bifazik deşarj sağlayan üst segment defibrilatördür. Kaşık elektrotları, hasta kabloları ve yeni bataryası ile tam çalışır durumdadır."
       },
       "en": {
-        "title": "Color Doppler Ultrasound System (CBC-US7000 Expert)",
-        "shortDescription": "High-resolution ultrasound imaging system with 4 active ports and 21.5-inch medical display.",
-        "description": "The CBC-US7000 delivers diagnostic clarity across radiology, cardiology, OB/GYN, and musculoskeletal exams with advanced imaging technologies and ergonomic workflow."
-      },
-      "ar": {
-        "title": "جهاز الموجات فوق الصوتية الملون دوبلر (CBC-US7000 Expert)",
-        "shortDescription": "نظام تصوير بالموجات فوق الصوتية عالي الدقة مزود بـ 4 منافذ للمجسات وشاشة طبية 21.5 بوصة.",
-        "description": "يقدم جهاز CBC-US7000 صوراً تشخيصية فائقة الوضوح لمختلف التخصصات من أمراض النساء والولادة إلى القلب والأوعية الدموية مع حزم قياس متطورة وسهولة في الاستخدام."
+        "title": "Nihon Kohden Cardiolife TEC-7631K Defibrillator",
+        "shortDescription": "Biphasic multi-parameter defibrillator/monitor with external pacing and fast energy charge.",
+        "description": "Engineered with Nihon Kohden's proprietary ActiBiphasic waveform technology, ensuring rapid and safe defibrillation in emergency cardiac scenarios."
       },
       "de": {
-        "title": "Farbdoppler-Ultraschallsystem (CBC-US7000 Expert)",
-        "shortDescription": "Leistungsstarkes Ultraschallsystem mit 21,5-Zoll-Monitor und umfassenden Diagnosepaketen.",
-        "description": "Das CBC-US7000 Expert bietet exzellente Bildauflösung für Radiologie, Kardiologie und Gynäkologie mit modernster Signalverarbeitung und benutzerfreundlichem Bedienkonzept."
+        "title": "Nihon Kohden Cardiolife TEC-7631K Defibrilatör (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Nihon Kohden mit 1 Jahr Garantie.",
+        "description": "Engineered with Nihon Kohden's proprietary ActiBiphasic waveform technology, ensuring rapid and safe defibrillation in emergency cardiac scenarios. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Nihon Kohden Cardiolife TEC-7631K (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Nihon Kohden مع ضمان لمدة عام كامل.",
+        "description": "Nihon Kohden TEC-7631K Cardiolife serisi, kritik kardiyak resüsitasyon anlarında en hızlı şarj süresi (3 saniyede 200J) ve yüksek doğruluklu bifazik deşarj sağlayan üst segment defibrilatördür. Kaşık elektrotları, hasta kabloları ve yeni bataryası ile tam çalışır durumdadır. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
       },
       "ja": {
-        "title": "Color Doppler Ultrasound System (CBC-US7000 Expert)",
-        "shortDescription": "Cebeci Medikal CBC-US7000 Expert - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Cebeci Medikal CBC-US7000 Expertは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
+        "title": "Nihon Kohden Cardiolife TEC-7631K リファービッシュ医療機器",
+        "shortDescription": "Nihon Kohden製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Engineered with Nihon Kohden's proprietary ActiBiphasic waveform technology, ensuring rapid and safe defibrillation in emergency cardiac scenarios. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
       },
       "zh": {
-        "title": "Color Doppler Ultrasound System (CBC-US7000 Expert)",
-        "shortDescription": "Cebeci Medikal CBC-US7000 Expert - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Cebeci Medikal CBC-US7000 Expert 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
+        "title": "Nihon Kohden Cardiolife TEC-7631K 翻新医疗设备",
+        "shortDescription": "Nihon Kohden 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Engineered with Nihon Kohden's proprietary ActiBiphasic waveform technology, ensuring rapid and safe defibrillation in emergency cardiac scenarios. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
       }
     }
   },
   {
-    "id": "prod-8",
-    "slug": "elektroterapi-fizik-tedavi-cbc-pt400",
-    "categorySlug": "fizik-tedavi-cihazlari",
-    "brand": "Cebeci Medikal",
-    "model": "CBC-PT400 Combo",
-    "sku": "CBC-PT-400",
+    "id": "prod-defibrilator-cardioline-ep700",
+    "slug": "cardioline-ep700-defibrilator-monitor",
+    "categorySlug": "yogun-bakim-ve-yasam-destek",
+    "brand": "Cardioline",
+    "model": "EP700",
+    "sku": "CDL-EP7-008",
     "condition": "SECOND_HAND",
-    "featured": true,
+    "featured": false,
     "sortOrder": 8,
     "images": [
-      "/images/products/fizik-tedavi-1.webp",
+      "/images/products/defibrilator-2.webp"
+    ],
+    "technicalSpecs": {
+      "Cihaz Tipi": "Klinik Defibrilatör ve EKG Monitörizasyon Sistemi",
+      "Enerji Çıkışı": "Ayarlanabilir Enerji Kademeleri",
+      "Monitör": "Dahili EKG Dalga Formu Ekranı",
+      "Kaşık Tipi": "Yetişkin ve Pediatrik Entegre Kaşıklar",
+      "Durum": "Test Edilmiş & Revizyonlu, 1 Yıl Garantili"
+    },
+    "applications": [
+      "Kardiyoloji Poliklinikleri",
+      "Acil Müdahale Odaları",
+      "Tıp Merkezleri ve Özel Hastaneler"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Cardioline EP700 Defibrilatör & Monitör",
+        "shortDescription": "İtalyan Cardioline üretimi, stabil EKG takipli ve revizyonlu klinik defibrilatör.",
+        "description": "Cardioline EP700, kardiyak ritim analizi ve acil defibrilasyon gereksinimlerini tek cihazda birleştiren dayanıklı bir medikal cihazdır. Enerji deşarj testleri ve elektriksel güvenlik kalibrasyonları yapılmıştır."
+      },
+      "en": {
+        "title": "Cardioline EP700 Defibrillator & Monitor",
+        "shortDescription": "Reliable Italian defibrillator with built-in ECG monitoring screen and paddle electrodes.",
+        "description": "Cardioline EP700 offers straightforward operation, accurate energy delivery, and clear ECG wave presentation."
+      },
+      "de": {
+        "title": "Cardioline EP700 Monitör (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Cardioline mit 1 Jahr Garantie.",
+        "description": "Cardioline EP700 offers straightforward operation, accurate energy delivery, and clear ECG wave presentation. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Cardioline EP700 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Cardioline مع ضمان لمدة عام كامل.",
+        "description": "Cardioline EP700, kardiyak ritim analizi ve acil defibrilasyon gereksinimlerini tek cihazda birleştiren dayanıklı bir medikal cihazdır. Enerji deşarj testleri ve elektriksel güvenlik kalibrasyonları yapılmıştır. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Cardioline EP700 リファービッシュ医療機器",
+        "shortDescription": "Cardioline製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Cardioline EP700 offers straightforward operation, accurate energy delivery, and clear ECG wave presentation. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Cardioline EP700 翻新医疗设备",
+        "shortDescription": "Cardioline 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Cardioline EP700 offers straightforward operation, accurate energy delivery, and clear ECG wave presentation. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-defibrilator-primedic-dm3",
+    "slug": "primedic-defi-monitor-dm3-defibrilator",
+    "categorySlug": "yogun-bakim-ve-yasam-destek",
+    "brand": "Primedic",
+    "model": "Defi-Monitor DM3",
+    "sku": "PRM-DM3-009",
+    "condition": "SECOND_HAND",
+    "featured": false,
+    "sortOrder": 9,
+    "images": [
+      "/images/products/defibrilator-3.webp"
+    ],
+    "technicalSpecs": {
+      "Menşei": "Almanya (Metrax GmbH)",
+      "Dalga Tipi": "Akım Kontrollü Bifazik CCD (Current Controlled Defibrillation)",
+      "Enerji": "5J - 360J Geniş Enerji Skalası",
+      "Modlar": "Manuel, Senkron Kardiyoversiyon, EKG Monitör",
+      "Ekran": "Yüksek Kontrastlı Aydınlatmalı LCD",
+      "Yazıcı": "Entegre Termal Rapor Yazıcısı"
+    },
+    "applications": [
+      "Acil Yardım ve Ambulans",
+      "Yoğun Bakım Üniteleri",
+      "Cerrahi Servisler ve Klinikler"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Primedic Defi-Monitor DM3 Defibrilatör",
+        "shortDescription": "Alman kalitesiyle üretilmiş, CCD akım kontrollü bifazik deşarja sahip revizyonlu defibrilatör.",
+        "description": "Primedic Defi-Monitor DM3, hasta empedansına göre akımı otomatik ayarlayan CCD teknolojisi sayesinde miyokardiyal dokuyu koruyarak etkin defibrilasyon sağlar. Cebeci Medikal güvencesiyle 1 yıl garantilidir."
+      },
+      "en": {
+        "title": "Primedic Defi-Monitor DM3 Biphasic Defibrillator",
+        "shortDescription": "German Metrax engineered defibrillator featuring Current Controlled Defibrillation (CCD).",
+        "description": "Primedic DM3 combines rugged hospital/transport build with intelligent biphasic pulse delivery and thermal documentation."
+      },
+      "de": {
+        "title": "Primedic Defi-Monitor DM3 Defibrilatör (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Primedic mit 1 Jahr Garantie.",
+        "description": "Primedic DM3 combines rugged hospital/transport build with intelligent biphasic pulse delivery and thermal documentation. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Primedic Defi-Monitor DM3 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Primedic مع ضمان لمدة عام كامل.",
+        "description": "Primedic Defi-Monitor DM3, hasta empedansına göre akımı otomatik ayarlayan CCD teknolojisi sayesinde miyokardiyal dokuyu koruyarak etkin defibrilasyon sağlar. Cebeci Medikal güvencesiyle 1 yıl garantilidir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Primedic Defi-Monitor DM3 リファービッシュ医療機器",
+        "shortDescription": "Primedic製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Primedic DM3 combines rugged hospital/transport build with intelligent biphasic pulse delivery and thermal documentation. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Primedic Defi-Monitor DM3 翻新医疗设备",
+        "shortDescription": "Primedic 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Primedic DM3 combines rugged hospital/transport build with intelligent biphasic pulse delivery and thermal documentation. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-ekg-cardioline-ar600adv",
+    "slug": "cardioline-ar600adv-ekg-cihazi",
+    "categorySlug": "fizyolojik-sinyal-izleyiciler",
+    "brand": "Cardioline",
+    "model": "ar600adv",
+    "sku": "CDL-AR6-010",
+    "condition": "SECOND_HAND",
+    "featured": false,
+    "sortOrder": 10,
+    "images": [
+      "/images/products/ekg-cihazi-1.webp"
+    ],
+    "technicalSpecs": {
+      "Kanal Sayısı": "3 Kanallı Eşzamanlı Kayıt ve Baskı",
+      "Derivasyon": "12 Standart EKG Derivasyonu",
+      "Yazıcı": "60 mm Termal Rulo Yazıcı",
+      "Çalışma Modu": "Manuel, Otomatik, Zaman Ayarlı",
+      "Batarya": "Şarj Edilebilir Dahili Batarya",
+      "Garanti": "1 Yıl Tam Garanti"
+    },
+    "applications": [
+      "Aile Hekimlikleri ve Sağlık Ocakları",
+      "Poliklinik Muayene Odaları",
+      "İşyeri Hekimliği",
+      "Evde Sağlık Hizmetleri"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Cardioline ar600adv 3 Kanallı EKG Cihazı",
+        "shortDescription": "Taşınabilir, hafif ve yüksek baskı kalitesine sahip İtalyan üretimi 3 kanallı EKG.",
+        "description": "Cardioline ar600adv, kompakt boyutu ve pratik arayüzü ile rutin EKG çekimlerinde hızlı ve güvenilir teşhis imkanı sunar. Hasta kablosu, mandalları ve elektrotları ile eksiksiz teslim edilir."
+      },
+      "en": {
+        "title": "Cardioline ar600adv 3-Channel ECG Machine",
+        "shortDescription": "Portable, lightweight 3-channel electrocardiograph with high-resolution thermal printer.",
+        "description": "The Cardioline ar600adv offers reliable 12-lead ECG acquisition with automatic/manual recording modes for outpatient and primary care practices."
+      },
+      "de": {
+        "title": "Cardioline ar600adv Cihazı (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Cardioline mit 1 Jahr Garantie.",
+        "description": "The Cardioline ar600adv offers reliable 12-lead ECG acquisition with automatic/manual recording modes for outpatient and primary care practices. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Cardioline ar600adv (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Cardioline مع ضمان لمدة عام كامل.",
+        "description": "Cardioline ar600adv, kompakt boyutu ve pratik arayüzü ile rutin EKG çekimlerinde hızlı ve güvenilir teşhis imkanı sunar. Hasta kablosu, mandalları ve elektrotları ile eksiksiz teslim edilir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Cardioline ar600adv リファービッシュ医療機器",
+        "shortDescription": "Cardioline製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "The Cardioline ar600adv offers reliable 12-lead ECG acquisition with automatic/manual recording modes for outpatient and primary care practices. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Cardioline ar600adv 翻新医疗设备",
+        "shortDescription": "Cardioline 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "The Cardioline ar600adv offers reliable 12-lead ECG acquisition with automatic/manual recording modes for outpatient and primary care practices. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-ekg-plusmed-pmecg1200b",
+    "slug": "plusmed-pmecg1200b-12-kanalli-ekg-cihazi",
+    "categorySlug": "fizyolojik-sinyal-izleyiciler",
+    "brand": "Plusmed",
+    "model": "pmECG1200B",
+    "sku": "PLS-ECG-011",
+    "condition": "SECOND_HAND",
+    "featured": true,
+    "sortOrder": 11,
+    "images": [
+      "/images/products/ekg-cihazi-2.webp"
+    ],
+    "technicalSpecs": {
+      "Kanal Sayısı": "12 Kanallı Eşzamanlı Kayıt ve Görüntüleme",
+      "Ekran": "Geniş Renkli Dokunmatik LCD Ekran",
+      "Analiz": "Otomatik EKG Ölçüm ve Yorumlama Algoritması",
+      "Yazıcı": "210 mm / 216 mm Geniş Termal Kağıt Baskısı",
+      "Filtreler": "AC, EMG, Taban Çizgisi Drift Filtreleri",
+      "Hafıza": "Dahili Hasta Kayıt Belleği ve USB Dışa Aktarım"
+    },
+    "applications": [
+      "Kardiyoloji Servisleri",
+      "Hastaneler ve Tıp Merkezleri",
+      "Check-up ve Efor Öncesi Değerlendirme Merkezleri"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Plusmed pmECG1200B 12 Kanallı EKG Cihazı",
+        "shortDescription": "Geniş ekranlı, otomatik aritmi tespit ve yorumlamalı 12 kanallı dijital elektrokardiyograf.",
+        "description": "Plusmed pmECG1200B, 12 kanal eşzamanlı çekim ve A4 formatına yakın geniş kağıt baskısı ile kardiyolojik detayları net şekilde raporlar. Tüm filtreleme ve derivasyon kalibrasyonları yapılmıştır."
+      },
+      "en": {
+        "title": "Plusmed pmECG1200B 12-Channel ECG Machine",
+        "shortDescription": "High-end 12-channel digital ECG with touchscreen display and automatic diagnostic interpretation.",
+        "description": "Provides simultaneous 12-lead acquisition, broad paper printouts, and digital storage capabilities for clinical cardiology."
+      },
+      "de": {
+        "title": "Plusmed pmECG1200B Cihazı (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Plusmed mit 1 Jahr Garantie.",
+        "description": "Provides simultaneous 12-lead acquisition, broad paper printouts, and digital storage capabilities for clinical cardiology. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Plusmed pmECG1200B (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Plusmed مع ضمان لمدة عام كامل.",
+        "description": "Plusmed pmECG1200B, 12 kanal eşzamanlı çekim ve A4 formatına yakın geniş kağıt baskısı ile kardiyolojik detayları net şekilde raporlar. Tüm filtreleme ve derivasyon kalibrasyonları yapılmıştır. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Plusmed pmECG1200B リファービッシュ医療機器",
+        "shortDescription": "Plusmed製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Provides simultaneous 12-lead acquisition, broad paper printouts, and digital storage capabilities for clinical cardiology. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Plusmed pmECG1200B 翻新医疗设备",
+        "shortDescription": "Plusmed 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Provides simultaneous 12-lead acquisition, broad paper printouts, and digital storage capabilities for clinical cardiology. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-koter-petas-petkot-500s",
+    "slug": "petas-petkot-500s-elektrokoter-cihazi",
+    "categorySlug": "ameliyathane-cihazlari",
+    "brand": "Petaş",
+    "model": "Petkot 500S",
+    "sku": "PTS-500S-012",
+    "condition": "SECOND_HAND",
+    "featured": true,
+    "sortOrder": 12,
+    "images": [
+      "/images/products/elektrokoter-1.webp"
+    ],
+    "technicalSpecs": {
+      "Maksimum Çıkış Gücü": "400W - 500W Cerrahi Kesme & Koagülasyon",
+      "Modlar": "Monopolar Kesme (Pure/Blend), Monopolar Koagülasyon (Fulguration/Spray), Bipolar Koagülasyon",
+      "Güvenlik Sistemi": "REM (Hasta Plakası Temas Güvenlik Sistemi)",
+      "Pedal ve El Kumandası": "Çift Pedallı Ayak Anahtarı ve Kalemden Aktivasyon",
+      "Garanti": "1 Yıl Tam Teknik Servis Garantili"
+    },
+    "applications": [
+      "Genel Cerrahi ve Laparoskopi",
+      "Beyin ve Sinir Cerrahisi (Nöroşirürji)",
+      "Üroloji ve Jinekoloji",
+      "Ortopedi ve Plastik Cerrahi"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Petaş Petkot 500S Elektrokoter Cihazı",
+        "shortDescription": "Yüksek frekanslı monopolar ve bipolar cerrahi kesme-koagülasyon ünitesi.",
+        "description": "Petaş Petkot 500S, geniş cerrahi yelpazede doku kesme ve kanama durdurma (hemostaz) işlemlerini yüksek hassasiyetle gerçekleştiren güçlü bir elektrocerrahi ünitesidir. Biyomedikal güç çıkış testleri ve hasta plakası güvenlik devreleri eksiksiz doğrulanmıştır."
+      },
+      "en": {
+        "title": "Petaş Petkot 500S Electrosurgical Unit",
+        "shortDescription": "High-frequency monopolar and bipolar electrosurgical generator with REM plate safety monitoring.",
+        "description": "The Petkot 500S delivers precise cutting and coagulation across diverse surgical specialties with proven reliability."
+      },
+      "de": {
+        "title": "Petaş Petkot 500S Cihazı (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Petaş mit 1 Jahr Garantie.",
+        "description": "The Petkot 500S delivers precise cutting and coagulation across diverse surgical specialties with proven reliability. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Petaş Petkot 500S (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Petaş مع ضمان لمدة عام كامل.",
+        "description": "Petaş Petkot 500S, geniş cerrahi yelpazede doku kesme ve kanama durdurma (hemostaz) işlemlerini yüksek hassasiyetle gerçekleştiren güçlü bir elektrocerrahi ünitesidir. Biyomedikal güç çıkış testleri ve hasta plakası güvenlik devreleri eksiksiz doğrulanmıştır. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Petaş Petkot 500S リファービッシュ医療機器",
+        "shortDescription": "Petaş製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "The Petkot 500S delivers precise cutting and coagulation across diverse surgical specialties with proven reliability. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Petaş Petkot 500S 翻新医疗设备",
+        "shortDescription": "Petaş 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "The Petkot 500S delivers precise cutting and coagulation across diverse surgical specialties with proven reliability. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-endovizyon-sistemi",
+    "slug": "endovizyon-kamera-ve-goruntuleme-sistemi",
+    "categorySlug": "endovizyon-sistemleri",
+    "brand": "Cebeci Medikal",
+    "model": "EV-System",
+    "sku": "CBC-EVS-013",
+    "condition": "SECOND_HAND",
+    "featured": true,
+    "sortOrder": 13,
+    "images": [
+      "/images/products/endovizyon-sistemi-1.webp"
+    ],
+    "technicalSpecs": {
+      "Sistem Bileşenleri": "Medikal HD Kamera Kontrol Ünitesi, Kamera Kafası, Soğuk Işık Kaynağı, Medikal Monitör ve Taşıma Kulesi",
+      "Kamera Çözünürlüğü": "Full HD Medikal Görüntüleme",
+      "Işık Kaynağı": "Yüksek Lümen Güçlü Işık Çıkışı",
+      "Kule": "Kilitlenebilir Tekerlekli, Ayarlanabilir Raflı ve Çoklu Prizli Medikal Taşıma Arabası",
+      "Durum": "Kombine Revizyonlu Sistem, 1 Yıl Garantili"
+    },
+    "applications": [
+      "Laparoskopik Cerrahi",
+      "Artroskopi ve Ortopedi",
+      "Sistoskopi ve Histeroskopi",
+      "KBB Endoskopik Girişimler"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Endovizyon Kamera ve Görüntüleme Sistemi",
+        "shortDescription": "Laparoskopi, artroskopi ve minimal invaziv cerrahiler için komple revizyonlu endovizyon kulesi.",
+        "description": "Komple endovizyon sistemi; medikal monitör, Full HD endoskopi kamerası, soğuk ışık kaynağı ve ergonomik taşıma kulesiyle anahtar teslim cerrahi görüntüleme çözümü sunar. Tüm optik ve elektronik bağlantıları test edilmiştir."
+      },
+      "en": {
+        "title": "Endovision Surgical Camera & Tower System",
+        "shortDescription": "Complete refurbished endoscopy tower system for laparoscopic and minimally invasive procedures.",
+        "description": "Includes high-definition medical camera unit, fiberoptic light source, medical display, and mobile equipment trolley."
+      },
+      "de": {
+        "title": "Cebeci Medikal EV-System Sistemi (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Cebeci Medikal mit 1 Jahr Garantie.",
+        "description": "Includes high-definition medical camera unit, fiberoptic light source, medical display, and mobile equipment trolley. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Cebeci Medikal EV-System (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Cebeci Medikal مع ضمان لمدة عام كامل.",
+        "description": "Komple endovizyon sistemi; medikal monitör, Full HD endoskopi kamerası, soğuk ışık kaynağı ve ergonomik taşıma kulesiyle anahtar teslim cerrahi görüntüleme çözümü sunar. Tüm optik ve elektronik bağlantıları test edilmiştir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Cebeci Medikal EV-System リファービッシュ医療機器",
+        "shortDescription": "Cebeci Medikal製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Includes high-definition medical camera unit, fiberoptic light source, medical display, and mobile equipment trolley. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Cebeci Medikal EV-System 翻新医疗设备",
+        "shortDescription": "Cebeci Medikal 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Includes high-definition medical camera unit, fiberoptic light source, medical display, and mobile equipment trolley. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-isik-karl-storz-powerled175",
+    "slug": "karl-storz-powerled-175-isik-kaynagi",
+    "categorySlug": "endovizyon-sistemleri",
+    "brand": "Karl Storz",
+    "model": "SCB PowerLED 175",
+    "sku": "KS-LED-014",
+    "condition": "SECOND_HAND",
+    "featured": true,
+    "sortOrder": 14,
+    "images": [
+      "/images/products/otoklav-1.webp"
+    ],
+    "technicalSpecs": {
+      "Işık Tipi": "Yüksek Yoğunluklu Soğuk LED Teknolojisi",
+      "Renk Sıcaklığı": "6400K (Gün Işığı Spektrumu)",
+      "LED Ömrü": "> 30.000 Saat",
+      "İletişim Portu": "KARL STORZ SCB (System Communication Bus)",
+      "Işık Şiddeti Ayarı": "Kademesiz Dijital Kontrol",
+      "Garanti": "1 Yıl Cebeci Medikal Garantisi"
+    },
+    "applications": [
+      "Laparoskopi ve Genel Endoskopi",
+      "Artroskopi",
+      "KBB ve Bronkoskopi",
+      "Ürolojik Cerrahi"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Karl Storz SCB PowerLED 175 Soğuk Işık Kaynağı",
+        "shortDescription": "Üstün Alman Karl Storz kalitesinde, uzun ömürlü ve yüksek lümenli LED endoskopi ışık kaynağı.",
+        "description": "Karl Storz PowerLED 175, cerrahi kavitelerde gerçeğe en yakın renk doku ayrımını sağlayan 6400K gün ışığı spektrumuna sahip profesyonel LED ışık kaynağıdır. Ampul değişim derdi olmadan on binlerce saat stabil aydınlatma sunar."
+      },
+      "en": {
+        "title": "Karl Storz SCB PowerLED 175 Cold Light Source",
+        "shortDescription": "Premium German cold LED endoscopy light source delivering daylight spectrum illumination.",
+        "description": "Features high-performance LED technology with 30,000+ hour lifespan, continuous digital intensity adjustment, and SCB bus integration."
+      },
+      "de": {
+        "title": "Karl Storz SCB PowerLED 175 Kaynağı (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Karl Storz mit 1 Jahr Garantie.",
+        "description": "Features high-performance LED technology with 30,000+ hour lifespan, continuous digital intensity adjustment, and SCB bus integration. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Karl Storz SCB PowerLED 175 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Karl Storz مع ضمان لمدة عام كامل.",
+        "description": "Karl Storz PowerLED 175, cerrahi kavitelerde gerçeğe en yakın renk doku ayrımını sağlayan 6400K gün ışığı spektrumuna sahip profesyonel LED ışık kaynağıdır. Ampul değişim derdi olmadan on binlerce saat stabil aydınlatma sunar. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Karl Storz SCB PowerLED 175 リファービッシュ医療機器",
+        "shortDescription": "Karl Storz製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Features high-performance LED technology with 30,000+ hour lifespan, continuous digital intensity adjustment, and SCB bus integration. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Karl Storz SCB PowerLED 175 翻新医疗设备",
+        "shortDescription": "Karl Storz 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Features high-performance LED technology with 30,000+ hour lifespan, continuous digital intensity adjustment, and SCB bus integration. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-isik-dyonics-xenon",
+    "slug": "dyonics-xenon-endoskopik-isik-kaynagi",
+    "categorySlug": "endovizyon-sistemleri",
+    "brand": "Smith & Nephew Dyonics",
+    "model": "Xenon Light Source",
+    "sku": "DYN-XEN-015",
+    "condition": "SECOND_HAND",
+    "featured": false,
+    "sortOrder": 15,
+    "images": [
+      "/images/products/isik-kaynagi-1.webp"
+    ],
+    "technicalSpecs": {
+      "Ampul Tipi": "300W Yüksek Parlaklıklı Xenon Ark Lambası",
+      "Renk Sıcaklığı": "5600K - 6000K",
+      "Optik Çıkış": "Evrensel Fiberoptik Kablo Tareti (Storz, Wolf, Olympus uyumlu)",
+      "Soğutma": "Düşük Ses Seviyeli Akıllı Fan Sistemi",
+      "Durum": "Yeni Lamba ve Biyomedikal Test Onaylı"
+    },
+    "applications": [
+      "Artroskopik Eklem Cerrahisi",
+      "Laparoskopi",
+      "Omurga Cerrahisi (Spine)"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Dyonics Xenon Endoskopik Işık Kaynağı",
+        "shortDescription": "Smith & Nephew Dyonics 300W Xenon lambalı, yoğun cerrahi aydınlatma sağlayan ışık kaynağı.",
+        "description": "Dyonics Xenon Işık Kaynağı, artroskopi ve laparoskopik cerrahilerde yüksek ışık geçirgenliği ve berrak görüntüleme için 300 Watt saf beyaz ışık üretir. Lamba ömrü ve optik yansıtıcı kontrolleri tamamlanmıştır."
+      },
+      "en": {
+        "title": "Smith & Nephew Dyonics Xenon Light Source",
+        "shortDescription": "High-intensity 300W Xenon surgical light source for arthroscopy and laparoscopy.",
+        "description": "Produces brilliant white illumination with universal turret connections for standard medical fiberoptic cables."
+      },
+      "de": {
+        "title": "Smith & Nephew Dyonics Xenon Light Source Kaynağı (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Smith & Nephew Dyonics mit 1 Jahr Garantie.",
+        "description": "Produces brilliant white illumination with universal turret connections for standard medical fiberoptic cables. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Smith & Nephew Dyonics Xenon Light Source (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Smith & Nephew Dyonics مع ضمان لمدة عام كامل.",
+        "description": "Dyonics Xenon Işık Kaynağı, artroskopi ve laparoskopik cerrahilerde yüksek ışık geçirgenliği ve berrak görüntüleme için 300 Watt saf beyaz ışık üretir. Lamba ömrü ve optik yansıtıcı kontrolleri tamamlanmıştır. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Smith & Nephew Dyonics Xenon Light Source リファービッシュ医療機器",
+        "shortDescription": "Smith & Nephew Dyonics製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Produces brilliant white illumination with universal turret connections for standard medical fiberoptic cables. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Smith & Nephew Dyonics Xenon Light Source 翻新医疗设备",
+        "shortDescription": "Smith & Nephew Dyonics 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Produces brilliant white illumination with universal turret connections for standard medical fiberoptic cables. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-isik-olympus-clk4",
+    "slug": "olympus-clk-4-halojen-isik-kaynagi",
+    "categorySlug": "endovizyon-sistemleri",
+    "brand": "Olympus",
+    "model": "CLK-4",
+    "sku": "OLY-CLK-016",
+    "condition": "SECOND_HAND",
+    "featured": false,
+    "sortOrder": 16,
+    "images": [
+      "/images/products/isik-kaynagi-2.webp"
+    ],
+    "technicalSpecs": {
+      "Lamba Tipi": "150W Halojen Reflektörlü Lamba",
+      "Yedek Lamba Sistemi": "Entegre Acil Durum Manuel Yedek Lamba Kolu",
+      "Hava Pompası": "Dahili Endoskopik Hava/Su Pompası",
+      "Garanti": "1 Yıl Cebeci Medikal Garantili"
+    },
+    "applications": [
+      "Gastroskopi ve Kolonoskopi",
+      "KBB Rijit ve Fleksibl Muayeneleri",
+      "Klinik Endoskopi Odaları"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Olympus CLK-4 Halojen Endoskopi Işık Kaynağı",
+        "shortDescription": "Olympus kalitesinde, dahili hava pompalı ve yedek ampul mekanizmalı halojen ışık kaynağı.",
+        "description": "Olympus CLK-4, fleksibl ve rijit endoskopi uygulamalarında güvenilir ışık ve hava beslemesi sağlayan kompakt ışık kaynağıdır. Yedek lamba sistemi sayesinde cerrahi sırasında kesinti yaşanmaz."
+      },
+      "en": {
+        "title": "Olympus CLK-4 Halogen Light Source",
+        "shortDescription": "Compact Olympus halogen light source with integrated air pump and emergency backup lamp.",
+        "description": "Dependable lighting unit designed for diagnostic endoscopy suites, clinics, and flexible endoscopy procedures."
+      },
+      "de": {
+        "title": "Olympus CLK-4 Kaynağı (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Olympus mit 1 Jahr Garantie.",
+        "description": "Dependable lighting unit designed for diagnostic endoscopy suites, clinics, and flexible endoscopy procedures. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Olympus CLK-4 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Olympus مع ضمان لمدة عام كامل.",
+        "description": "Olympus CLK-4, fleksibl ve rijit endoskopi uygulamalarında güvenilir ışık ve hava beslemesi sağlayan kompakt ışık kaynağıdır. Yedek lamba sistemi sayesinde cerrahi sırasında kesinti yaşanmaz. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Olympus CLK-4 リファービッシュ医療機器",
+        "shortDescription": "Olympus製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Dependable lighting unit designed for diagnostic endoscopy suites, clinics, and flexible endoscopy procedures. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Olympus CLK-4 翻新医疗设备",
+        "shortDescription": "Olympus 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Dependable lighting unit designed for diagnostic endoscopy suites, clinics, and flexible endoscopy procedures. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-pompa-bbraun-perfusor-space",
+    "slug": "b-braun-perfusor-space-enjektor-pompasi",
+    "categorySlug": "yogun-bakim-ve-yasam-destek",
+    "brand": "B. Braun",
+    "model": "Perfusor Space",
+    "sku": "BBR-SPC-017",
+    "condition": "SECOND_HAND",
+    "featured": true,
+    "sortOrder": 17,
+    "images": [
+      "/images/products/enjektor-pompasi-1.webp"
+    ],
+    "technicalSpecs": {
+      "Akış Hızı Aralığı": "0.01 - 999.9 mL/saat",
+      "Şırınga Uyumluluğu": "2, 5, 10, 20, 30, 50/60 mL (Otomatik Şırınga Tanıma)",
+      "Bolus Hızı": "1 - 1800 mL/saat ayarlanabilir",
+      "Hassasiyet": "±%2 hacimsel doğruluk",
+      "Oklüzyon Basıncı": "9 seviyeli ayarlanabilir basınç limiti",
+      "Tasarım": "İstiflenebilir Space İstasyon Uyumlu Modüler Yapı"
+    },
+    "applications": [
+      "Yoğun Bakım ve Anestezi",
+      "Onkoloji ve Kemoterapi İnfüzyonları",
+      "Neonatoloji (Yenidoğan) ve Pediatri",
+      "Kardiyovasküler İlaç Tedavileri"
+    ],
+    "translations": {
+      "tr": {
+        "title": "B. Braun Perfusor Space Enjektör Pompası",
+        "shortDescription": "Dünya standartlarında hassasiyete sahip, kompakt ve modüler Space serisi enjektör pompası.",
+        "description": "B. Braun Perfusor Space, kritik ilaçların mikro düzeyde hassas verilmesi için geliştirilmiş ultra kompakt enjektör pompasıdır. Otomatik enjektör boyutu algılama ve gelişmiş oklüzyon güvenliği sunar. Debimetre testleri ve mekanik kalibrasyonu yapılmıştır."
+      },
+      "en": {
+        "title": "B. Braun Perfusor Space Syringe Pump",
+        "shortDescription": "Ultra-compact, highly precise syringe infusion pump with modular stackable design.",
+        "description": "Engineered for demanding intensive care, anesthesia, and neonatal drug delivery with comprehensive safety profiles."
+      },
+      "de": {
+        "title": "B. Braun Perfusor Space Pompası (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von B. Braun mit 1 Jahr Garantie.",
+        "description": "Engineered for demanding intensive care, anesthesia, and neonatal drug delivery with comprehensive safety profiles. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "B. Braun Perfusor Space (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة B. Braun مع ضمان لمدة عام كامل.",
+        "description": "B. Braun Perfusor Space, kritik ilaçların mikro düzeyde hassas verilmesi için geliştirilmiş ultra kompakt enjektör pompasıdır. Otomatik enjektör boyutu algılama ve gelişmiş oklüzyon güvenliği sunar. Debimetre testleri ve mekanik kalibrasyonu yapılmıştır. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "B. Braun Perfusor Space リファービッシュ医療機器",
+        "shortDescription": "B. Braun製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Engineered for demanding intensive care, anesthesia, and neonatal drug delivery with comprehensive safety profiles. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "B. Braun Perfusor Space 翻新医疗设备",
+        "shortDescription": "B. Braun 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Engineered for demanding intensive care, anesthesia, and neonatal drug delivery with comprehensive safety profiles. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-pompa-bbraun-perfusor-compact",
+    "slug": "b-braun-perfusor-compact-enjektor-pompasi",
+    "categorySlug": "yogun-bakim-ve-yasam-destek",
+    "brand": "B. Braun",
+    "model": "Perfusor Compact",
+    "sku": "BBR-CMP-018",
+    "condition": "SECOND_HAND",
+    "featured": false,
+    "sortOrder": 18,
+    "images": [
+      "/images/products/enjektor-pompasi-2.webp"
+    ],
+    "technicalSpecs": {
+      "Akış Hızı": "0.1 - 99.9 mL/saat",
+      "Şırınga Desteği": "20 mL ve 50/60 mL Orijinal Perfusor Şırıngaları",
+      "Batarya Süresi": "Standart piller veya dahili akü ile 80 saat üzeri çalışma",
+      "Taşınabilirlik": "Hafif, sağlam ve taşıma kulplu gövde",
+      "Garanti": "1 Yıl Cebeci Medikal Garantisi"
+    },
+    "applications": [
+      "Yataklı Tedavi Servisleri",
+      "Ambulans ve Hasta Nakli",
+      "Acil Müdahale Odaları"
+    ],
+    "translations": {
+      "tr": {
+        "title": "B. Braun Perfusor Compact Enjektör Pompası",
+        "shortDescription": "Kullanımı kolay, sağlam ve uzun batarya ömrüne sahip klasik B. Braun enjektör pompası.",
+        "description": "B. Braun Perfusor Compact, sadeliği ve güvenilirliğiyle hastanelerin en çok tercih ettiği enjektör pompalarından biridir. İlaç infüzyonunda istikrarlı akış sağlar. Revizyonlu ve test onaylıdır."
+      },
+      "en": {
+        "title": "B. Braun Perfusor Compact Infusion Syringe Pump",
+        "shortDescription": "Robust, easy-to-operate syringe pump with long battery autonomy for wards and transport.",
+        "description": "A medical benchmark for daily syringe infusion, offering durable mechanical drive and dependable alarm monitoring."
+      },
+      "de": {
+        "title": "B. Braun Perfusor Compact Pompası (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von B. Braun mit 1 Jahr Garantie.",
+        "description": "A medical benchmark for daily syringe infusion, offering durable mechanical drive and dependable alarm monitoring. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "B. Braun Perfusor Compact (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة B. Braun مع ضمان لمدة عام كامل.",
+        "description": "B. Braun Perfusor Compact, sadeliği ve güvenilirliğiyle hastanelerin en çok tercih ettiği enjektör pompalarından biridir. İlaç infüzyonunda istikrarlı akış sağlar. Revizyonlu ve test onaylıdır. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "B. Braun Perfusor Compact リファービッシュ医療機器",
+        "shortDescription": "B. Braun製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "A medical benchmark for daily syringe infusion, offering durable mechanical drive and dependable alarm monitoring. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "B. Braun Perfusor Compact 翻新医疗设备",
+        "shortDescription": "B. Braun 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "A medical benchmark for daily syringe infusion, offering durable mechanical drive and dependable alarm monitoring. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-pompa-argus-414",
+    "slug": "argus-414-volumetrik-infuzyon-pompasi",
+    "categorySlug": "yogun-bakim-ve-yasam-destek",
+    "brand": "Argus (Schiller)",
+    "model": "414 Green Stream",
+    "sku": "ARG-414-019",
+    "condition": "SECOND_HAND",
+    "featured": false,
+    "sortOrder": 19,
+    "images": [
+      "/images/products/infuzyon-pompasi-1.webp"
+    ],
+    "technicalSpecs": {
+      "Pompa Tipi": "Volumetrik Damar İçi (IV) İnfüzyon Pompası",
+      "Akış Aralığı": "0.1 - 999.9 mL/saat",
+      "Hava Dedektörü": "Ultrasonik Hava Kabarcığı Algılama",
+      "Damla Sayacı": "Optik Damla Kontrol Sensörü",
+      "Garanti": "1 Yıl Tam Garanti"
+    },
+    "applications": [
+      "Genel Hastane Servisleri",
+      "Yoğun Bakım Üniteleri",
+      "Ameliyathane Sıvı Tedavileri"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Argus 414 Volumetrik İnfüzyon Pompası",
+        "shortDescription": "İsviçre üretimi, hassas serum ve sıvı infüzyonu sağlayan volumetrik damar içi infüzyon pompası.",
+        "description": "Argus 414 Green Stream, standart IV infüzyon setleriyle yüksek doğrulukta çalışan dayanıklı bir infüzyon cihazıdır. Hava kabarcığı ve tıkanma sensörleri kalibre edilmiştir."
+      },
+      "en": {
+        "title": "Argus 414 Volumetric Infusion Pump",
+        "shortDescription": "Swiss precision IV volumetric infusion pump with ultrasonic air bubble detection.",
+        "description": "Designed for standard infusion therapy across hospital departments, ensuring accurate continuous flow rates."
+      },
+      "de": {
+        "title": "Argus (Schiller) 414 Green Stream Pompası (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Argus (Schiller) mit 1 Jahr Garantie.",
+        "description": "Designed for standard infusion therapy across hospital departments, ensuring accurate continuous flow rates. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Argus (Schiller) 414 Green Stream (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Argus (Schiller) مع ضمان لمدة عام كامل.",
+        "description": "Argus 414 Green Stream, standart IV infüzyon setleriyle yüksek doğrulukta çalışan dayanıklı bir infüzyon cihazıdır. Hava kabarcığı ve tıkanma sensörleri kalibre edilmiştir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Argus (Schiller) 414 Green Stream リファービッシュ医療機器",
+        "shortDescription": "Argus (Schiller)製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Designed for standard infusion therapy across hospital departments, ensuring accurate continuous flow rates. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Argus (Schiller) 414 Green Stream 翻新医疗设备",
+        "shortDescription": "Argus (Schiller) 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Designed for standard infusion therapy across hospital departments, ensuring accurate continuous flow rates. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-ftr-estetic-italia-eswt",
+    "slug": "estetic-italia-eswt-sok-dalga-cihazi",
+    "categorySlug": "fizik-tedavi-cihazlari",
+    "brand": "Estetic Italia",
+    "model": "ESWT Radial Shockwave",
+    "sku": "EST-ESW-020",
+    "condition": "SECOND_HAND",
+    "featured": true,
+    "sortOrder": 20,
+    "images": [
+      "/images/products/fizik-tedavi-1.webp"
+    ],
+    "technicalSpecs": {
+      "Tedavi Prensibi": "Radyal Şok Dalga Terapisi (ESWT)",
+      "Basınç Gücü": "1.0 - 4.0 Bar ayarlanabilir enerji",
+      "Frekans": "1 - 16 Hz darbe frekansı",
+      "Aplikatör": "Farklı Derinlikler İçin Değiştirilebilir Başlık Seti",
+      "Ekran": "Dijital Parametre ve Protokol Kontrol Paneli",
+      "Garanti": "1 Yıl Cebeci Medikal Garantili"
+    },
+    "applications": [
+      "Fizik Tedavi ve Rehabilitasyon Merkezleri",
+      "Ortopedi ve Spor Hekimliği",
+      "Topuk Dikeni ve Plantar Fasiit Tedavisi",
+      "Tenisçi / Golfçü Dirseği ve Kronik Tendinopatiler"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Estetic Italia ESWT Şok Dalga Terapi Cihazı",
+        "shortDescription": "Kas-iskelet sistemi ağrıları ve kronik tendinopatiler için İtalyan üretimi radyal ESWT cihazı.",
+        "description": "Estetic Italia ESWT, ortopedik ve fizik tedavi rahatsızlıklarında doku rejenerasyonunu tetikleyen invaziv olmayan güçlü bir şok dalga terapi cihazıdır. Kompresör basınç değerleri ve tabanca aplikatörü yenilenmiştir."
+      },
+      "en": {
+        "title": "Estetic Italia Radial ESWT Shockwave Therapy Unit",
+        "shortDescription": "Italian manufactured radial shockwave device for orthopedic and physical therapy rehabilitation.",
+        "description": "Effective non-invasive solution for musculoskeletal disorders, tendinopathy, and plantar fasciitis."
+      },
+      "de": {
+        "title": "Estetic Italia ESWT Radial Shockwave Cihazı (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Estetic Italia mit 1 Jahr Garantie.",
+        "description": "Effective non-invasive solution for musculoskeletal disorders, tendinopathy, and plantar fasciitis. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Estetic Italia ESWT Radial Shockwave (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Estetic Italia مع ضمان لمدة عام كامل.",
+        "description": "Estetic Italia ESWT, ortopedik ve fizik tedavi rahatsızlıklarında doku rejenerasyonunu tetikleyen invaziv olmayan güçlü bir şok dalga terapi cihazıdır. Kompresör basınç değerleri ve tabanca aplikatörü yenilenmiştir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Estetic Italia ESWT Radial Shockwave リファービッシュ医療機器",
+        "shortDescription": "Estetic Italia製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Effective non-invasive solution for musculoskeletal disorders, tendinopathy, and plantar fasciitis. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Estetic Italia ESWT Radial Shockwave 翻新医疗设备",
+        "shortDescription": "Estetic Italia 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Effective non-invasive solution for musculoskeletal disorders, tendinopathy, and plantar fasciitis. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-ftr-fizik-tedavi-masasi",
+    "slug": "motorlu-fizik-tedavi-ve-rehabilitasyon-masasi",
+    "categorySlug": "fizik-tedavi-cihazlari",
+    "brand": "Cebeci Medikal",
+    "model": "FTR-Pro Bed",
+    "sku": "CBC-FTR-021",
+    "condition": "SECOND_HAND",
+    "featured": false,
+    "sortOrder": 21,
+    "images": [
       "/images/products/fizik-tedavi-2.webp",
       "/images/products/fizik-tedavi-3.webp",
       "/images/products/fizik-tedavi-4.webp",
       "/images/products/fizik-tedavi-5.webp"
     ],
     "technicalSpecs": {
-      "Akım Tipleri": "TENS, NMES, Enterferansiyel (IFC), Galvanik, Faradik, Rus Akımı, Trabert, Diadinamik",
-      "Kanal Sayısı": "2 Bağımsız Elektroterapi Kanalı + 1 Ultrason Terapi Kanalı",
-      "Ultrason Frekansları": "1 MHz (Derin Doku) ve 3 MHz (Yüzeyel Doku) Çift Frekanslı Başlık",
-      "Çalışma Modları": "Sürekli (Continuous) ve Kesikli (Pulsed: %10, %20, %50) Modlar",
-      "Ekran": "Renkli Grafik Ekran ve Anatomik Vaka Tedavi Rehberi",
-      "Hafıza": "100+ Hazır Klinik Protokol ve 50 Kullanıcı Tanımlı Özel Program"
+      "Yatak Bölümleri": "Çok Parçalı (Baş, Gövde, Bacak Açı Ayarlı)",
+      "Yükseklik Ayarı": "Elektrikli Motorlu Yükseklik ve Pozisyon Kontrolü",
+      "Döşeme": "Antibakteriyel, Silinebilir ve Sıvı Geçirmez Medikal Vinleks",
+      "Taşıma Kapasitesi": "220 kg Güvenli Çalışma Yükü",
+      "Aksesuarlar": "Yüz Boşluğu Deliği ve Kol Destekleri",
+      "Görsel Sayısı": "4 Farklı Açıdan Fotoğraflanmış Tek Ürün"
     },
     "applications": [
-      "Fizik Tedavi ve Rehabilitasyon Merkezleri",
-      "Ortopedi ve Travmatoloji Klinikleri",
-      "Sporcu Sağlığı ve Performans Merkezleri",
-      "Nörolojik Rehabilitasyon ve Ağrı Tedavi Üniteleri"
+      "Fizik Tedavi ve Rehabilitasyon Klinikleri",
+      "Manuel Terapi ve Kayropraktik Merkezleri",
+      "Nörolojik Rehabilitasyon Salonları",
+      "Spor Kulübü Sağlık Odaları"
     ],
     "translations": {
       "tr": {
-        "title": "Kombine Elektroterapi & Ultrason Tedavi Cihazı (CBC-PT400)",
-        "shortDescription": "Çift kanallı elektroterapi ve 1/3 MHz ultrason terapisi sunan kombine fizik tedavi cihazı.",
-        "description": "CBC-PT400 Combo; kas iskelet sistemi ağrılarının giderilmesinde, kas güçlendirmede ve doku iyileşmesinde elektroterapi ve ultrasonu tek bir ünitede birleştirir. Geniş akım yelpazesi ve hazır anatomik tedavi protokolleri ile fizyoterapistlerin en büyük yardımcısıdır."
+        "title": "Motorlu Fizik Tedavi ve Rehabilitasyon Masası",
+        "shortDescription": "Çok parçalı, motorlu yükseklik ve eğim kontrollü, ergonomik fizik tedavi yatağı (4 farklı açı görseli mevcuttur).",
+        "description": "Fizik tedavi ve manuel terapi seansları için tasarlanmış profesyonel muayene ve tedavi masasıdır. Elektrikli motorları, el/ayak kumandası ve sünger döşemesi tamamen kontrol edilmiş ve mükemmel kondisyondadır."
       },
       "en": {
-        "title": "Combined Electrotherapy & Ultrasound Device (CBC-PT400)",
-        "shortDescription": "Dual-channel electrotherapy and 1/3 MHz therapeutic ultrasound combination unit.",
-        "description": "The CBC-PT400 combines multiple electrotherapy waveforms with dual-frequency ultrasound for rehabilitation, pain management, and musculoskeletal therapy."
-      },
-      "ar": {
-        "title": "جهاز العلاج الطبيعي المدمج بالكهرباء والألتراساوند (CBC-PT400)",
-        "shortDescription": "وحدة علاج طبيعي متكاملة تجمع بين التيارات العلاجية والموجات فوق الصوتية 1/3 ميجاهرتز.",
-        "description": "يوفر CBC-PT400 حلولاً شاملة لإعادة التأهيل وعلاج الآلام العضلية والمفصلية عبر برامج علاجية مبرمجة مسبقاً وتصميم احترافي يلبي احتياجات مراكز العلاج الطبيعي."
+        "title": "Motorized Physical Therapy & Rehabilitation Table",
+        "shortDescription": "Multi-section motorized physical therapy examination and treatment bed with adjustable sections.",
+        "description": "Robust and hygienic rehabilitation couch providing smooth height adjustments and flexible positioning for manual therapists."
       },
       "de": {
-        "title": "Kombinationsgerät Elektro- & Ultraschalltherapie (CBC-PT400)",
-        "shortDescription": "2-Kanal-Elektrotherapie und 1/3 MHz Ultraschalltherapie in einem kompakten System.",
-        "description": "Das CBC-PT400 kombiniert moderne Reizstromformen mit therapeutischem Ultraschall für effektive Schmerztherapie und muskuloskelettale Rehabilitation."
+        "title": "Cebeci Medikal FTR-Pro Bed Masası (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Cebeci Medikal mit 1 Jahr Garantie.",
+        "description": "Robust and hygienic rehabilitation couch providing smooth height adjustments and flexible positioning for manual therapists. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Cebeci Medikal FTR-Pro Bed (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Cebeci Medikal مع ضمان لمدة عام كامل.",
+        "description": "Fizik tedavi ve manuel terapi seansları için tasarlanmış profesyonel muayene ve tedavi masasıdır. Elektrikli motorları, el/ayak kumandası ve sünger döşemesi tamamen kontrol edilmiş ve mükemmel kondisyondadır. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
       },
       "ja": {
-        "title": "Combined Electrotherapy & Ultrasound Device (CBC-PT400)",
-        "shortDescription": "Cebeci Medikal CBC-PT400 Combo - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Cebeci Medikal CBC-PT400 Comboは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
+        "title": "Cebeci Medikal FTR-Pro Bed リファービッシュ医療機器",
+        "shortDescription": "Cebeci Medikal製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Robust and hygienic rehabilitation couch providing smooth height adjustments and flexible positioning for manual therapists. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
       },
       "zh": {
-        "title": "Combined Electrotherapy & Ultrasound Device (CBC-PT400)",
-        "shortDescription": "Cebeci Medikal CBC-PT400 Combo - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Cebeci Medikal CBC-PT400 Combo 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
+        "title": "Cebeci Medikal FTR-Pro Bed 翻新医疗设备",
+        "shortDescription": "Cebeci Medikal 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Robust and hygienic rehabilitation couch providing smooth height adjustments and flexible positioning for manual therapists. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
       }
     }
   },
   {
-    "id": "prod-9",
-    "slug": "kan-gazi-analizoru-cbc-bg300",
-    "categorySlug": "laboratuvar-cihazlari",
-    "brand": "Cebeci Medikal",
-    "model": "CBC-BG300 Lab",
-    "sku": "CBC-LAB-300",
-    "condition": "SECOND_HAND",
-    "featured": false,
-    "sortOrder": 9,
-    "images": [
-      "/images/products/kan-gazi-analizoru-1.webp",
-      "/images/products/kan-gazi-analizoru-2.webp"
-    ],
-    "technicalSpecs": {
-      "Ölçülen Parametreler": "pH, pCO2, pO2, Na+, K+, Cl-, Ca++, Glu, Lac, Hct, tHb, SO2",
-      "Örnek Hacmi": "Tam Kan, Plazma veya Serum (Sadece 90 µL Örnek)",
-      "Analiz Süresi": "60 Saniyenin Altında Hızlı Test Çıktısı",
-      "Kartuş Sistemi": "Bakım Gerektirmeyen Entegre Çoklu Test Kartuşu",
-      "Kalibrasyon": "Otomatik Sıvı ve Gaz Kalibrasyonu",
-      "Ekran": "8.4 inç Dokunmatik Renkli Ekran ve Dahili Termal Yazıcı"
-    },
-    "applications": [
-      "Acil Servis ve Yoğun Bakım Laboratuvarları",
-      "Kardiyovasküler Cerrahi ve Anestezi Birimleri",
-      "Göğüs Hastalıkları ve Solunum Klinikleri"
-    ],
-    "translations": {
-      "tr": {
-        "title": "Tam Otomatik Kan Gazı & Elektrolit Analizörü (CBC-BG300)",
-        "shortDescription": "Kartuşlu sistem, 60 saniyede hızlı sonuç ve 90µL düşük numune hacmiyle kritik kan gazı ölçüm cihazı.",
-        "description": "CBC-BG300, acil servis ve yoğun bakımlarda dakikaların hayati olduğu anlarda hızlı ve güvenilir kan gazı, elektrolit ve metabolit analizleri sunar. Kartuşlu yapısı bakım ihtiyacını sıfıra indirir."
-      },
-      "en": {
-        "title": "Automated Blood Gas & Electrolyte Analyzer (CBC-BG300)",
-        "shortDescription": "Fast cartridge-based blood gas analyzer delivering critical results in under 60 seconds.",
-        "description": "The CBC-BG300 provides accurate point-of-care blood gas, electrolyte, and metabolite testing with minimal sample volume and maintenance-free cartridge technology."
-      },
-      "ar": {
-        "title": "محلل غازات الدم والشوارد التلقائي (CBC-BG300)",
-        "shortDescription": "جهاز قياس غازات الدم بنظام الكبسولات يمنح نتائج دقيقة في أقل من 60 ثانية.",
-        "description": "يقدم CBC-BG300 نتائج مخبرية سريعة وموثوقة لتحليل غازات الدم والشوارد في أقسام الطوارئ والعناية المشددة دون الحاجة لصيانة معقدة."
-      },
-      "de": {
-        "title": "Automatischer Blutgas- und Elektrolyt-Analysator (CBC-BG300)",
-        "shortDescription": "Wartungsfreier Blutgasanalysator mit Ergebnissen in unter 60 Sekunden.",
-        "description": "Der CBC-BG300 ermöglicht präzise Point-of-Care-Diagnostik für Blutgase, Elektrolyte und Stoffwechselparameter in Notaufnahmen und Intensivstationen."
-      },
-      "ja": {
-        "title": "Automated Blood Gas & Electrolyte Analyzer (CBC-BG300)",
-        "shortDescription": "Cebeci Medikal CBC-BG300 Lab - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Cebeci Medikal CBC-BG300 Labは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
-      },
-      "zh": {
-        "title": "Automated Blood Gas & Electrolyte Analyzer (CBC-BG300)",
-        "shortDescription": "Cebeci Medikal CBC-BG300 Lab - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Cebeci Medikal CBC-BG300 Lab 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
-      }
-    }
-  },
-  {
-    "id": "prod-10",
-    "slug": "cerrahi-aspirator-cbc-asp3000",
-    "categorySlug": "ameliyathane-cihazlari",
-    "brand": "Cebeci Medikal",
-    "model": "CBC-ASP3000 Suction",
-    "sku": "CBC-ASP-300",
-    "condition": "SECOND_HAND",
-    "featured": false,
-    "sortOrder": 10,
-    "images": [
-      "/images/products/aspirator-1.webp",
-      "/images/products/aspirator-2.webp",
-      "/images/products/aspirator-3.webp"
-    ],
-    "technicalSpecs": {
-      "Maksimum Vakum": "-0.90 bar (-675 mmHg) Kademesiz Ayarlanabilir",
-      "Emiş Debisi": "60 Litre / Dakika Yüksek Performanslı Yağsız Pompa",
-      "Toplama Kavanozları": "2 x 3 Litre veya 2 x 5 Litre Otoklavlanabilir Polikarbonat Kavanoz",
-      "Güvenlik Sistemi": "Çift Taşma Emniyet Valfi ve Hidrofobik Bakteri Filtresi",
-      "Gürültü Seviyesi": "≤ 45 dB Sessiz Çalışma",
-      "Mobilite": "4 Adet Kilitlenebilir Antistatik Tekerlekli Paslanmaz Çelik Şasi"
-    },
-    "applications": [
-      "Genel ve Ortopedik Cerrahi Ameliyathaneleri",
-      "Kadın Doğum ve Jinekolojik Müdahaleler",
-      "Yoğun Bakım Aspirasyon ve Drenaj İşlemleri",
-      "Acil Servis Cerrahi Müdahale Odaları"
-    ],
-    "translations": {
-      "tr": {
-        "title": "Yüksek Vakumlu Cerrahi Aspiratör Cihazı (CBC-ASP3000)",
-        "shortDescription": "60 L/dk emiş debili, çift otoklavlanabilir kavanozlu ve taşma emniyetli cerrahi aspiratör.",
-        "description": "CBC-ASP3000, cerrahi operasyonlarda kan, vücut sıvıları ve partiküllerin güvenle tahliyesi için güçlü vakum performansı ve sessiz çalışma sunar. Yağsız pistonlu motoru uzun ömürlü ve bakım gerektirmez."
-      },
-      "en": {
-        "title": "High-Vacuum Surgical Suction Unit (CBC-ASP3000)",
-        "shortDescription": "Heavy-duty 60 L/min surgical aspirator with dual autoclavable jars and overflow protection.",
-        "description": "The CBC-ASP3000 delivers dependable high-vacuum suction for operating rooms and intensive care, featuring oil-less pump design and dual overflow safety filters."
-      },
-      "ar": {
-        "title": "شفاط جراحي عالي القدرة (CBC-ASP3000)",
-        "shortDescription": "جهاز شفط جراحي بقدرة 60 لتر/دقيقة مع برطمانين قابلين للتعقيم ونظام حماية من الفيضان.",
-        "description": "صُمم CBC-ASP3000 للعمل الشاق في غرف العمليات وشفط السوائل الجراحية بأعلى معايير الأمان ومستوى ضجيج منخفض للغاية."
-      },
-      "de": {
-        "title": "Chirurgisches Hochleistungs-Absauggerät (CBC-ASP3000)",
-        "shortDescription": "Chirurgischer Absauger mit 60 L/min Saugleistung und autoklavierbaren Behältern.",
-        "description": "Das CBC-ASP3000 gewährleistet leistungsstarke und leise Absaugung im Operationssaal mit wartungsfreier Kolbenpumpe und doppeltem Überlaufschutz."
-      },
-      "ja": {
-        "title": "High-Vacuum Surgical Suction Unit (CBC-ASP3000)",
-        "shortDescription": "Cebeci Medikal CBC-ASP3000 Suction - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Cebeci Medikal CBC-ASP3000 Suctionは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
-      },
-      "zh": {
-        "title": "High-Vacuum Surgical Suction Unit (CBC-ASP3000)",
-        "shortDescription": "Cebeci Medikal CBC-ASP3000 Suction - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Cebeci Medikal CBC-ASP3000 Suction 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
-      }
-    }
-  },
-  {
-    "id": "prod-11",
-    "slug": "elektrokoter-cerrahi-unite-cbc-surg400",
-    "categorySlug": "ameliyathane-cihazlari",
-    "brand": "Cebeci Medikal",
-    "model": "CBC-SURG400 Pro",
-    "sku": "CBC-KOT-400",
-    "condition": "SECOND_HAND",
-    "featured": false,
-    "sortOrder": 11,
-    "images": [
-      "/images/products/elektrokoter-1.webp"
-    ],
-    "technicalSpecs": {
-      "Maksimum Monopolar Güç": "400 Watt Saf Kesme (Pure Cut), 300W Karışık Kesme (Blend 1/2/3)",
-      "Monopolar Koagülasyon": "150 Watt Fulgurasyon / Sprey / Kontak Koagülasyon",
-      "Bipolar Güç": "120 Watt Hassas Mikro-Bipolar ve Bipolar Kesme",
-      "Güvenlik Sistemi": "REM (Return Electrode Monitoring) Nötr Plak Temas ve Güvenlik Sistemi",
-      "Endoskopik Mod": "Laparoskopi ve Sualtı (TUR) Cerrahisi Özel Modları",
-      "Aktivasyon": "Çift Pedallı Ayak Şalteri ve El Kumandalı Kalem Desteği"
-    },
-    "applications": [
-      "Genel Cerrahi, Üroloji ve Jinekoloji",
-      "Ortopedi ve Beyin-Omurilik Cerrahisi (Nöroşirürji)",
-      "Plastik ve Rekonstrüktif Cerrahi",
-      "Laparoskopik ve Endoskopik Müdahaleler"
-    ],
-    "translations": {
-      "tr": {
-        "title": "Elektrocerrahi Koter & Cerrahi Ünite (CBC-SURG400 Pro)",
-        "shortDescription": "400 Watt monopolar ve bipolar kesme/koagülasyon özellikli, REM güvenlik sistemli elektrokoter.",
-        "description": "CBC-SURG400 Pro, cerrahi operasyonlarda doku kesme ve kanama kontrolünde maksimum hassasiyet sunar. Otomatik güç dengeleme ve nötr plak temas izleme sistemiyle cerrah ve hasta güvenliğini garanti eder."
-      },
-      "en": {
-        "title": "Electrosurgical Unit & Cautery (CBC-SURG400 Pro)",
-        "shortDescription": "400W monopolar and bipolar electrosurgical generator with advanced tissue sensing.",
-        "description": "The CBC-SURG400 Pro provides surgical cutting and coagulation with integrated contact quality monitoring (REM) and specialized TUR/laparoscopic modes."
-      },
-      "ar": {
-        "title": "وحدة الكي الجراحي الكهربائي (CBC-SURG400 Pro)",
-        "shortDescription": "جهاز كي وقص جراحي 400 واط أحادي وثنائي القطب مع أنظمة أمان متطورة.",
-        "description": "يوفر جهاز CBC-SURG400 Pro تحكماً فائقاً في القطع والتخثر أثناء العمليات الجراحية المفتوحة والتنظيرية مع حماية كاملة للمريض عبر نظام مراقبة القطب المحايد."
-      },
-      "de": {
-        "title": "Elektrochirurgie-Gerät (CBC-SURG400 Pro)",
-        "shortDescription": "400W monopolares und bipolares HF-Chirurgiegerät mit REM-Patientensicherheitssystem.",
-        "description": "Das CBC-SURG400 Pro bietet präzise Schneide- und Koagulationsmodi für alle chirurgischen Fachbereiche mit automatischer Leistungsanpassung."
-      },
-      "ja": {
-        "title": "Electrosurgical Unit & Cautery (CBC-SURG400 Pro)",
-        "shortDescription": "Cebeci Medikal CBC-SURG400 Pro - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Cebeci Medikal CBC-SURG400 Proは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
-      },
-      "zh": {
-        "title": "Electrosurgical Unit & Cautery (CBC-SURG400 Pro)",
-        "shortDescription": "Cebeci Medikal CBC-SURG400 Pro - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Cebeci Medikal CBC-SURG400 Pro 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
-      }
-    }
-  },
-  {
-    "id": "prod-12",
-    "slug": "endovizyon-kamera-sistemi-cbc-endo4k",
-    "categorySlug": "endovizyon-sistemleri",
-    "brand": "Cebeci Medikal",
-    "model": "CBC-ENDO4K Vision",
-    "sku": "CBC-END-400",
-    "condition": "SECOND_HAND",
-    "featured": false,
-    "sortOrder": 12,
-    "images": [
-      "/images/products/endovizyon-sistemi-1.webp"
-    ],
-    "technicalSpecs": {
-      "Kamera Çözünürlüğü": "Ultra HD 4K / Full HD 1080p 60 FPS Medikal CMOS Sensör",
-      "Kamera Başlığı": "IPX8 Su Geçirmez, Otoklavlanabilir / Gaz Sterilizasyonuna Uygun",
-      "Işık Kaynağı": "Entegre veya Bağımsız 100W Yüksek Lümenli LED Soğuk Işık",
-      "Video Çıkışları": "HDMI 2.0, 12G-SDI, DVI ve USB Kayıt Portu",
-      "Görüntü İşleme": "Doku Damar Vurgulama (Vascular Enhance), Otomatik Beyaz Ayarı, Dijital Zoom"
-    },
-    "applications": [
-      "Laparoskopi ve Genel Cerrahi",
-      "Artroskopik Eklem Cerrahisi",
-      "Ürolojik ve Histeroskopik Endoskopi",
-      "KBB (Kulak Burun Boğaz) Muayene ve Cerrahisi"
-    ],
-    "translations": {
-      "tr": {
-        "title": "Endovizyon & Laparoskopi Kamera Sistemi (CBC-ENDO4K)",
-        "shortDescription": "Ultra HD çözünürlüklü, su geçirmez başlıklı ve damar vurgulama modlu endoskopik kamera sistemi.",
-        "description": "CBC-ENDO4K, minimal invaziv cerrahide en ince anatomik detayları kristal netliğinde sunar. Gelişmiş renk ayrımı ve yüksek kare hızı ile cerrahlara operasyon sırasında benzersiz bir görsel derinlik kazandırır."
-      },
-      "en": {
-        "title": "Endoscopy & Laparoscopy Camera System (CBC-ENDO4K)",
-        "shortDescription": "Ultra HD medical camera system with waterproof head and advanced vascular enhancement.",
-        "description": "The CBC-ENDO4K delivers high-definition visualization for minimally invasive surgical procedures with realistic color reproduction and versatile digital outputs."
-      },
-      "ar": {
-        "title": "نظام كاميرات التنظير الجراحي (CBC-ENDO4K)",
-        "shortDescription": "نظام تصوير تنظيري فائق الدقة 4K مع رأس كاميرا مقاوم للماء وتعزيز بصري للأوعية.",
-        "description": "يقدم CBC-ENDO4K رؤية جراحية واضحة للغاية في عمليات المناظير والعمليات الجراحية الدقيقة مع مخرجات فيديو متعددة ونظام إضاءة باردة متطور."
-      },
-      "de": {
-        "title": "Endoskopie-Kamerasystem (CBC-ENDO4K)",
-        "shortDescription": "Ultra-HD Endoskopiekamera mit wasserdichtem Kamerakopf und Gefäßkontrast-Modus.",
-        "description": "Das CBC-ENDO4K liefert gestochen scharfe Visualisierung für laparoskopische und arthroskopische Eingriffe mit modernster Bildverarbeitung."
-      },
-      "ja": {
-        "title": "Endoscopy & Laparoscopy Camera System (CBC-ENDO4K)",
-        "shortDescription": "Cebeci Medikal CBC-ENDO4K Vision - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Cebeci Medikal CBC-ENDO4K Visionは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
-      },
-      "zh": {
-        "title": "Endoscopy & Laparoscopy Camera System (CBC-ENDO4K)",
-        "shortDescription": "Cebeci Medikal CBC-ENDO4K Vision - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Cebeci Medikal CBC-ENDO4K Vision 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
-      }
-    }
-  },
-  {
-    "id": "prod-13",
-    "slug": "enjektor-perfusor-pompasi-cbc-sp100",
+    "id": "prod-hasta-isitma-takip-unitesi",
+    "slug": "klinik-hasta-isitma-ve-akıs-takip-unitesi",
     "categorySlug": "yogun-bakim-ve-yasam-destek",
-    "brand": "Cebeci Medikal",
-    "model": "CBC-SP100 Precision",
-    "sku": "CBC-INJ-100",
+    "brand": "Medikal Klinik Sistem",
+    "model": "WarmFlow 300",
+    "sku": "MKS-WF3-022",
     "condition": "SECOND_HAND",
     "featured": false,
-    "sortOrder": 13,
-    "images": [
-      "/images/products/enjektor-pompasi-1.webp",
-      "/images/products/enjektor-pompasi-2.webp"
-    ],
-    "technicalSpecs": {
-      "Şırınga Boyutları": "5ml, 10ml, 20ml, 30ml, 50/60ml Evrensel Otomatik Şırınga Algılama",
-      "Akış Hızı Aralığı": "0.1 ml/h - 1500.0 ml/h (0.1 ml/h artırımlarla)",
-      "Hassasiyet": "± %2 Yüksek Dozaj Doğruluğu",
-      "Bolus Hızı": "1500 ml/h Kademeli Otomatik ve Manuel Bolus Modu",
-      "Oklüzyon Seviyeleri": "3 Kademeli Ayarlanabilir Tıkanma Basınç Sensörü",
-      "Batarya": "Dahili Şarj Edilebilir Batarya ile 8+ Saat Sürekli Çalışma"
-    },
-    "applications": [
-      "Yoğun Bakım Üniteleri ve Anestezi",
-      "Neonatoloji ve Pediyatrik Dozaj Uygulamaları",
-      "Onkoloji ve Kemoterapi İlaç İletimi"
-    ],
-    "translations": {
-      "tr": {
-        "title": "Hassas Enjektör (Perfüzör) Pompası (CBC-SP100)",
-        "shortDescription": "Tüm enjektör boyutlarıyla uyumlu, ±%2 hassasiyetli akıllı mikro-infüzyon enjektör pompası.",
-        "description": "CBC-SP100, kritik ilaç ve anestezik madde infüzyonlarında yüksek dozaj hassasiyeti ve güvenlik sunar. Otomatik şırınga boyutu tanıma, oklüzyon algılama ve uzun batarya ömrü ile yoğun bakım güvenliğini artırır."
-      },
-      "en": {
-        "title": "Precision Syringe Infusion Pump (CBC-SP100)",
-        "shortDescription": "High-accuracy syringe driver compatible with 5-60ml syringes and smart occlusion sensing.",
-        "description": "The CBC-SP100 provides accurate drug delivery for critical care, featuring universal syringe detection, multi-level occlusion alarms, and long battery autonomy."
-      },
-      "ar": {
-        "title": "مضخة الحقن والسرنجات الدقيقة (CBC-SP100)",
-        "shortDescription": "مضخة حقن إلكترونية عالية الدقة متوافقة مع جميع أحجام السرنجات من 5 إلى 60 مل.",
-        "description": "تضمن مضخة CBC-SP100 توزيعاً دقيقاً للغاية للأدوية الحساسة ومواد التخدير في العناية المركزة مع شاشة رقمية واضحة وأنظمة إنذار أمان متعددة."
-      },
-      "de": {
-        "title": "Präzisions-Spritzenpumpe (CBC-SP100)",
-        "shortDescription": "Intelligente Spritzenpumpe mit automatischer Größenerkennung (5-60ml) und hoher Dosiergenauigkeit.",
-        "description": "Die CBC-SP100 garantiert exakte Medikamentenverabreichung in der Intensiv- und Anästhesiepflege mit zuverlässigen Sicherheits- und Okklusionssensoren."
-      },
-      "ja": {
-        "title": "Precision Syringe Infusion Pump (CBC-SP100)",
-        "shortDescription": "Cebeci Medikal CBC-SP100 Precision - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Cebeci Medikal CBC-SP100 Precisionは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
-      },
-      "zh": {
-        "title": "Precision Syringe Infusion Pump (CBC-SP100)",
-        "shortDescription": "Cebeci Medikal CBC-SP100 Precision - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Cebeci Medikal CBC-SP100 Precision 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
-      }
-    }
-  },
-  {
-    "id": "prod-14",
-    "slug": "volumetrik-infuzyon-pompasi-cbc-ip200",
-    "categorySlug": "yogun-bakim-ve-yasam-destek",
-    "brand": "Cebeci Medikal",
-    "model": "CBC-IP200 Flow",
-    "sku": "CBC-INF-200",
-    "condition": "SECOND_HAND",
-    "featured": false,
-    "sortOrder": 14,
-    "images": [
-      "/images/products/infuzyon-pompasi-1.webp"
-    ],
-    "technicalSpecs": {
-      "İnfüzyon Aralığı": "0.1 - 1200 ml/h (0.1 ml/h hassasiyet)",
-      "Set Uyumu": "Evrensel Standart IV Serum Setleri ile Tam Uyum",
-      "Hava Kabarcığı Algılama": "Ultrasonik Çift Sensörlü Hava Dedektörü",
-      "Doz Hesaplama": "Dahili İlaç Kütüphanesi ve Vücut Ağırlığına Göre Doz Hesaplama",
-      "Ekran": "Geniş Renkli Aydınlatmalı LCD Gösterge",
-      "KVO (Keep Vein Open)": "0.1 - 5.0 ml/h Ayarlanabilir Damar Açık Tutma Hızı"
-    },
-    "applications": [
-      "Genel Servisler ve Yataklı Tedavi Birimleri",
-      "Kemoterapi ve Onkoloji İnfüzyonları",
-      "Yoğun Bakım Sıvı ve Elektrolit Tedavileri"
-    ],
-    "translations": {
-      "tr": {
-        "title": "Volumetrik İnfüzyon Pompası (CBC-IP200 Flow)",
-        "shortDescription": "Evrensel IV set uyumlu, ultrasonik hava dedektörlü ve akıllı ilaç kütüphaneli infüzyon pompası.",
-        "description": "CBC-IP200 Flow; damar içi sıvı, ilaç ve kan bileşenlerinin güvenli aktarımı için tasarlanmıştır. Çift ultrasonik hava dedektörü ve anti-bolus koruma sistemi ile hasta güvenliğini en üst düzeye çıkarır."
-      },
-      "en": {
-        "title": "Volumetric Infusion Pump (CBC-IP200 Flow)",
-        "shortDescription": "Universal IV set compatible infusion pump with ultrasonic air bubble detection.",
-        "description": "The CBC-IP200 ensures safe intravenous fluid and drug administration with dual ultrasonic air sensors, anti-bolus functionality, and comprehensive alarm profiles."
-      },
-      "ar": {
-        "title": "مضخة المحاليل الوريدية الحجمية (CBC-IP200 Flow)",
-        "shortDescription": "مضخة محاليل متطورة متوافقة مع مجموعات الحقن القياسية ومزودة بمستشعر فقاعات الهواء.",
-        "description": "توفر CBC-IP200 تحكماً دقيقاً في ضخ المحاليل والأدوية الوريدية مع شاشة واضحة ونظام حماية متكامل ضد الانسداد والفقاعات الهوائية."
-      },
-      "de": {
-        "title": "Volumetrische Infusionspumpe (CBC-IP200 Flow)",
-        "shortDescription": "Zuverlässige Infusionspumpe mit Ultraschall-Luftdetektion und universeller Set-Kompatibilität.",
-        "description": "Die CBC-IP200 gewährleistet präzise und sichere Infusionstherapie mit Anti-Bolus-Funktion und intuitiver Menüführung für den Pflegealltag."
-      },
-      "ja": {
-        "title": "Volumetric Infusion Pump (CBC-IP200 Flow)",
-        "shortDescription": "Cebeci Medikal CBC-IP200 Flow - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Cebeci Medikal CBC-IP200 Flowは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
-      },
-      "zh": {
-        "title": "Volumetric Infusion Pump (CBC-IP200 Flow)",
-        "shortDescription": "Cebeci Medikal CBC-IP200 Flow - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Cebeci Medikal CBC-IP200 Flow 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
-      }
-    }
-  },
-  {
-    "id": "prod-15",
-    "slug": "fetal-monitor-nst-cbc-nst800",
-    "categorySlug": "fizyolojik-sinyal-izleyiciler",
-    "brand": "Cebeci Medikal",
-    "model": "CBC-NST800 Dual",
-    "sku": "CBC-NST-800",
-    "condition": "SECOND_HAND",
-    "featured": false,
-    "sortOrder": 15,
-    "images": [
-      "/images/products/nst-fetal-monitor-1.webp"
-    ],
-    "technicalSpecs": {
-      "Parametreler": "FHR1 (Fetal Kalp Hızı 1), FHR2 (İkiz Gebelik), TOCO (Rahim Kasılmaları), Otomatik/Manuel Fetal Hareket (FM)",
-      "Ekran": "12.1 inç Katlanabilir Renkli Dokunmatik TFT Ekran (0-90° Açı Ayarlı)",
-      "Problar": "1 MHz 12 Kristalli Geniş Işınlı Yüksek Hassasiyetli Su Geçirmez Ultrason Probları",
-      "Yazıcı": "152mm Geniş Termal Yazıcı (Gerçek Zamanlı Çıktı)",
-      "Hafıza": "60 Saatlik Kesintisiz Fetal Eğri Trend Hafızası"
-    },
-    "applications": [
-      "Kadın Hastalıkları ve Doğum Klinikleri",
-      "Doğumhaneler ve Travay Odaları",
-      "Perinatoloji ve Yüksek Riskli Gebelik Takip Merkezleri"
-    ],
-    "translations": {
-      "tr": {
-        "title": "NST (Non-Stres Test) Fetal Monitör (CBC-NST800 Dual)",
-        "shortDescription": "İkiz gebelik destekli, katlanabilir 12.1 inç ekranlı ve 152mm termal yazıcılı fetal monitör.",
-        "description": "CBC-NST800 Dual; doğum öncesi ve doğum anında bebek kalp atışlarını ve rahim kasılmalarını eşzamanlı izler. İkiz gebelik takibi ve yüksek hassasiyetli 12 kristalli probları ile güvenilir perinatolojik tanı imkanı sunar."
-      },
-      "en": {
-        "title": "Fetal Monitor / NST Device (CBC-NST800 Dual)",
-        "shortDescription": "Twin monitoring capable fetal monitor with 12.1-inch folding display and 152mm thermal printer.",
-        "description": "The CBC-NST800 provides accurate antepartum and intrapartum monitoring of fetal heart rate and uterine contractions with high-sensitivity waterproof transducers."
-      },
-      "ar": {
-        "title": "جهاز مراقبة نبض الجنين والتقلصات (CBC-NST800 Dual)",
-        "shortDescription": "شاشة مراقبة الجنين المزدوجة مع شاشة قابلة للإمالة وطباعة حرارية عريضة.",
-        "description": "يراقب CBC-NST800 بدقة عالية نبض الجنين وانقباضات الرحم في عيادات التوليد وغرف الولادة مع دعم كامل للحمل التوأمي وحفظ السجلات."
-      },
-      "de": {
-        "title": "Fetalmonitor / CTG-Gerät (CBC-NST800 Dual)",
-        "shortDescription": "Kardiotokograph mit Zwillingsüberwachung und schwenkbarem 12,1-Zoll-Touchdisplay.",
-        "description": "Das CBC-NST800 ermöglicht präzise ante- und intrapartale CTG-Überwachung mit wasserdichten 12-Kristall-Sonden und integriertem Kurvenspeicher."
-      },
-      "ja": {
-        "title": "Fetal Monitor / NST Device (CBC-NST800 Dual)",
-        "shortDescription": "Cebeci Medikal CBC-NST800 Dual - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Cebeci Medikal CBC-NST800 Dualは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
-      },
-      "zh": {
-        "title": "Fetal Monitor / NST Device (CBC-NST800 Dual)",
-        "shortDescription": "Cebeci Medikal CBC-NST800 Dual - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Cebeci Medikal CBC-NST800 Dual 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
-      }
-    }
-  },
-  {
-    "id": "prod-16",
-    "slug": "pulse-oksimetre-cbc-po50",
-    "categorySlug": "fizyolojik-sinyal-izleyiciler",
-    "brand": "Cebeci Medikal",
-    "model": "CBC-PO50 Handheld",
-    "sku": "CBC-POX-050",
-    "condition": "SECOND_HAND",
-    "featured": false,
-    "sortOrder": 16,
-    "images": [
-      "/images/products/pulse-oksimetre-1.webp"
-    ],
-    "technicalSpecs": {
-      "Ölçüm Parametreleri": "SpO2 (Oksijen Doygunluğu), Nabız (PR), Pletismogram Dalgası, Perfüzyon İndeksi (PI)",
-      "Ekran": "3.5 inç Renkli TFT LCD Ekran (Otomatik Döndürme Sensörlü)",
-      "Prob Seçenekleri": "Yetişkin Parmak Tipi, Pediyatrik ve Yenidoğan Wrap Prob Desteği",
-      "Alarmlar": "Sesli ve Görsel Çok Kademeli Limit Alarmları",
-      "Batarya": "Şarj Edilebilir Li-Ion Batarya veya Standart AA Pil Desteği"
-    },
-    "applications": [
-      "Acil Sağlık Ambulansları ve İlk Yardım",
-      "Poliklinik Muayeneleri ve Evde Sağlık Hizmetleri",
-      "Yataklı Servisler ve Hasta Transferi"
-    ],
-    "translations": {
-      "tr": {
-        "title": "El Tipi & Masaüstü Pulse Oksimetre (CBC-PO50)",
-        "shortDescription": "Pletismogram dalgalı, perfüzyon indeksli ve yetişkin/bebek prob uyumlu el tipi pulse oksimetre.",
-        "description": "CBC-PO50, taşınabilir ergonomik yapısıyla oksijen saturasyonu ve nabız takibinde yüksek doğruluk sağlar. Zayıf perfüzyon koşullarında bile kararlı ölçüm sunar."
-      },
-      "en": {
-        "title": "Handheld Pulse Oximeter (CBC-PO50)",
-        "shortDescription": "Portable pulse oximeter with SpO2 waveform, perfusion index, and neonatal probe support.",
-        "description": "The CBC-PO50 offers fast and reliable SpO2 and pulse rate readings for clinical rounds, emergency transport, and outpatient monitoring."
-      },
-      "ar": {
-        "title": "جهاز قياس نسبة الأكسجين المحمول (CBC-PO50)",
-        "shortDescription": "جهاز قياس تشبع الأكسجين ونبضات القلب محمول باليد مع مجسات لجميع الأعمار.",
-        "description": "يوفر CBC-PO50 قراءات سريعة ودقيقة لنسبة الأكسجين في الدم والنبض مع شاشة ملونة وتصميم محمول يلائم العمل الميداني والعيادات."
-      },
-      "de": {
-        "title": "Hand-Pulsoximeter (CBC-PO50)",
-        "shortDescription": "Kompaktes Handpulsoximeter mit Plethysmogramm und Zubehör für Erwachsene und Pädiatrie.",
-        "description": "Das CBC-PO50 garantiert schnelle und zuverlässige SpO2- und Pulsfrequenzmessung auch bei schwacher Perfusion im mobilen und stationären Einsatz."
-      },
-      "ja": {
-        "title": "Handheld Pulse Oximeter (CBC-PO50)",
-        "shortDescription": "Cebeci Medikal CBC-PO50 Handheld - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Cebeci Medikal CBC-PO50 Handheldは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
-      },
-      "zh": {
-        "title": "Handheld Pulse Oximeter (CBC-PO50)",
-        "shortDescription": "Cebeci Medikal CBC-PO50 Handheld - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Cebeci Medikal CBC-PO50 Handheld 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
-      }
-    }
-  },
-  {
-    "id": "prod-17",
-    "slug": "klinik-santrifuj-cbc-cent4000",
-    "categorySlug": "laboratuvar-cihazlari",
-    "brand": "Cebeci Medikal",
-    "model": "CBC-CENT4000",
-    "sku": "CBC-LAB-400",
-    "condition": "SECOND_HAND",
-    "featured": false,
-    "sortOrder": 17,
-    "images": [
-      "/images/products/santrifuj-1.webp"
-    ],
-    "technicalSpecs": {
-      "Maksimum Hız": "4000 - 6000 RPM (Hassas Dijital Ayar)",
-      "Rotor Kapasitesi": "12 x 15ml veya 24 x 10ml Tüp Kapasiteli Açılı/Salınımlı Rotor",
-      "Maksimum RCF": "3500 x g Santrifüj Gücü",
-      "Güvenlik": "Elektronik Kapak Emniyet Kilidi ve Dengesizlik (Imbalance) Sensörü",
-      "Zamanlayıcı": "1 - 99 Dakika veya Sürekli Çalışma Modu"
-    },
-    "applications": [
-      "Klinik Biyokimya ve Hematoloji Laboratuvarları",
-      "Kan Merkezleri ve Serum Ayrıştırma",
-      "Tıp Merkezleri ve Araştırma Laboratuvarları"
-    ],
-    "translations": {
-      "tr": {
-        "title": "Klinik Laboratuvar Santrifüj Cihazı (CBC-CENT4000)",
-        "shortDescription": "6000 RPM dijital hızlı, elektronik kapak kilitli ve dengesizlik emniyetli klinik santrifüj.",
-        "description": "CBC-CENT4000; kan, idrar ve biyolojik sıvıların hızlı ve etkin ayrıştırılması için yüksek torklu fırçasız motor teknolojisine sahiptir. Sessiz ve titreşimsiz çalışmasıyla laboratuvar verimliliğini artırır."
-      },
-      "en": {
-        "title": "Clinical Laboratory Centrifuge (CBC-CENT4000)",
-        "shortDescription": "Digital benchtop laboratory centrifuge with electronic lid lock and imbalance detection.",
-        "description": "The CBC-CENT4000 delivers quiet and stable sample separation for biochemistry, hematology, and clinical diagnostics with high-speed brushless drive."
-      },
-      "ar": {
-        "title": "جهاز الطرد المركزي للمختبرات (CBC-CENT4000)",
-        "shortDescription": "جهاز طرد مركزي رقمي عالي السرعة حتى 6000 دورة/دقيقة مع قفل أمان إلكتروني.",
-        "description": "يضمن CBC-CENT4000 فصلاً سريعاً ونقياً لعينات الدم والسوائل الحيوية مع محرك بدون فحمات لعمل هادئ وخالٍ من الاهتزاز في المختبرات الطبية."
-      },
-      "de": {
-        "title": "Klinische Laborzentrifuge (CBC-CENT4000)",
-        "shortDescription": "Digitale Tischzentrifuge bis 6000 U/min mit Unwuchterkennung und Sicherheitsverriegelung.",
-        "description": "Die CBC-CENT4000 bietet zuverlässige Zentrifugation von Blut- und Urinproben mit bürstenlosem Motor für maximale Langlebigkeit im Labor."
-      },
-      "ja": {
-        "title": "Clinical Laboratory Centrifuge (CBC-CENT4000)",
-        "shortDescription": "Cebeci Medikal CBC-CENT4000 - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Cebeci Medikal CBC-CENT4000は、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
-      },
-      "zh": {
-        "title": "Clinical Laboratory Centrifuge (CBC-CENT4000)",
-        "shortDescription": "Cebeci Medikal CBC-CENT4000 - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Cebeci Medikal CBC-CENT4000 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
-      }
-    }
-  },
-  {
-    "id": "prod-18",
-    "slug": "medikal-soguk-isik-kaynagi-cbc-light300",
-    "categorySlug": "ameliyathane-cihazlari",
-    "brand": "Cebeci Medikal",
-    "model": "CBC-LIGHT300 LED",
-    "sku": "CBC-LGT-300",
-    "condition": "SECOND_HAND",
-    "featured": false,
-    "sortOrder": 18,
-    "images": [
-      "/images/products/isik-kaynagi-1.webp",
-      "/images/products/isik-kaynagi-2.webp"
-    ],
-    "technicalSpecs": {
-      "Işık Kaynağı Türü": "100 Watt Yüksek Şiddetli Medikal LED Modülü",
-      "Renk Sıcaklığı": "5700K - 6500K Doğal Gün Işığı Dengesi",
-      "Lamba Ömrü": "50.000 Saatin Üzerinde Bakım Gerektirmeyen LED Ömrü",
-      "Adaptör Uyumu": "Storz, Olympus, Wolf ve ACMI Standart Fiber Optik Uç Desteği",
-      "Parlaklık Ayarı": "Dijital Dokunmatik Kademesiz Parlaklık Kontrolü (%1 - %100)"
-    },
-    "applications": [
-      "Laparoskopi ve Genel Cerrahi",
-      "Artroskopi ve Eklem Muayeneleri",
-      "Histeroskopi ve Sistoskopi",
-      "KBB Endoskopik Muayeneleri"
-    ],
-    "translations": {
-      "tr": {
-        "title": "Medikal LED Soğuk Işık Kaynağı (CBC-LIGHT300 LED)",
-        "shortDescription": "50.000 saat ömürlü, 100W güçlü LED teknolojili üniversal endoskopi soğuk ışık kaynağı.",
-        "description": "CBC-LIGHT300, endoskopik ve laparoskopik cerrahide homojen ve yüksek parlaklıkta aydınlatma sağlar. Doğal gün ışığı renk spektrumu sayesinde cerrahi alandaki dokuların gerçek renklerinde görüntülenmesini garanti eder."
-      },
-      "en": {
-        "title": "Medical LED Cold Light Source (CBC-LIGHT300 LED)",
-        "shortDescription": "100W high-intensity surgical LED light source with 50,000-hour lifespan and universal adapter.",
-        "description": "The CBC-LIGHT300 provides bright, daylight-quality illumination for endoscopic and laparoscopic procedures with low thermal emission and long-life LED technology."
-      },
-      "ar": {
-        "title": "مصدر الضوء البارد الطبي LED (CBC-LIGHT300)",
-        "shortDescription": "مصدر ضوء بارد قوي 100 واط لعمليات التنظير مع عمر تشغيلي يتجاوز 50,000 ساعة.",
-        "description": "يمنح CBC-LIGHT300 إضاءة جراحية نقية ومتجانسة لعمليات المناظير مع توافق شامل لجميع كابلات الألياف الضوئية القياسية."
-      },
-      "de": {
-        "title": "Medizinische LED-Kaltlichtquelle (CBC-LIGHT300)",
-        "shortDescription": "100W LED-Lichtquelle für die Endoskopie mit 50.000 Stunden Lebensdauer und Storz/Wolf-Adapter.",
-        "description": "Die CBC-LIGHT300 sorgt für brillante, tageslichtähnliche Ausleuchtung des Operationsfeldes bei minimaler Wärmeentwicklung."
-      },
-      "ja": {
-        "title": "Medical LED Cold Light Source (CBC-LIGHT300 LED)",
-        "shortDescription": "Cebeci Medikal CBC-LIGHT300 LED - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Cebeci Medikal CBC-LIGHT300 LEDは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
-      },
-      "zh": {
-        "title": "Medical LED Cold Light Source (CBC-LIGHT300 LED)",
-        "shortDescription": "Cebeci Medikal CBC-LIGHT300 LED - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Cebeci Medikal CBC-LIGHT300 LED 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
-      }
-    }
-  },
-  {
-    "id": "prod-19",
-    "slug": "masaustu-otoklav-sterilizator-cbc-auto24",
-    "categorySlug": "laboratuvar-cihazlari",
-    "brand": "Cebeci Medikal",
-    "model": "CBC-AUTO24 Class B",
-    "sku": "CBC-ST-024",
-    "condition": "SECOND_HAND",
-    "featured": false,
-    "sortOrder": 19,
-    "images": [
-      "/images/products/otoklav-1.webp"
-    ],
-    "technicalSpecs": {
-      "Sınıf": "EN 13060 Standardında B Sınıfı Medikal Otoklav",
-      "Hazne Hacmi": "24 Litre Paslanmaz Çelik AISI 316 Hücre",
-      "Sterilizasyon Sıcaklıkları": "121°C ve 134°C Hazır Medikal Programlar",
-      "Vakum Sistemi": "Fraksiyonel 3 Aşamalı Ön Vakum ve Güçlü Kurutma Pompası",
-      "Yazıcı & Kayıt": "Entegre Termal Rapor Yazıcısı ve USB Veri Kaydı"
-    },
-    "applications": [
-      "Ağız ve Diş Sağlığı Merkezleri (ADSM) ve Klinikler",
-      "Göz ve Günübirlik Cerrahi Merkezleri",
-      "Poliklinikler ve Laboratuvarlar"
-    ],
-    "translations": {
-      "tr": {
-        "title": "B Sınıfı Masaüstü Otoklav & Sterilizatör (CBC-AUTO24)",
-        "shortDescription": "24 Litre paslanmaz çelik hazneli, fraksiyonel ön vakumlu ve entegre yazıcılı B sınıfı otoklav.",
-        "description": "CBC-AUTO24, cerrahi ve dental aletlerin sterilizasyonunda en katı Avrupa standartlarını karşılar. Delikli, gözenekli ve paketli aletlerde dahi tam sterilizasyon güvencesi sunar."
-      },
-      "en": {
-        "title": "Class B Benchtop Autoclave Sterilizer (CBC-AUTO24)",
-        "shortDescription": "24L stainless steel pre-vacuum Class B autoclave for surgical and dental sterilization.",
-        "description": "The CBC-AUTO24 meets EN 13060 standards with fractionated pre-vacuum cycles, integrated thermal printout, and automated cycle verification."
-      },
-      "ar": {
-        "title": "جهاز التعقيم بالبخار أوتوكلاف الفئة B (CBC-AUTO24)",
-        "shortDescription": "أوتوكلاف طبي سعة 24 لتر مع نظام تفريغ الهواء الثلاثي وطباعة دورات التعقيم.",
-        "description": "يلبي CBC-AUTO24 أعلى معايير التعقيم الأوروبية للأدوات الجراحية وأدوات طب الأسنان المجوفة والملفوفة بأمان تام."
-      },
-      "de": {
-        "title": "Klasse B Tisch-Autoklav (CBC-AUTO24)",
-        "shortDescription": "24-Liter Klasse B Dampfsterilisator mit fraktioniertem Vorvakuum und Protokolldrucker.",
-        "description": "Der CBC-AUTO24 erfüllt die EN 13060 Norm für höchste Sterilisationssicherheit bei verpackten und hohlen Instrumenten in Praxis und Klinik."
-      },
-      "ja": {
-        "title": "Class B Benchtop Autoclave Sterilizer (CBC-AUTO24)",
-        "shortDescription": "Cebeci Medikal CBC-AUTO24 Class B - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Cebeci Medikal CBC-AUTO24 Class Bは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
-      },
-      "zh": {
-        "title": "Class B Benchtop Autoclave Sterilizer (CBC-AUTO24)",
-        "shortDescription": "Cebeci Medikal CBC-AUTO24 Class B - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Cebeci Medikal CBC-AUTO24 Class B 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
-      }
-    }
-  },
-  {
-    "id": "prod-20",
-    "slug": "motorlu-yogun-bakim-hasta-karyolasi-cbc-bed400",
-    "categorySlug": "medikal-sarf-malzemeler",
-    "brand": "Cebeci Medikal",
-    "model": "CBC-BED400 ICU",
-    "sku": "CBC-BED-400",
-    "condition": "SECOND_HAND",
-    "featured": false,
-    "sortOrder": 20,
-    "images": [
-      "/images/products/hasta-karyolasi-1.webp"
-    ],
-    "technicalSpecs": {
-      "Motor Sistemi": "4 Adet Sessiz Elektrikli Lineer / Kolon Motor (24V DC)",
-      "Pozisyonlar": "Sırt Açısı, Ayak Açısı, Yükseklik Ayarı, Trendelenburg ve Ters Trendelenburg, Vasküler ve Kardiyak Pozisyon",
-      "Acil Durum": "Mekanik ve Elektronik Hızlı CPR Kolu",
-      "Korkuluklar": "4 Parça Entegre Kontrol Panelli Antibakteriyel ABS Korkuluk",
-      "Taşıma Kapasitesi": "250 kg Güvenli Çalışma Yükü"
-    },
-    "applications": [
-      "Yoğun Bakım Üniteleri (Erişkin ve KVC)",
-      "Ameliyat Sonrası Bakım ve Yatan Hasta Katları",
-      "Özel Hastane VIP Hasta Odaları"
-    ],
-    "translations": {
-      "tr": {
-        "title": "4 Motorlu Yoğun Bakım & Hasta Karyolası (CBC-BED400)",
-        "shortDescription": "Kolon motorlu, Trendelenburg ve CPR özellikli antibakteriyel elektrikli yoğun bakım karyolası.",
-        "description": "CBC-BED400 ICU; kritik hastaların pozisyonlandırılmasında ve hemşirelik bakımında maksimum ergonomi sunar. Sarsıntısız kolon motorları, tek tuşla CPR ve kardiyak sandalye pozisyonu ile hasta konforunu ve klinik güvenliği garanti eder."
-      },
-      "en": {
-        "title": "4-Motor ICU Electric Hospital Bed (CBC-BED400)",
-        "shortDescription": "Motorized intensive care bed with Trendelenburg, electronic CPR, and built-in attendant controls.",
-        "description": "The CBC-BED400 provides ergonomic patient positioning with smooth column actuators, integrated safety side rails, and emergency CPR functionality."
-      },
-      "ar": {
-        "title": "سرير العناية المركزة الكهربائي 4 محركات (CBC-BED400)",
-        "shortDescription": "سرير طبي متطور للعناية المركزة مع وضعيات ترندلبورغ والإنعاش السريع وألواح تحكم مدمجة.",
-        "description": "يوفر سرير CBC-BED400 أقصى درجات الراحة للمريض وسهولة التحكم للطاقم التمريضي مع بنية قوية ومحركات هادئة تدعم أوزان حتى 250 كجم."
-      },
-      "de": {
-        "title": "4-Motoriges Intensivpflegebett (CBC-BED400)",
-        "shortDescription": "Elektrisches Intensivbett mit Trendelenburg-Verstellung, CPR-Notabsenkung und integrierten Bedienelementen.",
-        "description": "Das CBC-BED400 bietet erstklassige Positionierungsmöglichkeiten für Intensivpatienten mit ruckfreien Hubsäulen und robuster Konstruktion."
-      },
-      "ja": {
-        "title": "4-Motor ICU Electric Hospital Bed (CBC-BED400)",
-        "shortDescription": "Cebeci Medikal CBC-BED400 ICU - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Cebeci Medikal CBC-BED400 ICUは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
-      },
-      "zh": {
-        "title": "4-Motor ICU Electric Hospital Bed (CBC-BED400)",
-        "shortDescription": "Cebeci Medikal CBC-BED400 ICU - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Cebeci Medikal CBC-BED400 ICU 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
-      }
-    }
-  },
-  {
-    "id": "prod-21",
-    "slug": "hasta-isitma-sistemi-cbc-warm200",
-    "categorySlug": "yogun-bakim-ve-yasam-destek",
-    "brand": "Cebeci Medikal",
-    "model": "CBC-WARM200",
-    "sku": "CBC-WRM-200",
-    "condition": "SECOND_HAND",
-    "featured": false,
-    "sortOrder": 21,
+    "sortOrder": 22,
     "images": [
       "/images/products/hasta-isitma-1.webp"
     ],
     "technicalSpecs": {
-      "Isıtma Teknolojisi": "Sıcak Hava Üflemeli ve Karbon Fiber Isıtma Battaniyesi Desteği",
-      "Sıcaklık Ayar Kademeleri": "Oda Sıcaklığı, 32°C, 38°C, 43°C Hassas Termostatik Kontrol",
-      "Filtreleme": "0.2 Mikron Yüksek Verimli Medikal HEPA Hava Filtresi",
-      "Güvenlik": "Çift Bağımsız Aşırı Isınma Emniyet Sensörü ve Otomatik Kapanma"
+      "Fonksiyon": "Cerrahi ve Yoğun Bakım Hasta Isıtma / Parametrik Akış Takibi",
+      "Sıcaklık Kademeleri": "Ortam Sıcaklığı, 38°C, 40°C, 43°C Güvenlik Limitli",
+      "Hava Akışı": "HEPA Filtreli Temiz Sıcak Hava Sirkülasyonu",
+      "Alarm": "Aşırı Sıcaklık Koruması ve Sensör Hatası Uyarısı",
+      "Garanti": "1 Yıl Cebeci Medikal Garantili"
     },
     "applications": [
-      "Ameliyathane İntraoperatif Isıtma",
-      "Ayılma Odaları (PACU) Postoperatif Bakım",
-      "Yoğun Bakım ve Travma Hipotermi Yönetimi"
+      "Ameliyathane Hipotermi Önleme",
+      "Post-Op Uyandırma Odaları (PACU)",
+      "Yoğun Bakım Üniteleri"
     ],
     "translations": {
       "tr": {
-        "title": "Hasta Isıtma & Hipotermi Önleme Sistemi (CBC-WARM200)",
-        "shortDescription": "HEPA filtreli, 4 kademe sıcaklık kontrollü ve hasta güvenliği onaylı hava üflemeli hasta ısıtma cihazı.",
-        "description": "Cerrahi operasyonlar sırasında ve sonrasında hastanın vücut ısısının korunması iyileşme sürecini hızlandırır ve enfeksiyon riskini azaltır. CBC-WARM200, homojen hava dağılımı ve hassas sıcaklık kontrolü ile hipotermiyi etkin şekilde önler."
+        "title": "Klinik Hasta Isıtma ve Akış Takip Ünitesi",
+        "shortDescription": "Ameliyat esnasında ve sonrasında hipotermiyi önleyen üflemeli hasta ısıtma sistemi.",
+        "description": "Cerrahi operasyonlarda hastanın vücut ısısını stabil tutarak enfeksiyon ve kanama riskini azaltan medikal hasta ısıtma cihazıdır. Isıtıcı rezistansı, hava debisi ve termal güvenlik sensörleri test edilmiştir."
       },
       "en": {
-        "title": "Forced-Air Patient Warming System (CBC-WARM200)",
-        "shortDescription": "HEPA-filtered forced-air warming unit for perioperative and ICU hypothermia prevention.",
-        "description": "The CBC-WARM200 maintains normothermia during and after surgical procedures with quiet air delivery, multiple temperature settings, and dual-sensor thermal safety."
-      },
-      "ar": {
-        "title": "نظام تدفئة المرضى ومنع انخفاض الحرارة (CBC-WARM200)",
-        "shortDescription": "جهاز تدفئة هوائي طبي مع فلتر HEPA للحفاظ على حرارة المرضى أثناء العمليات والعناية المشددة.",
-        "description": "يمنع CBC-WARM200 هبوط درجة حرارة جسم المريض في غرف العمليات والإنعاش عبر تدفق هوائي دافئ متجانس وآمن تماماً."
+        "title": "Clinical Patient Warming & Flow Management Unit",
+        "shortDescription": "Forced-air patient warming device preventing perioperative hypothermia in surgical patients.",
+        "description": "Maintains normothermia during surgeries with precise temperature regulation and HEPA filtered air flow."
       },
       "de": {
-        "title": "Patientenwärmesystem (CBC-WARM200)",
-        "shortDescription": "Gebläse-Wärmesystem mit HEPA-Filter zur perioperativen Hypothermie-Prävention.",
-        "description": "Das CBC-WARM200 schützt Patienten vor Auskühlung während und nach chirurgischen Eingriffen durch präzise Temperaturregelung und leise Luftzirkulation."
+        "title": "Medikal Klinik Sistem WarmFlow 300 Ünitesi (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Medikal Klinik Sistem mit 1 Jahr Garantie.",
+        "description": "Maintains normothermia during surgeries with precise temperature regulation and HEPA filtered air flow. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Medikal Klinik Sistem WarmFlow 300 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Medikal Klinik Sistem مع ضمان لمدة عام كامل.",
+        "description": "Cerrahi operasyonlarda hastanın vücut ısısını stabil tutarak enfeksiyon ve kanama riskini azaltan medikal hasta ısıtma cihazıdır. Isıtıcı rezistansı, hava debisi ve termal güvenlik sensörleri test edilmiştir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
       },
       "ja": {
-        "title": "Forced-Air Patient Warming System (CBC-WARM200)",
-        "shortDescription": "Cebeci Medikal CBC-WARM200 - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Cebeci Medikal CBC-WARM200は、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
+        "title": "Medikal Klinik Sistem WarmFlow 300 リファービッシュ医療機器",
+        "shortDescription": "Medikal Klinik Sistem製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Maintains normothermia during surgeries with precise temperature regulation and HEPA filtered air flow. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
       },
       "zh": {
-        "title": "Forced-Air Patient Warming System (CBC-WARM200)",
-        "shortDescription": "Cebeci Medikal CBC-WARM200 - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Cebeci Medikal CBC-WARM200 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
+        "title": "Medikal Klinik Sistem WarmFlow 300 翻新医疗设备",
+        "shortDescription": "Medikal Klinik Sistem 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Maintains normothermia during surgeries with precise temperature regulation and HEPA filtered air flow. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
       }
     }
   },
   {
-    "id": "prod-22",
-    "slug": "2-el-mindray-hastabasi-monitoru-revizyonlu",
-    "categorySlug": "fizyolojik-sinyal-izleyiciler",
-    "brand": "Mindray / Cebeci Revizyon",
-    "model": "BeneView T5 / T8 Revizyonlu",
-    "sku": "REF-MON-001",
-    "condition": "SECOND_HAND",
-    "featured": true,
-    "sortOrder": 22,
-    "images": [
-      "/images/products/hastabasi-monitoru-6.webp",
-      "/images/products/hastabasi-monitoru-7.webp",
-      "/images/products/hastabasi-monitoru-8.webp"
-    ],
-    "technicalSpecs": {
-      "Durum": "2. El - Cebeci Medikal Biyomedikal Testlerinden Geçmiş, 1 Yıl Garantili",
-      "Testler": "Elektriksel Güvenlik Testi (IEC 62353), Kalibrasyon ve Akü Yenilemesi Tamamlandı",
-      "Ekran": "12.1 inç Dokunmatik Renkli LCD",
-      "Parametreler": "5 Derivasyon EKG, SpO2, NIBP, 2-Kanal Isı, Solunum",
-      "Aksesuarlar": "Sıfır EKG Kablosu, Sıfır SpO2 Probu, Sıfır NIBP Manşonu ve Güç Kablosu Dahildir"
-    },
-    "applications": [
-      "Özel Hastaneler ve Tıp Merkezleri",
-      "Günübirlik Cerrahi ve Klinikler",
-      "Veteriner Cerrahi ve Yoğun Bakım"
-    ],
-    "translations": {
-      "tr": {
-        "title": "Revizyonlu Hastabaşı Monitörü (1 Yıl Tam Garantili)",
-        "shortDescription": "Tüm testleri ve kalibrasyonları yapılmış, sıfır aksesuarlarıyla 1 yıl garantili revizyonlu hastabaşı monitörü.",
-        "description": "Cebeci Medikal uzman biyomedikal mühendisleri tarafından tüm fonksiyon testleri, kalibrasyonları ve batarya yenilemesi yapılmış 2. el garantili hastabaşı monitörü. Sıfır orijinal aksesuarları ve 1 yıl tam servis/parça garantisi ile satışa sunulmaktadır."
-      },
-      "en": {
-        "title": "Refurbished Patient Monitor (1 Year Warranty)",
-        "shortDescription": "Fully tested and calibrated patient monitor with brand-new accessories and 1-year warranty.",
-        "description": "Biomedical certified pre-owned patient monitor. Passed full IEC 62353 electrical safety and calibration testing. Includes brand new patient cables and 12-month Cebeci Medikal warranty."
-      },
-      "ar": {
-        "title": "شاشة مراقبة مرضى مجددة (ضمان شامل لمدة عام)",
-        "shortDescription": "جهاز مراقبة مجدد ومفحوص طبياً مع كابلات جديدة وضمان كامل لمدة 12 شهراً.",
-        "description": "جهاز مراقبة مرضى مستعمل تم تجديده بالكامل واختباره في مختبرات سبيجي ميديكال، مع بطارية جديدة وملحقات أصلية وضمان شامل."
-      },
-      "de": {
-        "title": "Generalüberholter Patientenmonitor (1 Jahr Garantie)",
-        "shortDescription": "Vollständig geprüfter und kalibrierter Monitor mit neuem Zubehör und 1 Jahr Garantie.",
-        "description": "Fachmännisch gewarteter Gebrauchtmonitor mit neuer Sicherheitsprüfung (STK/MTK), neuen Patientenkabeln und 12 Monaten Vollgarantie."
-      },
-      "ja": {
-        "title": "Refurbished Patient Monitor (1 Year Warranty)",
-        "shortDescription": "Mindray / Cebeci Revizyon BeneView T5 / T8 Revizyonlu - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Mindray / Cebeci Revizyon BeneView T5 / T8 Revizyonluは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
-      },
-      "zh": {
-        "title": "Refurbished Patient Monitor (1 Year Warranty)",
-        "shortDescription": "Mindray / Cebeci Revizyon BeneView T5 / T8 Revizyonlu - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Mindray / Cebeci Revizyon BeneView T5 / T8 Revizyonlu 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
-      }
-    }
-  },
-  {
-    "id": "prod-23",
-    "slug": "2-el-drager-ventilator-revizyonlu",
+    "id": "prod-karyola-yogun-bakim",
+    "slug": "cok-fonksiyonlu-motorlu-yogun-bakim-karyolasi",
     "categorySlug": "yogun-bakim-ve-yasam-destek",
-    "brand": "Dräger / Cebeci Revizyon",
-    "model": "Evita Serisi Revizyonlu",
-    "sku": "REF-VNT-002",
+    "brand": "Medikal Donanım",
+    "model": "ICU-Bed 4M",
+    "sku": "MDK-ICU-023",
     "condition": "SECOND_HAND",
-    "featured": true,
+    "featured": false,
     "sortOrder": 23,
     "images": [
-      "/images/products/ventilator-4.webp",
-      "/images/products/ventilator-5.webp"
+      "/images/products/hasta-karyolasi-1.webp"
     ],
     "technicalSpecs": {
-      "Durum": "2. El - Biyomedikal Revizyonu ve O2 Sensörü Yenilenmiş, 1 Yıl Garantili",
-      "Testler": "Pnömatik Kalibrasyon, Akciğer Simülatör Testleri ve Güvenlik Sertifikalandırması Tamamlandı",
-      "Modlar": "IPPV, SIMV, BIPAP, CPAP/ASB",
-      "Ekstra": "Yeni Solunum Devresi, Test Ciğeri ve Oksijen Hortumları Dahil"
+      "Motor Sayısı": "4 Bağımsız Elektrikli Lineer Motor",
+      "Pozisyonlar": "Trendelenburg, Ters Trendelenburg, Sırt, Ayak ve Yükseklik Ayarı, CPR Konumu",
+      "Korkuluklar": "Dahili Açılı Göstergeli Katlanabilir ABS Korkuluklar",
+      "Tekerlekler": "Merkezi Kilitli Antistatik Tekerlek Sistemi",
+      "Yatak Platformu": "X-Ray Geçirgen Sırt Bölümü"
     },
     "applications": [
-      "Yoğun Bakım Üniteleri",
-      "Solunum Tedavi Merkezleri",
-      "Yedek ve Acil Durum Ventilatörü"
+      "Genel ve Koroner Yoğun Bakım",
+      "Ameliyathane Sonrası Derlenme",
+      "Özel Klinik ve VIP Hasta Odaları"
     ],
     "translations": {
       "tr": {
-        "title": "Revizyonlu Yoğun Bakım Ventilatörü (1 Yıl Tam Garantili)",
-        "shortDescription": "Oksijen hücresi ve filtreleri sıfırlanmış, kalibrasyon sertifikalı 2. el yoğun bakım mekanik ventilatörü.",
-        "description": "Kapsamlı biyomedikal bakım ve kalibrasyon süreçlerinden geçmiş, O2 hücresi ve kritik valfleri sıfırlanmış garantili 2. el ventilatör cihazı. CE ve TSE standartlarında test raporu ile teslim edilir."
+        "title": "Çok Fonksiyonlu Motorlu Yoğun Bakım Karyolası",
+        "shortDescription": "4 motorlu, Trendelenburg ve CPR özellikli, tam donanımlı yoğun bakım hasta yatağı.",
+        "description": "Kritik hasta takibinde maksimum konfor ve kolay hemşire erişimi sağlayan 4 motorlu elektrikli yoğun bakım karyolasıdır. Motor sürücüleri, batarya yedeklemesi ve mekanik mafsalları revize edilmiştir."
       },
       "en": {
-        "title": "Refurbished Intensive Care Ventilator (1 Year Warranty)",
-        "shortDescription": "Certified pre-owned mechanical ventilator with new O2 cell and 1-year Cebeci warranty.",
-        "description": "Thoroughly tested and calibrated ICU ventilator. Includes new oxygen sensor, patient tubing, test lung, and 1-year comprehensive parts and service guarantee."
-      },
-      "ar": {
-        "title": "جهاز تنفس اصطناعي مجدد للعناية المركزة (ضمان عام)",
-        "shortDescription": "جهاز تنفس مجدد مع مستشعر أكسجين جديد واختبارات كفاءة معتمدة وضمان لمدة عام.",
-        "description": "جهاز تنفس اصطناعي مستعمل خضع لعملية تجديد شاملة ومعايرة دقيقة في مختبراتنا، مع شهادة اختبار الأمان وضمان لمدة 12 شهراً."
+        "title": "Multi-Functional 4-Motor ICU Hospital Bed",
+        "shortDescription": "Full electric ICU bed with Trendelenburg, reverse Trendelenburg, and emergency CPR release.",
+        "description": "Engineered for optimal intensive care patient management with motorized positioning and central braking."
       },
       "de": {
-        "title": "Generalüberholtes Intensivbeatmungsgerät (1 Jahr Garantie)",
-        "shortDescription": "Geprüftes Gebraucht-Beatmungsgerät mit neuem O2-Sensor und 12 Monaten Garantie.",
-        "description": "Vollständig rezertifiziertes Intensivbeatmungsgerät mit erneuerten Verschleißteilen, STK-Protokoll und umfassender Garantie."
+        "title": "Medikal Donanım ICU-Bed 4M Karyolası (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Medikal Donanım mit 1 Jahr Garantie.",
+        "description": "Engineered for optimal intensive care patient management with motorized positioning and central braking. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Medikal Donanım ICU-Bed 4M (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Medikal Donanım مع ضمان لمدة عام كامل.",
+        "description": "Kritik hasta takibinde maksimum konfor ve kolay hemşire erişimi sağlayan 4 motorlu elektrikli yoğun bakım karyolasıdır. Motor sürücüleri, batarya yedeklemesi ve mekanik mafsalları revize edilmiştir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
       },
       "ja": {
-        "title": "Refurbished Intensive Care Ventilator (1 Year Warranty)",
-        "shortDescription": "Dräger / Cebeci Revizyon Evita Serisi Revizyonlu - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Dräger / Cebeci Revizyon Evita Serisi Revizyonluは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
+        "title": "Medikal Donanım ICU-Bed 4M リファービッシュ医療機器",
+        "shortDescription": "Medikal Donanım製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Engineered for optimal intensive care patient management with motorized positioning and central braking. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
       },
       "zh": {
-        "title": "Refurbished Intensive Care Ventilator (1 Year Warranty)",
-        "shortDescription": "Dräger / Cebeci Revizyon Evita Serisi Revizyonlu - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Dräger / Cebeci Revizyon Evita Serisi Revizyonlu 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
+        "title": "Medikal Donanım ICU-Bed 4M 翻新医疗设备",
+        "shortDescription": "Medikal Donanım 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Engineered for optimal intensive care patient management with motorized positioning and central braking. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
       }
     }
   },
   {
-    "id": "prod-24",
-    "slug": "2-el-defibrilator-revizyonlu",
-    "categorySlug": "yogun-bakim-ve-yasam-destek",
-    "brand": "Nihon Kohden / Cebeci Revizyon",
-    "model": "TEC Serisi Revizyonlu",
-    "sku": "REF-DEF-003",
+    "id": "prod-mon-spacelabs-90369",
+    "slug": "spacelabs-90369-hastabasi-monitoru",
+    "categorySlug": "fizyolojik-sinyal-izleyiciler",
+    "brand": "Spacelabs Healthcare",
+    "model": "90369 Ultraview",
+    "sku": "SPC-903-024",
     "condition": "SECOND_HAND",
-    "featured": false,
+    "featured": true,
     "sortOrder": 24,
     "images": [
-      "/images/products/defibrilator-2.webp",
-      "/images/products/defibrilator-3.webp"
+      "/images/products/hastabasi-monitoru-1.webp"
     ],
     "technicalSpecs": {
-      "Durum": "2. El - Batarya Yenilenmiş, Defibrilasyon ve Güvenlik Testlerinden Geçmiş, 1 Yıl Garantili",
-      "Enerji": "Bifazik 1–360 Joule, Şarj Süresi <3 saniye",
-      "Testler": "IEC 62353 Elektriksel Güvenlik, Defibrilasyon Doğruluk Testi ve Kalibrasyon Tamamlanmıştır"
+      "Ekran": "10.4 inç Yüksek Çözünürlüklü Renkli Dokunmatik Ekran",
+      "Standart Parametreler": "EKG, SpO2, NIBP (Non-İnvaziv Tansiyon), Solunum (RESP), Çift Kanal Sıcaklık (TEMP)",
+      "Aritmi Analizi": "Çok Kanallı Gelişmiş Aritmi ve ST Segment Değerlendirmesi",
+      "Ağ Bağlantısı": "Merkezi Monitör (Central Station) Entegrasyonu",
+      "Garanti": "1 Yıl Cebeci Medikal Garantili"
     },
     "applications": [
-      "Acil Servisler",
-      "Yoğun Bakım Üniteleri",
-      "Ambulans ve 112 Servisleri"
+      "Yoğun Bakım Üniteleri (ICU / CCU)",
+      "Ameliyathane ve Anestezi Takibi",
+      "Acil Müdahale ve Travma Odaları"
     ],
     "translations": {
       "tr": {
-        "title": "Revizyonlu Bifazik Defibrilatör (1 Yıl Garantili)",
-        "shortDescription": "Bataryası ve paddle'ları sıfırlanmış, test sertifikalı 2. el garantili bifazik defibrilatör.",
-        "description": "Cebeci Medikal tarafından batarya yenilemesi, elektrot değişimi ve tam kalibrasyon sürecinden geçirilmiş 2. el defibrilatör. 1 yıl parça ve servis garantisi ile teslim edilir."
+        "title": "Spacelabs 90369 Çok Parametreli Hastabaşı Monitörü",
+        "shortDescription": "Amerikan Spacelabs güvencesiyle dokunmatik ekranlı, modüler klinik hasta monitörü.",
+        "description": "Spacelabs 90369 Ultraview serisi, yoğun bakım ve ameliyathanelerde vital parametrelerin kesintisiz ve hassas izlenmesi için tasarlanmış yüksek sınıf bir monitördür. Tüm sensör kabloları ve EKG simülatör testleri yapılmıştır."
       },
       "en": {
-        "title": "Refurbished Biphasic Defibrillator (1 Year Warranty)",
-        "shortDescription": "Certified pre-owned defibrillator with new battery and paddles.",
-        "description": "Fully tested and calibrated biphasic defibrillator with renewed battery pack, new electrodes, and 12-month Cebeci Medikal warranty."
-      },
-      "ar": {
-        "title": "جهاز صدمات كهربائية مجدد (ضمان عام)",
-        "shortDescription": "جهاز صدمات مجدد مع بطارية جديدة وأقطاب كهربائية.",
-        "description": "جهاز صدمات ثنائي الطور مجدد بالكامل ومعاير مع ضمان لمدة 12 شهراً."
+        "title": "Spacelabs 90369 Multi-Parameter Patient Monitor",
+        "shortDescription": "Touchscreen clinical patient monitor with comprehensive vital sign tracking and arrhythmia analysis.",
+        "description": "The Spacelabs 90369 delivers dependable bedside monitoring for ICU and OR environments with intuitive navigation."
       },
       "de": {
-        "title": "Generalüberholter Defibrillator (1 Jahr Garantie)",
-        "shortDescription": "Geprüfter Gebraucht-Defibrillator mit neuer Batterie und 12 Monaten Garantie.",
-        "description": "Vollständig rezertifizierter Biphasischer Defibrillator mit erneuertem Akkupack und umfassender Garantie."
+        "title": "Spacelabs Healthcare 90369 Ultraview Monitörü (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Spacelabs Healthcare mit 1 Jahr Garantie.",
+        "description": "The Spacelabs 90369 delivers dependable bedside monitoring for ICU and OR environments with intuitive navigation. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Spacelabs Healthcare 90369 Ultraview (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Spacelabs Healthcare مع ضمان لمدة عام كامل.",
+        "description": "Spacelabs 90369 Ultraview serisi, yoğun bakım ve ameliyathanelerde vital parametrelerin kesintisiz ve hassas izlenmesi için tasarlanmış yüksek sınıf bir monitördür. Tüm sensör kabloları ve EKG simülatör testleri yapılmıştır. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
       },
       "ja": {
-        "title": "Refurbished Biphasic Defibrillator (1 Year Warranty)",
-        "shortDescription": "Nihon Kohden / Cebeci Revizyon TEC Serisi Revizyonlu - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Nihon Kohden / Cebeci Revizyon TEC Serisi Revizyonluは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
+        "title": "Spacelabs Healthcare 90369 Ultraview リファービッシュ医療機器",
+        "shortDescription": "Spacelabs Healthcare製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "The Spacelabs 90369 delivers dependable bedside monitoring for ICU and OR environments with intuitive navigation. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
       },
       "zh": {
-        "title": "Refurbished Biphasic Defibrillator (1 Year Warranty)",
-        "shortDescription": "Nihon Kohden / Cebeci Revizyon TEC Serisi Revizyonlu - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Nihon Kohden / Cebeci Revizyon TEC Serisi Revizyonlu 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
+        "title": "Spacelabs Healthcare 90369 Ultraview 翻新医疗设备",
+        "shortDescription": "Spacelabs Healthcare 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "The Spacelabs 90369 delivers dependable bedside monitoring for ICU and OR environments with intuitive navigation. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
       }
     }
   },
   {
-    "id": "prod-25",
-    "slug": "2-el-infuzyon-pompasi-revizyonlu",
-    "categorySlug": "yogun-bakim-ve-yasam-destek",
-    "brand": "B.Braun / Cebeci Revizyon",
-    "model": "Infusomat Space Revizyonlu",
-    "sku": "REF-INF-004",
+    "id": "prod-mon-uzumcu-visio",
+    "slug": "uzumcu-visio-hastabasi-monitoru",
+    "categorySlug": "fizyolojik-sinyal-izleyiciler",
+    "brand": "Üzümcü",
+    "model": "Visio",
+    "sku": "UZM-VIS-025",
     "condition": "SECOND_HAND",
-    "featured": false,
+    "featured": true,
     "sortOrder": 25,
     "images": [
-      "/images/products/infuzyon-pompasi-1.webp"
+      "/images/products/hastabasi-monitoru-2.webp"
     ],
     "technicalSpecs": {
-      "Durum": "2. El - Mekanik ve Elektronik Bakımı Tamamlanmış, Kalibrasyon Sertifikalı, 1 Yıl Garantili",
-      "Debi Aralığı": "0.1 – 1200 ml/saat",
-      "Oklüzyon Alarmı": "Ayarlanabilir oklüzyon basınç algılama"
+      "Ekran Boyutu": "12.1 inç Parlak TFT Renkli Ekran",
+      "Parametreler": "EKG (3/5 Derivasyon), SpO2, NIBP, Solunum, 2 x Sıcaklık, Opsiyonel IBP / EtCO2",
+      "Trend Hafızası": "96 Saatlik Grafik ve Tablo Trend Kaydı",
+      "Batarya": "Dahili Şarj Edilebilir Lityum-İyon Batarya (Mobil Kullanım)",
+      "Kondisyon": "Test Edilmiş, Revizyonlu 2. El Medikal Cihaz"
     },
     "applications": [
-      "Yoğun Bakım",
-      "Servis İçi İnfüzyon",
-      "Onkoloji ve Kemoterapi"
+      "Genel Yoğun Bakım ve Koroner Yoğun Bakım",
+      "Cerrahi Servisler ve Uyandırma Odaları",
+      "Acil Servisler"
     ],
     "translations": {
       "tr": {
-        "title": "Revizyonlu Volumetrik İnfüzyon Pompası (1 Yıl Garantili)",
-        "shortDescription": "Bakımı ve kalibrasyonu yapılmış, test raporlu 2. el garantili infüzyon pompası.",
-        "description": "Valfler ve sensörleri yenilenmiş, tam fonksiyonel test ve kalibrasyonu tamamlanmış 2. el infüzyon pompası. 1 yıl Cebeci Medikal garantisi ile sunulmaktadır."
+        "title": "Üzümcü Visio Hastabaşı Monitörü",
+        "shortDescription": "12.1 inç geniş ekranlı, çok parametreli ve stabil ölçüm kabiliyetli revizyonlu hastabaşı monitörü.",
+        "description": "Üzümcü Visio, hastanelerin yataklı servislerinde ve yoğun bakımlarında hasta hayati bulgularının anlık takibi için ideal bir monitördür. NIBP pompası, SpO2 probu ve EKG kablosu sıfırlanmış olarak teslim edilir."
       },
       "en": {
-        "title": "Refurbished Volumetric Infusion Pump (1 Year Warranty)",
-        "shortDescription": "Calibrated pre-owned infusion pump with renewed valves and sensors.",
-        "description": "Certified refurbished infusion pump with full functional testing and 12-month warranty."
-      },
-      "ar": {
-        "title": "مضخة تسريب مجددة (ضمان عام)",
-        "shortDescription": "مضخة تسريب مجددة ومعايرة مع ضمان شامل.",
-        "description": "مضخة تسريب مستعملة تم تجديدها بالكامل مع صمامات جديدة وضمان لمدة 12 شهراً."
+        "title": "Üzümcü Visio Multi-Parameter Bedside Monitor",
+        "shortDescription": "12.1-inch color TFT patient monitor with comprehensive trend memory and reliable alarms.",
+        "description": "Provides accurate multi-lead ECG, pulse oximetry, and non-invasive blood pressure tracking across hospital departments."
       },
       "de": {
-        "title": "Generalüberholte Infusionspumpe (1 Jahr Garantie)",
-        "shortDescription": "Kalibrierte Gebraucht-Infusionspumpe mit erneuerten Ventilen.",
-        "description": "Vollständig getestete und kalibrierte Infusionspumpe mit 12 Monaten Garantie."
+        "title": "Üzümcü Visio Monitörü (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Üzümcü mit 1 Jahr Garantie.",
+        "description": "Provides accurate multi-lead ECG, pulse oximetry, and non-invasive blood pressure tracking across hospital departments. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Üzümcü Visio (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Üzümcü مع ضمان لمدة عام كامل.",
+        "description": "Üzümcü Visio, hastanelerin yataklı servislerinde ve yoğun bakımlarında hasta hayati bulgularının anlık takibi için ideal bir monitördür. NIBP pompası, SpO2 probu ve EKG kablosu sıfırlanmış olarak teslim edilir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
       },
       "ja": {
-        "title": "Refurbished Volumetric Infusion Pump (1 Year Warranty)",
-        "shortDescription": "B.Braun / Cebeci Revizyon Infusomat Space Revizyonlu - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "B.Braun / Cebeci Revizyon Infusomat Space Revizyonluは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
+        "title": "Üzümcü Visio リファービッシュ医療機器",
+        "shortDescription": "Üzümcü製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Provides accurate multi-lead ECG, pulse oximetry, and non-invasive blood pressure tracking across hospital departments. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
       },
       "zh": {
-        "title": "Refurbished Volumetric Infusion Pump (1 Year Warranty)",
-        "shortDescription": "B.Braun / Cebeci Revizyon Infusomat Space Revizyonlu - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal B.Braun / Cebeci Revizyon Infusomat Space Revizyonlu 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
+        "title": "Üzümcü Visio 翻新医疗设备",
+        "shortDescription": "Üzümcü 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Provides accurate multi-lead ECG, pulse oximetry, and non-invasive blood pressure tracking across hospital departments. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
       }
     }
   },
   {
-    "id": "prod-26",
-    "slug": "2-el-enjektor-pompasi-revizyonlu",
-    "categorySlug": "yogun-bakim-ve-yasam-destek",
-    "brand": "Fresenius Kabi / Cebeci Revizyon",
-    "model": "Agilia SP Revizyonlu",
-    "sku": "REF-ENJ-005",
+    "id": "prod-mon-schiller-physicgard-910",
+    "slug": "schiller-physicgard-tm-910-hastabasi-monitoru",
+    "categorySlug": "fizyolojik-sinyal-izleyiciler",
+    "brand": "Schiller",
+    "model": "Physicgard TM 910",
+    "sku": "SCH-910-026",
     "condition": "SECOND_HAND",
     "featured": false,
     "sortOrder": 26,
     "images": [
-      "/images/products/enjektor-pompasi-1.webp",
-      "/images/products/enjektor-pompasi-2.webp"
+      "/images/products/hastabasi-monitoru-3.webp"
     ],
     "technicalSpecs": {
-      "Durum": "2. El - Mekanik Sıkıştırma Parçaları Yenilenmiş, 1 Yıl Garantili",
-      "Debi Aralığı": "0.01 – 99.9 ml/saat",
-      "Uyumlu Şırıngalar": "5 ml, 10 ml, 20 ml, 50 ml"
+      "Menşei": "İsviçre (Schiller AG)",
+      "Ölçüm Parametreleri": "EKG, Nabız, SpO2, NIBP, Isı Takibi",
+      "Ekran": "Yüksek Kontrastlı Medikal CRT / LCD Monitör",
+      "Garanti": "1 Yıl Cebeci Medikal Garantili"
     },
     "applications": [
-      "Yoğun Bakım Sedasyonu",
-      "Yenidoğan İlaç İnfüzyonu",
-      "Acil Müdahale"
-    ],
-    "translations": {
-      "tr": {
-        "title": "Revizyonlu Enjektör (Perfüzör) Pompası (1 Yıl Garantili)",
-        "shortDescription": "Sıkıştırma mekanizması yenilenmiş, test sertifikalı 2. el enjektör pompası.",
-        "description": "Cebeci Medikal biyomedikal laboratuvarında tam bakımı ve kalibrasyonu yapılmış 2. el enjektör pompası. Yeni sıkıştırma parçaları ve 1 yıl garanti ile sunulmaktadır."
-      },
-      "en": {
-        "title": "Refurbished Syringe Pump (1 Year Warranty)",
-        "shortDescription": "Certified pre-owned syringe pump with renewed mechanism.",
-        "description": "Fully serviced syringe pump with new drive mechanism and 12-month warranty."
-      },
-      "ar": {
-        "title": "مضخة حقن مجددة (ضمان عام)",
-        "shortDescription": "مضخة حقن مجددة مع آلية ضغط جديدة.",
-        "description": "مضخة حقن مجددة بالكامل مع ضمان 12 شهراً."
-      },
-      "de": {
-        "title": "Generalüberholte Spritzenpumpe (1 Jahr Garantie)",
-        "shortDescription": "Kalibrierte Gebraucht-Spritzenpumpe mit erneuerten Teilen.",
-        "description": "Vollständig getestete Spritzenpumpe mit 12 Monaten Garantie."
-      },
-      "ja": {
-        "title": "Refurbished Syringe Pump (1 Year Warranty)",
-        "shortDescription": "Fresenius Kabi / Cebeci Revizyon Agilia SP Revizyonlu - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Fresenius Kabi / Cebeci Revizyon Agilia SP Revizyonluは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
-      },
-      "zh": {
-        "title": "Refurbished Syringe Pump (1 Year Warranty)",
-        "shortDescription": "Fresenius Kabi / Cebeci Revizyon Agilia SP Revizyonlu - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Fresenius Kabi / Cebeci Revizyon Agilia SP Revizyonlu 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
-      }
-    }
-  },
-  {
-    "id": "prod-27",
-    "slug": "2-el-pulse-oksimetre-revizyonlu",
-    "categorySlug": "fizyolojik-sinyal-izleyiciler",
-    "brand": "Nellcor / Cebeci Revizyon",
-    "model": "PM10N Revizyonlu",
-    "sku": "REF-OKS-006",
-    "condition": "SECOND_HAND",
-    "featured": false,
-    "sortOrder": 27,
-    "images": [
-      "/images/products/pulse-oksimetre-1.webp"
-    ],
-    "technicalSpecs": {
-      "Durum": "2. El - Sensör Yenilenmiş, Kalibrasyon Tamamlanmış, 1 Yıl Garantili",
-      "Ölçüm": "SpO2 (%0-100) ve Nabız (20-300 bpm)"
-    },
-    "applications": [
-      "Klinikler ve Muayenehaneler",
-      "Evde Bakım Hizmetleri",
-      "Ambulans Servisleri"
-    ],
-    "translations": {
-      "tr": {
-        "title": "Revizyonlu Pulse Oksimetre (1 Yıl Garantili)",
-        "shortDescription": "Sensörü sıfırlanmış, kalibrasyon sertifikalı 2. el pulse oksimetre.",
-        "description": "Yeni SpO2 probu ve batarya ile tam kalibrasyon kontrolünden geçmiş 2. el pulse oksimetre. 1 yıl garanti dahildir."
-      },
-      "en": {
-        "title": "Refurbished Pulse Oximeter (1 Year Warranty)",
-        "shortDescription": "Calibrated pre-owned pulse oximeter with new sensor probe.",
-        "description": "Certified refurbished pulse oximeter with renewed SpO2 probe and 12-month warranty."
-      },
-      "ar": {
-        "title": "جهاز قياس أكسجين مجدد (ضمان عام)",
-        "shortDescription": "جهاز قياس نسبة الأكسجين مجدد مع حساس جديد.",
-        "description": "جهاز قياس أكسجين مجدد بالكامل مع ضمان 12 شهراً."
-      },
-      "de": {
-        "title": "Generalüberholtes Pulsoximeter (1 Jahr Garantie)",
-        "shortDescription": "Kalibriertes Gebraucht-Pulsoximeter mit neuem Sensor.",
-        "description": "Vollständig getestetes Pulsoximeter mit 12 Monaten Garantie."
-      },
-      "ja": {
-        "title": "Refurbished Pulse Oximeter (1 Year Warranty)",
-        "shortDescription": "Nellcor / Cebeci Revizyon PM10N Revizyonlu - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Nellcor / Cebeci Revizyon PM10N Revizyonluは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
-      },
-      "zh": {
-        "title": "Refurbished Pulse Oximeter (1 Year Warranty)",
-        "shortDescription": "Nellcor / Cebeci Revizyon PM10N Revizyonlu - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Nellcor / Cebeci Revizyon PM10N Revizyonlu 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
-      }
-    }
-  },
-  {
-    "id": "prod-28",
-    "slug": "2-el-anestezi-cihazi-revizyonlu",
-    "categorySlug": "ameliyathane-cihazlari",
-    "brand": "Dräger / Cebeci Revizyon",
-    "model": "Fabius Serisi Revizyonlu",
-    "sku": "REF-ANS-007",
-    "condition": "SECOND_HAND",
-    "featured": false,
-    "sortOrder": 28,
-    "images": [
-      "/images/products/anestezi-cihazi-2.webp",
-      "/images/products/anestezi-cihazi-3.webp"
-    ],
-    "technicalSpecs": {
-      "Durum": "2. El - Vaporizatörler Kalibre Edilmiş, Solunum Devreleri Sıfırlanmış, 1 Yıl Garantili",
-      "Testler": "Gaz Kaçağı Testi, Mekanik Ventilatör Testi ve Güvenlik Sertifikalandırması Tamamlanmış",
-      "Anesteztik Ajanlar": "Sevofluran, Desfluran, İzofluran uyumlu"
-    },
-    "applications": [
-      "Ameliyathaneler",
-      "Günübirlik Cerrahi Merkezleri",
-      "Yedek Anestezi İstasyonu"
-    ],
-    "translations": {
-      "tr": {
-        "title": "Revizyonlu Anestezi Cihazı (1 Yıl Garantili)",
-        "shortDescription": "Vaporizatörleri kalibre edilmiş, kaçak testlerinden geçmiş 2. el garantili anestezi cihazı.",
-        "description": "Kapsamlı biyomedikal bakımdan geçmiş, vaporizatör kalibrasyonu, gaz kaçak testi ve mekanik ventilatör doğrulaması yapılmış 2. el anestezi iş istasyonu. 1 yıl garanti ile sunulur."
-      },
-      "en": {
-        "title": "Refurbished Anesthesia Machine (1 Year Warranty)",
-        "shortDescription": "Calibrated pre-owned anesthesia workstation with tested vaporizers.",
-        "description": "Certified refurbished anesthesia system with calibrated vaporizers, leak-tested circuits, and 12-month warranty."
-      },
-      "ar": {
-        "title": "جهاز تخدير مجدد (ضمان عام)",
-        "shortDescription": "جهاز تخدير مجدد مع مبخرات معايرة.",
-        "description": "جهاز تخدير مجدد بالكامل مع ضمان 12 شهراً."
-      },
-      "de": {
-        "title": "Generalüberholte Anästhesiemaschine (1 Jahr Garantie)",
-        "shortDescription": "Kalibrierte Gebraucht-Anästhesieanlage mit geprüften Vaporizern.",
-        "description": "Vollständig rezertifizierte Anästhesie-Arbeitsstation mit 12 Monaten Garantie."
-      },
-      "ja": {
-        "title": "Refurbished Anesthesia Machine (1 Year Warranty)",
-        "shortDescription": "Dräger / Cebeci Revizyon Fabius Serisi Revizyonlu - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Dräger / Cebeci Revizyon Fabius Serisi Revizyonluは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
-      },
-      "zh": {
-        "title": "Refurbished Anesthesia Machine (1 Year Warranty)",
-        "shortDescription": "Dräger / Cebeci Revizyon Fabius Serisi Revizyonlu - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Dräger / Cebeci Revizyon Fabius Serisi Revizyonlu 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
-      }
-    }
-  },
-  {
-    "id": "prod-29",
-    "slug": "2-el-endovizyon-sistemi-revizyonlu",
-    "categorySlug": "endovizyon-sistemleri",
-    "brand": "Karl Storz / Cebeci Revizyon",
-    "model": "Image 1 HD Revizyonlu",
-    "sku": "REF-END-008",
-    "condition": "SECOND_HAND",
-    "featured": false,
-    "sortOrder": 29,
-    "images": [
-      "/images/products/endovizyon-sistemi-1.webp"
-    ],
-    "technicalSpecs": {
-      "Durum": "2. El - Kamera Başlığı ve Işık Kaynağı Test Edilmiş, 1 Yıl Garantili",
-      "Çözünürlük": "Full HD 1080p"
-    },
-    "applications": [
-      "Laparoskopik Cerrahi",
-      "Endoskopi Üniteleri",
-      "Üroloji ve Jinekoloji"
-    ],
-    "translations": {
-      "tr": {
-        "title": "Revizyonlu Endovizyon Kamera Sistemi (1 Yıl Garantili)",
-        "shortDescription": "Kamera başlığı ve ışık kaynağı test edilmiş, 2. el garantili endovizyon sistemi.",
-        "description": "Optik kalite kontrolünden geçmiş, kamera başlığı ve soğuk ışık kaynağı fonksiyonel testleri tamamlanmış 2. el endovizyon sistemi. 1 yıl garanti dahildir."
-      },
-      "en": {
-        "title": "Refurbished Endovision Camera System (1 Year Warranty)",
-        "shortDescription": "Tested pre-owned HD endoscopy camera system with light source.",
-        "description": "Certified refurbished endovision system with quality-checked optics and 12-month warranty."
-      },
-      "ar": {
-        "title": "نظام كاميرا تنظير مجدد (ضمان عام)",
-        "shortDescription": "نظام كاميرا تنظير مجدد مع مصدر ضوء.",
-        "description": "نظام تنظير مجدد بالكامل مع ضمان 12 شهراً."
-      },
-      "de": {
-        "title": "Generalüberholtes Endovisionssystem (1 Jahr Garantie)",
-        "shortDescription": "Geprüftes Gebraucht-Endoskopie-Kamerasystem.",
-        "description": "Vollständig getestetes HD-Endoskopie-System mit 12 Monaten Garantie."
-      },
-      "ja": {
-        "title": "Refurbished Endovision Camera System (1 Year Warranty)",
-        "shortDescription": "Karl Storz / Cebeci Revizyon Image 1 HD Revizyonlu - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Karl Storz / Cebeci Revizyon Image 1 HD Revizyonluは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
-      },
-      "zh": {
-        "title": "Refurbished Endovision Camera System (1 Year Warranty)",
-        "shortDescription": "Karl Storz / Cebeci Revizyon Image 1 HD Revizyonlu - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Karl Storz / Cebeci Revizyon Image 1 HD Revizyonlu 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
-      }
-    }
-  },
-  {
-    "id": "prod-30",
-    "slug": "2-el-elektrokoter-revizyonlu",
-    "categorySlug": "ameliyathane-cihazlari",
-    "brand": "Erbe / Cebeci Revizyon",
-    "model": "VIO Serisi Revizyonlu",
-    "sku": "REF-KOT-009",
-    "condition": "SECOND_HAND",
-    "featured": false,
-    "sortOrder": 30,
-    "images": [
-      "/images/products/elektrokoter-1.webp"
-    ],
-    "technicalSpecs": {
-      "Durum": "2. El - Çıkış Gücü ve Topraklama Kontrolleri Yapılmış, 1 Yıl Garantili",
-      "Modlar": "Monopolar Kesme/Koagülasyon, Bipolar"
-    },
-    "applications": [
-      "Genel Cerrahi",
-      "Ortopedi",
-      "Plastik Cerrahi"
-    ],
-    "translations": {
-      "tr": {
-        "title": "Revizyonlu Elektrocerrahi Koter Ünitesi (1 Yıl Garantili)",
-        "shortDescription": "Çıkış gücü ve güvenlik testlerinden geçmiş, 2. el garantili elektrokoter.",
-        "description": "Monopolar/bipolar çıkış kalibrasyonu ve topraklama güvenlik testi tamamlanmış 2. el elektrokoter ünitesi. 1 yıl garanti ile sunulmaktadır."
-      },
-      "en": {
-        "title": "Refurbished Electrosurgical Unit (1 Year Warranty)",
-        "shortDescription": "Calibrated pre-owned ESU with tested outputs.",
-        "description": "Certified refurbished electrosurgical unit with calibrated monopolar/bipolar outputs and 12-month warranty."
-      },
-      "ar": {
-        "title": "وحدة كي جراحي مجددة (ضمان عام)",
-        "shortDescription": "وحدة كي جراحي مجددة ومعايرة.",
-        "description": "وحدة كي كهربائي مجددة بالكامل مع ضمان 12 شهراً."
-      },
-      "de": {
-        "title": "Generalüberholtes Elektrochirurgiegerät (1 Jahr Garantie)",
-        "shortDescription": "Kalibriertes Gebraucht-HF-Chirurgiegerät.",
-        "description": "Vollständig getestete Koagulations-/Schneideeinheit mit 12 Monaten Garantie."
-      },
-      "ja": {
-        "title": "Refurbished Electrosurgical Unit (1 Year Warranty)",
-        "shortDescription": "Erbe / Cebeci Revizyon VIO Serisi Revizyonlu - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Erbe / Cebeci Revizyon VIO Serisi Revizyonluは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
-      },
-      "zh": {
-        "title": "Refurbished Electrosurgical Unit (1 Year Warranty)",
-        "shortDescription": "Erbe / Cebeci Revizyon VIO Serisi Revizyonlu - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Erbe / Cebeci Revizyon VIO Serisi Revizyonlu 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
-      }
-    }
-  },
-  {
-    "id": "prod-31",
-    "slug": "2-el-kan-gazi-analizoru-revizyonlu",
-    "categorySlug": "laboratuvar-cihazlari",
-    "brand": "Siemens / Cebeci Revizyon",
-    "model": "RAPIDPoint Revizyonlu",
-    "sku": "REF-BGA-010",
-    "condition": "SECOND_HAND",
-    "featured": false,
-    "sortOrder": 31,
-    "images": [
-      "/images/products/kan-gazi-analizoru-1.webp",
-      "/images/products/kan-gazi-analizoru-2.webp"
-    ],
-    "technicalSpecs": {
-      "Durum": "2. El - Elektrotlar Yenilenmiş, Kalibrasyon Sertifikalı, 1 Yıl Garantili",
-      "Ölçüm": "pH, pCO2, pO2, Na+, K+, Ca++, Cl-, Glukoz, Laktat, Hct"
-    },
-    "applications": [
-      "Acil Servis Laboratuvarı",
-      "Yoğun Bakım POCT",
+      "Kardiyoloji Klinikleri",
+      "Yoğun Bakım ve Acil Servis",
       "Ameliyathane"
     ],
     "translations": {
       "tr": {
-        "title": "Revizyonlu Kan Gazı Analizörü (1 Yıl Garantili)",
-        "shortDescription": "Elektrotları yenilenmiş, kalibrasyon sertifikalı 2. el garantili kan gazı analizörü.",
-        "description": "Sensör modülleri ve elektrotları yenilenmiş, dahili kalibrasyon doğrulaması tamamlanmış 2. el kan gazı analizörü. 1 yıl garanti dahildir."
+        "title": "Schiller Physicgard TM 910 Hastabaşı Monitörü",
+        "shortDescription": "İsviçre Schiller kalitesinde, kardiyak ritim ve vital bulgu takibi sunan dayanıklı monitör.",
+        "description": "Schiller Physicgard TM 910, İsviçre mühendisliğinin hassas kardiyak sinyal işleme teknolojisini yansıtan sağlam bir hastabaşı monitörüdür. Biyomedikal elektriksel güvenlik kontrolleri yapılmıştır."
       },
       "en": {
-        "title": "Refurbished Blood Gas Analyzer (1 Year Warranty)",
-        "shortDescription": "Certified pre-owned blood gas analyzer with renewed electrodes.",
-        "description": "Fully reconditioned blood gas analyzer with new sensor modules and 12-month warranty."
-      },
-      "ar": {
-        "title": "جهاز تحليل غازات الدم مجدد (ضمان عام)",
-        "shortDescription": "جهاز تحليل غازات دم مجدد مع أقطاب جديدة.",
-        "description": "جهاز تحليل غازات الدم مجدد بالكامل مع ضمان 12 شهراً."
+        "title": "Schiller Physicgard TM 910 Patient Monitor",
+        "shortDescription": "Swiss engineered bedside monitor providing accurate ECG and vital signs telemetry.",
+        "description": "Durable clinical monitor ensuring precise cardiac wave visualization and physiological parameter logging."
       },
       "de": {
-        "title": "Generalüberholter Blutgasanalysator (1 Jahr Garantie)",
-        "shortDescription": "Kalibriertes Gebraucht-BGA mit erneuerten Elektroden.",
-        "description": "Vollständig getesteter Blutgasanalysator mit 12 Monaten Garantie."
+        "title": "Schiller Physicgard TM 910 Monitörü (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Schiller mit 1 Jahr Garantie.",
+        "description": "Durable clinical monitor ensuring precise cardiac wave visualization and physiological parameter logging. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Schiller Physicgard TM 910 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Schiller مع ضمان لمدة عام كامل.",
+        "description": "Schiller Physicgard TM 910, İsviçre mühendisliğinin hassas kardiyak sinyal işleme teknolojisini yansıtan sağlam bir hastabaşı monitörüdür. Biyomedikal elektriksel güvenlik kontrolleri yapılmıştır. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
       },
       "ja": {
-        "title": "Refurbished Blood Gas Analyzer (1 Year Warranty)",
-        "shortDescription": "Siemens / Cebeci Revizyon RAPIDPoint Revizyonlu - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Siemens / Cebeci Revizyon RAPIDPoint Revizyonluは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
+        "title": "Schiller Physicgard TM 910 リファービッシュ医療機器",
+        "shortDescription": "Schiller製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Durable clinical monitor ensuring precise cardiac wave visualization and physiological parameter logging. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
       },
       "zh": {
-        "title": "Refurbished Blood Gas Analyzer (1 Year Warranty)",
-        "shortDescription": "Siemens / Cebeci Revizyon RAPIDPoint Revizyonlu - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Siemens / Cebeci Revizyon RAPIDPoint Revizyonlu 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
+        "title": "Schiller Physicgard TM 910 翻新医疗设备",
+        "shortDescription": "Schiller 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Durable clinical monitor ensuring precise cardiac wave visualization and physiological parameter logging. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
       }
     }
   },
   {
-    "id": "prod-32",
-    "slug": "2-el-ekg-cihazi-revizyonlu",
+    "id": "prod-mon-philips-intellivue-mp20",
+    "slug": "philips-intellivue-mp20-hastabasi-monitoru",
     "categorySlug": "fizyolojik-sinyal-izleyiciler",
-    "brand": "Nihon Kohden / Cebeci Revizyon",
-    "model": "ECG-2350 Revizyonlu",
-    "sku": "REF-EKG-011",
+    "brand": "Philips",
+    "model": "IntelliVue MP20",
+    "sku": "PHL-MP2-027",
+    "condition": "SECOND_HAND",
+    "featured": true,
+    "sortOrder": 27,
+    "images": [
+      "/images/products/hastabasi-monitoru-4.webp"
+    ],
+    "technicalSpecs": {
+      "Ekran": "10.4 inç SVGA Renkli Dokunmatik Ekran",
+      "Modülerlik": "Philips Çoklu Ölçüm Sunucusu (MMS) Uyumlu",
+      "Parametreler": "EKG, FAST-SpO2, NIBP, İnvaziv Basınç (IBP), Sıcaklık, CO2",
+      "Taşınabilirlik": "Kompakt Gövde, Entegre Taşıma Kulpu, Uzun Batarya Süresi",
+      "Ağ Desteği": "Philips IntelliVue Bilgi Ağı ve Merkezi İstasyon Entegrasyonu",
+      "Garanti": "1 Yıl Cebeci Medikal Garantili"
+    },
+    "applications": [
+      "Yoğun Bakım Üniteleri",
+      "Hasta Nakli ve Transport Monitörizasyon",
+      "Ameliyathane ve Cerrahi Servisler"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Philips IntelliVue MP20 Hastabaşı Monitörü",
+        "shortDescription": "Dünya lideri Philips IntelliVue teknolojisiyle hem sabit hem transport amaçlı kullanılabilen modüler monitör.",
+        "description": "Philips IntelliVue MP20, kompakt tasarımda üst düzey klinik takip performansı sunar. Hızlı dokunmatik arayüzü ve Philips FAST-SpO2 teknolojisiyle en zorlu hasta şartlarında bile doğru ölçüm sağlar."
+      },
+      "en": {
+        "title": "Philips IntelliVue MP20 Patient Monitor",
+        "shortDescription": "Flexible and portable patient monitor with touchscreen display and Philips Multi-Measurement Server support.",
+        "description": "Combines high-performance bedside monitoring with seamless intra-hospital transport capability for critical patients."
+      },
+      "de": {
+        "title": "Philips IntelliVue MP20 Monitörü (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Philips mit 1 Jahr Garantie.",
+        "description": "Combines high-performance bedside monitoring with seamless intra-hospital transport capability for critical patients. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Philips IntelliVue MP20 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Philips مع ضمان لمدة عام كامل.",
+        "description": "Philips IntelliVue MP20, kompakt tasarımda üst düzey klinik takip performansı sunar. Hızlı dokunmatik arayüzü ve Philips FAST-SpO2 teknolojisiyle en zorlu hasta şartlarında bile doğru ölçüm sağlar. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Philips IntelliVue MP20 リファービッシュ医療機器",
+        "shortDescription": "Philips製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Combines high-performance bedside monitoring with seamless intra-hospital transport capability for critical patients. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Philips IntelliVue MP20 翻新医疗设备",
+        "shortDescription": "Philips 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Combines high-performance bedside monitoring with seamless intra-hospital transport capability for critical patients. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-mon-blt-m9000a",
+    "slug": "blt-m9000a-cok-parametreli-hastabasi-monitoru",
+    "categorySlug": "fizyolojik-sinyal-izleyiciler",
+    "brand": "Biolight (BLT)",
+    "model": "M9000A",
+    "sku": "BLT-M90-028",
+    "condition": "SECOND_HAND",
+    "featured": false,
+    "sortOrder": 28,
+    "images": [
+      "/images/products/hastabasi-monitoru-5.webp"
+    ],
+    "technicalSpecs": {
+      "Ekran": "12.1 inç Renkli TFT LCD Ekran",
+      "Parametreler": "3/5 Derivasyon EKG, NIBP, SpO2, Solunum, 2 x Sıcaklık",
+      "Aritmi / ST Analizi": "Var (Gerçek Zamanlı)",
+      "Depolama": "Geniş Alarm Olayı ve Dalga Formu Geri Çağırma Hafızası",
+      "Garanti": "1 Yıl Cebeci Medikal Güvencesi"
+    },
+    "applications": [
+      "Genel Servisler",
+      "Yoğun Bakım",
+      "Ameliyat Sonrası Takip"
+    ],
+    "translations": {
+      "tr": {
+        "title": "BLT M9000A Çok Parametreli Hastabaşı Monitörü",
+        "shortDescription": "Geniş 12.1 inç ekranlı, kullanıcı dostu arayüze sahip revizyonlu hastabaşı monitörü.",
+        "description": "Biolight M9000A, temel ve ileri seviye vital bulguların net şekilde görüntülenmesini sağlayan stabil bir monitördür. Testleri yapılmış, tüm kablo aksesuarları eksiksiz tamamlanmıştır."
+      },
+      "en": {
+        "title": "Biolight BLT M9000A Multi-Parameter Monitor",
+        "shortDescription": "12.1-inch color display patient monitor with full standard parameter set and arrhythmia detection.",
+        "description": "Reliable clinical monitor for continuous surveillance of adult, pediatric, and neonatal patients."
+      },
+      "de": {
+        "title": "Biolight (BLT) M9000A Monitörü (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Biolight (BLT) mit 1 Jahr Garantie.",
+        "description": "Reliable clinical monitor for continuous surveillance of adult, pediatric, and neonatal patients. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Biolight (BLT) M9000A (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Biolight (BLT) مع ضمان لمدة عام كامل.",
+        "description": "Biolight M9000A, temel ve ileri seviye vital bulguların net şekilde görüntülenmesini sağlayan stabil bir monitördür. Testleri yapılmış, tüm kablo aksesuarları eksiksiz tamamlanmıştır. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Biolight (BLT) M9000A リファービッシュ医療機器",
+        "shortDescription": "Biolight (BLT)製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Reliable clinical monitor for continuous surveillance of adult, pediatric, and neonatal patients. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Biolight (BLT) M9000A 翻新医疗设备",
+        "shortDescription": "Biolight (BLT) 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Reliable clinical monitor for continuous surveillance of adult, pediatric, and neonatal patients. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-mon-contec-cms8000",
+    "slug": "contec-cms-8000-hastabasi-monitoru",
+    "categorySlug": "fizyolojik-sinyal-izleyiciler",
+    "brand": "Contec",
+    "model": "CMS 8000",
+    "sku": "CTC-CMS-029",
+    "condition": "SECOND_HAND",
+    "featured": false,
+    "sortOrder": 29,
+    "images": [
+      "/images/products/hastabasi-monitoru-6.webp"
+    ],
+    "technicalSpecs": {
+      "Ekran": "12.1 inç Renkli TFT Ekran",
+      "Standart Yapılandırma": "EKG, RESP, NIBP, SpO2, 2-TEMP, PR",
+      "Batarya": "Şarj Edilebilir Dahili Akü",
+      "Kullanım Tipi": "Yetişkin, Pediatrik ve Yenidoğan Seçilebilir Modlar",
+      "Garanti": "1 Yıl Tam Garanti"
+    },
+    "applications": [
+      "Özel Klinikler ve Tıp Merkezleri",
+      "Yataklı Hasta Servisleri",
+      "Acil Gözlem Odaları"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Contec CMS 8000 Hastabaşı Monitörü",
+        "shortDescription": "Çok yönlü parametre takibi ve pratik kullanımıyla ekonomik revizyonlu hasta monitörü.",
+        "description": "Contec CMS 8000, 12.1 inç yüksek çözünürlüklü ekranında EKG, tansiyon, oksijen saturasyonu ve solunum değerlerini eşzamanlı gösterir. Kliniğiniz için test edilmiş garantili çözümdür."
+      },
+      "en": {
+        "title": "Contec CMS 8000 Bedside Patient Monitor",
+        "shortDescription": "Versatile 12.1-inch multi-parameter vital signs monitor with built-in rechargeable battery.",
+        "description": "Delivers real-time monitoring of ECG, NIBP, SpO2, and respiration for everyday hospital workflow."
+      },
+      "de": {
+        "title": "Contec CMS 8000 Monitörü (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Contec mit 1 Jahr Garantie.",
+        "description": "Delivers real-time monitoring of ECG, NIBP, SpO2, and respiration for everyday hospital workflow. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Contec CMS 8000 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Contec مع ضمان لمدة عام كامل.",
+        "description": "Contec CMS 8000, 12.1 inç yüksek çözünürlüklü ekranında EKG, tansiyon, oksijen saturasyonu ve solunum değerlerini eşzamanlı gösterir. Kliniğiniz için test edilmiş garantili çözümdür. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Contec CMS 8000 リファービッシュ医療機器",
+        "shortDescription": "Contec製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Delivers real-time monitoring of ECG, NIBP, SpO2, and respiration for everyday hospital workflow. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Contec CMS 8000 翻新医疗设备",
+        "shortDescription": "Contec 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Delivers real-time monitoring of ECG, NIBP, SpO2, and respiration for everyday hospital workflow. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-mon-blt-anyview-a5",
+    "slug": "blt-anyview-a5-moduler-hastabasi-monitoru",
+    "categorySlug": "fizyolojik-sinyal-izleyiciler",
+    "brand": "Biolight (BLT)",
+    "model": "AnyView A5",
+    "sku": "BLT-A5-030",
+    "condition": "SECOND_HAND",
+    "featured": true,
+    "sortOrder": 30,
+    "images": [
+      "/images/products/hastabasi-monitoru-7.webp"
+    ],
+    "technicalSpecs": {
+      "Ekran": "12.1 inç Dokunmatik Yüksek Çözünürlüklü LED Ekran",
+      "Mimari": "Modüler Tak-Çıkar Parametre Yuvası",
+      "Gelişmiş Özellikler": "OxyCRG (Yenidoğan Solunum Grafiği), İlaç Doz Hesaplama, Hemodinamik Hesaplamalar",
+      "Gövde": "Fansız Sessiz Soğutma Tasarımı (Tozsuz ve Hijyenik)",
+      "Garanti": "1 Yıl Cebeci Medikal Garantili"
+    },
+    "applications": [
+      "Yoğun Bakım Üniteleri",
+      "Yenidoğan Yoğun Bakım (NICU)",
+      "Ameliyathane ve Kardiyoloji"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Biolight BLT AnyView A5 Modüler Hastabaşı Monitörü",
+        "shortDescription": "Fansız hijyenik gövdeli, dokunmatik ekranlı ve modüler mimarili üst segment hasta monitörü.",
+        "description": "BLT AnyView A5, modüler tak-çıkar parametre mimarisi ve sessiz fansız tasarımıyla yoğun bakım ortamlarında çapraz enfeksiyon riskini azaltırken maksimum izleme performansı sunar."
+      },
+      "en": {
+        "title": "Biolight BLT AnyView A5 Modular Patient Monitor",
+        "shortDescription": "Advanced modular patient monitor with fanless cooling, touchscreen display, and transport capability.",
+        "description": "The AnyView A5 features flexible plug-and-play parameter modules, hemodynamic calculations, and comprehensive alarm management."
+      },
+      "de": {
+        "title": "Biolight (BLT) AnyView A5 Monitörü (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Biolight (BLT) mit 1 Jahr Garantie.",
+        "description": "The AnyView A5 features flexible plug-and-play parameter modules, hemodynamic calculations, and comprehensive alarm management. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Biolight (BLT) AnyView A5 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Biolight (BLT) مع ضمان لمدة عام كامل.",
+        "description": "BLT AnyView A5, modüler tak-çıkar parametre mimarisi ve sessiz fansız tasarımıyla yoğun bakım ortamlarında çapraz enfeksiyon riskini azaltırken maksimum izleme performansı sunar. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Biolight (BLT) AnyView A5 リファービッシュ医療機器",
+        "shortDescription": "Biolight (BLT)製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "The AnyView A5 features flexible plug-and-play parameter modules, hemodynamic calculations, and comprehensive alarm management. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Biolight (BLT) AnyView A5 翻新医疗设备",
+        "shortDescription": "Biolight (BLT) 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "The AnyView A5 features flexible plug-and-play parameter modules, hemodynamic calculations, and comprehensive alarm management. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-mon-philips-intellivue-mp5",
+    "slug": "philips-intellivue-mp5-kompakt-hastabasi-monitoru",
+    "categorySlug": "fizyolojik-sinyal-izleyiciler",
+    "brand": "Philips",
+    "model": "IntelliVue MP5",
+    "sku": "PHL-MP5-031",
+    "condition": "SECOND_HAND",
+    "featured": true,
+    "sortOrder": 31,
+    "images": [
+      "/images/products/hastabasi-monitoru-8.webp"
+    ],
+    "technicalSpecs": {
+      "Ekran": "8.4 inç SVGA Renkli Dokunmatik Ekran",
+      "Parametreler": "Entegre EKG, SpO2, NIBP, Opsiyonel IBP / CO2",
+      "Ağırlık": "Hafif ve Taşınabilir (< 4 kg)",
+      "Ağ Bağlantısı": "Kablosuz ve Kablolu LAN Desteği",
+      "Durum": "Orijinal Philips Güvencesiyle Revizyonlu, 1 Yıl Garantili"
+    },
+    "applications": [
+      "Ameliyat Sonrası Derlenme (PACU)",
+      "Acil Servis ve Triyaj",
+      "Hastane İçi Hasta Nakli",
+      "Günübirlik Cerrahi Merkezleri"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Philips IntelliVue MP5 Kompakt Hastabaşı Monitörü",
+        "shortDescription": "Kompakt, taşınabilir dokunmatik ekranlı ve yüksek hassasiyetli Philips transport hasta monitörü.",
+        "description": "Philips IntelliVue MP5, küçük boyutuna rağmen eksiksiz bir yoğun bakım monitörünün tüm gücünü sunar. Taşınabilir yapısı sayesinde hastane içinde hasta nakil süreçlerinde vital takibi kesintisiz sürdürür."
+      },
+      "en": {
+        "title": "Philips IntelliVue MP5 Compact Patient Monitor",
+        "shortDescription": "Lightweight, highly portable touchscreen monitor delivering Philips IntelliVue monitoring standards.",
+        "description": "Ideal for intermediate care, ambulatory surgery, emergency triage, and seamless patient transport."
+      },
+      "de": {
+        "title": "Philips IntelliVue MP5 Monitörü (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Philips mit 1 Jahr Garantie.",
+        "description": "Ideal for intermediate care, ambulatory surgery, emergency triage, and seamless patient transport. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Philips IntelliVue MP5 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Philips مع ضمان لمدة عام كامل.",
+        "description": "Philips IntelliVue MP5, küçük boyutuna rağmen eksiksiz bir yoğun bakım monitörünün tüm gücünü sunar. Taşınabilir yapısı sayesinde hastane içinde hasta nakil süreçlerinde vital takibi kesintisiz sürdürür. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Philips IntelliVue MP5 リファービッシュ医療機器",
+        "shortDescription": "Philips製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Ideal for intermediate care, ambulatory surgery, emergency triage, and seamless patient transport. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Philips IntelliVue MP5 翻新医疗设备",
+        "shortDescription": "Philips 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Ideal for intermediate care, ambulatory surgery, emergency triage, and seamless patient transport. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-mon-mesa-ms100",
+    "slug": "mesa-ms100-hastabasi-monitoru",
+    "categorySlug": "fizyolojik-sinyal-izleyiciler",
+    "brand": "Mesa",
+    "model": "MS100",
+    "sku": "MSA-100-032",
     "condition": "SECOND_HAND",
     "featured": false,
     "sortOrder": 32,
     "images": [
-      "/images/products/ekg-cihazi-1.webp",
-      "/images/products/ekg-cihazi-2.webp"
+      "/images/products/hastabasi-monitoru-9.webp"
     ],
     "technicalSpecs": {
-      "Durum": "2. El - Termal Yazıcı ve Elektrot Kabloları Yenilenmiş, 1 Yıl Garantili",
-      "Kanal": "12 Kanallı otomatik yorumlama"
+      "Ölçümler": "EKG, NIBP, SpO2, Nabız, Sıcaklık",
+      "Ekran": "Renkli TFT Ekran",
+      "Alarm": "Görsel ve Sesli Çok Kademeli Uyarı Sistemi",
+      "Garanti": "1 Yıl Cebeci Medikal Garantili"
     },
     "applications": [
-      "Kardiyoloji Poliklinikleri",
-      "Acil Servis",
-      "Periyodik Sağlık Taramaları"
+      "Klinik Gözlem Odaları",
+      "Hasta Servisleri",
+      "Tıp Merkezleri"
     ],
     "translations": {
       "tr": {
-        "title": "Revizyonlu 12 Kanallı EKG Cihazı (1 Yıl Garantili)",
-        "shortDescription": "Yazıcısı ve kabloları sıfırlanmış, 2. el garantili EKG cihazı.",
-        "description": "Termal yazıcı ünitesi ve hasta kabloları yenilenmiş, sinyal kalitesi ve ölçüm doğruluğu test edilmiş 2. el EKG cihazı. 1 yıl garanti ile sunulmaktadır."
+        "title": "Mesa MS100 Hastabaşı Monitörü",
+        "shortDescription": "Klinik vital bulguların güvenilir takibi için revizyonlu kompakt hastabaşı monitörü.",
+        "description": "Mesa MS100, kliniklerde rutin hasta izlemi için tasarlanmış dayanıklı ve ekonomik bir monitördür. Tüm sensör fonksiyonları ve batarya performansı test edilmiştir."
       },
       "en": {
-        "title": "Refurbished 12-Lead ECG Machine (1 Year Warranty)",
-        "shortDescription": "Certified pre-owned ECG machine with new printer and cables.",
-        "description": "Fully tested 12-lead ECG with renewed thermal printer and patient cables. 12-month warranty included."
-      },
-      "ar": {
-        "title": "جهاز تخطيط قلب مجدد (ضمان عام)",
-        "shortDescription": "جهاز تخطيط قلب مجدد مع طابعة وكابلات جديدة.",
-        "description": "جهاز تخطيط قلب 12 قناة مجدد بالكامل مع ضمان 12 شهراً."
+        "title": "Mesa MS100 Bedside Patient Monitor",
+        "shortDescription": "Compact patient monitor offering dependable physiological parameter telemetry.",
+        "description": "Provides solid routine monitoring of vital parameters with audible and visual safety alarms."
       },
       "de": {
-        "title": "Generalüberholtes 12-Kanal-EKG (1 Jahr Garantie)",
-        "shortDescription": "Kalibriertes Gebraucht-EKG mit neuem Drucker.",
-        "description": "Vollständig getestetes 12-Kanal-EKG mit 12 Monaten Garantie."
+        "title": "Mesa MS100 Monitörü (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Mesa mit 1 Jahr Garantie.",
+        "description": "Provides solid routine monitoring of vital parameters with audible and visual safety alarms. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Mesa MS100 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Mesa مع ضمان لمدة عام كامل.",
+        "description": "Mesa MS100, kliniklerde rutin hasta izlemi için tasarlanmış dayanıklı ve ekonomik bir monitördür. Tüm sensör fonksiyonları ve batarya performansı test edilmiştir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
       },
       "ja": {
-        "title": "Refurbished 12-Lead ECG Machine (1 Year Warranty)",
-        "shortDescription": "Nihon Kohden / Cebeci Revizyon ECG-2350 Revizyonlu - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Nihon Kohden / Cebeci Revizyon ECG-2350 Revizyonluは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
+        "title": "Mesa MS100 リファービッシュ医療機器",
+        "shortDescription": "Mesa製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Provides solid routine monitoring of vital parameters with audible and visual safety alarms. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
       },
       "zh": {
-        "title": "Refurbished 12-Lead ECG Machine (1 Year Warranty)",
-        "shortDescription": "Nihon Kohden / Cebeci Revizyon ECG-2350 Revizyonlu - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Nihon Kohden / Cebeci Revizyon ECG-2350 Revizyonlu 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
+        "title": "Mesa MS100 翻新医疗设备",
+        "shortDescription": "Mesa 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Provides solid routine monitoring of vital parameters with audible and visual safety alarms. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
       }
     }
   },
   {
-    "id": "prod-33",
-    "slug": "2-el-nst-fetal-monitor-revizyonlu",
+    "id": "prod-mon-guoteng-gt9003f",
+    "slug": "guoteng-gt9003f-hastabasi-monitoru",
     "categorySlug": "fizyolojik-sinyal-izleyiciler",
-    "brand": "Edan / Cebeci Revizyon",
-    "model": "F9 Express Revizyonlu",
-    "sku": "REF-NST-012",
+    "brand": "Guoteng",
+    "model": "GT9003F",
+    "sku": "GTG-900-033",
     "condition": "SECOND_HAND",
     "featured": false,
     "sortOrder": 33,
     "images": [
-      "/images/products/nst-fetal-monitor-1.webp"
+      "/images/products/hastabasi-monitoru-10.webp"
     ],
     "technicalSpecs": {
-      "Durum": "2. El - Ultrasonik Transdüserler Yenilenmiş, 1 Yıl Garantili",
-      "Kanal": "İkiz takibi (Dual FHR)"
+      "Ekran": "12.1 inç Renkli LCD Ekran",
+      "Parametreler": "EKG, SpO2, NIBP, RESP, TEMP",
+      "Trend": "72 Saatlik Grafik Trend İncelemesi",
+      "Garanti": "1 Yıl Tam Garanti"
     },
     "applications": [
-      "Kadın Doğum Servisleri",
-      "Perinatoloji Klinikleri",
-      "Doğumhane"
+      "Genel Hastane Yataklı Servisleri",
+      "Acil Müdahale",
+      "Klinikler"
     ],
     "translations": {
       "tr": {
-        "title": "Revizyonlu NST Fetal Monitör (1 Yıl Garantili)",
-        "shortDescription": "Transdüserleri sıfırlanmış, kalibrasyon sertifikalı 2. el NST cihazı.",
-        "description": "Ultrasonik FHR transdüserleri ve TOCO sensörü yenilenmiş, ikiz takibi destekli 2. el fetal monitör. 1 yıl garanti dahildir."
+        "title": "Guoteng GT9003F Çok Parametreli Monitör",
+        "shortDescription": "Renkli geniş ekranlı, çok parametreli ve revizyonlu genel amaçlı hasta monitörü.",
+        "description": "Guoteng GT9003F, hasta takibinde temel yaşamsal parametreleri tek ekranda toplayan ekonomik bir çözümdür. Periyodik bakımı ve kalibrasyonları tamamlanmıştır."
       },
       "en": {
-        "title": "Refurbished NST Fetal Monitor (1 Year Warranty)",
-        "shortDescription": "Certified pre-owned fetal monitor with new transducers.",
-        "description": "Fully tested NST fetal monitor with renewed ultrasonic transducers and 12-month warranty."
-      },
-      "ar": {
-        "title": "جهاز مراقبة الجنين مجدد (ضمان عام)",
-        "shortDescription": "جهاز NST مجدد مع محولات جديدة.",
-        "description": "جهاز مراقبة جنين مجدد بالكامل مع ضمان 12 شهراً."
+        "title": "Guoteng GT9003F Multi-Parameter Patient Monitor",
+        "shortDescription": "Full-featured 12.1-inch patient monitor for ward monitoring and clinical vital checks.",
+        "description": "Cost-effective multi-parameter monitor with reliable alarm handling and trend memory."
       },
       "de": {
-        "title": "Generalüberholter Fetalmonitor (1 Jahr Garantie)",
-        "shortDescription": "Kalibrierter Gebraucht-CTG mit erneuerten Sensoren.",
-        "description": "Vollständig getesteter Fetalmonitor mit 12 Monaten Garantie."
+        "title": "Guoteng GT9003F Monitör (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Guoteng mit 1 Jahr Garantie.",
+        "description": "Cost-effective multi-parameter monitor with reliable alarm handling and trend memory. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Guoteng GT9003F (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Guoteng مع ضمان لمدة عام كامل.",
+        "description": "Guoteng GT9003F, hasta takibinde temel yaşamsal parametreleri tek ekranda toplayan ekonomik bir çözümdür. Periyodik bakımı ve kalibrasyonları tamamlanmıştır. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
       },
       "ja": {
-        "title": "Refurbished NST Fetal Monitor (1 Year Warranty)",
-        "shortDescription": "Edan / Cebeci Revizyon F9 Express Revizyonlu - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Edan / Cebeci Revizyon F9 Express Revizyonluは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
+        "title": "Guoteng GT9003F リファービッシュ医療機器",
+        "shortDescription": "Guoteng製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Cost-effective multi-parameter monitor with reliable alarm handling and trend memory. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
       },
       "zh": {
-        "title": "Refurbished NST Fetal Monitor (1 Year Warranty)",
-        "shortDescription": "Edan / Cebeci Revizyon F9 Express Revizyonlu - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Edan / Cebeci Revizyon F9 Express Revizyonlu 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
+        "title": "Guoteng GT9003F 翻新医疗设备",
+        "shortDescription": "Guoteng 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Cost-effective multi-parameter monitor with reliable alarm handling and trend memory. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
       }
     }
   },
   {
-    "id": "prod-34",
-    "slug": "2-el-ultrason-revizyonlu",
-    "categorySlug": "endovizyon-sistemleri",
-    "brand": "Mindray / Cebeci Revizyon",
-    "model": "DC Serisi Revizyonlu",
-    "sku": "REF-USG-013",
+    "id": "prod-mon-datascope-passport-xg",
+    "slug": "datascope-passport-xg-hastabasi-monitoru",
+    "categorySlug": "fizyolojik-sinyal-izleyiciler",
+    "brand": "Datascope (Mindray)",
+    "model": "Passport XG",
+    "sku": "DSC-PXG-034",
     "condition": "SECOND_HAND",
     "featured": false,
     "sortOrder": 34,
     "images": [
-      "/images/products/ultrason-2.webp",
-      "/images/products/ultrason-3.webp"
+      "/images/products/hastabasi-monitoru-11.webp"
     ],
     "technicalSpecs": {
-      "Durum": "2. El - Prob Kontrolleri ve Kalibrasyon Tamamlanmış, 1 Yıl Garantili",
-      "Modlar": "B, B/B, B/M, M, PW Doppler, Renkli Doppler"
+      "Menşei": "ABD (Datascope Corp.)",
+      "Ekran": "Renkli Yüksek Kontrastlı Ekran",
+      "Parametreler": "3/5 Derivasyon EKG, Masimo / Nellcor SpO2, NIBP, Sıcaklık",
+      "Dahili Yazıcı": "Entegre İki Kanallı Termal Kaydedici",
+      "Garanti": "1 Yıl Cebeci Medikal Garantisi"
     },
     "applications": [
-      "Radyoloji",
-      "Kadın Doğum",
-      "Acil Ultrason (FAST)"
+      "Ameliyathane ve Sedasyon Odaları",
+      "Endoskopi ve Kolonoskopi Takip Alanları",
+      "Yoğun Bakım ve PACU"
     ],
     "translations": {
       "tr": {
-        "title": "Revizyonlu Renkli Doppler Ultrason Cihazı (1 Yıl Garantili)",
-        "shortDescription": "Probları kontrol edilmiş, 2. el garantili renkli Doppler ultrasonografi cihazı.",
-        "description": "Prob kalite kontrolü, görüntü kalibrasyonu ve Doppler doğrulama testleri tamamlanmış 2. el ultrason cihazı. 1 yıl garanti ile sunulmaktadır."
+        "title": "Datascope Passport XG Hastabaşı Monitörü",
+        "shortDescription": "Amerikan Datascope kalitesinde, entegre yazıcılı ve yüksek doğruluklu anestezi/yoğun bakım monitörü.",
+        "description": "Datascope Passport XG, cerrahi ve anestezi takiplerinde dünya genelinde yaygın kullanılan efsanevi bir modeldir. Güçlü NIBP algoritması ve net dalga formu sunumu ile güven verir."
       },
       "en": {
-        "title": "Refurbished Color Doppler Ultrasound (1 Year Warranty)",
-        "shortDescription": "Certified pre-owned ultrasound with tested probes.",
-        "description": "Fully tested color Doppler ultrasound with calibrated imaging and 12-month warranty."
-      },
-      "ar": {
-        "title": "جهاز موجات فوق صوتية مجدد (ضمان عام)",
-        "shortDescription": "جهاز دوبلر ملون مجدد مع مجسات مفحوصة.",
-        "description": "جهاز أمواج فوق صوتية مجدد بالكامل مع ضمان 12 شهراً."
+        "title": "Datascope Passport XG Patient Monitor",
+        "shortDescription": "Renowned American clinical monitor with integrated thermal recorder and vital sign precision.",
+        "description": "Built for durable operating room and sedation monitoring with clear ECG filtering and rapid NIBP acquisition."
       },
       "de": {
-        "title": "Generalüberholter Farbdoppler-Ultraschall (1 Jahr Garantie)",
-        "shortDescription": "Geprüftes Gebraucht-Ultraschallgerät mit getesteten Sonden.",
-        "description": "Vollständig kalibriertes Farbdoppler-Gerät mit 12 Monaten Garantie."
+        "title": "Datascope (Mindray) Passport XG Monitörü (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Datascope (Mindray) mit 1 Jahr Garantie.",
+        "description": "Built for durable operating room and sedation monitoring with clear ECG filtering and rapid NIBP acquisition. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Datascope (Mindray) Passport XG (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Datascope (Mindray) مع ضمان لمدة عام كامل.",
+        "description": "Datascope Passport XG, cerrahi ve anestezi takiplerinde dünya genelinde yaygın kullanılan efsanevi bir modeldir. Güçlü NIBP algoritması ve net dalga formu sunumu ile güven verir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
       },
       "ja": {
-        "title": "Refurbished Color Doppler Ultrasound (1 Year Warranty)",
-        "shortDescription": "Mindray / Cebeci Revizyon DC Serisi Revizyonlu - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Mindray / Cebeci Revizyon DC Serisi Revizyonluは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
+        "title": "Datascope (Mindray) Passport XG リファービッシュ医療機器",
+        "shortDescription": "Datascope (Mindray)製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Built for durable operating room and sedation monitoring with clear ECG filtering and rapid NIBP acquisition. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
       },
       "zh": {
-        "title": "Refurbished Color Doppler Ultrasound (1 Year Warranty)",
-        "shortDescription": "Mindray / Cebeci Revizyon DC Serisi Revizyonlu - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Mindray / Cebeci Revizyon DC Serisi Revizyonlu 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
+        "title": "Datascope (Mindray) Passport XG 翻新医疗设备",
+        "shortDescription": "Datascope (Mindray) 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Built for durable operating room and sedation monitoring with clear ECG filtering and rapid NIBP acquisition. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
       }
     }
   },
   {
-    "id": "prod-35",
-    "slug": "2-el-otoklav-revizyonlu",
+    "id": "prod-kangazi-osmetech-opti",
+    "slug": "osmetech-opti-cca-kan-gazi-analizoru",
     "categorySlug": "laboratuvar-cihazlari",
-    "brand": "Melag / Cebeci Revizyon",
-    "model": "Euroklav Revizyonlu",
-    "sku": "REF-OTK-014",
+    "brand": "Osmetech (OPTI Medical)",
+    "model": "OPTI CCA / OPTI Lion",
+    "sku": "OSM-OPT-035",
     "condition": "SECOND_HAND",
-    "featured": false,
+    "featured": true,
     "sortOrder": 35,
     "images": [
-      "/images/products/otoklav-1.webp"
+      "/images/products/kan-gazi-analizoru-1.webp"
     ],
     "technicalSpecs": {
-      "Durum": "2. El - Contalar ve Filtreler Yenilenmiş, Sterilizasyon Testi Yapılmış, 1 Yıl Garantili",
-      "Sınıf": "B Sınıfı (EN 13060)"
+      "Ölçüm Teknolojisi": "Optik Floresans Sensör Kaseti (Elektrot Bakımı Gerektirmez)",
+      "Ölçülen Parametreler": "pH, PCO2, PO2, Na+, K+, Ca++, Cl-, Glukoz, Laktat, Hematokrit (Hct), tHb",
+      "Örnek Tipi": "Tam Kan (Arteryel, Venöz, Kılcal)",
+      "Örnek Hacmi": "Yalnızca 125 µL mikro örnekleme",
+      "Sonuç Süresi": "< 120 saniyede tam sonuç",
+      "Garanti": "1 Yıl Cebeci Medikal Garantili"
     },
     "applications": [
-      "Ameliyathane AEDT",
-      "Diş Klinikleri",
-      "Laboratuvar Sterilizasyonu"
+      "Yoğun Bakım Üniteleri (ICU / NICU)",
+      "Acil Servisler ve Kırmızı Alan",
+      "Kardiyovasküler Cerrahi ve Perfüzyon",
+      "Göğüs Hastalıkları ve Solunum Laboratuvarları"
     ],
     "translations": {
       "tr": {
-        "title": "Revizyonlu B Sınıfı Otoklav (1 Yıl Garantili)",
-        "shortDescription": "Contaları ve filtreleri sıfırlanmış, sterilizasyon testinden geçmiş 2. el otoklav.",
-        "description": "Tüm conta setleri, filtreleri ve güvenlik valfleri yenilenmiş, biyolojik indikatör testinden geçmiş 2. el otoklav. 1 yıl garanti dahildir."
+        "title": "Osmetech OPTI CCA Taşınabilir Kan Gazı Analizörü",
+        "shortDescription": "Optik kaset teknolojili, sıvı reaktif ve elektrot bakımı gerektirmeyen taşınabilir kan gazı analizörü.",
+        "description": "Osmetech OPTI CCA, kritik hasta başında birkaç dakika içinde hassas kan gazı, elektrolit ve laktat ölçümü sağlayan kompakt analizördür. Optik teknolojisi sayesinde bekleme maliyeti oluşturmaz. Revizyonlu ve test onaylıdır."
       },
       "en": {
-        "title": "Refurbished Class B Autoclave (1 Year Warranty)",
-        "shortDescription": "Certified pre-owned autoclave with new seals and filters.",
-        "description": "Fully tested B-class autoclave with renewed gaskets and 12-month warranty."
-      },
-      "ar": {
-        "title": "جهاز تعقيم مجدد (ضمان عام)",
-        "shortDescription": "جهاز تعقيم مجدد مع حشوات وفلاتر جديدة.",
-        "description": "جهاز أوتوكلاف فئة B مجدد بالكامل مع ضمان 12 شهراً."
+        "title": "Osmetech OPTI CCA Portable Blood Gas Analyzer",
+        "shortDescription": "Point-of-care optical fluorescence blood gas and electrolyte analyzer with maintenance-free cassettes.",
+        "description": "Delivers fast, lab-quality pH, blood gas, electrolyte, and metabolite results in less than 2 minutes using single-use optical cassettes."
       },
       "de": {
-        "title": "Generalüberholter Autoklav Klasse B (1 Jahr Garantie)",
-        "shortDescription": "Geprüfter Gebraucht-Autoklav mit erneuerten Dichtungen.",
-        "description": "Vollständig getesteter Klasse-B-Autoklav mit 12 Monaten Garantie."
+        "title": "Osmetech (OPTI Medical) OPTI CCA / OPTI Lion Analizörü (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Osmetech (OPTI Medical) mit 1 Jahr Garantie.",
+        "description": "Delivers fast, lab-quality pH, blood gas, electrolyte, and metabolite results in less than 2 minutes using single-use optical cassettes. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Osmetech (OPTI Medical) OPTI CCA / OPTI Lion (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Osmetech (OPTI Medical) مع ضمان لمدة عام كامل.",
+        "description": "Osmetech OPTI CCA, kritik hasta başında birkaç dakika içinde hassas kan gazı, elektrolit ve laktat ölçümü sağlayan kompakt analizördür. Optik teknolojisi sayesinde bekleme maliyeti oluşturmaz. Revizyonlu ve test onaylıdır. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
       },
       "ja": {
-        "title": "Refurbished Class B Autoclave (1 Year Warranty)",
-        "shortDescription": "Melag / Cebeci Revizyon Euroklav Revizyonlu - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Melag / Cebeci Revizyon Euroklav Revizyonluは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
+        "title": "Osmetech (OPTI Medical) OPTI CCA / OPTI Lion リファービッシュ医療機器",
+        "shortDescription": "Osmetech (OPTI Medical)製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Delivers fast, lab-quality pH, blood gas, electrolyte, and metabolite results in less than 2 minutes using single-use optical cassettes. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
       },
       "zh": {
-        "title": "Refurbished Class B Autoclave (1 Year Warranty)",
-        "shortDescription": "Melag / Cebeci Revizyon Euroklav Revizyonlu - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Melag / Cebeci Revizyon Euroklav Revizyonlu 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
+        "title": "Osmetech (OPTI Medical) OPTI CCA / OPTI Lion 翻新医疗设备",
+        "shortDescription": "Osmetech (OPTI Medical) 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Delivers fast, lab-quality pH, blood gas, electrolyte, and metabolite results in less than 2 minutes using single-use optical cassettes. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
       }
     }
   },
   {
-    "id": "prod-36",
-    "slug": "2-el-kuvoz-revizyonlu",
-    "categorySlug": "yogun-bakim-ve-yasam-destek",
-    "brand": "Dräger / Cebeci Revizyon",
-    "model": "Isolette Serisi Revizyonlu",
-    "sku": "REF-KVZ-015",
+    "id": "prod-kangazi-irma-trupoint",
+    "slug": "itc-irma-trupoint-kan-gazi-analizoru",
+    "categorySlug": "laboratuvar-cihazlari",
+    "brand": "ITC (LifeHealth)",
+    "model": "IRMA TRUPOINT",
+    "sku": "ITC-TRU-036",
     "condition": "SECOND_HAND",
     "featured": false,
     "sortOrder": 36,
     "images": [
-      "/images/products/kuvoz-4.webp",
-      "/images/products/kuvoz-5.webp"
+      "/images/products/kan-gazi-analizoru-2.webp"
     ],
     "technicalSpecs": {
-      "Durum": "2. El - Isıtıcı ve Nem Sistemi Yenilenmiş, 1 Yıl Garantili",
-      "Sıcaklık Kontrolü": "Hava ve Cilt modları, ±0.1°C hassasiyet"
+      "Ölçüm Prensipi": "Point-of-Care Tek Kullanımlık Kartuş Sistemi",
+      "Parametreler": "pH, pCO2, pO2, Na+, K+, Ca++, Hct, Glukoz, BUN",
+      "Ekran": "Entegre Dokunmatik Ekran ve Dahili Termal Yazıcı",
+      "Kalibrasyon": "Her Kartuşta Otomatik Dahili Kalibrasyon",
+      "Garanti": "1 Yıl Tam Garanti"
     },
     "applications": [
-      "Yenidoğan Yoğun Bakım (NICU)",
-      "Prematüre Bebek Takibi"
+      "Acil Servis Laboratuvarı",
+      "Ameliyathane ve Yoğun Bakım",
+      "Klinik Laboratuvarlar"
     ],
     "translations": {
       "tr": {
-        "title": "Revizyonlu Yenidoğan Küvözü (1 Yıl Garantili)",
-        "shortDescription": "Isıtıcı ve nem sistemleri yenilenmiş, 2. el garantili yenidoğan küvözü.",
-        "description": "Isıtma elemanları, nem jeneratörü ve sıcaklık sensörleri yenilenmiş, tam kalibrasyon kontrolünden geçmiş 2. el küvöz. 1 yıl garanti ile sunulmaktadır."
+        "title": "ITC IRMA TRUPOINT Kan Gazı ve Elektrolit Analizörü",
+        "shortDescription": "Hasta başında saniyeler içinde kan gazı ve elektrolit tayini yapan pratik kartuşlu analizör.",
+        "description": "IRMA TRUPOINT, hasta başı testlerinde (POCT) güvenilir sonuç veren taşınabilir kan gazı analiz cihazıdır. Kartuş okuma optikleri, termal yazıcısı ve bataryası test edilmiştir."
       },
       "en": {
-        "title": "Refurbished Neonatal Incubator (1 Year Warranty)",
-        "shortDescription": "Certified pre-owned incubator with renewed heating system.",
-        "description": "Fully tested neonatal incubator with calibrated temperature control and 12-month warranty."
-      },
-      "ar": {
-        "title": "حاضنة أطفال مجددة (ضمان عام)",
-        "shortDescription": "حاضنة أطفال مجددة مع نظام تسخين جديد.",
-        "description": "حاضنة أطفال حديثي الولادة مجددة بالكامل مع ضمان 12 شهراً."
+        "title": "ITC IRMA TRUPOINT Blood Gas & Electrolyte Analyzer",
+        "shortDescription": "Self-calibrating point-of-care blood gas system with single-use test cartridges.",
+        "description": "Provides rapid bedside diagnostic results with minimal blood volume and immediate thermal printing."
       },
       "de": {
-        "title": "Generalüberholter Inkubator (1 Jahr Garantie)",
-        "shortDescription": "Geprüfter Gebraucht-Inkubator mit erneuertem Heizsystem.",
-        "description": "Vollständig kalibrierter Neugeborenen-Inkubator mit 12 Monaten Garantie."
+        "title": "ITC (LifeHealth) IRMA TRUPOINT Analizörü (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von ITC (LifeHealth) mit 1 Jahr Garantie.",
+        "description": "Provides rapid bedside diagnostic results with minimal blood volume and immediate thermal printing. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "ITC (LifeHealth) IRMA TRUPOINT (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة ITC (LifeHealth) مع ضمان لمدة عام كامل.",
+        "description": "IRMA TRUPOINT, hasta başı testlerinde (POCT) güvenilir sonuç veren taşınabilir kan gazı analiz cihazıdır. Kartuş okuma optikleri, termal yazıcısı ve bataryası test edilmiştir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
       },
       "ja": {
-        "title": "Refurbished Neonatal Incubator (1 Year Warranty)",
-        "shortDescription": "Dräger / Cebeci Revizyon Isolette Serisi Revizyonlu - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Dräger / Cebeci Revizyon Isolette Serisi Revizyonluは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
+        "title": "ITC (LifeHealth) IRMA TRUPOINT リファービッシュ医療機器",
+        "shortDescription": "ITC (LifeHealth)製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Provides rapid bedside diagnostic results with minimal blood volume and immediate thermal printing. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
       },
       "zh": {
-        "title": "Refurbished Neonatal Incubator (1 Year Warranty)",
-        "shortDescription": "Dräger / Cebeci Revizyon Isolette Serisi Revizyonlu - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Dräger / Cebeci Revizyon Isolette Serisi Revizyonlu 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
+        "title": "ITC (LifeHealth) IRMA TRUPOINT 翻新医疗设备",
+        "shortDescription": "ITC (LifeHealth) 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Provides rapid bedside diagnostic results with minimal blood volume and immediate thermal printing. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
       }
     }
   },
   {
-    "id": "prod-37",
-    "slug": "2-el-hasta-yatagi-revizyonlu",
-    "categorySlug": "medikal-sarf-malzemeler",
-    "brand": "Stryker / Cebeci Revizyon",
-    "model": "Secure II Revizyonlu",
-    "sku": "REF-BED-016",
+    "id": "prod-kuvoz-fanem-vision-2186",
+    "slug": "fanem-vision-2186-yenidogan-kuvozu",
+    "categorySlug": "yogun-bakim-ve-yasam-destek",
+    "brand": "Fanem",
+    "model": "Vision 2186",
+    "sku": "FNM-218-037",
     "condition": "SECOND_HAND",
-    "featured": false,
+    "featured": true,
     "sortOrder": 37,
     "images": [
-      "/images/products/hasta-karyolasi-1.webp"
+      "/images/products/kuvoz-1.webp"
     ],
     "technicalSpecs": {
-      "Durum": "2. El - Motorlar ve Kumandalı Kontrol Ünitesi Test Edilmiş, 1 Yıl Garantili",
-      "Motor": "4 Motorlu Tam Elektrikli"
+      "Kontrol Modları": "Hava Sıcaklığı Modu, Bebek (Cilt) Sıcaklığı Servomodu",
+      "Nem Kontrolü": "Entegre Aktif Servo Nemlendirme Sistemi",
+      "Oksijen Kontrolü": "Hassas Servo O2 Kontrol Modülü",
+      "Kabin": "Çift Cidarlı Isı Kaybını Önleyen Akrilik Fanus",
+      "Yatak": "Sıfır Derece ve Trendelenburg Kademesiz Pozisyonlandırma",
+      "Garanti": "1 Yıl Cebeci Medikal Garantili"
     },
     "applications": [
-      "Yoğun Bakım Servisleri",
-      "Klinik Odaları",
-      "Palyatif Bakım"
+      "Yenidoğan Yoğun Bakım Üniteleri (NICU - Seviye II ve III)",
+      "Prematüre Bebek Bakımı",
+      "Doğumhaneler ve Kadın Doğum Hastaneleri"
     ],
     "translations": {
       "tr": {
-        "title": "Revizyonlu 4 Motorlu Hasta Karyolası (1 Yıl Garantili)",
-        "shortDescription": "Motorları ve kumandası test edilmiş, 2. el garantili hasta karyolası.",
-        "description": "Tüm motorları, kumanda paneli ve güvenlik bariyerleri kontrol edilmiş 2. el hasta karyolası. 1 yıl garanti ile sunulmaktadır."
+        "title": "Fanem Vision 2186 Yenidoğan Yoğun Bakım Küvözü",
+        "shortDescription": "Servo nem ve oksijen kontrollü, çift cidarlı akrilik fanuslu profesyonel yenidoğan küvözü.",
+        "description": "Fanem Vision 2186, prematüre ve kritik yenidoğanların mikroçevre şartlarını mükemmel sıcaklık, nem ve oksijen dengesiyle koruyan ileri teknoloji bir inkübatördür. Sensör kalibrasyonları ve ısıtıcı filtreleri yenilenmiştir."
       },
       "en": {
-        "title": "Refurbished 4-Motor Patient Bed (1 Year Warranty)",
-        "shortDescription": "Tested pre-owned ICU bed with full motor controls.",
-        "description": "Fully tested 4-motor patient bed with inspected safety rails and 12-month warranty."
-      },
-      "ar": {
-        "title": "سرير مرضى مجدد (ضمان عام)",
-        "shortDescription": "سرير كهربائي مجدد ومفحوص.",
-        "description": "سرير مرضى مجدد بالكامل مع ضمان 12 شهراً."
+        "title": "Fanem Vision 2186 Neonatal Intensive Care Incubator",
+        "shortDescription": "Advanced double-wall neonatal incubator with servo humidity and oxygen management.",
+        "description": "Creates an optimal thermal and acoustic microenvironment for premature infants with precise servo skin temperature control."
       },
       "de": {
-        "title": "Generalüberholtes 4-Motor-Patientenbett (1 Jahr Garantie)",
-        "shortDescription": "Geprüftes Gebraucht-Klinikbett mit Motorsteuerung.",
-        "description": "Vollständig getestetes Intensivpflegebett mit 12 Monaten Garantie."
+        "title": "Fanem Vision 2186 Küvözü (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Fanem mit 1 Jahr Garantie.",
+        "description": "Creates an optimal thermal and acoustic microenvironment for premature infants with precise servo skin temperature control. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Fanem Vision 2186 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Fanem مع ضمان لمدة عام كامل.",
+        "description": "Fanem Vision 2186, prematüre ve kritik yenidoğanların mikroçevre şartlarını mükemmel sıcaklık, nem ve oksijen dengesiyle koruyan ileri teknoloji bir inkübatördür. Sensör kalibrasyonları ve ısıtıcı filtreleri yenilenmiştir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
       },
       "ja": {
-        "title": "Refurbished 4-Motor Patient Bed (1 Year Warranty)",
-        "shortDescription": "Stryker / Cebeci Revizyon Secure II Revizyonlu - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Stryker / Cebeci Revizyon Secure II Revizyonluは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
+        "title": "Fanem Vision 2186 リファービッシュ医療機器",
+        "shortDescription": "Fanem製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Creates an optimal thermal and acoustic microenvironment for premature infants with precise servo skin temperature control. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
       },
       "zh": {
-        "title": "Refurbished 4-Motor Patient Bed (1 Year Warranty)",
-        "shortDescription": "Stryker / Cebeci Revizyon Secure II Revizyonlu - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Stryker / Cebeci Revizyon Secure II Revizyonlu 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
+        "title": "Fanem Vision 2186 翻新医疗设备",
+        "shortDescription": "Fanem 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Creates an optimal thermal and acoustic microenvironment for premature infants with precise servo skin temperature control. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
       }
     }
   },
   {
-    "id": "prod-38",
-    "slug": "2-el-fizik-tedavi-cihazi-revizyonlu",
-    "categorySlug": "fizik-tedavi-cihazlari",
-    "brand": "BTL / Cebeci Revizyon",
-    "model": "4000 Serisi Revizyonlu",
-    "sku": "REF-FTR-017",
+    "id": "prod-kuvoz-ertunc-ozcan-babynest-ic700",
+    "slug": "ertunc-ozcan-babynest-ic700-kuvoz",
+    "categorySlug": "yogun-bakim-ve-yasam-destek",
+    "brand": "Ertunç Özcan",
+    "model": "BabyNest IC700",
+    "sku": "EOZ-IC7-038",
     "condition": "SECOND_HAND",
     "featured": false,
     "sortOrder": 38,
     "images": [
-      "/images/products/fizik-tedavi-2.webp",
-      "/images/products/fizik-tedavi-3.webp"
+      "/images/products/kuvoz-2.webp"
     ],
     "technicalSpecs": {
-      "Durum": "2. El - Çıkış Kalibrasyonu ve Elektrot Kontrolleri Yapılmış, 1 Yıl Garantili",
-      "Modaliteler": "Elektroterapi (TENS, IF, EMS), Ultrason 1/3 MHz"
+      "Kontrol Tipi": "Mikroişlemci Kontrollü Cilt ve Hava Isıtma",
+      "Fanus": "Çift Cidarlı Şeffaf Başlık ve 6 Giriş Portu",
+      "Yükseklik Ayarı": "Elektrikli Motorlu Kolay Yükseklik Ayarı",
+      "Alarmlar": "Sıcaklık Sapması, Sensör Hatası, Fan Arızası ve Elektrik Kesintisi",
+      "Garanti": "1 Yıl Cebeci Medikal Güvencesi"
     },
     "applications": [
-      "FTR Poliklinikleri",
-      "Spor Yaralanmaları Rehabilitasyonu",
-      "Evde Bakım Fizyoterapisi"
+      "Yenidoğan Yoğun Bakım",
+      "Pediatrik Klinikler",
+      "Kadın Doğum Merkezleri"
     ],
     "translations": {
       "tr": {
-        "title": "Revizyonlu Fizik Tedavi Cihazı (1 Yıl Garantili)",
-        "shortDescription": "Çıkış kalibrasyonu ve elektrot kontrolleri yapılmış, 2. el garantili fizik tedavi ünitesi.",
-        "description": "Elektroterapi çıkışları ve ultrason modülü kalibre edilmiş, yeni elektrot setleri ile 2. el fizik tedavi cihazı. 1 yıl garanti dahildir."
+        "title": "Ertunç Özcan BabyNest IC700 Yoğun Bakım Küvözü",
+        "shortDescription": "Yerli standartların öncüsü Ertunç Özcan güvencesiyle revizyonlu mikroişlemcili bebek küvözü.",
+        "description": "BabyNest IC700, yenidoğan bakımında stabil sıcaklık dağılımı ve kolay klinik müdahale imkanı sunan bir küvöz modelidir. Fan motoru, ısıtıcı rezistansı ve cilt probları yenilenmiştir."
       },
       "en": {
-        "title": "Refurbished Physical Therapy Unit (1 Year Warranty)",
-        "shortDescription": "Calibrated pre-owned therapy unit with new electrodes.",
-        "description": "Fully tested combination therapy unit with calibrated outputs and 12-month warranty."
-      },
-      "ar": {
-        "title": "جهاز علاج طبيعي مجدد (ضمان عام)",
-        "shortDescription": "جهاز علاج طبيعي مجدد ومعاير.",
-        "description": "جهاز علاج طبيعي مجدد بالكامل مع ضمان 12 شهراً."
+        "title": "Ertunç Özcan BabyNest IC700 Infant Incubator",
+        "shortDescription": "Microprocessor controlled neonatal incubator designed for steady temperature and humidity control.",
+        "description": "Features double-walled hood, motorized height adjustment, and dependable alarm safety architecture."
       },
       "de": {
-        "title": "Generalüberholtes Physiotherapiegerät (1 Jahr Garantie)",
-        "shortDescription": "Kalibriertes Gebraucht-Therapiegerät mit neuen Elektroden.",
-        "description": "Vollständig getestetes Kombinationsgerät mit 12 Monaten Garantie."
+        "title": "Ertunç Özcan BabyNest IC700 Küvözü (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Ertunç Özcan mit 1 Jahr Garantie.",
+        "description": "Features double-walled hood, motorized height adjustment, and dependable alarm safety architecture. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Ertunç Özcan BabyNest IC700 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Ertunç Özcan مع ضمان لمدة عام كامل.",
+        "description": "BabyNest IC700, yenidoğan bakımında stabil sıcaklık dağılımı ve kolay klinik müdahale imkanı sunan bir küvöz modelidir. Fan motoru, ısıtıcı rezistansı ve cilt probları yenilenmiştir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
       },
       "ja": {
-        "title": "Refurbished Physical Therapy Unit (1 Year Warranty)",
-        "shortDescription": "BTL / Cebeci Revizyon 4000 Serisi Revizyonlu - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "BTL / Cebeci Revizyon 4000 Serisi Revizyonluは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
+        "title": "Ertunç Özcan BabyNest IC700 リファービッシュ医療機器",
+        "shortDescription": "Ertunç Özcan製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Features double-walled hood, motorized height adjustment, and dependable alarm safety architecture. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
       },
       "zh": {
-        "title": "Refurbished Physical Therapy Unit (1 Year Warranty)",
-        "shortDescription": "BTL / Cebeci Revizyon 4000 Serisi Revizyonlu - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal BTL / Cebeci Revizyon 4000 Serisi Revizyonlu 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
+        "title": "Ertunç Özcan BabyNest IC700 翻新医疗设备",
+        "shortDescription": "Ertunç Özcan 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Features double-walled hood, motorized height adjustment, and dependable alarm safety architecture. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
       }
     }
   },
   {
-    "id": "prod-39",
-    "slug": "2-el-aspirator-revizyonlu",
-    "categorySlug": "ameliyathane-cihazlari",
-    "brand": "Medela / Cebeci Revizyon",
-    "model": "Dominant Serisi Revizyonlu",
-    "sku": "REF-ASP-018",
+    "id": "prod-kuvoz-drager-caleo-isolette",
+    "slug": "drager-caleo-isolette-yenidogan-kuvozu",
+    "categorySlug": "yogun-bakim-ve-yasam-destek",
+    "brand": "Dräger",
+    "model": "Caleo / Isolette",
+    "sku": "DRG-CAL-039",
     "condition": "SECOND_HAND",
-    "featured": false,
+    "featured": true,
     "sortOrder": 39,
     "images": [
-      "/images/products/aspirator-2.webp",
-      "/images/products/aspirator-3.webp"
+      "/images/products/kuvoz-3.webp"
     ],
     "technicalSpecs": {
-      "Durum": "2. El - Vakum Pompası ve Filtreler Yenilenmiş, 1 Yıl Garantili",
-      "Vakum Kapasitesi": "Max -90 kPa"
+      "Mikroçevre": "Gelişmiş Çift Hava Perdesi (Fanus Kapakları Açıldığında Isı Kaybını Önler)",
+      "Servo Kontrol": "Hassas Cilt Sıcaklığı, Hava Sıcaklığı, Nem ve O2",
+      "Dahili Terazi": "Opsiyonel Yatak İçi Entegre Tartı Sistemi",
+      "Akustik Seviye": "Ultra Düşük Gürültü Seviyesi (< 47 dBA)",
+      "Garanti": "1 Yıl Tam Teknik Servis Garantili"
     },
     "applications": [
-      "Ameliyathane Cerrahisi",
-      "Yoğun Bakım Aspirasyonu",
-      "Acil Müdahale"
+      "3. Seviye Yenidoğan Yoğun Bakım (NICU)",
+      "Aşırı Düşük Doğum Ağırlıklı (ELBW) Bebek Tedavisi",
+      "Üniversite ve Şehir Hastaneleri"
     ],
     "translations": {
       "tr": {
-        "title": "Revizyonlu Cerrahi Aspiratör (1 Yıl Garantili)",
-        "shortDescription": "Vakum pompası ve filtreleri yenilenmiş, 2. el garantili cerrahi aspiratör.",
-        "description": "Vakum pompası, bakteri filtresi ve toplama şişeleri yenilenmiş 2. el cerrahi aspiratör. 1 yıl garanti ile teslim edilir."
+        "title": "Dräger Caleo / Isolette Yenidoğan Küvözü",
+        "shortDescription": "Dünya standartlarında Alman Dräger mikroçevre teknolojisiyle üretilmiş üst segment yenidoğan küvözü.",
+        "description": "Dräger Caleo, fanus kapağı açıldığında bile bebeğin vücut ısısını koruyan çift hava perdesi teknolojisine sahip altın standart bir küvözdür. Tüm sensör ve hava akış kalibrasyonları yapılmıştır."
       },
       "en": {
-        "title": "Refurbished Surgical Aspirator (1 Year Warranty)",
-        "shortDescription": "Certified pre-owned aspirator with renewed pump and filters.",
-        "description": "Fully tested surgical aspirator with new vacuum pump components and 12-month warranty."
-      },
-      "ar": {
-        "title": "جهاز شفط جراحي مجدد (ضمان عام)",
-        "shortDescription": "جهاز شفط مجدد مع مضخة وفلاتر جديدة.",
-        "description": "جهاز شفط جراحي مجدد بالكامل مع ضمان 12 شهراً."
+        "title": "Dräger Caleo / Isolette Neonatal Incubator",
+        "shortDescription": "Gold standard German engineered neonatal incubator with double air curtain technology.",
+        "description": "Delivers superior developmental care for micro-preemies with whisper-quiet operation and sophisticated climate control."
       },
       "de": {
-        "title": "Generalüberholter Chirurgischer Absauger (1 Jahr Garantie)",
-        "shortDescription": "Geprüfter Gebraucht-Absauger mit erneuerter Pumpe.",
-        "description": "Vollständig getesteter Absauger mit 12 Monaten Garantie."
+        "title": "Dräger Caleo / Isolette Küvözü (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Dräger mit 1 Jahr Garantie.",
+        "description": "Delivers superior developmental care for micro-preemies with whisper-quiet operation and sophisticated climate control. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Dräger Caleo / Isolette (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Dräger مع ضمان لمدة عام كامل.",
+        "description": "Dräger Caleo, fanus kapağı açıldığında bile bebeğin vücut ısısını koruyan çift hava perdesi teknolojisine sahip altın standart bir küvözdür. Tüm sensör ve hava akış kalibrasyonları yapılmıştır. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
       },
       "ja": {
-        "title": "Refurbished Surgical Aspirator (1 Year Warranty)",
-        "shortDescription": "Medela / Cebeci Revizyon Dominant Serisi Revizyonlu - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Medela / Cebeci Revizyon Dominant Serisi Revizyonluは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
+        "title": "Dräger Caleo / Isolette リファービッシュ医療機器",
+        "shortDescription": "Dräger製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Delivers superior developmental care for micro-preemies with whisper-quiet operation and sophisticated climate control. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
       },
       "zh": {
-        "title": "Refurbished Surgical Aspirator (1 Year Warranty)",
-        "shortDescription": "Medela / Cebeci Revizyon Dominant Serisi Revizyonlu - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Medela / Cebeci Revizyon Dominant Serisi Revizyonlu 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
+        "title": "Dräger Caleo / Isolette 翻新医疗设备",
+        "shortDescription": "Dräger 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Delivers superior developmental care for micro-preemies with whisper-quiet operation and sophisticated climate control. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
       }
     }
   },
   {
-    "id": "prod-40",
-    "slug": "2-el-hasta-isitma-revizyonlu",
+    "id": "prod-kuvoz-david-yp2000",
+    "slug": "david-yp-2000-yenidogan-kuvozu",
     "categorySlug": "yogun-bakim-ve-yasam-destek",
-    "brand": "3M / Cebeci Revizyon",
-    "model": "Bair Hugger Revizyonlu",
-    "sku": "REF-WRM-019",
+    "brand": "David Medical",
+    "model": "YP-2000",
+    "sku": "DVD-YP2-040",
     "condition": "SECOND_HAND",
     "featured": false,
     "sortOrder": 40,
     "images": [
-      "/images/products/hasta-isitma-1.webp"
+      "/images/products/kuvoz-4.webp"
     ],
     "technicalSpecs": {
-      "Durum": "2. El - Fan Motoru ve Isıtıcı Element Test Edilmiş, 1 Yıl Garantili",
-      "Sıcaklık Aralığı": "32°C – 43°C"
+      "Ekran": "Geniş LCD Bilgi Ekranı",
+      "Kontrol": "Servo Nem, Cilt ve Hava Sıcaklığı",
+      "Yatak Eğimi": "Kademesiz Ayarlanabilir Bebek Yatağı",
+      "Çift Cidar": "Var (Isı Yalıtımlı Akrilik Gövde)",
+      "Garanti": "1 Yıl Cebeci Medikal Garantili"
     },
     "applications": [
-      "Perioperatif Hipotermi Önleme",
-      "Yoğun Bakım",
-      "Travma Hastası Isıtma"
+      "Yenidoğan Servisleri",
+      "Doğumhaneler",
+      "Özel Hastaneler"
     ],
     "translations": {
       "tr": {
-        "title": "Revizyonlu Hasta Isıtma Sistemi (1 Yıl Garantili)",
-        "shortDescription": "Fan motoru ve ısıtıcı test edilmiş, 2. el garantili hasta ısıtma sistemi.",
-        "description": "Isıtma elemanı ve hava üfleyici kontrollerden geçmiş 2. el konvektif hasta ısıtma ünitesi. 1 yıl garanti dahildir."
+        "title": "David YP-2000 Yenidoğan Yoğun Bakım Küvözü",
+        "shortDescription": "Güvenilir servo nem ve sıcaklık kontrollü, geniş kabinli revizyonlu küvöz.",
+        "description": "David YP-2000, prematüre bebeklerin bakımı için stabil termal şartlar oluşturan modern bir küvözdür. Biyomedikal testleri tamamlanmış olup 1 yıl garantilidir."
       },
       "en": {
-        "title": "Refurbished Patient Warming System (1 Year Warranty)",
-        "shortDescription": "Tested pre-owned warming unit with certified fan motor.",
-        "description": "Fully tested convective warming system with 12-month warranty."
-      },
-      "ar": {
-        "title": "نظام تدفئة مرضى مجدد (ضمان عام)",
-        "shortDescription": "نظام تدفئة مجدد ومفحوص.",
-        "description": "نظام تدفئة مرضى مجدد بالكامل مع ضمان 12 شهراً."
+        "title": "David YP-2000 Infant Incubator",
+        "shortDescription": "Modern neonatal incubator with servo humidity, skin temperature tracking, and dual-wall hood.",
+        "description": "Provides safe thermal regulation and easy clinical access for routine and intensive neonatal therapy."
       },
       "de": {
-        "title": "Generalüberholtes Wärmesystem (1 Jahr Garantie)",
-        "shortDescription": "Geprüftes Gebraucht-Wärmegerät.",
-        "description": "Vollständig getestetes Patientenwärmesystem mit 12 Monaten Garantie."
+        "title": "David Medical YP-2000 Küvözü (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von David Medical mit 1 Jahr Garantie.",
+        "description": "Provides safe thermal regulation and easy clinical access for routine and intensive neonatal therapy. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "David Medical YP-2000 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة David Medical مع ضمان لمدة عام كامل.",
+        "description": "David YP-2000, prematüre bebeklerin bakımı için stabil termal şartlar oluşturan modern bir küvözdür. Biyomedikal testleri tamamlanmış olup 1 yıl garantilidir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
       },
       "ja": {
-        "title": "Refurbished Patient Warming System (1 Year Warranty)",
-        "shortDescription": "3M / Cebeci Revizyon Bair Hugger Revizyonlu - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "3M / Cebeci Revizyon Bair Hugger Revizyonluは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
+        "title": "David Medical YP-2000 リファービッシュ医療機器",
+        "shortDescription": "David Medical製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Provides safe thermal regulation and easy clinical access for routine and intensive neonatal therapy. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
       },
       "zh": {
-        "title": "Refurbished Patient Warming System (1 Year Warranty)",
-        "shortDescription": "3M / Cebeci Revizyon Bair Hugger Revizyonlu - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal 3M / Cebeci Revizyon Bair Hugger Revizyonlu 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
+        "title": "David Medical YP-2000 翻新医疗设备",
+        "shortDescription": "David Medical 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Provides safe thermal regulation and easy clinical access for routine and intensive neonatal therapy. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
       }
     }
   },
   {
-    "id": "prod-41",
-    "slug": "2-el-santrifuj-revizyonlu",
-    "categorySlug": "laboratuvar-cihazlari",
-    "brand": "Hettich / Cebeci Revizyon",
-    "model": "EBA 200 Revizyonlu",
-    "sku": "REF-SNT-020",
+    "id": "prod-kuvoz-isolette-c100",
+    "slug": "air-shields-isolette-c100-bebek-kuvozu",
+    "categorySlug": "yogun-bakim-ve-yasam-destek",
+    "brand": "Hill-Rom Air-Shields",
+    "model": "Isolette C100",
+    "sku": "HIL-C10-041",
     "condition": "SECOND_HAND",
     "featured": false,
     "sortOrder": 41,
     "images": [
-      "/images/products/santrifuj-1.webp"
+      "/images/products/kuvoz-5.webp"
     ],
     "technicalSpecs": {
-      "Durum": "2. El - Motor ve Rotor Kontrolleri Yapılmış, 1 Yıl Garantili",
-      "Maks RPM": "6.000 d/dk"
+      "Marka": "Air-Shields Isolette (Hill-Rom)",
+      "Klasik Model": "Klinik Olarak Kanıtlanmış Sıcaklık Kararlılığı",
+      "Hava Akışı": "Düşük Hızlı Laminar Hava Dağıtımı",
+      "Erişim": "Çoklu El Giriş Portları ve Ön Açılır Kapak",
+      "Garanti": "1 Yıl Tam Garanti"
     },
     "applications": [
-      "Klinik Laboratuvar",
-      "Kan Bankası",
-      "Araştırma Laboratuvarı"
+      "Yenidoğan Servisleri",
+      "Pediatri Klinikleri",
+      "Bebek Bakım Odaları"
     ],
     "translations": {
       "tr": {
-        "title": "Revizyonlu Klinik Santrifüj (1 Yıl Garantili)",
-        "shortDescription": "Motor ve rotor kontrolleri yapılmış, 2. el garantili klinik santrifüj.",
-        "description": "Fren sistemi, motor yatakları ve güvenlik kilidi kontrol edilmiş 2. el laboratuvar santrifüjü. 1 yıl garanti dahildir."
+        "title": "Air-Shields Isolette C100 Bebek Küvözü",
+        "shortDescription": "Dayanıklı tasarımı ve istikrarlı sıcaklık dağılımıyla bilinen klasik Air-Shields küvöz.",
+        "description": "Isolette C100, yenidoğan bakımında uzun yıllardır güvenle kullanılan sağlam gövdeli bir inkübatördür. Termostat devreleri ve fan rulmanları yenilenmiştir."
       },
       "en": {
-        "title": "Refurbished Clinical Centrifuge (1 Year Warranty)",
-        "shortDescription": "Tested pre-owned centrifuge with inspected motor.",
-        "description": "Fully tested clinical centrifuge with inspected safety mechanisms and 12-month warranty."
-      },
-      "ar": {
-        "title": "جهاز طرد مركزي مجدد (ضمان عام)",
-        "shortDescription": "جهاز طرد مركزي مجدد مع محرك مفحوص.",
-        "description": "جهاز طرد مركزي مختبري مجدد بالكامل مع ضمان 12 شهراً."
+        "title": "Air-Shields Isolette C100 Infant Incubator",
+        "shortDescription": "Classic, proven neonatal incubator providing uniform air temperature and durable mechanics.",
+        "description": "Manufactured by Air-Shields / Hill-Rom, fully serviced and calibrated for continuous infant warming."
       },
       "de": {
-        "title": "Generalüberholte Zentrifuge (1 Jahr Garantie)",
-        "shortDescription": "Geprüfte Gebraucht-Zentrifuge mit kontrolliertem Motor.",
-        "description": "Vollständig getestete Laborzentrifuge mit 12 Monaten Garantie."
+        "title": "Hill-Rom Air-Shields Isolette C100 Küvözü (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Hill-Rom Air-Shields mit 1 Jahr Garantie.",
+        "description": "Manufactured by Air-Shields / Hill-Rom, fully serviced and calibrated for continuous infant warming. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Hill-Rom Air-Shields Isolette C100 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Hill-Rom Air-Shields مع ضمان لمدة عام كامل.",
+        "description": "Isolette C100, yenidoğan bakımında uzun yıllardır güvenle kullanılan sağlam gövdeli bir inkübatördür. Termostat devreleri ve fan rulmanları yenilenmiştir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
       },
       "ja": {
-        "title": "Refurbished Clinical Centrifuge (1 Year Warranty)",
-        "shortDescription": "Hettich / Cebeci Revizyon EBA 200 Revizyonlu - 高精度臨床診断・治療に対応した医療機器。",
-        "description": "Hettich / Cebeci Revizyon EBA 200 Revizyonluは、集中治療室、手術室、一般病棟向けに設計された高性能医療機器です。厳格な品質管理基準と電気安全性試験をクリアし、臨床現場での安定稼働と最高水準の患者ケアを支援します。"
+        "title": "Hill-Rom Air-Shields Isolette C100 リファービッシュ医療機器",
+        "shortDescription": "Hill-Rom Air-Shields製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Manufactured by Air-Shields / Hill-Rom, fully serviced and calibrated for continuous infant warming. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
       },
       "zh": {
-        "title": "Refurbished Clinical Centrifuge (1 Year Warranty)",
-        "shortDescription": "Hettich / Cebeci Revizyon EBA 200 Revizyonlu - 适用于重症监护、手术室及临床科室的高精度医疗设备。",
-        "description": "Cebeci Medikal Hettich / Cebeci Revizyon EBA 200 Revizyonlu 专为各类医疗机构临床科室打造，具备卓越的测量精度、高稳定性的运行架构及严苛的电气安全合规性，为临床诊断与患者监护提供值得信赖的坚实保障。"
+        "title": "Hill-Rom Air-Shields Isolette C100 翻新医疗设备",
+        "shortDescription": "Hill-Rom Air-Shields 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Manufactured by Air-Shields / Hill-Rom, fully serviced and calibrated for continuous infant warming. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-kuvoz-atom-v85",
+    "slug": "atom-medical-v-85-yenidogan-kuvozu",
+    "categorySlug": "yogun-bakim-ve-yasam-destek",
+    "brand": "Atom Medical",
+    "model": "V-85",
+    "sku": "ATM-V85-042",
+    "condition": "SECOND_HAND",
+    "featured": false,
+    "sortOrder": 42,
+    "images": [
+      "/images/products/kuvoz-6.webp"
+    ],
+    "technicalSpecs": {
+      "Menşei": "Japonya (Atom Medical Corp.)",
+      "Kontrol Prensibi": "Servo Cilt & Hava Sıcaklığı",
+      "Fanus Yapısı": "Yüksek Şeffaflıkta Çift Cidarlı Başlık",
+      "Kompakt Tasarım": "Yüksek Manevra Kabiliyetli Şasi",
+      "Garanti": "1 Yıl Cebeci Medikal Garantisi"
+    },
+    "applications": [
+      "Yenidoğan Yoğun Bakım",
+      "Doğum Klinikleri",
+      "Tıp Merkezleri"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Atom Medical V-85 Yenidoğan Küvözü",
+        "shortDescription": "Japon Atom Medical üretimi, hassas sıcaklık dengeli ve ergonomik revizyonlu küvöz.",
+        "description": "Atom Medical V-85, kompakt boyutları ve Japon mekanik kalitesiyle yenidoğan ünitelerinde güvenilir bakım ortamı sağlar. Elektriksel güvenlik ve sıcaklık doğrulamaları yapılmıştır."
+      },
+      "en": {
+        "title": "Atom Medical V-85 Infant Incubator",
+        "shortDescription": "Japanese precision neonatal incubator with servo skin heating and ergonomic frame.",
+        "description": "Atom V-85 offers reliable thermal control and comfortable nursing access for neonatal care."
+      },
+      "de": {
+        "title": "Atom Medical V-85 Küvözü (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Atom Medical mit 1 Jahr Garantie.",
+        "description": "Atom V-85 offers reliable thermal control and comfortable nursing access for neonatal care. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Atom Medical V-85 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Atom Medical مع ضمان لمدة عام كامل.",
+        "description": "Atom Medical V-85, kompakt boyutları ve Japon mekanik kalitesiyle yenidoğan ünitelerinde güvenilir bakım ortamı sağlar. Elektriksel güvenlik ve sıcaklık doğrulamaları yapılmıştır. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Atom Medical V-85 リファービッシュ医療機器",
+        "shortDescription": "Atom Medical製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Atom V-85 offers reliable thermal control and comfortable nursing access for neonatal care. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Atom Medical V-85 翻新医疗设备",
+        "shortDescription": "Atom Medical 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Atom V-85 offers reliable thermal control and comfortable nursing access for neonatal care. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-nst-ge-corometrics-170",
+    "slug": "ge-corometrics-170-nst-fetal-monitor",
+    "categorySlug": "fizyolojik-sinyal-izleyiciler",
+    "brand": "GE Healthcare",
+    "model": "Corometrics 170 Series",
+    "sku": "GE-COR-043",
+    "condition": "SECOND_HAND",
+    "featured": true,
+    "sortOrder": 43,
+    "images": [
+      "/images/products/nst-fetal-monitor-1.webp"
+    ],
+    "technicalSpecs": {
+      "Problar": "9 Kristalleri Yüksek Hassasiyetli Fetal Kalp Hızı (FHR) Probu ve TOCO (Uterus Kasılma) Probu",
+      "İkiz Gebelik Desteği": "Opsiyonel Çift FHR Probu ile İkiz Kalp Atımı Takibi",
+      "Yazıcı": "Geniş Termal Çizici (Z-Fold EKG/NST Kağıdı)",
+      "Fetal Hareket": "Otomatik Fetal Hareket Algılama ve Manuel İşaretleme Butonu",
+      "Garanti": "1 Yıl Cebeci Medikal Garantili"
+    },
+    "applications": [
+      "Kadın Hastalıkları ve Doğum Poliklinikleri",
+      "Doğumhaneler ve Antenatal Takip Odaları",
+      "Perinatoloji Merkezleri"
+    ],
+    "translations": {
+      "tr": {
+        "title": "GE Corometrics 170 Serisi NST Fetal Monitör",
+        "shortDescription": "General Electric kalitesinde, yüksek hassasiyetli FHR ve TOCO problu non-stres test (NST) cihazı.",
+        "description": "GE Corometrics 170 serisi, doğum öncesi ve doğum anında bebek kalp atışlarını (FHR) ve anne kasılmalarını (TOCO) kesintisiz kaydeden lider NST cihazıdır. Ultrasonik probları ve mekanik kaydedicisi eksiksiz test edilmiştir."
+      },
+      "en": {
+        "title": "GE Corometrics 170 Series Fetal Monitor (NST)",
+        "shortDescription": "Gold standard antepartum/intrapartum fetal monitor with high-sensitivity 9-crystal ultrasound probes.",
+        "description": "GE Corometrics 170 ensures accurate fetal heart rate and uterine activity documentation for obstetrical clinics."
+      },
+      "de": {
+        "title": "GE Healthcare Corometrics 170 Series Monitör (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von GE Healthcare mit 1 Jahr Garantie.",
+        "description": "GE Corometrics 170 ensures accurate fetal heart rate and uterine activity documentation for obstetrical clinics. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "GE Healthcare Corometrics 170 Series (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة GE Healthcare مع ضمان لمدة عام كامل.",
+        "description": "GE Corometrics 170 serisi, doğum öncesi ve doğum anında bebek kalp atışlarını (FHR) ve anne kasılmalarını (TOCO) kesintisiz kaydeden lider NST cihazıdır. Ultrasonik probları ve mekanik kaydedicisi eksiksiz test edilmiştir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "GE Healthcare Corometrics 170 Series リファービッシュ医療機器",
+        "shortDescription": "GE Healthcare製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "GE Corometrics 170 ensures accurate fetal heart rate and uterine activity documentation for obstetrical clinics. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "GE Healthcare Corometrics 170 Series 翻新医疗设备",
+        "shortDescription": "GE Healthcare 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "GE Corometrics 170 ensures accurate fetal heart rate and uterine activity documentation for obstetrical clinics. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-pulse-nonin-7500",
+    "slug": "nonin-7500-masaustu-pulse-oksimetre",
+    "categorySlug": "fizyolojik-sinyal-izleyiciler",
+    "brand": "Nonin Medical",
+    "model": "7500",
+    "sku": "NON-750-044",
+    "condition": "SECOND_HAND",
+    "featured": false,
+    "sortOrder": 44,
+    "images": [
+      "/images/products/pulse-oksimetre-1.webp"
+    ],
+    "technicalSpecs": {
+      "Teknoloji": "Nonin PureSAT® Akıllı Pulse Oksimetre Algoritması",
+      "Ölçümler": "SpO2 (Oksijen Doygunluğu) ve Nabız Sayısı (Pulse Rate)",
+      "Ekran": "Geniş LED Gösterge ve Nabız Çubuk Grafiği",
+      "Batarya": "Dahili Akü ile 16 Saat Kesintisiz Çalışma",
+      "Hafıza": "70 Saatlik Veri Kaydı",
+      "Garanti": "1 Yıl Cebeci Medikal Güvencesi"
+    },
+    "applications": [
+      "Uyku Laboratuvarları ve Solunum Klinikleri",
+      "Ameliyathane Sonrası Derlenme",
+      "Yenidoğan ve Pediatrik Oksijen Takibi",
+      "Evde Mekanik Ventilasyonlu Hasta İzlemi"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Nonin 7500 Masaüstü Dijital Pulse Oksimetre",
+        "shortDescription": "Düşük perfüzyon ve hareketli hastalarda PureSAT® teknolojisiyle hassas oksijen ölçümü yapan masaüstü pulseoksimetre.",
+        "description": "Nonin 7500, klinik hassasiyeti kanıtlanmış masaüstü pulse oksimetredir. Zorlu perfüzyon koşullarında bile doğru SpO2 ve nabız değerleri verir. Yetişkin/pediatrik sensörleri ile teslim edilir."
+      },
+      "en": {
+        "title": "Nonin 7500 Tabletop Digital Pulse Oximeter",
+        "shortDescription": "PureSAT® signal processing tabletop pulse oximeter for versatile clinical and home monitoring.",
+        "description": "Engineered for reliable SpO2 measurements in motion and low perfusion environments across all age groups."
+      },
+      "de": {
+        "title": "Nonin Medical 7500 Oksimetre (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Nonin Medical mit 1 Jahr Garantie.",
+        "description": "Engineered for reliable SpO2 measurements in motion and low perfusion environments across all age groups. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Nonin Medical 7500 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Nonin Medical مع ضمان لمدة عام كامل.",
+        "description": "Nonin 7500, klinik hassasiyeti kanıtlanmış masaüstü pulse oksimetredir. Zorlu perfüzyon koşullarında bile doğru SpO2 ve nabız değerleri verir. Yetişkin/pediatrik sensörleri ile teslim edilir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Nonin Medical 7500 リファービッシュ医療機器",
+        "shortDescription": "Nonin Medical製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Engineered for reliable SpO2 measurements in motion and low perfusion environments across all age groups. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Nonin Medical 7500 翻新医疗设备",
+        "shortDescription": "Nonin Medical 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Engineered for reliable SpO2 measurements in motion and low perfusion environments across all age groups. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-santrifuj-berkhun-m5000",
+    "slug": "berkhun-m-5000-masaustu-santrifuj",
+    "categorySlug": "laboratuvar-cihazlari",
+    "brand": "Berkhun",
+    "model": "M-5000",
+    "sku": "BKH-M50-045",
+    "condition": "SECOND_HAND",
+    "featured": false,
+    "sortOrder": 45,
+    "images": [
+      "/images/products/santrifuj-1.webp"
+    ],
+    "technicalSpecs": {
+      "Maksimum Hız": "5000 RPM (Devir / Dakika)",
+      "Rotor Tipi": "Açılı Klinik Tüp Rotoru",
+      "Zamanlayıcı": "Dijital Zaman ve Hız Kontrolü",
+      "Güvenlik": "Kapak Kilit Emniyeti ve Dengesizlik Sensörü",
+      "Garanti": "1 Yıl Tam Garanti"
+    },
+    "applications": [
+      "Biyokimya ve Hematoloji Laboratuvarları",
+      "PRP ve Santrifüj Uygulama Klinikleri",
+      "Tıp Merkezleri ve Poliklinikler"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Berkhun M-5000 Masaüstü Klinik Santrifüj",
+        "shortDescription": "5000 RPM dijital kontrollü, sessiz motorlu ve kapak kilit emniyetli klinik laboratuvar santrifüjü.",
+        "description": "Berkhun M-5000, kan, serum ve idrar örneklerinin ayrıştırılmasında güvenilir devir kararlılığı sunan kompakt bir laboratuvar cihazıdır. Motor fırçaları ve rotor dengesi revize edilmiştir."
+      },
+      "en": {
+        "title": "Berkhun M-5000 Benchtop Clinical Centrifuge",
+        "shortDescription": "5000 RPM digital clinical centrifuge with safety lid-lock for serum and blood separation.",
+        "description": "Provides smooth acceleration, quiet brushless motor drive, and precise timer regulation for medical labs."
+      },
+      "de": {
+        "title": "Berkhun M-5000 Santrifüj (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Berkhun mit 1 Jahr Garantie.",
+        "description": "Provides smooth acceleration, quiet brushless motor drive, and precise timer regulation for medical labs. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Berkhun M-5000 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Berkhun مع ضمان لمدة عام كامل.",
+        "description": "Berkhun M-5000, kan, serum ve idrar örneklerinin ayrıştırılmasında güvenilir devir kararlılığı sunan kompakt bir laboratuvar cihazıdır. Motor fırçaları ve rotor dengesi revize edilmiştir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Berkhun M-5000 リファービッシュ医療機器",
+        "shortDescription": "Berkhun製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Provides smooth acceleration, quiet brushless motor drive, and precise timer regulation for medical labs. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Berkhun M-5000 翻新医疗设备",
+        "shortDescription": "Berkhun 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Provides smooth acceleration, quiet brushless motor drive, and precise timer regulation for medical labs. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-usg-philips-hdi-4000",
+    "slug": "philips-hdi-4000-renkli-doppler-ultrason",
+    "categorySlug": "endovizyon-sistemleri",
+    "brand": "Philips",
+    "model": "HDI 4000",
+    "sku": "PHL-HDI-046",
+    "condition": "SECOND_HAND",
+    "featured": true,
+    "sortOrder": 46,
+    "images": [
+      "/images/products/ultrason-1.webp"
+    ],
+    "technicalSpecs": {
+      "Görüntüleme Modları": "B-Mod, M-Mod, Renkli Doppler (Color Doppler), Power Doppler, Pulsed Wave (PW) Spectral Doppler",
+      "Ekran": "Yüksek Çözünürlüklü Medikal Monitör",
+      "Prob Girişleri": "3 Aktif Prob Portu",
+      "Uygulama Paketleri": "Abdomen, OB/GYN (Kadın Doğum), Vasküler, Küçük Organlar, Kardiyoloji",
+      "Garanti": "1 Yıl Cebeci Medikal Garantili"
+    },
+    "applications": [
+      "Radyoloji ve Görüntüleme Merkezleri",
+      "Kadın Hastalıkları ve Doğum Poliklinikleri",
+      "Genel Cerrahi ve Dahiliye Muayenehaneleri"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Philips HDI 4000 Renkli Doppler Ultrason Cihazı",
+        "shortDescription": "Çok yönlü klinik uygulamalar için yüksek görüntü berraklığına sahip Philips renkli Doppler ultrason.",
+        "description": "Philips HDI 4000, vasküler akımlardan derin abdominal organlara kadar üstün akustik netlik sağlayan kanıtlanmış bir ultrasonografi sistemidir. Prob bağlantıları, akustik kalibrasyonu ve yazılım fonksiyonları test edilmiştir."
+      },
+      "en": {
+        "title": "Philips HDI 4000 Color Doppler Ultrasound System",
+        "shortDescription": "Versatile color Doppler ultrasound platform delivering proven acoustic clarity and diagnostic reliability.",
+        "description": "Equipped with advanced broadband beamforming and specialized OB/GYN, abdominal, and vascular calculation packages."
+      },
+      "de": {
+        "title": "Philips HDI 4000 Cihazı (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Philips mit 1 Jahr Garantie.",
+        "description": "Equipped with advanced broadband beamforming and specialized OB/GYN, abdominal, and vascular calculation packages. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Philips HDI 4000 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Philips مع ضمان لمدة عام كامل.",
+        "description": "Philips HDI 4000, vasküler akımlardan derin abdominal organlara kadar üstün akustik netlik sağlayan kanıtlanmış bir ultrasonografi sistemidir. Prob bağlantıları, akustik kalibrasyonu ve yazılım fonksiyonları test edilmiştir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Philips HDI 4000 リファービッシュ医療機器",
+        "shortDescription": "Philips製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Equipped with advanced broadband beamforming and specialized OB/GYN, abdominal, and vascular calculation packages. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Philips HDI 4000 翻新医疗设备",
+        "shortDescription": "Philips 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Equipped with advanced broadband beamforming and specialized OB/GYN, abdominal, and vascular calculation packages. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-usg-mitsubishi-p93",
+    "slug": "mitsubishi-p93-termal-ultrason-yazicisi",
+    "categorySlug": "endovizyon-sistemleri",
+    "brand": "Mitsubishi Electric",
+    "model": "P93",
+    "sku": "MIT-P93-047",
+    "condition": "SECOND_HAND",
+    "featured": false,
+    "sortOrder": 47,
+    "images": [
+      "/images/products/ultrason-2.webp"
+    ],
+    "technicalSpecs": {
+      "Baskı Teknolojisi": "Yüksek Çözünürlüklü Termal Baskı (325 DPI)",
+      "Baskı Hızı": "Yaklaşık 3.3 saniye / sayfa",
+      "Kağıt Tipi": "110 mm Termal Rulo Kağıt (Standart / High Glossy)",
+      "Giriş": "Standart BNC Kompozit Video Girişi",
+      "Garanti": "1 Yıl Tam Garanti"
+    },
+    "applications": [
+      "Ultrasonografi Görüntü Baskısı",
+      "Mikroskopi ve Endoskopi Raporlama",
+      "Kardiyoloji Kateterizasyon Laboratuvarları"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Mitsubishi P93 Termal Ultrason Video Yazıcısı",
+        "shortDescription": "Ultrason cihazları için endüstri standardı yüksek çözünürlüklü siyah-beyaz termal video printer.",
+        "description": "Mitsubishi P93, ultrason görüntülerinin yüksek kontrast ve gri tonlama kalitesiyle anında kağıda basılmasını sağlar. Termal kafa temizliği ve mekanik testleri yapılmıştır."
+      },
+      "en": {
+        "title": "Mitsubishi P93 Thermal Ultrasound Video Printer",
+        "shortDescription": "Industry-standard monochrome thermal video printer for ultrasound diagnostic hardcopies.",
+        "description": "Features 325 dpi high-density print head delivering fast, razor-sharp hardcopy medical records."
+      },
+      "de": {
+        "title": "Mitsubishi Electric P93 Yazıcısı (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Mitsubishi Electric mit 1 Jahr Garantie.",
+        "description": "Features 325 dpi high-density print head delivering fast, razor-sharp hardcopy medical records. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Mitsubishi Electric P93 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Mitsubishi Electric مع ضمان لمدة عام كامل.",
+        "description": "Mitsubishi P93, ultrason görüntülerinin yüksek kontrast ve gri tonlama kalitesiyle anında kağıda basılmasını sağlar. Termal kafa temizliği ve mekanik testleri yapılmıştır. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Mitsubishi Electric P93 リファービッシュ医療機器",
+        "shortDescription": "Mitsubishi Electric製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Features 325 dpi high-density print head delivering fast, razor-sharp hardcopy medical records. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Mitsubishi Electric P93 翻新医疗设备",
+        "shortDescription": "Mitsubishi Electric 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Features 325 dpi high-density print head delivering fast, razor-sharp hardcopy medical records. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-usg-sony-up21md",
+    "slug": "sony-up-21md-renkli-medikal-video-yazici",
+    "categorySlug": "endovizyon-sistemleri",
+    "brand": "Sony",
+    "model": "UP-21MD",
+    "sku": "SNY-UP2-048",
+    "condition": "SECOND_HAND",
+    "featured": false,
+    "sortOrder": 48,
+    "images": [
+      "/images/products/ultrason-3.webp"
+    ],
+    "technicalSpecs": {
+      "Baskı Metodu": "Boya Süblimasyonlu Renkli Termal Baskı (Dye-Sublimation)",
+      "Çözünürlük": "403 DPI Fotoğraf Kalitesinde Medikal Baskı",
+      "Girişler": "S-Video (Y/C), Kompozit Video (BNC), RGB Girişi",
+      "Baskı Boyutu": "A6 Formatı Renkli Medikal Fotoğraf",
+      "Garanti": "1 Yıl Cebeci Medikal Güvencesi"
+    },
+    "applications": [
+      "Endoskopi ve Laparoskopi Renkli Raporlama",
+      "Renkli Doppler Ultrason Çıktıları",
+      "Cerrahi Mikroskopi"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Sony UP-21MD Renkli Medikal Video Yazıcı",
+        "shortDescription": "Endoskopi ve ultrason cihazları için fotoğraf kalitesinde renkli süblimasyon video printer.",
+        "description": "Sony UP-21MD, cerrahi ve endoskopik müdahalelerin gerçeğe yakın renklerde fotoğraflanmasını sağlayan profesyonel bir medikal yazıcıdır. Mekanik tepsisi ve transfer kafası revize edilmiştir."
+      },
+      "en": {
+        "title": "Sony UP-21MD Color Medical Video Printer",
+        "shortDescription": "A6 dye-sublimation color video printer for endoscopy and surgical documentation.",
+        "description": "Delivers photo-realistic 403 dpi color prints from composite, S-video, or RGB analog surgical video sources."
+      },
+      "de": {
+        "title": "Sony UP-21MD Yazıcı (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Sony mit 1 Jahr Garantie.",
+        "description": "Delivers photo-realistic 403 dpi color prints from composite, S-video, or RGB analog surgical video sources. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Sony UP-21MD (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Sony مع ضمان لمدة عام كامل.",
+        "description": "Sony UP-21MD, cerrahi ve endoskopik müdahalelerin gerçeğe yakın renklerde fotoğraflanmasını sağlayan profesyonel bir medikal yazıcıdır. Mekanik tepsisi ve transfer kafası revize edilmiştir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Sony UP-21MD リファービッシュ医療機器",
+        "shortDescription": "Sony製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Delivers photo-realistic 403 dpi color prints from composite, S-video, or RGB analog surgical video sources. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Sony UP-21MD 翻新医疗设备",
+        "shortDescription": "Sony 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Delivers photo-realistic 403 dpi color prints from composite, S-video, or RGB analog surgical video sources. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-usg-mitsubishi-p91",
+    "slug": "mitsubishi-p91-medikal-termal-yazici",
+    "categorySlug": "endovizyon-sistemleri",
+    "brand": "Mitsubishi Electric",
+    "model": "P91",
+    "sku": "MIT-P91-049",
+    "condition": "SECOND_HAND",
+    "featured": false,
+    "sortOrder": 49,
+    "images": [
+      "/images/products/ultrason-4.webp"
+    ],
+    "technicalSpecs": {
+      "Baskı Çözünürlüğü": "260 DPI Termal Çizici Kafa",
+      "Uyumluluk": "Tüm Analog Video Çıkışlı Ultrason Sistemleri",
+      "Kontrol": "Ön Panelden Kontrast, Parlaklık ve Boyut Ayarı",
+      "Garanti": "1 Yıl Cebeci Medikal Garantili"
+    },
+    "applications": [
+      "Ultrason Muayenehaneleri",
+      "Poliklinik Görüntüleme",
+      "Veterinerlik Ultrason Cihazları"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Mitsubishi P91 Medikal Termal Ultrason Yazıcısı",
+        "shortDescription": "Güvenilir, kompakt ve hızlı siyah-beyaz ultrason termal video kaydedici.",
+        "description": "Mitsubishi P91, ultrasonografi çıktılarının net ve ekonomik şekilde alınması için üretilmiş sağlam bir yazıcıdır. Tüm termal elemanları ve besleme mekanizması test edilmiştir."
+      },
+      "en": {
+        "title": "Mitsubishi P91 Monochrome Medical Printer",
+        "shortDescription": "Compact monochrome thermal printer for analog ultrasound video printouts.",
+        "description": "Proven medical imaging printer offering quick image capture and robust operation."
+      },
+      "de": {
+        "title": "Mitsubishi Electric P91 Yazıcısı (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Mitsubishi Electric mit 1 Jahr Garantie.",
+        "description": "Proven medical imaging printer offering quick image capture and robust operation. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Mitsubishi Electric P91 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Mitsubishi Electric مع ضمان لمدة عام كامل.",
+        "description": "Mitsubishi P91, ultrasonografi çıktılarının net ve ekonomik şekilde alınması için üretilmiş sağlam bir yazıcıdır. Tüm termal elemanları ve besleme mekanizması test edilmiştir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Mitsubishi Electric P91 リファービッシュ医療機器",
+        "shortDescription": "Mitsubishi Electric製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Proven medical imaging printer offering quick image capture and robust operation. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Mitsubishi Electric P91 翻新医疗设备",
+        "shortDescription": "Mitsubishi Electric 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Proven medical imaging printer offering quick image capture and robust operation. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-vent-oricare-v8800",
+    "slug": "oricare-v8800-yogun-bakim-ventilatoru",
+    "categorySlug": "yogun-bakim-ve-yasam-destek",
+    "brand": "Oricare",
+    "model": "V8800",
+    "sku": "ORI-V88-050",
+    "condition": "SECOND_HAND",
+    "featured": true,
+    "sortOrder": 50,
+    "images": [
+      "/images/products/ventilator-1.webp"
+    ],
+    "technicalSpecs": {
+      "Hasta Grubu": "Yetişkin, Pediatrik ve Yenidoğan (Opsiyonel)",
+      "Solunum Modları": "VCV, PCV, SIMV-V, SIMV-P, PSV, CPAP/BiPAP, APRV, PRVC",
+      "Ekran": "15 inç Renkli Dokunmatik TFT Ekran",
+      "Ekşülasyon Valfi": "Otoklavlanabilir Entegre Isıtmalı Ekspirasyon Valfi",
+      "Tidal Hacim": "20 - 2000 mL",
+      "Gaz Girişi": "Merkezi O2 ve Medikal Hava Desteği",
+      "Garanti": "1 Yıl Cebeci Medikal Tam Teknik Servis Garantili"
+    },
+    "applications": [
+      "Genel ve Cerrahi Yoğun Bakım Üniteleri",
+      "Koroner ve KVC Yoğun Bakım",
+      "Solunum Yetmezliği ve ARDS Tedavisi"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Oricare V8800 Yoğun Bakım Ventilatörü",
+        "shortDescription": "15 inç dokunmatik ekranlı, gelişmiş invaziv ve non-invaziv modlara sahip yoğun bakım mekanik ventilatörü.",
+        "description": "Oricare V8800, kritik solunum yetmezliği yaşayan yetişkin ve çocuk hastalarda fizyolojik solunumu en hassas şekilde destekleyen üst segment bir ventilatördür. Akış sensörü kalibrasyonu, O2 hücresi ve sızdırmazlık testleri yapılmıştır."
+      },
+      "en": {
+        "title": "Oricare V8800 Intensive Care Ventilator",
+        "shortDescription": "Premium 15-inch touchscreen ICU ventilator offering comprehensive invasive and non-invasive ventilation modes.",
+        "description": "Engineered for complex respiratory conditions with advanced lung recruitment tools, PRVC, and autoclavable exhalation assembly."
+      },
+      "de": {
+        "title": "Oricare V8800 Ventilatörü (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Oricare mit 1 Jahr Garantie.",
+        "description": "Engineered for complex respiratory conditions with advanced lung recruitment tools, PRVC, and autoclavable exhalation assembly. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Oricare V8800 (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Oricare مع ضمان لمدة عام كامل.",
+        "description": "Oricare V8800, kritik solunum yetmezliği yaşayan yetişkin ve çocuk hastalarda fizyolojik solunumu en hassas şekilde destekleyen üst segment bir ventilatördür. Akış sensörü kalibrasyonu, O2 hücresi ve sızdırmazlık testleri yapılmıştır. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Oricare V8800 リファービッシュ医療機器",
+        "shortDescription": "Oricare製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Engineered for complex respiratory conditions with advanced lung recruitment tools, PRVC, and autoclavable exhalation assembly. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Oricare V8800 翻新医疗设备",
+        "shortDescription": "Oricare 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Engineered for complex respiratory conditions with advanced lung recruitment tools, PRVC, and autoclavable exhalation assembly. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-vent-newport-e500",
+    "slug": "newport-e500-yogun-bakim-ventilatoru",
+    "categorySlug": "yogun-bakim-ve-yasam-destek",
+    "brand": "Newport Medical (Medtronic)",
+    "model": "E500 Wave",
+    "sku": "NWP-E50-051",
+    "condition": "SECOND_HAND",
+    "featured": true,
+    "sortOrder": 51,
+    "images": [
+      "/images/products/ventilator-2.webp"
+    ],
+    "technicalSpecs": {
+      "Hasta Kategorisi": "Pediatrik ve Yetişkin Hastalar",
+      "Öne Çıkan Modlar": "V-A/C, P-A/C, V-SIMV, P-SIMV, SPONT (CPAP/PSV), BIFLEX Çift Seviyeli Basınç",
+      "Tasarım": "Kompakt ve Dayanıklı Newport Dalga Formu Ekranı",
+      "Tidal Hacim Aralığı": "20 - 2000 mL",
+      "Garanti": "1 Yıl Tam Garanti"
+    },
+    "applications": [
+      "Yoğun Bakım Üniteleri",
+      "Kronik Solunum Bakım Merkezleri",
+      "Hastaneler ve Tıp Fakülteleri"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Newport E500 Yoğun Bakım Ventilatörü",
+        "shortDescription": "Amerikan Newport (Medtronic) güvencesiyle kanıtlanmış güvenilirlikte revizyonlu mekanik ventilatör.",
+        "description": "Newport E500 Wave, invaziv ve non-invaziv ventilasyon modları ile yoğun bakım ortamlarında stabil solunum desteği sunan kendini kanıtlamış bir cihazdır. Pnömatik valfleri ve debi sensörleri test edilmiştir."
+      },
+      "en": {
+        "title": "Newport E500 Wave Critical Care Ventilator",
+        "shortDescription": "Proven American ICU mechanical ventilator supporting pediatric to adult critical respiratory therapy.",
+        "description": "Manufactured by Newport Medical (Medtronic), featuring dual-mode ventilation and comprehensive graphic monitoring."
+      },
+      "de": {
+        "title": "Newport Medical (Medtronic) E500 Wave Ventilatörü (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Newport Medical (Medtronic) mit 1 Jahr Garantie.",
+        "description": "Manufactured by Newport Medical (Medtronic), featuring dual-mode ventilation and comprehensive graphic monitoring. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Newport Medical (Medtronic) E500 Wave (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Newport Medical (Medtronic) مع ضمان لمدة عام كامل.",
+        "description": "Newport E500 Wave, invaziv ve non-invaziv ventilasyon modları ile yoğun bakım ortamlarında stabil solunum desteği sunan kendini kanıtlamış bir cihazdır. Pnömatik valfleri ve debi sensörleri test edilmiştir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Newport Medical (Medtronic) E500 Wave リファービッシュ医療機器",
+        "shortDescription": "Newport Medical (Medtronic)製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Manufactured by Newport Medical (Medtronic), featuring dual-mode ventilation and comprehensive graphic monitoring. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Newport Medical (Medtronic) E500 Wave 翻新医疗设备",
+        "shortDescription": "Newport Medical (Medtronic) 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Manufactured by Newport Medical (Medtronic), featuring dual-mode ventilation and comprehensive graphic monitoring. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-vent-oxivent-oxi4plus",
+    "slug": "oxivent-oxi4plus-transport-ventilator",
+    "categorySlug": "yogun-bakim-ve-yasam-destek",
+    "brand": "Oxivent",
+    "model": "Oxi4Plus",
+    "sku": "OXI-4PL-052",
+    "condition": "SECOND_HAND",
+    "featured": true,
+    "sortOrder": 52,
+    "images": [
+      "/images/products/ventilator-3.webp"
+    ],
+    "technicalSpecs": {
+      "Cihaz Sınıfı": "Acil ve Transport Mekanik Ventilatörü",
+      "Modlar": "IPPV (CMV), SIMV, CPAP, Manuel",
+      "Ekran": "Basınç ve Solunum Parametreleri Göstergesi",
+      "Güç": "Dahili Şarj Edilebilir Batarya ve Harici 12V DC / 220V AC",
+      "Taşınabilirlik": "Hafif Gövde, Askı Aparatı ve Taşıma Çantası",
+      "Garanti": "1 Yıl Cebeci Medikal Garantili"
+    },
+    "applications": [
+      "Ambulanslar ve 112 Acil Yardım",
+      "Hastane İçi ve Dışı Hasta Nakli",
+      "Acil Servis Triyaj ve Resüsitasyon",
+      "Afet ve Sahra Hastaneleri"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Oxivent Oxi4Plus Transport Ventilatör",
+        "shortDescription": "Acil tıp ve ambulans nakil süreçleri için kompakt, hafif ve dayanıklı transport mekanik ventilatör.",
+        "description": "Oxivent Oxi4Plus, acil hasta transportunda kesintisiz mekanik solunum desteği sağlayan sağlam gövdeli bir acil ventilatörüdür. Gaz tüketimi optimizasyonu ve basınç valf kontrolleri tamamlanmıştır."
+      },
+      "en": {
+        "title": "Oxivent Oxi4Plus Emergency & Transport Ventilator",
+        "shortDescription": "Rugged, portable emergency ventilator designed for ambulances, intra-hospital transport, and rescue teams.",
+        "description": "Provides intuitive controls, low oxygen consumption, and dependable ventilation during patient transfers."
+      },
+      "de": {
+        "title": "Oxivent Oxi4Plus Ventilatör (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Oxivent mit 1 Jahr Garantie.",
+        "description": "Provides intuitive controls, low oxygen consumption, and dependable ventilation during patient transfers. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Oxivent Oxi4Plus (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Oxivent مع ضمان لمدة عام كامل.",
+        "description": "Oxivent Oxi4Plus, acil hasta transportunda kesintisiz mekanik solunum desteği sağlayan sağlam gövdeli bir acil ventilatörüdür. Gaz tüketimi optimizasyonu ve basınç valf kontrolleri tamamlanmıştır. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Oxivent Oxi4Plus リファービッシュ医療機器",
+        "shortDescription": "Oxivent製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Provides intuitive controls, low oxygen consumption, and dependable ventilation during patient transfers. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Oxivent Oxi4Plus 翻新医疗设备",
+        "shortDescription": "Oxivent 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Provides intuitive controls, low oxygen consumption, and dependable ventilation during patient transfers. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-vent-osiris-mekanik",
+    "slug": "air-liquide-osiris-transport-ventilator",
+    "categorySlug": "yogun-bakim-ve-yasam-destek",
+    "brand": "Air Liquide Medical Systems",
+    "model": "Osiris",
+    "sku": "ALM-OSI-053",
+    "condition": "SECOND_HAND",
+    "featured": false,
+    "sortOrder": 53,
+    "images": [
+      "/images/products/ventilator-4.webp"
+    ],
+    "technicalSpecs": {
+      "Menşei": "Fransa (Air Liquide Medical Systems)",
+      "Pnömatik Prensip": "O2 Tahrikli Yüksek Verimli Pnömatik Sürücü",
+      "Solunum Modları": "CMV (Kontrollü), ACMV (Asiste-Kontrollü), VS-PEP (Spontan + PEEP)",
+      "Dayanıklılık": "Düşmeye ve Titreşime Dayanıklı Şok Korumalı Şasi",
+      "Garanti": "1 Yıl Tam Garanti"
+    },
+    "applications": [
+      "Hava ve Kara Ambulansları",
+      "Acil Servisler",
+      "Kritik Hasta Nakli"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Air Liquide Osiris Transport Ventilatör",
+        "shortDescription": "Fransız Air Liquide üretimi, zorlu saha ve ambulans koşulları için tasarlanmış transport ventilatör.",
+        "description": "Air Liquide Osiris, acil solunum desteğinde yüksek güvenilirlik sunan kompakt transport ventilatörüdür. Düşük gaz tüketimi ve basit arayüzü ile kritik anlarda hekime hız kazandırır. Kalibrasyonları yapılmıştır."
+      },
+      "en": {
+        "title": "Air Liquide Osiris Transport Ventilator",
+        "shortDescription": "French manufactured rugged transport ventilator for emergency response and tactical ambulances.",
+        "description": "Engineered by Air Liquide Medical Systems for extreme field reliability and seamless respiratory support."
+      },
+      "de": {
+        "title": "Air Liquide Medical Systems Osiris Ventilatör (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Air Liquide Medical Systems mit 1 Jahr Garantie.",
+        "description": "Engineered by Air Liquide Medical Systems for extreme field reliability and seamless respiratory support. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Air Liquide Medical Systems Osiris (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Air Liquide Medical Systems مع ضمان لمدة عام كامل.",
+        "description": "Air Liquide Osiris, acil solunum desteğinde yüksek güvenilirlik sunan kompakt transport ventilatörüdür. Düşük gaz tüketimi ve basit arayüzü ile kritik anlarda hekime hız kazandırır. Kalibrasyonları yapılmıştır. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Air Liquide Medical Systems Osiris リファービッシュ医療機器",
+        "shortDescription": "Air Liquide Medical Systems製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Engineered by Air Liquide Medical Systems for extreme field reliability and seamless respiratory support. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Air Liquide Medical Systems Osiris 翻新医疗设备",
+        "shortDescription": "Air Liquide Medical Systems 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Engineered by Air Liquide Medical Systems for extreme field reliability and seamless respiratory support. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
+      }
+    }
+  },
+  {
+    "id": "prod-vent-sechrist-millennium",
+    "slug": "sechrist-millennium-yenidogan-ventilatoru",
+    "categorySlug": "yogun-bakim-ve-yasam-destek",
+    "brand": "Sechrist",
+    "model": "Millennium",
+    "sku": "SCH-MIL-054",
+    "condition": "SECOND_HAND",
+    "featured": true,
+    "sortOrder": 54,
+    "images": [
+      "/images/products/ventilator-5.webp"
+    ],
+    "technicalSpecs": {
+      "Hedef Hasta Grubu": "Yenidoğan (Neonatal) ve Pediatrik Bebekler",
+      "Ventilasyon Tipi": "Zaman Döngülü, Basınç Sınırlı Sürekli Akışlı Ventilatör",
+      "Dalga Formu Ekranı": "Grafik Basınç ve Akış Dalga Formu Takibi",
+      "Tidal Hacim": "2 mL kadar düşük hassas mikro hacimler",
+      "Solunum Frekansı": "1 - 150 bpm yüksek frekans desteği",
+      "Garanti": "1 Yıl Cebeci Medikal Güvencesi"
+    },
+    "applications": [
+      "Yenidoğan Yoğun Bakım Üniteleri (NICU)",
+      "Prematüre Bebek Solunum Tedavisi",
+      "Çocuk Cerrahisi ve Pediatrik Yoğun Bakım"
+    ],
+    "translations": {
+      "tr": {
+        "title": "Sechrist Millennium Yenidoğan & Pediatrik Ventilatör",
+        "shortDescription": "Yenidoğan yoğun bakımda prematüre bebekler için özel mikro solutma hassasiyetine sahip ventilatör.",
+        "description": "Sechrist Millennium, yenidoğan bebeklerin hassas akciğer dinamiklerine uygun sürekli akışlı ve basınç sınırlı solunum desteği sağlayan lider bir neonatal ventilatördür. Hassas akış valfleri ve basınç sensörleri tamamen kalibre edilmiştir."
+      },
+      "en": {
+        "title": "Sechrist Millennium Neonatal & Infant Ventilator",
+        "shortDescription": "Specialized infant and neonatal ICU ventilator providing micro-volume continuous flow ventilation.",
+        "description": "Dedicated to fragile premature infants with time-cycled pressure-limited modes and graphic waveform monitoring."
+      },
+      "de": {
+        "title": "Sechrist Millennium Ventilatör (Generalüberholt)",
+        "shortDescription": "Generalüberholtes medizinisches Gerät von Sechrist mit 1 Jahr Garantie.",
+        "description": "Dedicated to fragile premature infants with time-cycled pressure-limited modes and graphic waveform monitoring. Vollständig gewartet, nach IEC 62353 sicherheitsgeprüft und mit 1 Jahr Cebeci Medikal Garantie."
+      },
+      "ar": {
+        "title": "Sechrist Millennium (جهاز طبي مجدد)",
+        "shortDescription": "جهاز طبي مجدد ومضمون من شركة Sechrist مع ضمان لمدة عام كامل.",
+        "description": "Sechrist Millennium, yenidoğan bebeklerin hassas akciğer dinamiklerine uygun sürekli akışlı ve basınç sınırlı solunum desteği sağlayan lider bir neonatal ventilatördür. Hassas akış valfleri ve basınç sensörleri tamamen kalibre edilmiştir. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+      },
+      "ja": {
+        "title": "Sechrist Millennium リファービッシュ医療機器",
+        "shortDescription": "Sechrist製 認定リファービッシュ医療機器（1年保証付き）。",
+        "description": "Dedicated to fragile premature infants with time-cycled pressure-limited modes and graphic waveform monitoring. 電気安全規格IEC 62353適合検査済み、1年間のフルテクニカル保証付き。"
+      },
+      "zh": {
+        "title": "Sechrist Millennium 翻新医疗设备",
+        "shortDescription": "Sechrist 经过严格技术检测与校准的官方认证翻新医疗设备（提供1年质保）。",
+        "description": "Dedicated to fragile premature infants with time-cycled pressure-limited modes and graphic waveform monitoring. 已通过严格电气安全与生物医学工程校准测试，附带Cebeci Medikal 1年完整技术服务保修。"
       }
     }
   }
-];
-
-export const STATIC_REFERENCES: StaticReferenceItem[] = [
-  {
-    id: "ref-1",
-    companyName: "Ankara Şehir Hastanesi",
-    clientName: "Biyomedikal Klinik Mühendislik",
-    position: "Biyomedikal Birim Sorumlusu",
-    sector: "Şehir Hastanesi",
-    city: "Ankara",
-    serviceScope: "Yoğun Bakım & Ventilatör Teknik Servisi",
-    rating: 5,
-    sortOrder: 1,
-    translations: {
-      tr: {
-        quote: "Yoğun bakım ventilatörlerimizin periyodik kalibrasyon ve acil arıza onarımında Cebeci Medikal ekibi 7/24 kesintisiz profesyonel destek sağladı.",
-        projectDescription: "Yoğun bakım ventilatör parkuru yıllık periyodik bakım ve kalibrasyon anlaşması.",
-      },
-      en: {
-        quote: "Outstanding 24/7 technical support and precision calibration for our ICU ventilator fleet.",
-        projectDescription: "Annual preventive maintenance agreement for ICU ventilators.",
-      },
-      ar: {
-        quote: "دعم فني استثنائي على مدار الساعة ومعايرة دقيقة لأجهزة التنفس الاصطناعي في العناية المركزة.",
-        projectDescription: "عقد صيانة سنوي ومعايرة دورية لأجهزة التنفس في العناية المركزة.",
-      },
-      de: {
-        quote: "Erstklassiger 24/7-Support und präzise Kalibrierung für unsere Intensivbeatmungsgeräte.",
-        projectDescription: "Wartungsvertrag für Beatmungsgeräte auf der Intensivstation.",
-      },
-      ja: {
-        quote: "集中治療室の人工呼吸器保守において、Cebeci Medikalの迅速な対応と確かな技術力に深く信頼を寄せています。",
-        projectDescription: "人工呼吸器定期保守・校正プロジェクト。",
-      },
-      zh: {
-        quote: "在重症监护呼吸机的定期维护与急修响应方面，塞贝吉医疗展现了卓越的技术实力与服务品质。",
-        projectDescription: "重症监护呼吸机全生命周期维保协议。",
-      },
-    },
-  },
-  {
-    id: "ref-2",
-    companyName: "Özel Memorial Ankara Hastanesi",
-    clientName: "Ameliyathane Koordinatörlüğü",
-    position: "Cerrahi Donanım Sorumlusu",
-    sector: "Özel Sağlık Grubu",
-    city: "Ankara",
-    serviceScope: "Ameliyathane & Anestezi İstasyonları",
-    rating: 5,
-    sortOrder: 2,
-    translations: {
-      tr: {
-        quote: "Ameliyathane anestezi iş istasyonları ve koter ünitelerimizin revizyonunda yüksek teknik başarı ve hızlı yedek parça temini sağlandı.",
-        projectDescription: "Cerrahi koter ve anestezi cihazları revizyonu.",
-      },
-      en: {
-        quote: "High technical standard in anesthesia workstation refurbishment and electrosurgical unit repairs.",
-        projectDescription: "Surgical diathermy and anesthesia refurbishment.",
-      },
-      ar: {
-        quote: "محطات التخدير الجراحي ووحدات الكي الكهربائي تم تجديدها بأعلى المعايير.",
-        projectDescription: "تجديد أجهزة الكي والتخدير الجراحي.",
-      },
-      de: {
-        quote: "Hervorragende Qualität bei der Revision von Anästhesiegeräten und HF-Chirurgie.",
-        projectDescription: "Generalüberholung von Elektrochirurgie- und Anästhesiegeräten.",
-      },
-      ja: {
-        quote: "手術室麻酔器および電気メス装置の保守点検において、完璧なサポートを受けています。",
-        projectDescription: "手術室機器リファービッシュ・点検サービス。",
-      },
-      zh: {
-        quote: "手术室麻醉工作站与高频电刀的翻新及技术检测非常彻底，零部件供应十分迅速。",
-        projectDescription: "手术室核心设备全套维护与升级服务。",
-      },
-    },
-  },
-  {
-    id: "ref-3",
-    companyName: "Hacettepe Üniversitesi Hastaneleri",
-    clientName: "Biyomedikal Hizmetler",
-    position: "Biyomedikal Uzmanı",
-    sector: "Üniversite Tıp Fakültesi",
-    city: "Ankara",
-    serviceScope: "Hasta Takip Monitörleri & Telemetri Ağı",
-    rating: 5,
-    sortOrder: 3,
-    translations: {
-      tr: {
-        quote: "Merkezi monitörizasyon ağımız ve hastabaşı monitörlerimizin periyodik bakım anlaşmasıyla arıza oranımız sıfıra indi.",
-        projectDescription: "Merkezi monitör sistemleri entegrasyonu ve bakımı.",
-      },
-      en: {
-        quote: "Zero-failure operational reliability achieved with Cebeci Medikal's periodic maintenance agreement for patient monitors.",
-        projectDescription: "Central telemetry network maintenance.",
-      },
-      ar: {
-        quote: "صيانة دورية متميزة لشاشات المراقبة والشبكة المركزية بدون أي انقطاع.",
-        projectDescription: "صيانة أنظمة المراقبة المركزية.",
-      },
-      de: {
-        quote: "Höchste Ausfallsicherheit durch regelmäßige Wartung der Patientenüberwachung.",
-        projectDescription: "Wartung von Patientenüberwachungssystemen.",
-      },
-      ja: {
-        quote: "生体情報モニタネットワークの安定稼働を実現していただき、大変満足しています。",
-        projectDescription: "テレメトリーネットワーク保守管理。",
-      },
-      zh: {
-        quote: "中央监护网络与床旁监护系统的年度维保服务极大提升了临床运行的稳定性与安全性。",
-        projectDescription: "全院生命体征监护网络技术保障服务。",
-      },
-    },
-  },
-];
-
-export const STATIC_CATALOGS: StaticCatalogItem[] = [
-  {
-    id: "cat-doc-1",
-    title: "Cebeci Medikal Genel Ürün Kataloğu 2026",
-    category: "Genel",
-    description: "Cebeci Medikal 2026 yılı güncel medikal cihaz, yoğun bakım ve ameliyathane ürün kataloğu.",
-    fileUrl: "https://www.cebecimedikal.com",
-    thumbnailUrl: "/images/products/hastabasi-monitoru-1.webp",
-    fileSize: "14.8 MB",
-    version: "2026.1",
-    downloadCount: 142,
-    sortOrder: 1,
-    isActive: true,
-    locale: "tr",
-    createdAt: new Date("2026-01-01"),
-    updatedAt: new Date("2026-01-01"),
-  },
-  {
-    id: "cat-doc-2",
-    title: "Yoğun Bakım & Yaşam Destek Cihazları Kataloğu",
-    category: "Yoğun Bakım",
-    description: "Ventilatörler, hasta başı monitörleri, defibrilatörler ve infüzyon sistemleri ürün broşürü.",
-    fileUrl: "https://www.cebecimedikal.com",
-    thumbnailUrl: "/images/products/ventilator-1.webp",
-    fileSize: "8.4 MB",
-    version: "2026.1",
-    downloadCount: 98,
-    sortOrder: 2,
-    isActive: true,
-    locale: "tr",
-    createdAt: new Date("2026-01-01"),
-    updatedAt: new Date("2026-01-01"),
-  },
-  {
-    id: "cat-doc-3",
-    title: "2. El Revizyonlu Tıbbi Cihazlar Kataloğu",
-    category: "2. El Cihazlar",
-    description: "Garantili, test edilmiş ve kalibre edilmiş 2. el medikal cihaz envanteri.",
-    fileUrl: "https://www.cebecimedikal.com",
-    thumbnailUrl: "/images/products/anestezi-cihazi-1.webp",
-    fileSize: "6.2 MB",
-    version: "2026.1",
-    downloadCount: 175,
-    sortOrder: 3,
-    isActive: true,
-    locale: "tr",
-    createdAt: new Date("2026-01-01"),
-    updatedAt: new Date("2026-01-01"),
-  },
-  {
-    id: "cat-doc-4",
-    title: "Biyomedikal Teknik Servis & Kalibrasyon Rehberi",
-    category: "Teknik Servis",
-    description: "Periyodik bakım prosedürleri, kalibrasyon standartları ve servis kapsamı rehberi.",
-    fileUrl: "https://www.cebecimedikal.com",
-    thumbnailUrl: "/images/products/kuvoz-1.webp",
-    fileSize: "4.1 MB",
-    version: "2026.1",
-    downloadCount: 64,
-    sortOrder: 4,
-    isActive: true,
-    locale: "tr",
-    createdAt: new Date("2026-01-01"),
-    updatedAt: new Date("2026-01-01"),
-  },
 ];
 
 export function getStaticCategories(locale: string = DEFAULT_LOCALE): LocalizedCategory[] {
@@ -3422,6 +4017,66 @@ export function getStaticServiceBySlug(
   };
 }
 
+export const STATIC_REFERENCES: StaticReferenceItem[] = [
+  {
+    id: "ref-1",
+    companyName: "Özel Ankara Şehir Hastaneleri Grubu",
+    clientName: "Op. Dr. Mehmet Yılmaz",
+    position: "Başhekim Yardımcısı & Cerrahi Direktör",
+    sector: "Özel Hastane",
+    city: "Ankara",
+    rating: 5,
+    sortOrder: 1,
+    serviceScope: "Ameliyathane & Anestezi Cihazları Periyodik Bakımı",
+    translations: {
+      tr: { quote: "Ameliyathane ve yoğun bakım cihazlarımızın yıllık periyodik bakım ve kalibrasyon süreçlerinde Cebeci Medikal'in TSE HYB belgeli uzman mühendis kadrosuyla çalışmaktan son derece memnunuz. Hızlı müdahale ve güvenilir yedek parça temini operasyonlarımızın aksamamasını sağlıyor." },
+      en: { quote: "We are extremely satisfied working with Cebeci Medikal's certified engineering team for the annual preventive maintenance and calibration of our operating theatre and ICU equipment." },
+      de: { quote: "Wir sind äußerst zufrieden mit der Zusammenarbeit mit dem zertifizierten Ingenieurteam von Cebeci Medikal für die jährliche vorbeugende Wartung." },
+      ar: { quote: "نحن راضون للغاية عن العمل مع الفريق الهندسي المعتمد لشركة Cebeci Medikal في الصيانة الوقائية السنوية والمعايرة." },
+      ja: { quote: "手術室およびICU機器の年次定期保守と校正において、Cebeci Medikalの認定エンジニアチームとの協力に大変満足しています。" },
+      zh: { quote: "我们在手术室和ICU设备的年度预防性维护和校准方面与Cebeci Medikal的认证工程师团队合作非常满意。" },
+    },
+  },
+  {
+    id: "ref-2",
+    companyName: "Başkent Kardiyoloji & Tıp Merkezi",
+    clientName: "Biyomedikal Müh. Zeynep Kaya",
+    position: "Klinik Mühendislik Sorumlusu",
+    sector: "Tıp Merkezi",
+    city: "Ankara",
+    rating: 5,
+    sortOrder: 2,
+    serviceScope: "EKG & Defibrilatör Revizyonu ve Kalibrasyon",
+    translations: {
+      tr: { quote: "Kardiyoloji birimimizin defibrilatör ve EKG cihazlarının 2. el revizyon ve kalibrasyon testleri IEC 62353 standartlarına tam uygun olarak tamamlandı. Raporlama ve teknik dokümantasyon kalitesi takdire şayan." },
+      en: { quote: "Refurbishment and calibration testing of our cardiology unit's defibrillators and ECG devices were completed in full compliance with IEC 62353 standards." },
+      de: { quote: "Die Überholung und Kalibrierungsprüfung der Defibrillatoren und EKG-Geräte unserer kardiologischen Abteilung wurden in voller Übereinstimmung mit den IEC 62353-Standards abgeschlossen." },
+      ar: { quote: "تم الانتهاء من تجديد واختبار معايرة أجهزة إزالة الرجفان وأجهزة تخطيط القلب في وحدة أمراض القلب لدينا بما يتوافق تمامًا مع معايير IEC 62353." },
+      ja: { quote: "当院の循環器科の除細動器および心電計のオーバーホールと校正試験は、IEC 62353規格に完全準拠して完了しました。" },
+      zh: { quote: "我们心脏病科的心脏除颤器和心电图设备的翻新和校准测试完全符合IEC 62353标准。" },
+    },
+  },
+  {
+    id: "ref-3",
+    companyName: "Anadolu Doğum & Çocuk Sağlığı Kliniği",
+    clientName: "Uzm. Dr. Burak Demir",
+    position: "Klinik Direktörü",
+    sector: "Doğum & Pediyatri",
+    city: "Eskişehir",
+    rating: 5,
+    sortOrder: 3,
+    serviceScope: "Küvöz & Fototerapi Cihazları Kurulum ve Devreye Alma",
+    translations: {
+      tr: { quote: "Yenidoğan yoğun bakım ünitemize kazandırdığımız küvöz ve fototerapi sistemlerinin kurulum, montaj ve kullanıcı eğitimleri kusursuz şekilde yürütüldü. Satış sonrası 7/24 teknik destekleri bize büyük güven veriyor." },
+      en: { quote: "Installation, commissioning, and user training of incubator and phototherapy systems for our neonatal ICU were carried out flawlessly." },
+      de: { quote: "Installation, Inbetriebnahme und Benutzerschulung der Inkubator- und Phototherapiesysteme für unsere neonatale Intensivstation wurden einwandfrei durchgeführt." },
+      ar: { quote: "تم تنفيذ تركيب وتشغيل وتدريب المستخدمين على أنظمة الحاضنات والعلاج الضوئي لوحدة العناية المركزة لحديثي الولادة لدينا بشكل لا تشوبه شائبة." },
+      ja: { quote: "新生児集中治療室向けの保育器および光線治療システムの設置、立ち上げ、ユーザー教育が滞りなく実施されました。" },
+      zh: { quote: "我们新生儿重症监护室的婴儿保温箱和光疗系统的安装、调试和用户培训均顺利完成。" },
+    },
+  },
+];
+
 export function getStaticReferences(locale: string = DEFAULT_LOCALE): LocalizedReference[] {
   return STATIC_REFERENCES.map((r) => {
     const t = r.translations[locale] || r.translations[DEFAULT_LOCALE] || r.translations.tr;
@@ -3438,6 +4093,73 @@ export function getStaticReferences(locale: string = DEFAULT_LOCALE): LocalizedR
     };
   });
 }
+
+export const STATIC_CATALOGS: StaticCatalogItem[] = [
+  {
+    id: "cat-1",
+    title: "Cebeci Medikal Genel Ürün & Tıbbi Cihaz Kataloğu 2026",
+    category: "Genel Katalog",
+    description: "Ventilatörler, anestezi cihazları, defibrilatörler, hasta başı monitörleri ve cerrahi sistemleri kapsayan kapsamlı ürün kataloğu.",
+    fileUrl: "/catalogs/cebeci-medikal-genel-katalog-2026.pdf",
+    thumbnailUrl: "/catalogs/thumb-genel.jpg",
+    fileSize: "14.2 MB",
+    version: "2026.1",
+    downloadCount: 342,
+    sortOrder: 1,
+    isActive: true,
+    locale: "tr",
+    createdAt: new Date("2026-01-01"),
+    updatedAt: new Date("2026-01-01"),
+  },
+  {
+    id: "cat-2",
+    title: "Yoğun Bakım & Anestezi Çözümleri Kataloğu",
+    category: "Yoğun Bakım & Anestezi",
+    description: "Ventilatör, anestezi cihazları, hasta monitörleri ve infüzyon/enjektör pompa sistemleri teknik şartname ve ürün kataloğu.",
+    fileUrl: "/catalogs/cebeci-medikal-yogun-bakim-anestezi.pdf",
+    thumbnailUrl: "/catalogs/thumb-icu.jpg",
+    fileSize: "9.8 MB",
+    version: "2026.1",
+    downloadCount: 218,
+    sortOrder: 2,
+    isActive: true,
+    locale: "tr",
+    createdAt: new Date("2026-01-01"),
+    updatedAt: new Date("2026-01-01"),
+  },
+  {
+    id: "cat-3",
+    title: "Biyomedikal Teknik Servis & Periyodik Bakım Kılavuzu",
+    category: "Teknik Servis",
+    description: "TSE HYB standartlarında periyodik koruyucu bakım, IEC 62353 elektriksel güvenlik testleri ve kalibrasyon hizmet kapsamı.",
+    fileUrl: "/catalogs/cebeci-medikal-teknik-servis-kilavuzu.pdf",
+    thumbnailUrl: "/catalogs/thumb-service.jpg",
+    fileSize: "6.4 MB",
+    version: "2026.1",
+    downloadCount: 185,
+    sortOrder: 3,
+    isActive: true,
+    locale: "tr",
+    createdAt: new Date("2026-01-01"),
+    updatedAt: new Date("2026-01-01"),
+  },
+  {
+    id: "cat-4",
+    title: "Revizyonlu (2. El) Tıbbi Cihazlar & Garanti Kataloğu",
+    category: "2. El Cihazlar",
+    description: "Ekspertizi ve revizyonu yapılmış, 1 yıl tam garantili 2. el tıbbi cihaz envanteri ve sertifikasyon detayları.",
+    fileUrl: "/catalogs/cebeci-medikal-2-el-envanter.pdf",
+    thumbnailUrl: "/catalogs/thumb-secondhand.jpg",
+    fileSize: "8.1 MB",
+    version: "2026.1",
+    downloadCount: 290,
+    sortOrder: 4,
+    isActive: true,
+    locale: "tr",
+    createdAt: new Date("2026-01-01"),
+    updatedAt: new Date("2026-01-01"),
+  },
+];
 
 export function getStaticCatalogs(locale: string = DEFAULT_LOCALE): StaticCatalogItem[] {
   return STATIC_CATALOGS;

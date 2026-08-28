@@ -238,12 +238,14 @@ export default async function HomePage({
                 className="group p-6 rounded-2xl bg-surface border border-border hover:border-primary/50 hover:bg-surface-2 transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between"
               >
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 flex items-center justify-center mb-5 shadow-sm">
-                    <IconComp className="w-6 h-6" />
+                  <div className="flex items-center gap-3.5 mb-3.5">
+                    <div className="w-11 h-11 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 flex items-center justify-center flex-shrink-0 shadow-sm">
+                      <IconComp className="w-5.5 h-5.5" />
+                    </div>
+                    <h3 className="text-base sm:text-lg font-bold text-foreground group-hover:text-primary transition-colors leading-snug">
+                      {cat.name}
+                    </h3>
                   </div>
-                  <h3 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors mb-2">
-                    {cat.name}
-                  </h3>
                   <p className="text-xs sm:text-sm text-foreground-muted leading-relaxed line-clamp-2">
                     {cat.description}
                   </p>
@@ -377,12 +379,14 @@ export default async function HomePage({
                   className="p-6 rounded-2xl bg-surface border border-border hover:border-primary/40 transition-all duration-300 shadow-sm flex flex-col justify-between group"
                 >
                   <div>
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors flex items-center justify-center mb-5">
-                      <IconComp className="w-6 h-6" />
+                    <div className="flex items-center gap-3.5 mb-4">
+                      <div className="w-11 h-11 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors flex items-center justify-center flex-shrink-0 shadow-sm">
+                        <IconComp className="w-5.5 h-5.5" />
+                      </div>
+                      <h3 className="text-base font-bold text-foreground group-hover:text-primary transition-colors leading-snug">
+                        {service.title}
+                      </h3>
                     </div>
-                    <h3 className="text-base font-bold text-foreground group-hover:text-primary transition-colors mb-2">
-                      {service.title}
-                    </h3>
                     <p className="text-xs sm:text-sm text-foreground-muted leading-relaxed mb-6">
                       {service.shortDescription}
                     </p>

@@ -63,12 +63,14 @@ export default async function ServicesPage({
               className="p-8 rounded-3xl bg-surface border border-border hover:border-primary/40 hover:shadow-xl transition-all duration-300 flex flex-col justify-between space-y-6 group"
             >
               <div className="space-y-4">
-                <div className="w-14 h-14 rounded-2xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors flex items-center justify-center">
-                  <IconComp className="w-7 h-7" />
+                <div className="flex items-center gap-4">
+                  <div className="w-13 h-13 sm:w-14 sm:h-14 rounded-2xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors flex items-center justify-center flex-shrink-0 shadow-sm">
+                    <IconComp className="w-6 h-6 sm:w-7 sm:h-7" />
+                  </div>
+                  <h2 className="font-serif text-xl sm:text-2xl font-bold text-foreground group-hover:text-primary transition-colors leading-tight">
+                    {service.title}
+                  </h2>
                 </div>
-                <h2 className="font-serif text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
-                  {service.title}
-                </h2>
                 <p className="text-sm text-foreground-muted leading-relaxed">
                   {service.description}
                 </p>

@@ -91,24 +91,28 @@ export default async function AboutPage({
       {/* Mission & Vision Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="p-8 rounded-3xl bg-surface border border-border shadow-sm space-y-4">
-          <div className="w-12 h-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center">
-            <HeartPulse className="w-6 h-6" />
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 shadow-sm">
+              <HeartPulse className="w-6 h-6" />
+            </div>
+            <h2 className="font-serif text-2xl font-bold text-foreground">
+              {dict.about.missionTitle}
+            </h2>
           </div>
-          <h2 className="font-serif text-2xl font-bold text-foreground">
-            {dict.about.missionTitle}
-          </h2>
           <p className="text-sm text-foreground-muted leading-relaxed">
             {dict.about.missionDesc}
           </p>
         </div>
 
         <div className="p-8 rounded-3xl bg-surface border border-border shadow-sm space-y-4">
-          <div className="w-12 h-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center">
-            <Award className="w-6 h-6" />
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 shadow-sm">
+              <Award className="w-6 h-6" />
+            </div>
+            <h2 className="font-serif text-2xl font-bold text-foreground">
+              {dict.about.visionTitle}
+            </h2>
           </div>
-          <h2 className="font-serif text-2xl font-bold text-foreground">
-            {dict.about.visionTitle}
-          </h2>
           <p className="text-sm text-foreground-muted leading-relaxed">
             {dict.about.visionDesc}
           </p>

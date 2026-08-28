@@ -25,10 +25,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
+      { url: "/Logo/CBC_Medikal_Symbol_White.svg", type: "image/svg+xml" },
       { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/icon" },
     ],
-    apple: "/apple-icon",
+    shortcut: "/Logo/CBC_Medikal_Symbol_White.svg",
+    apple: "/Logo/CBC_Medikal_Symbol_White.svg",
   },
 };
 

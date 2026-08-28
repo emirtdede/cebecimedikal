@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 100" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg-dark { fill: #08121B; }
+      .text-primary { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .font-black { font-weight: 900; }
+      .accent { fill: #10B981; }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" class="bg-dark"/>
+  <g transform="translate(30, 20)">
+     <path d="M 26 7 L 8 18 L 8 42 L 26 53" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+     <path d="M 34 7 L 52 18 L 52 42 L 34 53" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+     <path d="M 27 20 L 33 20 L 33 27 L 40 27 L 40 33 L 33 33 L 33 40 L 27 40 L 27 33 L 20 33 L 20 27 L 27 27 Z" class="accent"/>
+     <text x="75" y="42" class="text-primary" font-size="38" letter-spacing="1">
+       <tspan class="font-black" fill="#FFFFFF">CBC</tspan>
+       <tspan class="font-black" fill="#10B981" dx="8">MEDİKAL</tspan>
+     </text>
+  </g>
+</svg>

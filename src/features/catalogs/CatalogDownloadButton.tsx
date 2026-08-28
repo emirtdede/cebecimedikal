@@ -1,24 +1,28 @@
 "use client";
 
 import { useState } from "react";
-import { FileText, Check, Loader2, ExternalLink } from "lucide-react";
+import { FileText, Check, Loader2, ExternalLink, Download } from "lucide-react";
 import { getOrCreateVisitorId, getOrCreateSessionId, trackClientEvent } from "@/features/analytics/AnalyticsTracker";
 
 export function CatalogDownloadButton({
   catalogId,
   fileUrl,
   title,
-  initialCount,
+  initialCount = 0,
+  btnText = "PDF İncele & İndir",
 }: {
   catalogId: string;
   fileUrl: string;
   title: string;
-  initialCount: number;
+  initialCount?: number;
+  btnText?: string;
 }) {
   const [loading, setLoading] = useState(false);
+  const [downloadCount, setDownloadCount] = useState(initialCount);
   const [opened, setOpened] = useState(false);
 
-  const handleOpenCatalog = async () => {
+  const handleOpenCatalog = async (e: React.MouseEvent) => {
+    e.preventDefault();
     setLoading(true);
     const visitorId = getOrCreateVisitorId();
     const sessionId = getOrCreateSessionId();
@@ -29,39 +33,49 @@ export function CatalogDownloadButton({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ catalogId, visitorId, sessionId }),
       });
+      setDownloadCount((prev) => prev + 1);
     } catch {}
 
-    trackClientEvent("catalog_view", { label: title });
+    trackClientEvent("catalog_download", { label: title });
 
-    // Open PDF in new tab
+    // Open/download PDF
     window.open(fileUrl, "_blank");
 
     setLoading(false);
     setOpened(true);
-    setTimeout(() => setOpened(false), 3000);
+    setTimeout(() => setOpened(false), 3500);
   };
 
   return (
-    <div className="flex items-center justify-between gap-4 w-full">
-      <span className="text-xs text-foreground-muted flex items-center gap-1.5">
-        <FileText className="w-3.5 h-3.5 text-primary" />
-        <span>Resmi Ürün Dokümanı</span>
-      </span>
+    <div className="flex items-center gap-3">
       <button
         type="button"
         onClick={handleOpenCatalog}
         disabled={loading}
-        className="px-4 py-2 rounded-xl bg-primary hover:bg-primary-hover text-white text-xs font-bold shadow-sm transition-colors flex items-center gap-1.5 focus:outline-none"
+        className="px-5 py-2.5 rounded-xl bg-primary hover:bg-primary-hover text-white text-xs sm:text-sm font-bold shadow-md shadow-primary/20 hover:shadow-primary/30 transition-all flex items-center gap-2 focus:outline-none flex-shrink-0 cursor-pointer active:scale-95"
       >
         {loading ? (
-          <Loader2 className="w-3.5 h-3.5 animate-spin" />
+          <Loader2 className="w-4 h-4 animate-spin" />
         ) : opened ? (
-          <Check className="w-3.5 h-3.5 text-white" />
+          <Check className="w-4 h-4 text-white" />
         ) : (
-          <ExternalLink className="w-3.5 h-3.5" />
+          <FileText className="w-4 h-4" />
         )}
-        <span>{opened ? "Açıldı" : "PDF İncele"}</span>
+        <span>{opened ? "Açıldı & İndirildi" : btnText}</span>
       </button>
+
+      <a
+        href={fileUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        download
+        onClick={() => trackClientEvent("catalog_direct_download", { label: title })}
+        className="p-2.5 rounded-xl bg-surface-2 hover:bg-surface border border-border text-foreground hover:text-primary transition-all flex items-center justify-center"
+        title="Doğrudan İndir"
+        aria-label="Doğrudan İndir"
+      >
+        <Download className="w-4 h-4" />
+      </a>
     </div>
   );
 }

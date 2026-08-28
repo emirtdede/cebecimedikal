@@ -29,6 +29,7 @@ import { Dictionary } from "@/lib/dictionary";
 import { ThemeToggle } from "./ThemeToggle";
 import { LanguageSelector } from "./LanguageSelector";
 import { SearchModal } from "./SearchModal";
+import { BrandLogo } from "./BrandLogo";
 import { LocalizedCategory } from "@/lib/data";
 import { getLocalizedHref } from "@/lib/routes";
 
@@ -127,16 +128,15 @@ export function Header({
           {/* Brand Logo */}
           <Link
             href={`/${locale}`}
-            className="flex flex-col group focus:outline-none flex-shrink-0"
+            className="flex items-center group focus:outline-none flex-shrink-0"
             aria-label="Cebeci Medikal Ana Sayfa"
           >
-            <span className="font-serif font-black text-lg sm:text-2xl text-foreground tracking-tight group-hover:text-primary transition-colors leading-none">
-              CEBECİ
-              <span className="text-primary ml-1">MEDİKAL</span>
-            </span>
-            <span className="text-[10px] text-foreground-muted tracking-wider uppercase font-semibold mt-0.5 hidden xs:block">
-              Biyomedikal Teknolojileri
-            </span>
+            <BrandLogo
+              showSubtitle
+              subtitleText={dict.brand.tagline || "Biyomedikal Teknolojileri"}
+              height={36}
+              className="group-hover:opacity-90 transition-opacity"
+            />
           </Link>
 
           {/* Desktop Navigation */}

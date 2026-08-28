@@ -11,6 +11,8 @@ import {
 import { Locale } from "@/lib/i18n";
 import { Dictionary } from "@/lib/dictionary";
 import { getLocalizedHref } from "@/lib/routes";
+import { BrandLogo } from "./BrandLogo";
+import { VelliumLogo } from "./VelliumLogo";
 
 export function Footer({
   locale,
@@ -50,10 +52,13 @@ export function Footer({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10">
           {/* Col 1: Brand Info & Social Media (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
-            <Link href={`/${locale}`} className="inline-block">
-              <div className="font-serif font-bold text-lg text-foreground tracking-tight hover:text-primary transition-colors">
-                CEBECİ MEDİKAL
-              </div>
+            <Link href={`/${locale}`} className="inline-block group focus:outline-none" aria-label="Cebeci Medikal Ana Sayfa">
+              <BrandLogo
+                showSubtitle
+                subtitleText={dict.brand.tagline || "Biyomedikal Teknolojileri"}
+                height={36}
+                className="group-hover:opacity-90 transition-opacity"
+              />
             </Link>
 
             <p className="text-xs text-foreground-muted leading-relaxed max-w-sm">
@@ -144,13 +149,13 @@ export function Footer({
             </h4>
             <ul className="space-y-2.5 text-xs text-foreground-muted">
               <li>
-                <Link href={productsHref} className="hover:text-primary transition-colors block whitespace-nowrap">
+                <Link href={catalogsHref} className="hover:text-primary transition-colors block whitespace-nowrap">
                   {dict.products.title}
                 </Link>
               </li>
               <li>
-                <Link href={`${productsHref}?durum=SECOND_HAND`} className="hover:text-primary transition-colors block whitespace-nowrap">
-                  {dict.nav.secondHand}
+                <Link href={productsHref} className="hover:text-primary transition-colors block whitespace-nowrap">
+                  {dict.nav.products}
                 </Link>
               </li>
               <li>
@@ -229,8 +234,43 @@ export function Footer({
 
         {/* Bottom Bar: Copyright & Legal */}
         <div className="pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-foreground-muted">
-          <div>
-            © {new Date().getFullYear()} Cebeci Medikal. {dict.footer.rights}
+          <div className="unified-shimmer-wrapper">
+            {/* Base Layer */}
+            <div className="unified-shimmer-base flex flex-wrap items-center gap-x-2.5 gap-y-1 text-center sm:text-left">
+              <span>
+                © {new Date().getFullYear()} Cebeci Medikal. {dict.footer.rights}
+              </span>
+              <span className="hidden sm:inline text-border">•</span>
+              <a
+                href="https://vellium.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 transition-opacity group cursor-pointer"
+                title="Designed & Developed by Vellium"
+              >
+                <VelliumLogo className="w-5 h-4.5 flex-shrink-0" />
+                <span className="text-xs">
+                  Designed &amp; Developed by <strong className="font-bold">Vellium</strong>
+                </span>
+              </a>
+            </div>
+
+            {/* Seamless In-Letter & In-Logo Single-Pass Light Wave Overlay */}
+            <div
+              className="unified-shimmer-shine flex flex-wrap items-center gap-x-2.5 gap-y-1 text-center sm:text-left"
+              aria-hidden="true"
+            >
+              <span>
+                © {new Date().getFullYear()} Cebeci Medikal. {dict.footer.rights}
+              </span>
+              <span className="hidden sm:inline opacity-40">•</span>
+              <span className="inline-flex items-center gap-2">
+                <VelliumLogo className="w-5 h-4.5 flex-shrink-0" />
+                <span className="text-xs">
+                  Designed &amp; Developed by <strong className="font-bold">Vellium</strong>
+                </span>
+              </span>
+            </div>
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">

@@ -53,7 +53,7 @@ export async function generateMetadata({
       type: "website",
       images: [
         {
-          url: "https://cebecimedikal.com/favicon.svg",
+          url: "https://cebecimedikal.com/Logo/CBC_Medikal_Symbol_White.svg",
           width: 512,
           height: 512,
           alt: "Cebeci Medikal Logo",
@@ -64,7 +64,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: `${dict.brand.name} | ${dict.brand.tagline}`,
       description: dict.brand.shortDescription,
-      images: ["https://cebecimedikal.com/favicon.svg"],
+      images: ["https://cebecimedikal.com/Logo/CBC_Medikal_Symbol_White.svg"],
     },
     other: {
       "geo.region": "TR-06",
@@ -101,8 +101,8 @@ export default async function LocaleLayout({
     name: "Cebeci Medikal - Tıbbi Cihazlar ve Biyomedikal Hizmetleri",
     alternateName: "Cebeci Medikal",
     url: "https://cebecimedikal.com",
-    logo: "https://cebecimedikal.com/favicon.svg",
-    image: "https://cebecimedikal.com/favicon.svg",
+    logo: "https://cebecimedikal.com/Logo/CBC_Medikal_Symbol_White.svg",
+    image: "https://cebecimedikal.com/Logo/CBC_Medikal_Symbol_White.svg",
     description: dict.brand.shortDescription,
     telephone: ["+90 506 606 15 40", "+90 506 835 57 41"],
     email: "cbcmedikal@gmail.com",

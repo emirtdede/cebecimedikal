@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { X, ExternalLink, Volume2, VolumeX } from "lucide-react";
+import { X, ExternalLink, Volume2, VolumeX, ArrowRight } from "lucide-react";
 
 interface Announcement {
   id: string;
@@ -105,8 +105,8 @@ export function AnnouncementPopup() {
   return (
     <div
       className={`
-        fixed bottom-6 left-6 z-[90] 
-        w-[340px] max-w-[calc(100vw-48px)]
+        fixed bottom-5 left-4 sm:bottom-6 sm:left-6 z-[90] 
+        w-[285px] max-w-[calc(100vw-32px)]
         transition-all duration-500 ease-out
         ${isEntering && !isExiting
           ? "opacity-100 translate-y-0 translate-x-0 scale-100"
@@ -116,7 +116,7 @@ export function AnnouncementPopup() {
       role="dialog"
       aria-label="Bilgilendirme"
     >
-      <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border/60 bg-surface/95 backdrop-blur-xl">
+      <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border/80 bg-surface/95 backdrop-blur-xl">
         {/* Decorative top gradient bar */}
         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-primary-hover to-primary/60" />
 
@@ -124,7 +124,7 @@ export function AnnouncementPopup() {
         {current.dismissible && (
           <button
             onClick={dismiss}
-            className="absolute top-3 right-3 z-10 w-7 h-7 rounded-lg bg-bg/60 backdrop-blur-sm border border-border/40 text-foreground-muted hover:text-foreground hover:bg-bg/80 transition-all duration-200 flex items-center justify-center group"
+            className="absolute top-2.5 right-2.5 z-10 w-6.5 h-6.5 rounded-lg bg-bg/60 backdrop-blur-sm border border-border/40 text-foreground-muted hover:text-foreground hover:bg-bg/80 transition-all duration-200 flex items-center justify-center group cursor-pointer"
             aria-label="Kapat"
           >
             <X className="w-3.5 h-3.5 group-hover:rotate-90 transition-transform duration-300" />
@@ -133,7 +133,7 @@ export function AnnouncementPopup() {
 
         {/* Image content */}
         {hasImage && (
-          <div className="relative w-full aspect-[4/3] overflow-hidden">
+          <div className="relative w-full aspect-[16/10] overflow-hidden">
             <img
               src={current.imageUrl!}
               alt={current.title || "Bilgilendirme"}
@@ -161,7 +161,7 @@ export function AnnouncementPopup() {
             {/* Mute toggle */}
             <button
               onClick={() => setIsMuted(!isMuted)}
-              className="absolute bottom-3 right-3 z-10 w-7 h-7 rounded-lg bg-bg/60 backdrop-blur-sm border border-border/40 text-foreground-muted hover:text-foreground transition-all flex items-center justify-center"
+              className="absolute bottom-2.5 right-2.5 z-10 w-6.5 h-6.5 rounded-lg bg-bg/60 backdrop-blur-sm border border-border/40 text-foreground-muted hover:text-foreground transition-all flex items-center justify-center cursor-pointer"
               aria-label={isMuted ? "Sesi aç" : "Sesi kapat"}
             >
               {isMuted ? (
@@ -179,14 +179,14 @@ export function AnnouncementPopup() {
 
         {/* Text content area */}
         {hasText && (
-          <div className={`p-5 ${hasImage || hasVideo ? "pt-4" : "pt-6"}`}>
+          <div className={`p-4 sm:p-4.5 ${hasImage || hasVideo ? "pt-3" : "pt-4.5"}`}>
             {current.title && (
-              <h3 className="text-sm font-bold text-foreground leading-snug mb-2">
+              <h3 className="text-xs sm:text-[13px] font-bold text-foreground leading-snug mb-1.5 pr-6">
                 {current.title}
               </h3>
             )}
             {current.message && (
-              <p className="text-xs text-foreground-muted leading-relaxed">
+              <p className="text-[11px] sm:text-[11.5px] text-foreground-muted leading-relaxed">
                 {current.message}
               </p>
             )}
@@ -194,17 +194,21 @@ export function AnnouncementPopup() {
         )}
 
         {/* Action area */}
-        <div className="px-5 pb-4 flex items-center justify-between gap-3">
+        <div className="px-4 sm:px-4.5 pb-3.5 flex items-center justify-between gap-3">
           {/* Link button */}
           {hasLink && (
             <a
               href={current.linkUrl!}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={current.linkUrl?.startsWith("http") ? "_blank" : undefined}
+              rel={current.linkUrl?.startsWith("http") ? "noopener noreferrer" : undefined}
               className="inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:text-primary-hover transition-colors"
             >
-              <span>{current.linkText || "Detaylı Bilgi"}</span>
-              <ExternalLink className="w-3 h-3" />
+              <span>{current.linkText || "İncele"}</span>
+              {current.linkUrl?.startsWith("http") ? (
+                <ExternalLink className="w-3 h-3" />
+              ) : (
+                <ArrowRight className="w-3 h-3" />
+              )}
             </a>
           )}
 
@@ -217,7 +221,7 @@ export function AnnouncementPopup() {
         </div>
 
         {/* Subtle ambient glow */}
-        <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-primary/8 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-primary/8 rounded-full blur-2xl pointer-events-none" />
       </div>
     </div>
   );
