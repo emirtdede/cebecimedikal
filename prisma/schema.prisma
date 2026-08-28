@@ -1,0 +1,336 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String     @id @default(cuid())
+  email        String     @unique
+  name         String
+  passwordHash String
+  role         String     @default("SUPER_ADMIN") // SUPER_ADMIN, CONTENT_MANAGER, SALES_SUPPORT, ANALYST, VIEWER
+  isActive     Boolean    @default(true)
+  lastLoginAt  DateTime?
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  auditLogs    AuditLog[]
+}
+
+model AuditLog {
+  id         String   @id @default(cuid())
+  userId     String?
+  userName   String?
+  userEmail  String?
+  action     String   // LOGIN, LOGIN_FAILED, PRODUCT_CREATED, PRODUCT_UPDATED, PRODUCT_PUBLISHED, PRODUCT_DELETED, SETTING_CHANGED, etc.
+  entityType String?
+  entityId   String?
+  details    String?  // JSON string
+  ipAddress  String?
+  userAgent  String?
+  createdAt  DateTime @default(now())
+
+  user User? @relation(fields: [userId], references: [id], onDelete: SetNull)
+}
+
+model SiteSetting {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  value     String   // Can store string or JSON
+  group     String   @default("general") // general, contact, social, theme, analytics, seo
+  updatedAt DateTime @updatedAt
+}
+
+model Category {
+  id           String                @id @default(cuid())
+  slug         String                @unique
+  icon         String                @default("Activity")
+  sortOrder    Int                   @default(0)
+  isActive     Boolean               @default(true)
+  createdAt    DateTime              @default(now())
+  updatedAt    DateTime              @updatedAt
+  translations CategoryTranslation[]
+  products     Product[]
+}
+
+model CategoryTranslation {
+  id             String   @id @default(cuid())
+  categoryId     String
+  locale         String   // tr, en, ar, de, ja, zh
+  name           String
+  description    String?
+  seoTitle       String?
+  seoDescription String?
+  category       Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  @@unique([categoryId, locale])
+}
+
+model Product {
+  id             String               @id @default(cuid())
+  slug           String               @unique
+  categoryId     String
+  brand          String               @default("Cebeci Medikal")
+  model          String?
+  sku            String?
+  condition      String               @default("NEW") // NEW, SECOND_HAND
+  status         String               @default("PUBLISHED") // DRAFT, REVIEW, PUBLISHED, ARCHIVED
+  aiGenerated    Boolean              @default(false)
+  humanReviewed  Boolean              @default(true)
+  featured       Boolean              @default(false)
+  sortOrder      Int                  @default(0)
+  technicalSpecs String?              // JSON string of specs key-value/tables
+  applications   String?              // JSON array of strings
+  images         String               // JSON array of image URLs
+  documents      String?              // JSON array of document objects { title, url }
+  publishedAt    DateTime?            @default(now())
+  createdAt      DateTime             @default(now())
+  updatedAt      DateTime             @updatedAt
+  category       Category             @relation(fields: [categoryId], references: [id])
+  translations   ProductTranslation[]
+}
+
+model ProductTranslation {
+  id               String  @id @default(cuid())
+  productId        String
+  locale           String  // tr, en, ar, de, ja, zh
+  title            String
+  shortDescription String?
+  description      String
+  seoTitle         String?
+  seoDescription   String?
+  product          Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([productId, locale])
+}
+
+model Service {
+  id           String               @id @default(cuid())
+  slug         String               @unique
+  icon         String               @default("Wrench")
+  sortOrder    Int                  @default(0)
+  isActive     Boolean              @default(true)
+  createdAt    DateTime             @default(now())
+  updatedAt    DateTime             @updatedAt
+  translations ServiceTranslation[]
+}
+
+model ServiceTranslation {
+  id               String  @id @default(cuid())
+  serviceId        String
+  locale           String  // tr, en, ar, de, ja, zh
+  title            String
+  shortDescription String?
+  description      String
+  details          String? // JSON string: features, workflow steps, benefits
+  seoTitle         String?
+  seoDescription   String?
+  service          Service @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+
+  @@unique([serviceId, locale])
+}
+
+model Reference {
+  id                   String                 @id @default(cuid())
+  companyName          String
+  clientName           String?
+  position             String?
+  sector               String                 @default("Sağlık / Hastane")
+  city                 String                 @default("Ankara")
+  logoUrl              String?
+  rating               Int                    @default(5)
+  serviceScope         String?
+  hasPublishPermission Boolean                @default(true)
+  featured             Boolean                @default(true)
+  sortOrder            Int                    @default(0)
+  isActive             Boolean                @default(true)
+  createdAt            DateTime               @default(now())
+  updatedAt            DateTime               @updatedAt
+  translations         ReferenceTranslation[]
+}
+
+model ReferenceTranslation {
+  id                 String    @id @default(cuid())
+  referenceId        String
+  locale             String    // tr, en, ar, de, ja, zh
+  quote              String
+  projectDescription String?
+  reference          Reference @relation(fields: [referenceId], references: [id], onDelete: Cascade)
+
+  @@unique([referenceId, locale])
+}
+
+model Catalog {
+  id            String   @id @default(cuid())
+  title         String
+  locale        String   @default("tr")
+  category      String   @default("Genel")
+  description   String?
+  fileUrl       String
+  thumbnailUrl  String?
+  fileSize      String   @default("2.4 MB")
+  version       String   @default("1.0")
+  downloadCount Int      @default(0)
+  isActive      Boolean  @default(true)
+  sortOrder     Int      @default(0)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Faq {
+  id           String           @id @default(cuid())
+  category     String           @default("Genel")
+  sortOrder    Int              @default(0)
+  isActive     Boolean          @default(true)
+  createdAt    DateTime         @default(now())
+  updatedAt    DateTime         @updatedAt
+  translations FaqTranslation[]
+}
+
+model FaqTranslation {
+  id        String @id @default(cuid())
+  faqId     String
+  locale    String // tr, en, ar, de, ja, zh
+  question  String
+  answer    String
+  faq       Faq    @relation(fields: [faqId], references: [id], onDelete: Cascade)
+
+  @@unique([faqId, locale])
+}
+
+model QuoteRequest {
+  id               String   @id @default(cuid())
+  quoteNumber      String   @unique
+  fullName         String
+  company          String
+  email            String
+  phone            String
+  city             String
+  topic            String
+  productId        String?
+  productName      String?
+  quantity         Int      @default(1)
+  message          String
+  preferredChannel String   @default("phone") // phone, email, whatsapp
+  documentUrl      String?
+  status           String   @default("NEW") // NEW, IN_REVIEW, QUOTE_PREPARED, CONTACTED, CONCLUDED, CLOSED, SPAM
+  notes            String?
+  ipAddress        String?
+  userAgent        String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  fullName  String
+  company   String?
+  email     String
+  phone     String
+  subject   String
+  message   String
+  isRead    Boolean  @default(false)
+  status    String   @default("NEW") // NEW, REPLIED, ARCHIVED, SPAM
+  ipAddress String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model AnalyticsVisitor {
+  id          String   @id @default(cuid())
+  visitorId   String   @unique // Anonymous UUID
+  firstSeenAt DateTime @default(now())
+  lastSeenAt  DateTime @default(now())
+  userAgent   String?
+  browser     String?
+  os          String?
+  deviceType  String?
+  country     String?  @default("TR")
+  city        String?  @default("Ankara")
+  language    String?  @default("tr")
+}
+
+model AnalyticsSession {
+  id              String   @id @default(cuid())
+  sessionId       String   @unique // UUID
+  visitorId       String
+  startedAt       DateTime @default(now())
+  lastActivityAt  DateTime @default(now())
+  durationSeconds Int      @default(0)
+  entryPage       String   @default("/")
+  exitPage        String?
+  referrer        String?
+  pageViewsCount  Int      @default(1)
+  isBounce        Boolean  @default(false)
+}
+
+model AnalyticsPageView {
+  id              String   @id @default(cuid())
+  visitorId       String
+  sessionId       String
+  path            String
+  title           String?
+  locale          String   @default("tr")
+  referrer        String?
+  durationSeconds Int      @default(0)
+  createdAt       DateTime @default(now())
+}
+
+model AnalyticsEvent {
+  id            String   @id @default(cuid())
+  visitorId     String
+  sessionId     String?
+  eventName     String   // product_view, service_view, quote_open, quote_submit, whatsapp_click, phone_click, email_click, catalog_download, search
+  eventCategory String?
+  eventLabel    String?
+  eventValue    String?
+  path          String
+  metadata      String?  // JSON string
+  createdAt     DateTime @default(now())
+}
+
+model CookieConsent {
+  id          String   @id @default(cuid())
+  visitorId   String   @unique
+  necessary   Boolean  @default(true)
+  preferences Boolean  @default(false)
+  analytics   Boolean  @default(false)
+  marketing   Boolean  @default(false)
+  ipAddress   String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model SearchQuery {
+  id            String   @id @default(cuid())
+  query         String
+  locale        String   @default("tr")
+  resultsCount  Int      @default(0)
+  clickedEntity String?
+  ipAddress     String?
+  createdAt     DateTime @default(now())
+}
+
+model Announcement {
+  id           String    @id @default(cuid())
+  title        String?
+  message      String?
+  imageUrl     String?
+  videoUrl     String?
+  linkUrl      String?
+  linkText     String?
+  contentType  String    @default("TEXT") // TEXT, IMAGE, TEXT_IMAGE, VIDEO, TEXT_VIDEO
+  position     String    @default("BOTTOM_LEFT") // BOTTOM_LEFT, BOTTOM_RIGHT, CENTER
+  isActive     Boolean   @default(true)
+  priority     Int       @default(0)
+  startDate    DateTime  @default(now())
+  endDate      DateTime?
+  dismissible  Boolean   @default(true)
+  showOnce     Boolean   @default(false) // Only show once per visitor
+  delaySeconds Int       @default(3) // Delay before showing
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+}

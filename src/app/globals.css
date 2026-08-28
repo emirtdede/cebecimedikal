@@ -1,0 +1,273 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap');
+
+:root,
+[data-theme="navy"] {
+  --color-bg: #07141C;
+  --color-surface: #0D202B;
+  --color-surface-2: #122B37;
+  --color-text: #F5F8FA;
+  --color-text-muted: #AAB8BF;
+  --color-primary: #1F8A70;
+  --color-primary-hover: #27A184;
+  --color-border: #24404B;
+  color-scheme: dark;
+}
+
+[data-theme="white"] {
+  --color-bg: #F7F9FA;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #EEF3F5;
+  --color-text: #101820;
+  --color-text-muted: #58666E;
+  --color-primary: #176B59;
+  --color-primary-hover: #125545;
+  --color-border: #D9E1E5;
+  color-scheme: light;
+}
+
+[data-theme="black"] {
+  --color-bg: #050607;
+  --color-surface: #0D0F10;
+  --color-surface-2: #151819;
+  --color-text: #F5F5F5;
+  --color-text-muted: #A7ACAE;
+  --color-primary: #29A37F;
+  --color-primary-hover: #38B68F;
+  --color-border: #292D2E;
+  color-scheme: dark;
+}
+
+[data-theme="green"] {
+  --color-bg: #061612;
+  --color-surface: #0B211B;
+  --color-surface-2: #103027;
+  --color-text: #F2FAF7;
+  --color-text-muted: #A8BDB6;
+  --color-primary: #45B890;
+  --color-primary-hover: #5CC8A1;
+  --color-border: #234B40;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+  border-color: var(--color-border);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Locale font families */
+html[lang="ar"] {
+  font-family: 'Noto Sans Arabic', 'Inter', system-ui, sans-serif;
+}
+
+html[lang="ja"] {
+  font-family: 'Noto Sans JP', 'Inter', system-ui, sans-serif;
+}
+
+html[lang="zh"] {
+  font-family: 'Noto Sans SC', 'Inter', system-ui, sans-serif;
+}
+
+.font-serif {
+  font-family: 'DM Serif Display', Georgia, serif;
+}
+
+/* Glassmorphism & Surface Utilities */
+.glass-panel {
+  background: rgba(13, 32, 43, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--color-border);
+}
+
+[data-theme="white"] .glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme="black"] .glass-panel {
+  background: rgba(13, 15, 16, 0.85);
+}
+
+[data-theme="green"] .glass-panel {
+  background: rgba(11, 33, 27, 0.85);
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* Accessibility Focus Ring */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Google Maps Theme Filters */
+.theme-map-iframe {
+  transition: filter 0.3s ease;
+  width: 100%;
+  height: 100%;
+}
+
+/* White Theme: Natural, crisp light map */
+[data-theme="white"] .theme-map-iframe {
+  filter: saturate(110%) contrast(105%);
+}
+
+/* Navy Theme: Deep dark blue / sapphire tech map */
+[data-theme="navy"] .theme-map-iframe {
+  filter: invert(90%) hue-rotate(195deg) saturate(150%) brightness(95%) contrast(110%);
+}
+
+/* Green Theme: Emerald / mint medical dark map */
+[data-theme="green"] .theme-map-iframe {
+  filter: invert(90%) hue-rotate(115deg) saturate(160%) brightness(95%) contrast(110%);
+}
+
+/* Black Theme: Sleek monochrome OLED dark map */
+[data-theme="black"] .theme-map-iframe {
+  filter: grayscale(100%) invert(92%) contrast(120%) brightness(85%);
+}
+
+/* Scroll Reveal & Parallax Animations */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-1 { transition-delay: 80ms; }
+.stagger-2 { transition-delay: 160ms; }
+.stagger-3 { transition-delay: 240ms; }
+.stagger-4 { transition-delay: 320ms; }
+.stagger-5 { transition-delay: 400ms; }
+
+/* Parallax Floating Layer */
+[data-parallax-speed] {
+  will-change: transform;
+  transition: transform 0.15s cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* Smooth Dropdown & Modal Animations */
+@keyframes menuDropdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-dropdown {
+  animation: menuDropdown 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: top;
+}
+
+@keyframes modalIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95) translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-modal {
+  animation: modalIn 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Smooth Accordion Details */
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary ~ * {
+  animation: modalIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Continuous Infinite Marquee Left */
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-left {
+  display: flex;
+  width: max-content;
+  animation: marqueeLeft 42s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-left:hover {
+  animation-play-state: paused;
+}
+
+.mask-marquee {
+  mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
