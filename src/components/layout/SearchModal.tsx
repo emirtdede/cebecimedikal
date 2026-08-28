@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef, useMemo } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname, useParams } from "next/navigation";
 import {
   Search,
   X,
@@ -17,8 +17,8 @@ import {
   CornerDownLeft,
   RefreshCw,
 } from "lucide-react";
-import { Dictionary } from "@/lib/dictionary";
-import { Locale } from "@/lib/i18n";
+import { Dictionary, getDictionary } from "@/lib/dictionary";
+import { Locale, isValidLocale, DEFAULT_LOCALE } from "@/lib/i18n";
 import { trackClientEvent } from "@/features/analytics/AnalyticsTracker";
 
 interface SearchProduct {
@@ -90,6 +90,25 @@ export function SearchModal({
   const [selectedIndex, setSelectedIndex] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
+  const pathname = usePathname();
+  const params = useParams();
+
+  // Resolve current active locale dynamically
+  let activeLocale = locale;
+  if (params?.locale && typeof params.locale === "string" && isValidLocale(params.locale)) {
+    activeLocale = params.locale as Locale;
+  } else if (pathname) {
+    const firstSeg = pathname.split("/")[1];
+    if (isValidLocale(firstSeg)) {
+      activeLocale = firstSeg as Locale;
+    }
+  }
+  if (!activeLocale || !isValidLocale(activeLocale)) {
+    activeLocale = DEFAULT_LOCALE;
+  }
+
+  const currentDict = getDictionary(activeLocale) || dict;
+  const s = currentDict.search;
 
   // Reset & autofocus on open
   useEffect(() => {
@@ -115,7 +134,7 @@ export function SearchModal({
     const handler = setTimeout(async () => {
       try {
         const res = await fetch(
-          `/api/search?q=${encodeURIComponent(query)}&locale=${locale}`
+          `/api/search?q=${encodeURIComponent(query)}&locale=${activeLocale}`
         );
         if (res.ok) {
           const data = await res.json();
@@ -136,7 +155,7 @@ export function SearchModal({
     }, 200);
 
     return () => clearTimeout(handler);
-  }, [query, locale]);
+  }, [query, activeLocale]);
 
   // Filtered items based on active filter
   const filteredProducts = useMemo(() => {
@@ -197,8 +216,6 @@ export function SearchModal({
   };
 
   if (!isOpen) return null;
-
-  const s = dict.search;
 
   return (
     <div

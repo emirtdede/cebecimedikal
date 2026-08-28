@@ -28,6 +28,7 @@ import {
 } from "lucide-react";
 import { Locale, isValidLocale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionary";
+import { getLocalizedHref } from "@/lib/routes";
 import { HeroImageSlider } from "@/components/home/HeroImageSlider";
 import {
   getCategories,
@@ -388,7 +389,7 @@ export default async function HomePage({
                   </div>
 
                   <Link
-                    href={`/${currentLocale}/hizmetler/${service.slug}`}
+                    href={getLocalizedHref(currentLocale, "services", service.slug)}
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:underline mt-auto"
                   >
                     <span>{dict.services.learnMore}</span>

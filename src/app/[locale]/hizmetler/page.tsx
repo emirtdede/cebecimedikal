@@ -4,6 +4,7 @@ import { Wrench, ShieldCheck, Cpu, Briefcase, ArrowRight, CheckCircle2, FileText
 import { Locale, isValidLocale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionary";
 import { getServices } from "@/lib/data";
+import { getLocalizedHref } from "@/lib/routes";
 import type { Metadata } from "next";
 
 export async function generateMetadata({
@@ -87,7 +88,7 @@ export default async function ServicesPage({
 
               <div className="pt-6 border-t border-border flex items-center justify-between">
                 <Link
-                  href={`/${currentLocale}/hizmetler/${service.slug}`}
+                  href={getLocalizedHref(currentLocale, "services", service.slug)}
                   className="text-xs font-bold text-primary hover:underline flex items-center gap-1.5"
                 >
                   <span>{dict.services.learnMore}</span>

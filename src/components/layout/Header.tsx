@@ -30,6 +30,7 @@ import { ThemeToggle } from "./ThemeToggle";
 import { LanguageSelector } from "./LanguageSelector";
 import { SearchModal } from "./SearchModal";
 import { LocalizedCategory } from "@/lib/data";
+import { getLocalizedHref } from "@/lib/routes";
 
 const CATEGORY_ICONS: Record<string, any> = {
   "ameliyathane-cihazlari": ShieldAlert,
@@ -40,7 +41,6 @@ const CATEGORY_ICONS: Record<string, any> = {
   "medikal-gaz-sistemleri": Gauge,
   "fizik-tedavi-cihazlari": Dumbbell,
   "sarf-malzemeler": Layers,
-
 };
 
 export function Header({
@@ -51,91 +51,106 @@ export function Header({
 }: {
   locale: Locale;
   dict: Dictionary;
-  categories?: LocalizedCategory[];
+  categories: LocalizedCategory[];
   primaryPhone?: string;
 }) {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  const dropdownTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+  const dropdownTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  const handleMouseEnterDropdown = (menuName: string) => {
-    if (dropdownTimeoutRef.current) {
-      clearTimeout(dropdownTimeoutRef.current);
-      dropdownTimeoutRef.current = null;
-    }
-    setActiveDropdown(menuName);
-  };
-
-  const handleMouseLeaveDropdown = () => {
-    if (dropdownTimeoutRef.current) {
-      clearTimeout(dropdownTimeoutRef.current);
-    }
-    dropdownTimeoutRef.current = setTimeout(() => {
-      setActiveDropdown(null);
-    }, 150);
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  // Global shortcut for Ctrl+K or /
+  // Keyboard shortcut Ctrl+K or / to open search
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
+      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
         e.preventDefault();
         setSearchOpen((prev) => !prev);
-      } else if (e.key === "/" && document.activeElement?.tagName !== "INPUT" && document.activeElement?.tagName !== "TEXTAREA") {
+      } else if (
+        e.key === "/" &&
+        !["INPUT", "TEXTAREA", "SELECT"].includes((e.target as HTMLElement).tagName)
+      ) {
         e.preventDefault();
         setSearchOpen(true);
       }
     };
+
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 
-  // Close mobile menu on route change
+  // Header background on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Close menus on route change
   useEffect(() => {
     setMobileMenuOpen(false);
     setActiveDropdown(null);
   }, [pathname]);
 
-  const isRtl = LOCALE_METADATA[locale]?.dir === "rtl";
+  const handleMouseEnterDropdown = (menu: string) => {
+    if (dropdownTimeoutRef.current) clearTimeout(dropdownTimeoutRef.current);
+    setActiveDropdown(menu);
+  };
+
+  const handleMouseLeaveDropdown = () => {
+    dropdownTimeoutRef.current = setTimeout(() => {
+      setActiveDropdown(null);
+    }, 150);
+  };
+
+  const productsHref = getLocalizedHref(locale, "products");
+  const servicesHref = getLocalizedHref(locale, "services");
+  const aboutHref = getLocalizedHref(locale, "about");
+  const contactHref = getLocalizedHref(locale, "contact");
+  const quoteHref = getLocalizedHref(locale, "quote");
+  const catalogsHref = getLocalizedHref(locale, "catalogs");
+  const referencesHref = getLocalizedHref(locale, "references");
 
   return (
     <>
-      {/* Main Navigation Header */}
       <header
-        className={`sticky top-0 z-40 w-full transition-all duration-300 ${isScrolled
-            ? "glass-panel shadow-lg py-2.5"
-            : "bg-surface/95 backdrop-blur border-b border-border py-4"
-          }`}
+        className={`sticky top-0 z-40 w-full transition-all duration-300 ${
+          isScrolled
+            ? "bg-surface/95 backdrop-blur-md shadow-md border-b border-border"
+            : "bg-surface border-b border-border/60"
+        }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-3 xl:gap-6 flex-nowrap w-full">
-          {/* Brand Wordmark */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between gap-2 sm:gap-4">
+          {/* Brand Logo */}
           <Link
             href={`/${locale}`}
-            className="flex items-center group focus:outline-none flex-shrink-0 whitespace-nowrap"
+            className="flex items-center gap-2 sm:gap-3 group focus:outline-none flex-shrink-0"
             aria-label="Cebeci Medikal Ana Sayfa"
           >
-            <span className="font-serif text-xl sm:text-2xl font-bold tracking-wider text-foreground group-hover:text-primary transition-colors leading-none">
-              CEBECİ MEDİKAL
-            </span>
+            <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-primary flex items-center justify-center text-white shadow-md shadow-primary/20 group-hover:scale-105 transition-transform flex-shrink-0">
+              <Activity className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+            </div>
+            <div className="flex flex-col">
+              <span className="font-serif font-black text-lg sm:text-2xl text-foreground tracking-tight group-hover:text-primary transition-colors leading-none">
+                CEBECİ
+                <span className="text-primary ml-1">MEDİKAL</span>
+              </span>
+              <span className="text-[10px] text-foreground-muted tracking-wider uppercase font-semibold mt-0.5 hidden xs:block">
+                Biyomedikal Teknolojileri
+              </span>
+            </div>
           </Link>
 
-          {/* Desktop Navigation Links - Single Row, Zero Wrapping */}
-          <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1 text-xs xl:text-sm font-medium text-foreground whitespace-nowrap flex-shrink-0">
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center gap-1 xl:gap-2 text-xs xl:text-sm font-medium text-foreground flex-shrink-0">
             <Link
               href={`/${locale}`}
-              className={`px-2 xl:px-3 py-2 rounded-md hover:text-primary hover:bg-surface-2 transition-colors whitespace-nowrap flex-shrink-0 ${pathname === `/${locale}` ? "text-primary font-semibold" : ""
-                }`}
+              className={`px-2 xl:px-3 py-2 rounded-md hover:text-primary hover:bg-surface-2 transition-colors whitespace-nowrap flex-shrink-0 ${
+                pathname === `/${locale}` ? "text-primary font-semibold" : ""
+              }`}
             >
               {dict.nav.home}
             </Link>
@@ -148,10 +163,16 @@ export function Header({
             >
               <button
                 type="button"
-                className={`px-2 xl:px-3 py-2 rounded-md flex items-center gap-1 hover:text-primary hover:bg-surface-2 transition-colors whitespace-nowrap flex-shrink-0 ${pathname.includes("/hakkimizda") || pathname.includes("/referanslar") || pathname.includes("/kataloglar")
+                className={`px-2 xl:px-3 py-2 rounded-md flex items-center gap-1 hover:text-primary hover:bg-surface-2 transition-colors whitespace-nowrap flex-shrink-0 ${
+                  pathname.includes("/hakkimizda") ||
+                  pathname.includes("/about") ||
+                  pathname.includes("/referanslar") ||
+                  pathname.includes("/references") ||
+                  pathname.includes("/kataloglar") ||
+                  pathname.includes("/catalogs")
                     ? "text-primary font-semibold"
                     : ""
-                  }`}
+                }`}
               >
                 <span>{dict.nav.corporate}</span>
                 <ChevronDown className="w-3.5 h-3.5 text-foreground-muted" />
@@ -161,19 +182,19 @@ export function Header({
                 <div className="absolute left-0 top-full pt-1.5 z-50 animate-dropdown">
                   <div className="w-56 rounded-xl shadow-2xl bg-surface border border-border py-2 whitespace-normal">
                     <Link
-                      href={`/${locale}/hakkimizda`}
+                      href={aboutHref}
                       className="block px-4 py-2.5 hover:bg-surface-2 hover:text-primary text-sm transition-colors"
                     >
                       {dict.nav.about}
                     </Link>
                     <Link
-                      href={`/${locale}/referanslar`}
+                      href={referencesHref}
                       className="block px-4 py-2.5 hover:bg-surface-2 hover:text-primary text-sm transition-colors"
                     >
                       {dict.nav.references}
                     </Link>
                     <Link
-                      href={`/${locale}/kataloglar`}
+                      href={catalogsHref}
                       className="block px-4 py-2.5 hover:bg-surface-2 hover:text-primary text-sm transition-colors"
                     >
                       {dict.nav.catalogs}
@@ -190,9 +211,12 @@ export function Header({
               onMouseLeave={handleMouseLeaveDropdown}
             >
               <Link
-                href={`/${locale}/urunler`}
-                className={`px-2 xl:px-3 py-2 rounded-md flex items-center gap-1 hover:text-primary hover:bg-surface-2 transition-colors whitespace-nowrap flex-shrink-0 ${pathname.includes("/urunler") ? "text-primary font-semibold" : ""
-                  }`}
+                href={productsHref}
+                className={`px-2 xl:px-3 py-2 rounded-md flex items-center gap-1 hover:text-primary hover:bg-surface-2 transition-colors whitespace-nowrap flex-shrink-0 ${
+                  pathname.includes("/urunler") || pathname.includes("/products") || pathname.includes("/produkte")
+                    ? "text-primary font-semibold"
+                    : ""
+                }`}
               >
                 <span>{dict.nav.products}</span>
                 <ChevronDown className="w-3.5 h-3.5 text-foreground-muted" />
@@ -206,7 +230,7 @@ export function Header({
                         {dict.categories.title}
                       </span>
                       <Link
-                        href={`/${locale}/urunler`}
+                        href={productsHref}
                         className="text-xs font-semibold text-foreground-muted hover:text-primary transition-colors"
                       >
                         {dict.categories.viewAll} →
@@ -218,7 +242,7 @@ export function Header({
                         return (
                           <Link
                             key={cat.id}
-                            href={`/${locale}/urunler?kategori=${cat.slug}`}
+                            href={`${productsHref}?kategori=${cat.slug}`}
                             className="flex items-start gap-3 p-2.5 rounded-xl hover:bg-surface-2 transition-colors group min-w-0"
                           >
                             <div className="p-2 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors flex-shrink-0 mt-0.5">
@@ -238,14 +262,14 @@ export function Header({
                     </div>
                     <div className="mt-4 pt-3 border-t border-border flex items-center justify-between bg-surface-2/40 -mx-5 -mb-5 p-4 rounded-b-2xl">
                       <Link
-                        href={`/${locale}/urunler?durum=SECOND_HAND`}
+                        href={`${productsHref}?durum=SECOND_HAND`}
                         className="text-xs font-bold text-primary flex items-center gap-1.5 hover:underline"
                       >
                         <RefreshCw className="w-3.5 h-3.5" />
-                        <span>{dict.nav.secondHand} Kataloğunu İnceleyin</span>
+                        <span>{dict.nav.secondHand} Kataloğu</span>
                       </Link>
                       <Link
-                        href={`/${locale}/teklif`}
+                        href={quoteHref}
                         className="text-xs font-semibold px-3.5 py-1.5 rounded-lg bg-primary text-white hover:bg-primary-hover transition-colors shadow-sm"
                       >
                         {dict.nav.requestQuote}
@@ -263,9 +287,12 @@ export function Header({
               onMouseLeave={handleMouseLeaveDropdown}
             >
               <Link
-                href={`/${locale}/hizmetler`}
-                className={`px-2 xl:px-3 py-2 rounded-md flex items-center gap-1 hover:text-primary hover:bg-surface-2 transition-colors whitespace-nowrap flex-shrink-0 ${pathname.includes("/hizmetler") ? "text-primary font-semibold" : ""
-                  }`}
+                href={servicesHref}
+                className={`px-2 xl:px-3 py-2 rounded-md flex items-center gap-1 hover:text-primary hover:bg-surface-2 transition-colors whitespace-nowrap flex-shrink-0 ${
+                  pathname.includes("/hizmetler") || pathname.includes("/services") || pathname.includes("/dienstleistungen")
+                    ? "text-primary font-semibold"
+                    : ""
+                }`}
               >
                 <span>{dict.nav.services}</span>
                 <ChevronDown className="w-3.5 h-3.5 text-foreground-muted" />
@@ -275,28 +302,28 @@ export function Header({
                 <div className="absolute left-0 top-full pt-1.5 z-50 animate-dropdown">
                   <div className="w-64 rounded-xl shadow-2xl bg-surface border border-border py-2 whitespace-normal">
                     <Link
-                      href={`/${locale}/hizmetler/teknik-servis`}
+                      href={`${servicesHref}/teknik-servis`}
                       className="flex items-center gap-2 px-4 py-2.5 hover:bg-surface-2 hover:text-primary text-sm transition-colors"
                     >
                       <Wrench className="w-4 h-4 text-primary" />
                       <span>{dict.nav.technicalService}</span>
                     </Link>
                     <Link
-                      href={`/${locale}/hizmetler/periyodik-koruyucu-bakim`}
+                      href={`${servicesHref}/periyodik-koruyucu-bakim`}
                       className="flex items-center gap-2 px-4 py-2.5 hover:bg-surface-2 hover:text-primary text-sm transition-colors"
                     >
                       <ShieldCheck className="w-4 h-4 text-primary" />
                       <span>{dict.nav.maintenance}</span>
                     </Link>
                     <Link
-                      href={`/${locale}/hizmetler/kurulum-devreye-alma`}
+                      href={`${servicesHref}/kurulum-devreye-alma`}
                       className="flex items-center gap-2 px-4 py-2.5 hover:bg-surface-2 hover:text-primary text-sm transition-colors"
                     >
                       <Cpu className="w-4 h-4 text-primary" />
                       <span>{dict.nav.installation}</span>
                     </Link>
                     <Link
-                      href={`/${locale}/hizmetler/teknik-danismanlik`}
+                      href={`${servicesHref}/teknik-danismanlik`}
                       className="flex items-center gap-2 px-4 py-2.5 hover:bg-surface-2 hover:text-primary text-sm transition-colors"
                     >
                       <Briefcase className="w-4 h-4 text-primary" />
@@ -307,25 +334,27 @@ export function Header({
               )}
             </div>
 
-
             <Link
-              href={`/${locale}/iletisim`}
-              className={`px-2 xl:px-3 py-2 rounded-md hover:text-primary hover:bg-surface-2 transition-colors whitespace-nowrap flex-shrink-0 ${pathname.includes("/iletisim") ? "text-primary font-semibold" : ""
-                }`}
+              href={contactHref}
+              className={`px-2 xl:px-3 py-2 rounded-md hover:text-primary hover:bg-surface-2 transition-colors whitespace-nowrap flex-shrink-0 ${
+                pathname.includes("/iletisim") || pathname.includes("/contact") || pathname.includes("/kontakt")
+                  ? "text-primary font-semibold"
+                  : ""
+              }`}
             >
               {dict.nav.contact}
             </Link>
           </nav>
 
-          {/* Right Action Icons & CTA - Zero Wrapping */}
+          {/* Right Action Icons & CTA */}
           <div className="flex items-center gap-1.5 sm:gap-2.5 flex-shrink-0 flex-nowrap whitespace-nowrap">
-            {/* Search Trigger Button - Icon Only, No Border */}
+            {/* Search Trigger Button */}
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
               className="p-2 rounded-lg hover:bg-surface-2 text-foreground-muted hover:text-primary transition-colors focus:outline-none flex items-center justify-center flex-shrink-0"
               aria-label={dict.nav.search}
-              title="Arama (Ctrl + K veya /)"
+              title={dict.nav.search}
             >
               <Search className="w-4 h-4 text-primary" />
             </button>
@@ -336,7 +365,7 @@ export function Header({
 
             {/* Request Quote CTA Button */}
             <Link
-              href={`/${locale}/teklif`}
+              href={quoteHref}
               className="hidden sm:inline-flex items-center gap-1.5 px-3.5 xl:px-4 py-2 rounded-lg bg-primary hover:bg-primary-hover text-white text-xs font-bold shadow-md hover:shadow-primary/25 transition-all whitespace-nowrap flex-shrink-0"
             >
               <FileText className="w-3.5 h-3.5" />
@@ -348,7 +377,7 @@ export function Header({
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="lg:hidden p-2 rounded-md hover:bg-surface-2 border border-border text-foreground focus:outline-none flex-shrink-0"
-              aria-label={dict.nav.menu}
+              aria-label={mobileMenuOpen ? dict.nav.close : dict.nav.menu}
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
@@ -357,8 +386,8 @@ export function Header({
 
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
-          <div className="lg:hidden border-t border-border bg-surface px-4 py-6 space-y-4 shadow-2xl animate-slide-up">
-            <nav className="flex flex-col space-y-1 text-sm font-medium">
+          <div className="lg:hidden border-t border-border bg-surface px-4 py-6 space-y-4 animate-dropdown">
+            <nav className="flex flex-col space-y-2 text-sm font-semibold">
               <Link
                 href={`/${locale}`}
                 className="px-3 py-2.5 rounded-lg hover:bg-surface-2 transition-colors text-foreground"
@@ -366,38 +395,37 @@ export function Header({
                 {dict.nav.home}
               </Link>
               <Link
-                href={`/${locale}/hakkimizda`}
+                href={aboutHref}
                 className="px-3 py-2.5 rounded-lg hover:bg-surface-2 transition-colors text-foreground"
               >
                 {dict.nav.about}
               </Link>
               <Link
-                href={`/${locale}/urunler`}
+                href={productsHref}
                 className="px-3 py-2.5 rounded-lg hover:bg-surface-2 transition-colors text-foreground"
               >
                 {dict.nav.products}
               </Link>
-
               <Link
-                href={`/${locale}/hizmetler`}
+                href={servicesHref}
                 className="px-3 py-2.5 rounded-lg hover:bg-surface-2 transition-colors text-foreground"
               >
                 {dict.nav.services}
               </Link>
               <Link
-                href={`/${locale}/referanslar`}
+                href={referencesHref}
                 className="px-3 py-2.5 rounded-lg hover:bg-surface-2 transition-colors text-foreground"
               >
                 {dict.nav.references}
               </Link>
               <Link
-                href={`/${locale}/kataloglar`}
+                href={catalogsHref}
                 className="px-3 py-2.5 rounded-lg hover:bg-surface-2 transition-colors text-foreground"
               >
                 {dict.nav.catalogs}
               </Link>
               <Link
-                href={`/${locale}/iletisim`}
+                href={contactHref}
                 className="px-3 py-2.5 rounded-lg hover:bg-surface-2 transition-colors text-foreground"
               >
                 {dict.nav.contact}
@@ -406,7 +434,7 @@ export function Header({
 
             <div className="pt-4 border-t border-border flex flex-col gap-3">
               <Link
-                href={`/${locale}/teklif`}
+                href={quoteHref}
                 className="w-full py-2.5 rounded-lg bg-primary hover:bg-primary-hover text-white text-center text-sm font-bold shadow-md transition-all flex items-center justify-center gap-2"
               >
                 <FileText className="w-4 h-4" />

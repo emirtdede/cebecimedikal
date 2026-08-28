@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { Locale } from "@/lib/i18n";
 import { Dictionary } from "@/lib/dictionary";
+import { getLocalizedHref } from "@/lib/routes";
 
 export function Footer({
   locale,
@@ -35,18 +36,25 @@ export function Footer({
     }
   };
 
+  const productsHref = getLocalizedHref(locale, "products");
+  const servicesHref = getLocalizedHref(locale, "services");
+  const aboutHref = getLocalizedHref(locale, "about");
+  const contactHref = getLocalizedHref(locale, "contact");
+  const quoteHref = getLocalizedHref(locale, "quote");
+  const catalogsHref = getLocalizedHref(locale, "catalogs");
+  const referencesHref = getLocalizedHref(locale, "references");
+
   return (
     <footer className="bg-surface border-t border-border mt-auto pt-16 pb-10 text-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-12">
-        {/* Main Footer 4-Column Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10 pb-12 border-b border-border">
-          {/* Col 1: Brand & Overview (4 cols) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10">
+          {/* Col 1: Brand Info & Social Media (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
-            <Link
-              href={`/${locale}`}
-              className="inline-block group focus:outline-none"
-            >
-              <div className="font-serif text-2xl font-bold tracking-wider text-foreground group-hover:text-primary transition-colors whitespace-nowrap">
+            <Link href={`/${locale}`} className="inline-flex items-center gap-2.5">
+              <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white font-serif font-black text-sm">
+                C
+              </div>
+              <div className="font-serif font-bold text-lg text-foreground tracking-tight">
                 CEBECİ MEDİKAL
               </div>
             </Link>
@@ -55,10 +63,10 @@ export function Footer({
               {dict.footer.companyDesc}
             </p>
 
-            {/* Clean SVG Social Icons */}
+            {/* Social Icons */}
             <div className="pt-2">
               <div className="text-[11px] font-bold uppercase tracking-wider text-foreground-muted mb-2.5">
-                Sosyal Medya & İletişim
+                {dict.contact.title} & WhatsApp
               </div>
               <div className="flex items-center gap-2">
                 <a
@@ -105,27 +113,27 @@ export function Footer({
             </h4>
             <ul className="space-y-2.5 text-xs text-foreground-muted">
               <li>
-                <Link href={`/${locale}/hakkimizda`} className="hover:text-primary transition-colors block whitespace-nowrap">
+                <Link href={aboutHref} className="hover:text-primary transition-colors block whitespace-nowrap">
                   {dict.nav.about}
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/referanslar`} className="hover:text-primary transition-colors block whitespace-nowrap">
+                <Link href={referencesHref} className="hover:text-primary transition-colors block whitespace-nowrap">
                   {dict.nav.references}
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/kataloglar`} className="hover:text-primary transition-colors block whitespace-nowrap">
+                <Link href={catalogsHref} className="hover:text-primary transition-colors block whitespace-nowrap">
                   {dict.nav.catalogs}
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/teklif`} className="hover:text-primary transition-colors block whitespace-nowrap">
+                <Link href={quoteHref} className="hover:text-primary transition-colors block whitespace-nowrap">
                   {dict.nav.requestQuote}
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/iletisim`} className="hover:text-primary transition-colors block whitespace-nowrap">
+                <Link href={contactHref} className="hover:text-primary transition-colors block whitespace-nowrap">
                   {dict.nav.contact}
                 </Link>
               </li>
@@ -135,36 +143,36 @@ export function Footer({
           {/* Col 3: Ürünler & Hizmetler (3 cols) */}
           <div className="lg:col-span-3 space-y-3.5">
             <h4 className="text-xs font-bold uppercase tracking-wider text-foreground whitespace-nowrap">
-              {dict.nav.products} & Hizmetler
+              {dict.nav.products} & {dict.nav.services}
             </h4>
             <ul className="space-y-2.5 text-xs text-foreground-muted">
               <li>
-                <Link href={`/${locale}/urunler`} className="hover:text-primary transition-colors block whitespace-nowrap">
+                <Link href={productsHref} className="hover:text-primary transition-colors block whitespace-nowrap">
                   {dict.products.title}
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/urunler?durum=SECOND_HAND`} className="hover:text-primary transition-colors block whitespace-nowrap">
+                <Link href={`${productsHref}?durum=SECOND_HAND`} className="hover:text-primary transition-colors block whitespace-nowrap">
                   {dict.nav.secondHand}
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/hizmetler/teknik-servis`} className="hover:text-primary transition-colors block whitespace-nowrap">
+                <Link href={`${servicesHref}/teknik-servis`} className="hover:text-primary transition-colors block whitespace-nowrap">
                   {dict.nav.technicalService}
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/hizmetler/periyodik-koruyucu-bakim`} className="hover:text-primary transition-colors block whitespace-nowrap">
+                <Link href={`${servicesHref}/periyodik-koruyucu-bakim`} className="hover:text-primary transition-colors block whitespace-nowrap">
                   {dict.nav.maintenance}
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/hizmetler/kurulum-devreye-alma`} className="hover:text-primary transition-colors block whitespace-nowrap">
+                <Link href={`${servicesHref}/kurulum-devreye-alma`} className="hover:text-primary transition-colors block whitespace-nowrap">
                   {dict.nav.installation}
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/hizmetler/teknik-danismanlik`} className="hover:text-primary transition-colors block whitespace-nowrap">
+                <Link href={`${servicesHref}/teknik-danismanlik`} className="hover:text-primary transition-colors block whitespace-nowrap">
                   {dict.nav.consulting}
                 </Link>
               </li>
@@ -203,10 +211,10 @@ export function Footer({
               {/* 3. Çalışma Saatleri */}
               <div className="flex items-center gap-2.5 whitespace-nowrap">
                 <Clock className="w-3.5 h-3.5 text-primary flex-shrink-0" />
-                <span>Pzt - Cmt: 08:30 - 18:30</span>
+                <span>{dict.contact.hoursText || "Pzt - Cmt: 08:30 - 18:30"}</span>
               </div>
 
-              {/* 4. Adres (En altta) */}
+              {/* 4. Adres */}
               <div className="flex items-start gap-2.5 pt-1">
                 <MapPin className="w-3.5 h-3.5 text-primary flex-shrink-0 mt-0.5" />
                 <a
@@ -222,43 +230,35 @@ export function Footer({
           </div>
         </div>
 
-        {/* Sub-Footer Legal & Cookie Bar */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-foreground-muted">
-          <div className="whitespace-nowrap">
+        {/* Bottom Bar: Copyright & Legal */}
+        <div className="pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-foreground-muted">
+          <div>
             © {new Date().getFullYear()} Cebeci Medikal. {dict.footer.rights}
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-x-3.5 gap-y-2 text-xs">
-            <Link href={`/${locale}/yasal/kvkk-aydinlatma-metni`} className="hover:text-primary transition-colors whitespace-nowrap">
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+            <Link href={`/${locale}/yasal/kvkk-aydinlatma-metni`} className="hover:text-primary transition-colors">
               {dict.footer.kvkk}
             </Link>
-            <span>•</span>
-            <Link href={`/${locale}/yasal/gizlilik-politikasi`} className="hover:text-primary transition-colors whitespace-nowrap">
+            <span className="text-border">•</span>
+            <Link href={`/${locale}/yasal/gizlilik-politikasi`} className="hover:text-primary transition-colors">
               {dict.footer.privacy}
             </Link>
-            <span>•</span>
-            <Link href={`/${locale}/yasal/cerez-politikasi`} className="hover:text-primary transition-colors whitespace-nowrap">
+            <span className="text-border">•</span>
+            <Link href={`/${locale}/yasal/cerez-politikasi`} className="hover:text-primary transition-colors">
               {dict.footer.cookiePolicy}
             </Link>
-            <span>•</span>
-            <Link href={`/${locale}/yasal/kullanim-kosullari`} className="hover:text-primary transition-colors whitespace-nowrap">
+            <span className="text-border">•</span>
+            <Link href={`/${locale}/yasal/kullanim-kosullari`} className="hover:text-primary transition-colors">
               {dict.footer.terms}
             </Link>
-            <span>•</span>
-            <Link href={`/${locale}/yasal/yasal-uyari`} className="hover:text-primary transition-colors whitespace-nowrap">
-              {dict.footer.disclaimer}
-            </Link>
-            <span>•</span>
-            <Link href={`/${locale}/yasal/erisilebilirlik-bildirimi`} className="hover:text-primary transition-colors whitespace-nowrap">
-              {dict.footer.accessibility}
-            </Link>
-            <span>•</span>
+            <span className="text-border">•</span>
             <button
               type="button"
               onClick={handleOpenCookieSettings}
-              className="hover:text-primary transition-colors flex items-center gap-1 font-medium text-foreground whitespace-nowrap"
+              className="hover:text-primary transition-colors flex items-center gap-1 text-primary/90 font-medium"
             >
-              <Sliders className="w-3 h-3 text-primary" />
+              <Sliders className="w-3 h-3" />
               <span>{dict.footer.cookieSettings}</span>
             </button>
           </div>

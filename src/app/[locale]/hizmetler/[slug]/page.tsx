@@ -15,6 +15,7 @@ import {
 import { Locale, LOCALES, isValidLocale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionary";
 import { getServiceBySlug, getServices, getSiteSettings } from "@/lib/data";
+import { SERVICE_SLUG_MAP } from "@/lib/routes";
 import type { Metadata } from "next";
 
 export async function generateStaticParams() {
@@ -24,6 +25,15 @@ export async function generateStaticParams() {
     for (const service of services) {
       params.push({ locale, slug: service.slug });
     }
+    // Also include English/international alias slugs for 100% route coverage
+    params.push({ locale, slug: "technical-service" });
+    params.push({ locale, slug: "preventive-maintenance" });
+    params.push({ locale, slug: "installation-commissioning" });
+    params.push({ locale, slug: "biomedical-consulting" });
+    params.push({ locale, slug: "wartung-reparatur" });
+    params.push({ locale, slug: "praeventive-wartung" });
+    params.push({ locale, slug: "montage-inbetriebnahme" });
+    params.push({ locale, slug: "biomedizinische-beratung" });
   }
   return params;
 }
@@ -35,7 +45,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale, slug } = await params;
   const currentLocale = isValidLocale(locale) ? (locale as Locale) : "tr";
-  const service = await getServiceBySlug(slug, currentLocale);
+  const canonicalSlug = SERVICE_SLUG_MAP[slug] || slug;
+  const service = await getServiceBySlug(canonicalSlug, currentLocale);
 
   if (!service) {
     return { title: "Hizmet Bulunamadı | Cebeci Medikal" };
@@ -64,8 +75,9 @@ export default async function ServiceDetailPage({
 
   const currentLocale = locale as Locale;
   const dict = getDictionary(currentLocale);
+  const canonicalSlug = SERVICE_SLUG_MAP[slug] || slug;
   const [service, settings] = await Promise.all([
-    getServiceBySlug(slug, currentLocale),
+    getServiceBySlug(canonicalSlug, currentLocale),
     getSiteSettings(),
   ]);
 

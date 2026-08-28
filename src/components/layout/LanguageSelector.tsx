@@ -6,6 +6,7 @@ import { Globe, Check } from "lucide-react";
 import { LOCALES, Locale, LOCALE_METADATA } from "@/lib/i18n";
 import { Dictionary } from "@/lib/dictionary";
 import { trackClientEvent } from "@/features/analytics/AnalyticsTracker";
+import { REVERSE_ROUTE_MAP, LOCALIZED_ROUTES, RouteMapping } from "@/lib/routes";
 
 export function LanguageSelector({
   currentLocale,
@@ -32,6 +33,17 @@ export function LanguageSelector({
       segments[1] = newLocale;
     } else {
       segments.unshift("", newLocale);
+    }
+
+    // Convert section slug to target locale's native slug if applicable
+    if (segments[2] && REVERSE_ROUTE_MAP[segments[2]]) {
+      const canonicalName = REVERSE_ROUTE_MAP[segments[2]];
+      const routeKey = (Object.keys(LOCALIZED_ROUTES.tr) as (keyof RouteMapping)[]).find(
+        (k) => LOCALIZED_ROUTES.tr[k] === canonicalName
+      );
+      if (routeKey && LOCALIZED_ROUTES[newLocale]?.[routeKey]) {
+        segments[2] = LOCALIZED_ROUTES[newLocale][routeKey];
+      }
     }
 
     const newPath = segments.join("/") || `/${newLocale}`;
