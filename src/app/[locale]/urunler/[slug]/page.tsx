@@ -12,11 +12,22 @@ import {
   ArrowLeft,
   ArrowRight,
 } from "lucide-react";
-import { Locale, isValidLocale } from "@/lib/i18n";
+import { Locale, LOCALES, isValidLocale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionary";
-import { getProductBySlug, getRelatedProducts, getSiteSettings } from "@/lib/data";
+import { getProductBySlug, getProducts, getRelatedProducts, getSiteSettings } from "@/lib/data";
 import { ProductGallery } from "@/features/products/ProductGallery";
 import type { Metadata } from "next";
+
+export async function generateStaticParams() {
+  const products = await getProducts();
+  const params: { locale: string; slug: string }[] = [];
+  for (const locale of LOCALES) {
+    for (const product of products) {
+      params.push({ locale, slug: product.slug });
+    }
+  }
+  return params;
+}
 
 export async function generateMetadata({
   params,

@@ -55,9 +55,17 @@
   },
   "services": {
     "title": "核心技术服务",
+    "heroTitle": "生物医学工程技术服务与整体咨询解决方案",
     "subtitle": "通过严格的专业技术服务、预防性维护和工程咨询，保障医疗仪器处于最佳工作状态。",
     "explore": "了解服务详情",
-    "learnMore": "查看更多"
+    "learnMore": "查看更多",
+    "requestService": "提交服务需求",
+    "scopeTitle": "服务范畴与核心优势",
+    "workflowTitle": "规范化服务实施流程",
+    "supportBadge": "24/7 全天候医学工程支持",
+    "supportDesc": "资深生物医学工程师团队针对重症及手术室突发故障提供极速响应。",
+    "responseTimeTitle": "极速响应时效",
+    "responseTimeDesc": "安卡拉及重点区域医院提供当日现场勘验与故障诊断。"
   },
   "whyUs": {
     "title": "为什么选择杰贝吉医疗？",
@@ -105,6 +113,7 @@
     "applications": "临床应用领域",
     "relatedProducts": "相关设备推荐",
     "noProducts": "未找到符合搜索条件的设备。",
+    "noProductsSubtitle": "您可以尝试使用其他关键词搜索或重置当前筛选条件。",
     "clearFilters": "重置筛选条件",
     "sku": "产品编号",
     "zoomHint": "点击图片查看高清大图",
@@ -165,13 +174,31 @@
     "openInMaps": "在谷歌地图中查看"
   },
   "search": {
-    "placeholder": "搜索设备、型号、服务或页面... (Ctrl + K 或 /)",
-    "title": "全局快速搜索",
-    "noResults": "未找到匹配的搜索结果。",
+    "title": "搜索面板",
+    "quickSearch": "快速搜索",
+    "placeholder": "搜索设备名称、品牌、型号、技术服务或页面...",
+    "clear": "清除",
+    "close": "关闭",
+    "advancedFilters": "高级搜索与分类筛选",
+    "activeFilter": "当前筛选",
+    "openFilters": "展开筛选",
+    "closeFilters": "收起筛选",
+    "all": "全部",
     "products": "医疗设备",
+    "secondHand": "二手与翻新设备",
     "services": "技术服务",
-    "pages": "网站页面",
-    "pressEsc": "按ESC键关闭"
+    "catalogs": "产品目录",
+    "pages": "页面",
+    "idleHint": "请输入设备名称、品牌、型号或所需服务关键词。",
+    "noResults": "未找到匹配的搜索结果。",
+    "noResultsTitle": "未找到匹配的搜索结果。",
+    "noResultsHint": "请尝试更换其他关键词重新搜索。",
+    "navigate": "浏览",
+    "select": "选择",
+    "pressEsc": "关闭 (ESC)",
+    "resultsCount": "条结果",
+    "brandTag": "Cebeci Medikal 快速全局搜索",
+    "secondHandBadge": "认证二手"
   },
   "cookie": {
     "title": "Cookie设置与隐私权声明",

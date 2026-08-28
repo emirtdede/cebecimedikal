@@ -55,9 +55,17 @@
   },
   "services": {
     "title": "提供サービス",
+    "heroTitle": "医用工学技術サービスおよびコンサルティングソリューション",
     "subtitle": "厳格な技術基準に基づき、医療機器の安全性と稼働性能を最大化します。",
     "explore": "サービス詳細",
-    "learnMore": "詳しく見る"
+    "learnMore": "詳しく見る",
+    "requestService": "サービス依頼を作成",
+    "scopeTitle": "サービス対象範囲および主な特長",
+    "workflowTitle": "サービス実施フロー",
+    "supportBadge": "24時間年中無休バイオメディカルサポート",
+    "supportDesc": "緊急の故障発生時にも、認定エンジニアが迅速に現地対応いたします。",
+    "responseTimeTitle": "迅速な駆けつけ体制",
+    "responseTimeDesc": "アンカラ市内および近郊主要クリニックへは即日訪問点検を実施。"
   },
   "whyUs": {
     "title": "ジェベジ・メディカルが選ばれる理由",
@@ -104,8 +112,9 @@
     "specs": "技術仕様",
     "applications": "適用分野・用途",
     "relatedProducts": "関連機器",
-    "noProducts": "該当する製品が見つかりませんでした。",
-    "clearFilters": "条件をクリア",
+    "noProducts": "検索条件に一致する製品は見つかりませんでした。",
+    "noProductsSubtitle": "別のキーワードで検索するか、検索条件をリセットしてください。",
+    "clearFilters": "フィルターをクリア",
     "sku": "製品コード",
     "zoomHint": "画像をクリックして高解像度表示",
     "gallery": "製品ギャラリー"
@@ -165,13 +174,31 @@
     "openInMaps": "Google マップで開く"
   },
   "search": {
-    "placeholder": "製品、型番、サービス、ページを検索... (Ctrl + K または /)",
-    "title": "クイック検索",
-    "noResults": "一致する結果が見つかりませんでした。",
-    "products": "製品",
+    "title": "検索パネル",
+    "quickSearch": "クイック検索",
+    "placeholder": "製品名、メーカー、型番、サービス、ページを検索...",
+    "clear": "クリア",
+    "close": "閉じる",
+    "advancedFilters": "詳細検索・カテゴリフィルター",
+    "activeFilter": "適用中のフィルター",
+    "openFilters": "フィルターを表示",
+    "closeFilters": "フィルターを閉じる",
+    "all": "すべて",
+    "products": "医療機器",
+    "secondHand": "中古・リファービッシュ",
     "services": "サービス",
+    "catalogs": "カタログ",
     "pages": "ページ",
-    "pressEsc": "ESCキーで閉じる"
+    "idleHint": "機器名、ブランド、型番、またはサービス名を入力してください。",
+    "noResults": "一致する結果が見つかりませんでした。",
+    "noResultsTitle": "一致する検索結果は見つかりませんでした。",
+    "noResultsHint": "別のキーワードで再検索をお試しください。",
+    "navigate": "移動",
+    "select": "選択",
+    "pressEsc": "閉じる (ESC)",
+    "resultsCount": "件の結果",
+    "brandTag": "Cebeci Medikal 高速検索",
+    "secondHandBadge": "認定中古"
   },
   "cookie": {
     "title": "Cookie設定およびプライバシーに関する通知",

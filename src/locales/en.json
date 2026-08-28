@@ -55,9 +55,17 @@
   },
   "services": {
     "title": "Our Services",
+    "heroTitle": "Biomedical Technical Service and Consulting Solutions",
     "subtitle": "Ensuring maximum reliability and performance of your medical devices with technical service, preventive maintenance, and biomedical expertise.",
     "explore": "Explore Service",
-    "learnMore": "Learn More"
+    "learnMore": "Learn More",
+    "requestService": "Request Service",
+    "scopeTitle": "Service Scope & Key Highlights",
+    "workflowTitle": "Step-by-Step Process",
+    "supportBadge": "24/7 Biomedical Support",
+    "supportDesc": "Our rapid technical response team ensures immediate on-site intervention for critical healthcare units.",
+    "responseTimeTitle": "Fast Response Time",
+    "responseTimeDesc": "Same-day on-site inspection and troubleshooting across Ankara and metropolitan clinics."
   },
   "whyUs": {
     "title": "Why Cebeci Medikal?",
@@ -105,6 +113,7 @@
     "applications": "Clinical Applications",
     "relatedProducts": "Related Equipment",
     "noProducts": "No products match your search criteria.",
+    "noProductsSubtitle": "You can try searching with different keywords or clear your active filters.",
     "clearFilters": "Clear Filters",
     "sku": "Product SKU",
     "zoomHint": "Click image to inspect high-resolution view",
@@ -165,13 +174,31 @@
     "openInMaps": "Open in Google Maps"
   },
   "search": {
-    "placeholder": "Search devices, models, services or pages... (Ctrl + K or /)",
-    "title": "Quick Search",
-    "noResults": "No results found matching your search.",
-    "products": "Products",
+    "title": "Search Panel",
+    "quickSearch": "Quick Search",
+    "placeholder": "Search devices, models, services or pages...",
+    "clear": "Clear",
+    "close": "Close",
+    "advancedFilters": "Advanced Search & Category Filters",
+    "activeFilter": "Active Filter",
+    "openFilters": "Open Filters",
+    "closeFilters": "Close Filters",
+    "all": "All",
+    "products": "Medical Devices",
+    "secondHand": "Certified Pre-Owned",
     "services": "Services",
+    "catalogs": "Catalogs",
     "pages": "Pages",
-    "pressEsc": "Press ESC to close"
+    "idleHint": "Type device name, brand, model, or biomedical service to search.",
+    "noResults": "No results found matching your search.",
+    "noResultsTitle": "No results found matching your search.",
+    "noResultsHint": "Please try searching with different keywords.",
+    "navigate": "Navigate",
+    "select": "Select",
+    "pressEsc": "Close (ESC)",
+    "resultsCount": "results",
+    "brandTag": "Cebeci Medikal Quick Search",
+    "secondHandBadge": "2nd Hand"
   },
   "cookie": {
     "title": "Cookie Preferences & Privacy Notice",

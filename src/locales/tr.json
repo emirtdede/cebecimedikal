@@ -55,9 +55,17 @@
   },
   "services": {
     "title": "Hizmetlerimiz",
+    "heroTitle": "Biyomedikal Teknik Servis ve Danışmanlık Çözümleri",
     "subtitle": "Teknik servis, koruyucu bakım ve biyomedikal danışmanlık ile cihazlarınızın maksimum performansta çalışmasını sağlıyoruz.",
     "explore": "Hizmeti İncele",
-    "learnMore": "Detaylı Bilgi"
+    "learnMore": "Detaylı Bilgi",
+    "requestService": "Servis Talebi Oluştur",
+    "scopeTitle": "Hizmet Kapsamı ve Öne Çıkan Özellikler",
+    "workflowTitle": "Adım Adım Süreç İşleyişi",
+    "supportBadge": "7/24 Biyomedikal Destek",
+    "supportDesc": "Hastaneler ve kritik sağlık birimlerindeki arıza bildirimleri için acil teknik ekibimiz hızlı müdahale sağlamaktadır.",
+    "responseTimeTitle": "Hızlı Müdahale Süresi",
+    "responseTimeDesc": "Ankara içi aynı gün yerinde inceleme ve arıza tespiti."
   },
   "whyUs": {
     "title": "Neden Cebeci Medikal?",
@@ -105,6 +113,7 @@
     "applications": "Kullanım Alanları",
     "relatedProducts": "Benzer Cihazlar",
     "noProducts": "Arama kriterlerinize uygun ürün bulunamadı.",
+    "noProductsSubtitle": "Farklı anahtar kelimelerle arama yapabilir veya filtreleri sıfırlayabilirsiniz.",
     "clearFilters": "Filtreleri Temizle",
     "sku": "Ürün Kodu",
     "zoomHint": "Büyütmek için görsele tıklayın",
@@ -165,13 +174,31 @@
     "openInMaps": "Google Haritalar'da Aç"
   },
   "search": {
-    "placeholder": "Cihaz, model, hizmet veya sayfa ara... (Ctrl + K veya /)",
-    "title": "Hızlı Arama",
-    "noResults": "Aramanızla eşleşen sonuç bulunamadı.",
-    "products": "Ürünler",
+    "title": "Arama Paneli",
+    "quickSearch": "Hızlı Arama",
+    "placeholder": "Cihaz, model, hizmet veya sayfa ara...",
+    "clear": "Temizle",
+    "close": "Kapat",
+    "advancedFilters": "Gelişmiş Arama & Kategori Filtreleri",
+    "activeFilter": "Aktif Filtre",
+    "openFilters": "Filtreleri Aç",
+    "closeFilters": "Filtreleri Kapat",
+    "all": "Tümü",
+    "products": "Tıbbi Cihazlar",
+    "secondHand": "2. El Cihazlar",
     "services": "Hizmetler",
+    "catalogs": "Kataloglar",
     "pages": "Sayfalar",
-    "pressEsc": "Kapatmak için ESC tuşuna basın"
+    "idleHint": "Aramak istediğiniz cihaz adı, marka, model veya hizmeti yazın.",
+    "noResults": "Aramanızla eşleşen sonuç bulunamadı.",
+    "noResultsTitle": "ile eşleşen sonuç bulunamadı.",
+    "noResultsHint": "Lütfen farklı bir arama terimi deneyin.",
+    "navigate": "Gezin",
+    "select": "Seç",
+    "pressEsc": "Kapat (ESC)",
+    "resultsCount": "sonuç",
+    "brandTag": "Cebeci Medikal Hızlı Arama",
+    "secondHandBadge": "2. El"
   },
   "cookie": {
     "title": "Çerez Tercihleri ve Gizlilik Bildirimi",

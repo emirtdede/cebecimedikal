@@ -45,7 +45,7 @@ export default async function ServicesPage({
       {/* Page Header */}
       <div className="max-w-3xl space-y-3">
         <h1 className="font-serif text-3xl sm:text-5xl font-bold text-foreground">
-          Biyomedikal Teknik Servis ve Danışmanlık Çözümleri
+          {dict.services.heroTitle || dict.services.title}
         </h1>
         <p className="text-base sm:text-lg text-foreground-muted leading-relaxed">
           {dict.services.subtitle}
@@ -99,7 +99,7 @@ export default async function ServicesPage({
                   className="px-4 py-2 rounded-xl bg-surface-2 hover:bg-primary hover:text-white text-xs font-bold text-foreground border border-border transition-colors flex items-center gap-1.5"
                 >
                   <FileText className="w-3.5 h-3.5" />
-                  <span>Servis Talebi</span>
+                  <span>{dict.services.requestService || "Servis Talebi"}</span>
                 </Link>
               </div>
             </div>

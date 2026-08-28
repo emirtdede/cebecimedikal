@@ -150,7 +150,7 @@ export default async function ProductsPage({
           <Box className="w-12 h-12 text-foreground-muted mx-auto opacity-50" />
           <h3 className="text-lg font-bold text-foreground">{dict.products.noProducts}</h3>
           <p className="text-xs sm:text-sm text-foreground-muted max-w-md mx-auto">
-            Farklı anahtar kelimelerle arama yapabilir veya filtreleri sıfırlayabilirsiniz.
+            {dict.products.noProductsSubtitle || "Farklı anahtar kelimelerle arama yapabilir veya filtreleri sıfırlayabilirsiniz."}
           </p>
           <Link
             href={`/${currentLocale}/urunler`}

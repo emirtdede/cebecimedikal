@@ -38,6 +38,10 @@ import {
   getCatalogs,
   getFaqs,
   getSiteSettings,
+  LocalizedCategory,
+  LocalizedProduct,
+  LocalizedService,
+  LocalizedReference,
 } from "@/lib/data";
 
 const CATEGORY_ICONS: Record<string, any> = {
@@ -69,17 +73,34 @@ export default async function HomePage({
   const currentLocale = locale as Locale;
   const dict = getDictionary(currentLocale);
 
-  const [categories, featuredProducts, services, references, catalogs, faqs, settings, productsCount] =
-    await Promise.all([
-      getCategories(currentLocale),
-      getProducts(currentLocale, { featured: true, limit: 4 }),
-      getServices(currentLocale),
-      getReferences(currentLocale),
-      getCatalogs(currentLocale),
-      getFaqs(currentLocale),
-      getSiteSettings(),
-      getProductsCount(),
-    ]);
+  const [
+    categories,
+    featuredProducts,
+    services,
+    references,
+    catalogs,
+    faqs,
+    settings,
+    productsCount,
+  ]: [
+    LocalizedCategory[],
+    LocalizedProduct[],
+    LocalizedService[],
+    LocalizedReference[],
+    any[],
+    any[],
+    Record<string, string>,
+    number
+  ] = await Promise.all([
+    getCategories(currentLocale),
+    getProducts(currentLocale, { featured: true, limit: 4 }),
+    getServices(currentLocale),
+    getReferences(currentLocale),
+    getCatalogs(currentLocale),
+    getFaqs(currentLocale),
+    getSiteSettings(),
+    getProductsCount(),
+  ]);
 
   const primaryPhone = settings.phone_primary || "+90 506 606 15 40";
   const whatsappNum = settings.whatsapp || "905066061540";
@@ -207,7 +228,7 @@ export default async function HomePage({
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {categories.map((cat) => {
+          {categories.map((cat: LocalizedCategory) => {
             const IconComp = CATEGORY_ICONS[cat.slug] || Activity;
             return (
               <Link

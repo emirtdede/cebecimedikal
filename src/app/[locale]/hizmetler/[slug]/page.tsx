@@ -12,10 +12,21 @@ import {
   Clock,
   ArrowRight,
 } from "lucide-react";
-import { Locale, isValidLocale } from "@/lib/i18n";
+import { Locale, LOCALES, isValidLocale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionary";
-import { getServiceBySlug, getSiteSettings } from "@/lib/data";
+import { getServiceBySlug, getServices, getSiteSettings } from "@/lib/data";
 import type { Metadata } from "next";
+
+export async function generateStaticParams() {
+  const services = await getServices();
+  const params: { locale: string; slug: string }[] = [];
+  for (const locale of LOCALES) {
+    for (const service of services) {
+      params.push({ locale, slug: service.slug });
+    }
+  }
+  return params;
+}
 
 export async function generateMetadata({
   params,
@@ -95,7 +106,7 @@ export default async function ServiceDetailPage({
               className="px-6 py-3.5 rounded-xl bg-primary hover:bg-primary-hover text-white text-sm font-bold shadow-lg shadow-primary/25 transition-all flex items-center gap-2"
             >
               <FileText className="w-4 h-4" />
-              <span>Bu Hizmet İçin Talep Oluştur</span>
+              <span>{dict.services.requestService || "Servis Talebi Oluştur"}</span>
             </Link>
 
             <a
@@ -110,17 +121,19 @@ export default async function ServiceDetailPage({
 
         {/* Right Info Box */}
         <div className="lg:col-span-4 p-8 rounded-3xl bg-surface border border-border shadow-xl space-y-6">
-          <h2 className="text-base font-bold text-foreground">7/24 Biyomedikal Destek</h2>
+          <h2 className="text-base font-bold text-foreground">
+            {dict.services.supportBadge || "7/24 Biyomedikal Destek"}
+          </h2>
           <p className="text-xs sm:text-sm text-foreground-muted leading-relaxed">
-            Hastaneler ve kritik sağlık birimlerindeki arıza bildirimleri için acil teknik ekibimiz hızlı müdahale sağlamaktadır.
+            {dict.services.supportDesc || "Hastaneler ve kritik sağlık birimlerindeki arıza bildirimleri için acil teknik ekibimiz hızlı müdahale sağlamaktadır."}
           </p>
           <div className="p-4 rounded-xl bg-surface-2 border border-border space-y-2 text-xs">
             <div className="flex items-center gap-2 text-foreground font-semibold">
               <Clock className="w-4 h-4 text-primary" />
-              <span>Hızlı Müdahale Süresi</span>
+              <span>{dict.services.responseTimeTitle || "Hızlı Müdahale Süresi"}</span>
             </div>
             <div className="text-foreground-muted">
-              Ankara içi aynı gün yerinde inceleme ve arıza tespiti.
+              {dict.services.responseTimeDesc || "Ankara içi aynı gün yerinde inceleme ve arıza tespiti."}
             </div>
           </div>
         </div>
@@ -130,7 +143,7 @@ export default async function ServiceDetailPage({
       {service.details?.features && service.details.features.length > 0 && (
         <div className="space-y-6 pt-6 border-t border-border">
           <h2 className="font-serif text-2xl font-bold text-foreground">
-            Hizmet Kapsamı ve Öne Çıkan Özellikler
+            {dict.services.scopeTitle || "Hizmet Kapsamı ve Öne Çıkan Özellikler"}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {service.details.features.map((feat, idx) => (
@@ -147,7 +160,7 @@ export default async function ServiceDetailPage({
       {service.details?.workflow && service.details.workflow.length > 0 && (
         <div className="p-8 sm:p-12 rounded-3xl bg-surface-2/40 border border-border space-y-8">
           <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground text-center">
-            Adım Adım Süreç İşleyişi
+            {dict.services.workflowTitle || "Adım Adım Süreç İşleyişi"}
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 pt-4">

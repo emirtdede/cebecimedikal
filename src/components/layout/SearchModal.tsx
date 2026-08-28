@@ -198,6 +198,8 @@ export function SearchModal({
 
   if (!isOpen) return null;
 
+  const s = dict.search;
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-md transition-all duration-200 animate-fade-in"
@@ -209,7 +211,7 @@ export function SearchModal({
         onClick={(e) => e.stopPropagation()}
         role="dialog"
         aria-modal="true"
-        aria-label="Arama Paneli"
+        aria-label={s.title || "Arama Paneli"}
       >
         {/* 1. Clean Input Bar with ESC Button on Top Right */}
         <div className="relative flex items-center px-4 sm:px-5 py-4 border-b border-border bg-surface-2/30">
@@ -219,7 +221,7 @@ export function SearchModal({
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Cihaz, model, hizmet veya sayfa ara..."
+            placeholder={s.placeholder || "Cihaz, model, hizmet veya sayfa ara..."}
             className="w-full bg-transparent text-foreground placeholder:text-foreground-muted text-base sm:text-lg focus:outline-none"
           />
 
@@ -234,7 +236,7 @@ export function SearchModal({
                   inputRef.current?.focus();
                 }}
                 className="p-1 rounded-md text-foreground-muted hover:text-foreground hover:bg-surface-2 transition-colors"
-                title="Temizle"
+                title={s.clear || "Temizle"}
               >
                 <X className="w-4 h-4" />
               </button>
@@ -245,7 +247,7 @@ export function SearchModal({
               type="button"
               onClick={onClose}
               className="px-2.5 py-1 rounded-lg bg-surface hover:bg-surface-2 border border-border hover:border-primary/40 text-foreground text-xs font-bold flex items-center gap-1.5 transition-all shadow-sm group"
-              title="Kapat (ESC)"
+              title={s.pressEsc || "Kapat (ESC)"}
             >
               <span className="font-mono text-[11px] text-foreground-muted group-hover:text-primary transition-colors">
                 ESC
@@ -267,15 +269,19 @@ export function SearchModal({
         >
           <div className="flex items-center gap-2">
             <SlidersHorizontal className="w-3.5 h-3.5 text-primary" />
-            <span>Gelişmiş Arama & Kategori Filtreleri</span>
+            <span>{s.advancedFilters || "Gelişmiş Arama & Kategori Filtreleri"}</span>
             {activeFilter !== "all" && (
               <span className="px-2 py-0.5 rounded-full bg-primary text-white text-[10px] font-bold shadow-sm">
-                Aktif Filtre
+                {s.activeFilter || "Aktif Filtre"}
               </span>
             )}
           </div>
           <div className="flex items-center gap-1 text-[11px]">
-            <span>{showAdvanced ? "Filtreleri Kapat" : "Filtreleri Aç"}</span>
+            <span>
+              {showAdvanced
+                ? s.closeFilters || "Filtreleri Kapat"
+                : s.openFilters || "Filtreleri Aç"}
+            </span>
             {showAdvanced ? (
               <ChevronUp className="w-3.5 h-3.5 text-primary" />
             ) : (
@@ -296,7 +302,7 @@ export function SearchModal({
                   : "bg-surface text-foreground-muted hover:text-foreground hover:bg-surface-2"
               }`}
             >
-              <span>Tümü</span>
+              <span>{s.all || "Tümü"}</span>
             </button>
             <button
               type="button"
@@ -308,7 +314,7 @@ export function SearchModal({
               }`}
             >
               <Box className="w-3 h-3" />
-              <span>Tıbbi Cihazlar</span>
+              <span>{s.products || "Tıbbi Cihazlar"}</span>
             </button>
             <button
               type="button"
@@ -320,7 +326,7 @@ export function SearchModal({
               }`}
             >
               <RefreshCw className="w-3 h-3" />
-              <span>2. El Cihazlar</span>
+              <span>{s.secondHand || "2. El Cihazlar"}</span>
             </button>
             <button
               type="button"
@@ -332,7 +338,7 @@ export function SearchModal({
               }`}
             >
               <Wrench className="w-3 h-3" />
-              <span>Hizmetler</span>
+              <span>{s.services || "Hizmetler"}</span>
             </button>
             <button
               type="button"
@@ -344,7 +350,7 @@ export function SearchModal({
               }`}
             >
               <FileText className="w-3 h-3" />
-              <span>Kataloglar</span>
+              <span>{s.catalogs || "Kataloglar"}</span>
             </button>
             <button
               type="button"
@@ -356,7 +362,7 @@ export function SearchModal({
               }`}
             >
               <Layers className="w-3 h-3" />
-              <span>Sayfalar</span>
+              <span>{s.pages || "Sayfalar"}</span>
             </button>
           </div>
         )}
@@ -366,15 +372,19 @@ export function SearchModal({
           {/* Empty / Idle State */}
           {query.trim().length < 2 && (
             <div className="text-center py-6 text-foreground-muted text-xs sm:text-sm">
-              <p>Aramak istediğiniz cihaz adı, marka, model veya hizmeti yazın.</p>
+              <p>{s.idleHint || "Aramak istediğiniz cihaz adı, marka, model veya hizmeti yazın."}</p>
             </div>
           )}
 
           {/* No Results */}
           {query.trim().length >= 2 && allItems.length === 0 && !loading && (
             <div className="text-center py-10 text-foreground-muted text-sm space-y-1">
-              <p className="font-semibold text-foreground">&ldquo;{query}&rdquo; ile eşleşen sonuç bulunamadı.</p>
-              <p className="text-xs text-foreground-muted">Lütfen farklı bir arama terimi deneyin.</p>
+              <p className="font-semibold text-foreground">
+                &ldquo;{query}&rdquo; {s.noResultsTitle || "ile eşleşen sonuç bulunamadı."}
+              </p>
+              <p className="text-xs text-foreground-muted">
+                {s.noResultsHint || "Lütfen farklı bir arama terimi deneyin."}
+              </p>
             </div>
           )}
 
@@ -383,7 +393,9 @@ export function SearchModal({
             <div>
               <div className="text-[11px] font-bold uppercase tracking-wider text-primary px-2 py-1 flex items-center gap-1.5">
                 <Box className="w-3.5 h-3.5" />
-                <span>Tıbbi Cihazlar ({filteredProducts.length})</span>
+                <span>
+                  {s.products || "Tıbbi Cihazlar"} ({filteredProducts.length})
+                </span>
               </div>
               <div className="space-y-1 mt-1">
                 {filteredProducts.map((product, idx) => {
@@ -410,7 +422,7 @@ export function SearchModal({
                           )}
                           {product.condition === "SECOND_HAND" && (
                             <span className="text-[10px] px-1.5 py-0.2 rounded bg-amber-500/15 border border-amber-500/30 text-amber-500 font-semibold">
-                              2. El
+                              {s.secondHandBadge || "2. El"}
                             </span>
                           )}
                         </div>
@@ -433,7 +445,9 @@ export function SearchModal({
             <div>
               <div className="text-[11px] font-bold uppercase tracking-wider text-primary px-2 py-1 flex items-center gap-1.5">
                 <Wrench className="w-3.5 h-3.5" />
-                <span>Hizmetler ({filteredServices.length})</span>
+                <span>
+                  {s.services || "Hizmetler"} ({filteredServices.length})
+                </span>
               </div>
               <div className="space-y-1 mt-1">
                 {filteredServices.map((service, idx) => {
@@ -471,7 +485,9 @@ export function SearchModal({
             <div>
               <div className="text-[11px] font-bold uppercase tracking-wider text-primary px-2 py-1 flex items-center gap-1.5">
                 <FileText className="w-3.5 h-3.5" />
-                <span>Kataloglar ({filteredCatalogs.length})</span>
+                <span>
+                  {s.catalogs || "Kataloglar"} ({filteredCatalogs.length})
+                </span>
               </div>
               <div className="space-y-1 mt-1">
                 {filteredCatalogs.map((catalog, idx) => {
@@ -512,7 +528,9 @@ export function SearchModal({
             <div>
               <div className="text-[11px] font-bold uppercase tracking-wider text-primary px-2 py-1 flex items-center gap-1.5">
                 <Layers className="w-3.5 h-3.5" />
-                <span>Sayfalar ({filteredPages.length})</span>
+                <span>
+                  {s.pages || "Sayfalar"} ({filteredPages.length})
+                </span>
               </div>
               <div className="space-y-1 mt-1">
                 {filteredPages.map((page, idx) => {
@@ -554,22 +572,24 @@ export function SearchModal({
             <span className="flex items-center gap-1">
               <kbd className="px-1.5 py-0.5 bg-surface border border-border rounded text-[10px] font-bold">↑</kbd>
               <kbd className="px-1.5 py-0.5 bg-surface border border-border rounded text-[10px] font-bold">↓</kbd>
-              <span className="ml-0.5">Gezin</span>
+              <span className="ml-0.5">{s.navigate || "Gezin"}</span>
             </span>
             <span className="flex items-center gap-1">
               <kbd className="px-1.5 py-0.5 bg-surface border border-border rounded text-[10px] font-bold flex items-center gap-0.5">
                 <CornerDownLeft className="w-2.5 h-2.5" /> ENTER
               </kbd>
-              <span className="ml-0.5">Seç</span>
+              <span className="ml-0.5">{s.select || "Seç"}</span>
             </span>
             <span className="flex items-center gap-1">
               <kbd className="px-1.5 py-0.5 bg-surface border border-border rounded text-[10px] font-bold">ESC</kbd>
-              <span className="ml-0.5">Kapat</span>
+              <span className="ml-0.5">{s.close || "Kapat"}</span>
             </span>
           </div>
 
           <span className="text-[11px] font-medium hidden sm:inline">
-            {query.length >= 2 ? `${allItems.length} sonuç` : "Cebeci Medikal Hızlı Arama"}
+            {query.length >= 2
+              ? `${allItems.length} ${s.resultsCount || "sonuç"}`
+              : s.brandTag || "Cebeci Medikal Hızlı Arama"}
           </span>
         </div>
       </div>

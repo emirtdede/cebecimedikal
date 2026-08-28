@@ -1,5 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 import bcrypt from "bcryptjs";
+import { STATIC_SERVICES } from "../src/lib/static-data";
 
 const prisma = new PrismaClient();
 
@@ -2659,6 +2660,33 @@ async function main() {
           locale,
           quote: t.quote,
           projectDescription: t.projectDescription,
+        },
+      });
+    }
+  }
+
+  // 7.5. Services & Service Translations
+  for (const srv of STATIC_SERVICES) {
+    const createdService = await prisma.service.create({
+      data: {
+        slug: srv.slug,
+        icon: srv.icon,
+        sortOrder: srv.sortOrder,
+        isActive: true,
+      },
+    });
+
+    for (const [locale, t] of Object.entries(srv.translations)) {
+      await prisma.serviceTranslation.create({
+        data: {
+          serviceId: createdService.id,
+          locale,
+          title: t.title,
+          shortDescription: t.shortDescription,
+          description: t.description,
+          details: JSON.stringify(srv.details),
+          seoTitle: `${t.title} | Cebeci Medikal`,
+          seoDescription: t.shortDescription,
         },
       });
     }
