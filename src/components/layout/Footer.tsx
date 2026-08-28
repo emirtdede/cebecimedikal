@@ -50,11 +50,8 @@ export function Footer({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10">
           {/* Col 1: Brand Info & Social Media (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
-            <Link href={`/${locale}`} className="inline-flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white font-serif font-black text-sm">
-                C
-              </div>
-              <div className="font-serif font-bold text-lg text-foreground tracking-tight">
+            <Link href={`/${locale}`} className="inline-block">
+              <div className="font-serif font-bold text-lg text-foreground tracking-tight hover:text-primary transition-colors">
                 CEBECİ MEDİKAL
               </div>
             </Link>

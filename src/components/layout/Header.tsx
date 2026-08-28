@@ -127,21 +127,16 @@ export function Header({
           {/* Brand Logo */}
           <Link
             href={`/${locale}`}
-            className="flex items-center gap-2 sm:gap-3 group focus:outline-none flex-shrink-0"
+            className="flex flex-col group focus:outline-none flex-shrink-0"
             aria-label="Cebeci Medikal Ana Sayfa"
           >
-            <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-primary flex items-center justify-center text-white shadow-md shadow-primary/20 group-hover:scale-105 transition-transform flex-shrink-0">
-              <Activity className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-serif font-black text-lg sm:text-2xl text-foreground tracking-tight group-hover:text-primary transition-colors leading-none">
-                CEBECİ
-                <span className="text-primary ml-1">MEDİKAL</span>
-              </span>
-              <span className="text-[10px] text-foreground-muted tracking-wider uppercase font-semibold mt-0.5 hidden xs:block">
-                Biyomedikal Teknolojileri
-              </span>
-            </div>
+            <span className="font-serif font-black text-lg sm:text-2xl text-foreground tracking-tight group-hover:text-primary transition-colors leading-none">
+              CEBECİ
+              <span className="text-primary ml-1">MEDİKAL</span>
+            </span>
+            <span className="text-[10px] text-foreground-muted tracking-wider uppercase font-semibold mt-0.5 hidden xs:block">
+              Biyomedikal Teknolojileri
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
