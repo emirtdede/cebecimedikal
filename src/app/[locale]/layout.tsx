@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
+import { Inter, DM_Serif_Display, Noto_Sans_Arabic, Noto_Sans_JP, Noto_Sans_SC } from "next/font/google";
 import { LOCALES, Locale, isValidLocale, getDirection } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionary";
 import { getCategories, getSiteSettings } from "@/lib/data";
@@ -13,6 +14,37 @@ import { RouteTransitionLoader } from "@/components/common/RouteTransitionLoader
 import { ScrollObserver } from "@/components/common/ScrollObserver";
 import { AnalyticsTracker } from "@/features/analytics/AnalyticsTracker";
 import type { Metadata } from "next";
+
+const inter = Inter({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const dmSerif = DM_Serif_Display({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-serif",
+  display: "swap",
+});
+
+const notoArabic = Noto_Sans_Arabic({
+  subsets: ["arabic"],
+  variable: "--font-arabic",
+  display: "swap",
+});
+
+const notoJp = Noto_Sans_JP({
+  subsets: ["latin"],
+  variable: "--font-jp",
+  display: "swap",
+});
+
+const notoSc = Noto_Sans_SC({
+  subsets: ["latin"],
+  variable: "--font-sc",
+  display: "swap",
+});
 
 export async function generateStaticParams() {
   return LOCALES.map((locale) => ({ locale }));
@@ -138,12 +170,14 @@ export default async function LocaleLayout({
     },
   };
 
-  const whatsappMessage = currentLocale === "tr"
-    ? "Merhaba, Cebeci Medikal hakkında bilgi ve teklif almak istiyorum."
-    : "Hello, I would like to get information and quotation about Cebeci Medical services.";
+  const whatsappMessage = (dict as any).whatsapp?.defaultMessage || (dict.contact as any)?.whatsappMessage || "Merhaba, Cebeci Medikal hakkında bilgi ve teklif almak istiyorum.";
 
   return (
-    <div dir={dir} lang={currentLocale} className="flex flex-col min-h-screen">
+    <div
+      dir={dir}
+      lang={currentLocale}
+      className={`${inter.variable} ${dmSerif.variable} ${notoArabic.variable} ${notoJp.variable} ${notoSc.variable} font-sans flex flex-col min-h-screen`}
+    >
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -152,7 +186,7 @@ export default async function LocaleLayout({
         <RouteTransitionLoader />
       </Suspense>
       <ScrollObserver />
-      <SkipLink text={dict.common.details} />
+      <SkipLink text={dict.common?.skipToContent || "İçeriğe Atla"} />
       <Header
         locale={currentLocale}
         dict={dict}
@@ -163,7 +197,7 @@ export default async function LocaleLayout({
         {children}
       </main>
       <Footer locale={currentLocale} dict={dict} settings={settings} />
-      <AnnouncementPopup />
+      <AnnouncementPopup dict={dict} />
       <CookieBanner dict={dict} />
       <WhatsAppButton
         phoneNumber={settings.whatsapp || "905066061540"}

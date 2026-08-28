@@ -1,6 +1,19 @@
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/lib/db";
-import { getCurrentUser } from "@/lib/auth";
+import { getCurrentUser, hasPermission } from "@/lib/auth";
+import { z } from "zod";
+
+const catalogSchema = z.object({
+  title: z.string().min(2, "Katalog başlığı zorunludur"),
+  category: z.string().default("Genel"),
+  description: z.string().optional().nullable(),
+  fileUrl: z.string().min(1, "Dosya URL'si zorunludur"),
+  thumbnailUrl: z.string().optional().nullable(),
+  fileSize: z.string().default("2.4 MB"),
+  version: z.string().default("1.0"),
+  sortOrder: z.number().int().default(0),
+  isActive: z.boolean().default(true),
+});
 
 export async function GET(req: NextRequest) {
   try {
@@ -22,35 +35,29 @@ export async function POST(req: NextRequest) {
   try {
     const user = await getCurrentUser();
     if (!user) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    if (!hasPermission(user.role, "CONTENT_MANAGER")) {
+      return NextResponse.json({ error: "Bu işlem için yetkiniz bulunmamaktadır." }, { status: 403 });
+    }
 
     const body = await req.json();
-    const {
-      title,
-      category = "Genel",
-      description = "",
-      fileUrl,
-      thumbnailUrl = "",
-      fileSize = "2.4 MB",
-      version = "1.0",
-      sortOrder = 0,
-      isActive = true,
-    } = body;
-
-    if (!title || !fileUrl) {
-      return NextResponse.json({ error: "Katalog başlığı ve dosya URL'si zorunludur" }, { status: 400 });
+    const parsed = catalogSchema.safeParse(body);
+    if (!parsed.success) {
+      return NextResponse.json({ error: "Geçersiz katalog verisi", details: parsed.error.format() }, { status: 400 });
     }
+
+    const data = parsed.data;
 
     const catalog = await db.catalog.create({
       data: {
-        title,
-        category,
-        description,
-        fileUrl,
-        thumbnailUrl: thumbnailUrl || null,
-        fileSize,
-        version,
-        sortOrder: Number(sortOrder) || 0,
-        isActive: Boolean(isActive),
+        title: data.title,
+        category: data.category,
+        description: data.description || null,
+        fileUrl: data.fileUrl,
+        thumbnailUrl: data.thumbnailUrl || null,
+        fileSize: data.fileSize,
+        version: data.version,
+        sortOrder: data.sortOrder,
+        isActive: data.isActive,
       },
     });
 

@@ -45,16 +45,35 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale, slug } = await params;
   const currentLocale = isValidLocale(locale) ? (locale as Locale) : "tr";
+  const dict = await getDictionary(currentLocale);
   const canonicalSlug = SERVICE_SLUG_MAP[slug] || slug;
   const service = await getServiceBySlug(canonicalSlug, currentLocale);
 
   if (!service) {
-    return { title: "Hizmet Bulunamadı | Cebeci Medikal" };
+    return { title: `${(dict.common as any)?.notFound || "Hizmet Bulunamadı"} | Cebeci Medikal` };
   }
 
   return {
     title: service.title,
     description: service.shortDescription,
+    alternates: {
+      canonical: `https://cebecimedikal.com/${currentLocale}/hizmetler/${canonicalSlug}`,
+      languages: {
+        tr: `https://cebecimedikal.com/tr/hizmetler/${canonicalSlug}`,
+        en: `https://cebecimedikal.com/en/hizmetler/${canonicalSlug}`,
+        de: `https://cebecimedikal.com/de/hizmetler/${canonicalSlug}`,
+        ar: `https://cebecimedikal.com/ar/hizmetler/${canonicalSlug}`,
+        ja: `https://cebecimedikal.com/ja/hizmetler/${canonicalSlug}`,
+        zh: `https://cebecimedikal.com/zh/hizmetler/${canonicalSlug}`,
+        "x-default": `https://cebecimedikal.com/tr/hizmetler/${canonicalSlug}`,
+      },
+    },
+    openGraph: {
+      title: service.title,
+      description: service.shortDescription,
+      url: `https://cebecimedikal.com/${currentLocale}/hizmetler/${canonicalSlug}`,
+      locale: currentLocale === "tr" ? "tr_TR" : currentLocale === "en" ? "en_US" : currentLocale,
+    },
   };
 }
 

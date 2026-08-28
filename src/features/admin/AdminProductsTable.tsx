@@ -2,16 +2,21 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Edit2, Trash2, Plus, Search, ExternalLink, RefreshCw } from "lucide-react";
+import { useAdminLanguage } from "./AdminLanguageContext";
+import { getAdminUi } from "@/lib/admin-translations";
 
 export function AdminProductsTable({ initialProducts }: { initialProducts: any[] }) {
+  const { locale, dict } = useAdminLanguage();
+  const a = dict.admin || {};
   const [products, setProducts] = useState(initialProducts);
   const [search, setSearch] = useState("");
   const [statusFilter, setStatusFilter] = useState("ALL");
   const [deletingId, setDeletingId] = useState<string | null>(null);
 
   const handleDelete = async (id: string, title: string) => {
-    if (!confirm(`"${title}" adlı ürünü silmek istediğinize emin misiniz?`)) return;
+    if (!confirm(getAdminUi("confirmDelete", locale))) return;
 
     setDeletingId(id);
     try {
@@ -19,10 +24,10 @@ export function AdminProductsTable({ initialProducts }: { initialProducts: any[]
       if (res.ok) {
         setProducts((prev) => prev.filter((p) => p.id !== id));
       } else {
-        alert("Ürün silinemedi.");
+        alert("Operation failed.");
       }
     } catch {
-      alert("Bağlantı hatası.");
+      alert("Network error.");
     } finally {
       setDeletingId(null);
     }
@@ -51,7 +56,7 @@ export function AdminProductsTable({ initialProducts }: { initialProducts: any[]
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              placeholder="Ürün adı, marka veya model ara..."
+              placeholder={getAdminUi("searchProductPlaceholder", locale)}
               className="w-full pl-9 pr-3 py-2 rounded-xl bg-surface-2 border border-border text-xs text-foreground focus:outline-none focus:border-primary"
             />
           </div>
@@ -60,11 +65,9 @@ export function AdminProductsTable({ initialProducts }: { initialProducts: any[]
             onChange={(e) => setStatusFilter(e.target.value)}
             className="px-3 py-2 rounded-xl bg-surface-2 border border-border text-xs text-foreground focus:outline-none"
           >
-            <option value="ALL">Tüm Durumlar</option>
-            <option value="PUBLISHED">Yayında (Published)</option>
-            <option value="DRAFT">Taslak (Draft)</option>
-            <option value="REVIEW">İncelemede (Review)</option>
-            <option value="ARCHIVED">Arşiv (Archived)</option>
+            <option value="ALL">{getAdminUi("allStatuses", locale)}</option>
+            <option value="PUBLISHED">{getAdminUi("published", locale)}</option>
+            <option value="DRAFT">{getAdminUi("draft", locale)}</option>
           </select>
         </div>
 
@@ -73,7 +76,7 @@ export function AdminProductsTable({ initialProducts }: { initialProducts: any[]
           className="px-4 py-2 rounded-xl bg-primary hover:bg-primary-hover text-white text-xs font-bold shadow-sm transition-colors flex items-center gap-1.5"
         >
           <Plus className="w-4 h-4" />
-          <span>Yeni Ürün Ekle</span>
+          <span>{getAdminUi("addNewProduct", locale)}</span>
         </Link>
       </div>
 
@@ -83,13 +86,13 @@ export function AdminProductsTable({ initialProducts }: { initialProducts: any[]
           <table className="w-full text-xs">
             <thead>
               <tr className="border-b border-border bg-surface-2/40 text-left text-foreground-muted">
-                <th className="p-4 font-semibold">Görsel</th>
-                <th className="p-4 font-semibold">Ürün Adı</th>
-                <th className="p-4 font-semibold">Kategori</th>
-                <th className="p-4 font-semibold">Marka / Model</th>
-                <th className="p-4 font-semibold">Durum</th>
-                <th className="p-4 font-semibold">Yayın Durumu</th>
-                <th className="p-4 font-semibold text-right">İşlemler</th>
+                <th className="p-4 font-semibold">{getAdminUi("image", locale)}</th>
+                <th className="p-4 font-semibold">{getAdminUi("productName", locale)}</th>
+                <th className="p-4 font-semibold">{getAdminUi("category", locale)}</th>
+                <th className="p-4 font-semibold">{getAdminUi("brandModel", locale)}</th>
+                <th className="p-4 font-semibold">{getAdminUi("condition", locale)}</th>
+                <th className="p-4 font-semibold">{getAdminUi("publishStatus", locale)}</th>
+                <th className="p-4 font-semibold text-right">{getAdminUi("actions", locale)}</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-border">
@@ -114,9 +117,9 @@ export function AdminProductsTable({ initialProducts }: { initialProducts: any[]
                   return (
                     <tr key={prod.id} className="hover:bg-surface-2/40 transition-colors">
                       <td className="p-4">
-                        <div className="w-12 h-12 rounded-lg bg-surface-2 overflow-hidden border border-border flex items-center justify-center">
+                        <div className="w-12 h-12 rounded-lg bg-surface-2 overflow-hidden border border-border flex items-center justify-center relative">
                           {img ? (
-                            <img src={img} alt={title} className="w-full h-full object-cover" />
+                            <Image src={img} alt={title} width={48} height={48} className="w-full h-full object-cover" />
                           ) : (
                             <span className="text-[10px] text-foreground-muted">Yok</span>
                           )}

@@ -15,8 +15,11 @@ import {
   Building,
   CheckCircle2,
 } from "lucide-react";
+import { useAdminLanguage } from "./AdminLanguageContext";
+import { getAdminUi } from "@/lib/admin-translations";
 
 export function AdminQuotesTable({ initialQuotes }: { initialQuotes: any[] }) {
+  const { locale, dict } = useAdminLanguage();
   const [quotes, setQuotes] = useState(initialQuotes);
   const [search, setSearch] = useState("");
   const [statusFilter, setStatusFilter] = useState("ALL");
@@ -40,33 +43,33 @@ export function AdminQuotesTable({ initialQuotes }: { initialQuotes: any[] }) {
         if (selectedQuote && selectedQuote.id === id) {
           setSelectedQuote((prev: any) => ({ ...prev, status: newStatus }));
         }
-        setSuccessMsg(`Teklif durumu "${newStatus}" olarak güncellendi.`);
+        setSuccessMsg(`Status updated to "${newStatus}".`);
         setTimeout(() => setSuccessMsg(null), 3000);
       } else {
-        alert("Durum güncellenemedi.");
+        alert("Operation failed.");
       }
     } catch {
-      alert("Bağlantı hatası.");
+      alert("Network error.");
     } finally {
       setUpdatingId(null);
     }
   };
 
   const handleDelete = async (id: string, quoteNumber: string) => {
-    if (!confirm(`"${quoteNumber}" numaralı teklif talebini silmek istediğinize emin misiniz?`)) return;
+    if (!confirm(getAdminUi("confirmDelete", locale))) return;
 
     try {
       const res = await fetch(`/api/admin/quotes/${id}`, { method: "DELETE" });
       if (res.ok) {
         setQuotes((prev) => prev.filter((q) => q.id !== id));
         if (selectedQuote?.id === id) setSelectedQuote(null);
-        setSuccessMsg("Teklif talebi silindi.");
+        setSuccessMsg("Deleted successfully.");
         setTimeout(() => setSuccessMsg(null), 3000);
       } else {
-        alert("Teklif talebi silinemedi.");
+        alert("Operation failed.");
       }
     } catch {
-      alert("Bağlantı hatası.");
+      alert("Network error.");
     }
   };
 
@@ -98,31 +101,27 @@ export function AdminQuotesTable({ initialQuotes }: { initialQuotes: any[] }) {
 
       {/* Action and Filter Bar */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="flex flex-wrap items-center gap-3 flex-1">
-          <div className="relative flex-1 min-w-[220px] max-w-md">
+        <div className="flex items-center gap-3 flex-1">
+          <div className="relative flex-1 max-w-sm">
             <Search className="w-4 h-4 text-foreground-muted absolute left-3 top-1/2 -translate-y-1/2" />
             <input
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              placeholder="İsim, kurum, teklif no, ürün, şehir veya e-postada ara..."
+              placeholder={getAdminUi("searchPlaceholder", locale)}
               className="w-full pl-9 pr-3 py-2 rounded-xl bg-surface-2 border border-border text-xs text-foreground focus:outline-none focus:border-primary"
             />
           </div>
-
           <select
             value={statusFilter}
             onChange={(e) => setStatusFilter(e.target.value)}
             className="px-3 py-2 rounded-xl bg-surface-2 border border-border text-xs text-foreground focus:outline-none"
           >
-            <option value="ALL">Tüm Durumlar ({quotes.length})</option>
-            <option value="NEW">Yeni (NEW)</option>
-            <option value="IN_REVIEW">İnceleniyor (IN_REVIEW)</option>
-            <option value="QUOTE_PREPARED">Teklif Hazırlandı</option>
-            <option value="CONTACTED">İletişime Geçildi</option>
-            <option value="CONCLUDED">Sonuçlandı (Kabul)</option>
-            <option value="CLOSED">Kapatıldı</option>
-            <option value="SPAM">Spam</option>
+            <option value="ALL">{getAdminUi("allStatuses", locale)}</option>
+            <option value="NEW">NEW</option>
+            <option value="CONTACTED">CONTACTED</option>
+            <option value="CONVERTED">CONVERTED</option>
+            <option value="REJECTED">REJECTED</option>
           </select>
         </div>
       </div>
@@ -133,14 +132,14 @@ export function AdminQuotesTable({ initialQuotes }: { initialQuotes: any[] }) {
           <table className="w-full text-xs">
             <thead>
               <tr className="border-b border-border bg-surface-2/40 text-left text-foreground-muted">
-                <th className="p-4 font-semibold">Teklif No</th>
-                <th className="p-4 font-semibold">Müşteri / Kurum</th>
-                <th className="p-4 font-semibold">İletişim</th>
-                <th className="p-4 font-semibold">Talep Detayı</th>
-                <th className="p-4 font-semibold">Kanal</th>
-                <th className="p-4 font-semibold">Durum</th>
-                <th className="p-4 font-semibold">Tarih</th>
-                <th className="p-4 font-semibold text-right">İşlemler</th>
+                <th className="p-4 font-semibold">{getAdminUi("quoteNumber", locale)}</th>
+                <th className="p-4 font-semibold">{getAdminUi("customerCompany", locale)}</th>
+                <th className="p-4 font-semibold">{getAdminUi("contact", locale)}</th>
+                <th className="p-4 font-semibold">{getAdminUi("requestDetail", locale)}</th>
+                <th className="p-4 font-semibold">{getAdminUi("channel", locale)}</th>
+                <th className="p-4 font-semibold">{getAdminUi("condition", locale)}</th>
+                <th className="p-4 font-semibold">{getAdminUi("date", locale)}</th>
+                <th className="p-4 font-semibold text-right">{getAdminUi("actions", locale)}</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-border">

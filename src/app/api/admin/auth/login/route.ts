@@ -17,6 +17,23 @@ export async function POST(req: NextRequest) {
       "127.0.0.1";
     const userAgent = req.headers.get("user-agent") || undefined;
 
+    // Brute-force rate limiting check (Max 5 failed attempts in 15 minutes)
+    const fifteenMinutesAgo = new Date(Date.now() - 15 * 60 * 1000);
+    const recentFailures = await db.auditLog.count({
+      where: {
+        action: "LOGIN_FAILED",
+        ipAddress,
+        createdAt: { gte: fifteenMinutesAgo },
+      },
+    });
+
+    if (recentFailures >= 5) {
+      return NextResponse.json(
+        { error: "Çok fazla başarısız giriş denemesi. Güvenliğiniz için lütfen 15 dakika sonra tekrar deneyiniz." },
+        { status: 429 }
+      );
+    }
+
     const user = await db.user.findUnique({
       where: { email: email.toLowerCase().trim() },
     });

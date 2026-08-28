@@ -3,8 +3,12 @@ import { cookies } from "next/headers";
 import { db } from "./db";
 import bcrypt from "bcryptjs";
 
+if (!process.env.JWT_SECRET && process.env.NODE_ENV === "production") {
+  console.error("CRITICAL SECURITY WARNING: JWT_SECRET environment variable is not defined in production!");
+}
+
 const JWT_SECRET = new TextEncoder().encode(
-  process.env.JWT_SECRET || "cebeci_medikal_super_secret_jwt_key_2026"
+  process.env.JWT_SECRET || (process.env.NODE_ENV === "production" ? undefined : "cebeci_medikal_dev_secret_key_2026")
 );
 
 export const COOKIE_NAME = "cebeci_admin_token";

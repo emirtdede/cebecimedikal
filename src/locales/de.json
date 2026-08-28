@@ -117,7 +117,19 @@
     "clearFilters": "Filter zurücksetzen",
     "sku": "Artikelnummer",
     "zoomHint": "Klicken zum Vergrößern",
-    "gallery": "Bildergalerie"
+    "gallery": "Bildergalerie",
+    "imageAlt": "{title} - Abbildung {index}",
+    "technicalSpecsTitle": "Technische Spezifikationen",
+    "applicationsTitle": "Klinische Anwendungsbereiche",
+    "catalogSuffix": "Katalog",
+    "serviceGuarantee": "Cebeci Medikal Servicegarantie",
+    "requestQuoteForProduct": "Angebot für dieses Produkt anfordern",
+    "whatsappQuickPrice": "Schnellangebot per WhatsApp",
+    "biomedicalCalibrationApproved": "Biomedizinisch kalibriert und geprüft",
+    "onsiteInstallationTraining": "Installation & Schulung vor Ort",
+    "seeMore": "Mehr anzeigen",
+    "description": "Produktbeschreibung",
+    "warrantyAndSupport": "Garantie & Support"
   },
   "quote": {
     "title": "Preisangebot anfordern",
@@ -146,7 +158,28 @@
     "successDesc": "Ihre Anfrage wurde an unser Fachteam weitergeleitet. Referenznummer:",
     "errorTitle": "Übertragungsfehler",
     "errorDesc": "Beim Absenden ist ein Fehler aufgetreten. Bitte überprüfen Sie Ihre Eingaben.",
-    "spamDetected": "Anfrage wurde durch Spamschutz abgelehnt."
+    "spamDetected": "Anfrage wurde durch Spamschutz abgelehnt.",
+    "selectServiceDefault": "-- Dienstleistung Auswählen --",
+    "selectServiceOther": "Sonstige / Individuelle Technische Serviceanfrage",
+    "selectProductDefault": "-- Gerät aus Liste Auswählen --",
+    "selectProductOther": "Sonstige / Nicht gelistete Geräteanfrage",
+    "noProductFound": "Kein passendes medizinisches Gerät gefunden.",
+    "newRequest": "Neue Anfrage Erstellen",
+    "chatWhatsApp": "Per WhatsApp Kontaktieren",
+    "fullNamePlaceholder": "z.B. Dr. med. Thomas Müller",
+    "institutionPlaceholder": "z.B. Universitätsklinikum / Privatklinik",
+    "cityPlaceholder": "z.B. Berlin, Ankara",
+    "serviceTopicPlaceholder": "Gewünschter technischer Service oder Beratungsthema",
+    "notesPlaceholder": "Geben Sie technische Spezifikationen, Konfigurationen oder Anforderungen an...",
+    "whatsappTemplate": "Guten Tag, ich möchte mich bezüglich meiner Angebotsanfrage mit der Referenznummer #{refNo} erkundigen.",
+    "processTitle": "Wie Funktioniert der Angebotsprozess?",
+    "step1Title": "Prüfung der Anfrage",
+    "step1Desc": "Ihre Anfrage wird direkt an unsere biomedizinischen Fachingenieure weitergeleitet.",
+    "step2Title": "Spezifikation & Preisgestaltung",
+    "step2Desc": "Für Ihre Einrichtung wird ein maßgeschneidertes Budget- und Konfigurationsangebot erstellt.",
+    "step3Title": "Rückmeldung Innerhalb von 24h",
+    "step3Desc": "Ihr offizielles Angebot wird per E-Mail oder telefonisch zugestellt.",
+    "directContact": "Direkter Kontakt"
   },
   "contact": {
     "title": "Kontakt",
@@ -171,7 +204,18 @@
     "hoursText": "Montag - Samstag: 08:30 - 18:30 Uhr",
     "emergencySupport": "Technischer Notdienst",
     "getDirections": "Route berechnen",
-    "openInMaps": "In Google Maps öffnen"
+    "openInMaps": "In Google Maps öffnen",
+    "successTitle": "Ihre Nachricht wurde erfolgreich übermittelt",
+    "sendAnother": "Weitere Nachricht Senden",
+    "fullNamePlaceholder": "z.B. Dr. med. Thomas Müller",
+    "companyPlaceholder": "Klinik- / Institutionsname",
+    "subjectPlaceholder": "Betreff Ihrer Anfrage",
+    "messagePlaceholder": "Beschreiben Sie Ihren technischen Servicebedarf oder Ihre Anfrage im Detail...",
+    "switchboardSales": "(Zentrale / Vertrieb)",
+    "techService": "(Technischer Kundendienst)",
+    "workingHoursValue": "Montag - Samstag: 08:30 - 18:30 (Ortszeit)",
+    "openGoogleMaps": "In Google Maps öffnen",
+    "whatsappContact": "Über WhatsApp kontaktieren"
   },
   "search": {
     "title": "Suchleiste",
@@ -249,7 +293,13 @@
     "save": "Speichern",
     "delete": "Löschen",
     "edit": "Bearbeiten",
-    "actions": "Aktionen"
+    "actions": "Aktionen",
+    "skipToContent": "Zum Inhalt springen",
+    "muteAudio": "Ton stummschalten",
+    "unmuteAudio": "Ton einschalten",
+    "inspect": "Details Ansehen",
+    "whatsappDefaultMessage": "Guten Tag, ich möchte Informationen und ein Angebot von Cebeci Medikal anfordern.",
+    "whatsappLabel": "WhatsApp-Kontakt"
   },
   "about": {
     "badge": "Medizintechnische Lösungen",
@@ -287,6 +337,71 @@
     "size": "Größe",
     "officialDoc": "Offizielles Produktdokument",
     "viewPdf": "PDF Anzeigen",
-    "opened": "Geöffnet"
+    "opened": "Geöffnet",
+    "viewAndDownload": "PDF Anzeigen & Herunterladen",
+    "openedAndDownloaded": "Geöffnet & Heruntergeladen",
+    "directDownload": "Direkt Herunterladen"
+  },
+  "legal": {
+    "kvkkTitle": "Datenschutz- & Informationspflicht",
+    "kvkkDesc": "Gesetzliche Angaben zum Schutz personenbezogener Daten",
+    "privacyTitle": "Datenschutzerklärung",
+    "privacyDesc": "Grundsätze zur Datensicherheit und Vertraulichkeit",
+    "cookieTitle": "Cookie-Richtlinie",
+    "cookieDesc": "Cookie-Kategorien & Präferenzverwaltung",
+    "termsTitle": "Nutzungsbedingungen",
+    "termsDesc": "Webseiten-Bedingungen & Servicevereinbarungen",
+    "disclaimerTitle": "Rechtliche Hinweise & Medizinprodukte-Mevzuat",
+    "disclaimerDesc": "Konformitätshinweise und Haftungsausschluss",
+    "accessibilityTitle": "Erklärung zur Barrierefreiheit",
+    "accessibilityDesc": "Konformität nach WCAG 2.1 AA Standards",
+    "effectiveDate": "Gültig ab:",
+    "officialBadge": "Offiziell & Aktuell",
+    "sidebarTitle": "Rechtliche Dokumente & Richtlinien",
+    "dataControllerTitle": "Verantwortliche Stelle & Unternehmensangaben",
+    "regulatoryBadge": "Zertifiziert nach TSE HYB & registriert bei Medizintechnikbehörden",
+    "requestTitle": "Rechtliche Anfragen & Datenschutzrechte",
+    "requestDesc": "Zur Geltendmachung Ihrer Rechte oder bei Anfragen können Sie sich schriftlich an unsere Unternehmensadresse wenden oder eine E-Mail an cbcmedikal@gmail.com richten. Anträge werden innerhalb von 30 Tagen unentgeltlich bearbeitet."
+  },
+  "home": {
+    "highStandardEquipment": "Medizingeräte auf Höchstem Standard",
+    "technicalExpertise": "Technische & Biomedizinische Expertise",
+    "faqTitle": "Häufig Gestellte Fragen",
+    "faqSubtitle": "Antworten auf Fragen zu Medizintechnik-Beschaffung, technischem Kundendienst und Garantiebestimmungen."
+  },
+  "secondHand": {
+    "warranty1Year": "1 Jahr Vollgarantie",
+    "calibrationSafety": "Kalibrierung & Sicherheit Geprüft",
+    "budgetAdvantage": "50%+ Budgetvorteil",
+    "requestCustomDevice": "Spezifisches Gerät Anfragen",
+    "warrantyBadge": "1 Jahr Vollgarantie"
+  },
+  "admin": {
+    "title": "Verwaltungspanel",
+    "dashboard": "Übersicht",
+    "commercial": "Handel & Produkte",
+    "productManagement": "Produktverwaltung",
+    "categoryManagement": "Kategorieverwaltung",
+    "serviceManagement": "Dienstleistungsverwaltung",
+    "operations": "Betrieb & Anfragen",
+    "quoteRequests": "Angebotsanfragen",
+    "contactMessages": "Kontaktnachrichten",
+    "references": "Referenzverwaltung",
+    "catalogs": "Kataloge & Dokumente",
+    "contentSettings": "Inhalte & Einstellungen",
+    "faqs": "FAQ-Verwaltung",
+    "media": "Medienbibliothek",
+    "analytics": "Besucheranalysen",
+    "searchAnalytics": "Suchanalysen",
+    "translations": "Übersetzungsstatus",
+    "auditLogs": "Aktivitätsprotokoll",
+    "settings": "Systemeinstellungen",
+    "logout": "Abmelden",
+    "switchLang": "Sprache"
+  },
+  "announcement": {
+    "title": "Willkommen bei Cebeci Medikal!",
+    "message": "Kontaktieren Sie uns jederzeit für Medizintechnik-Beschaffung, zertifizierte Gebrauchtgeräte und 24/7 biomedizinischen Kundendienst.",
+    "buttonText": "Schnellangebot anfordern →"
   }
 }

@@ -99,10 +99,10 @@ export default async function ContactPage({
                   <div className="font-bold text-foreground">{dict.contact.phoneLabel}</div>
                   <div className="flex flex-col gap-0.5">
                     <a href={`tel:${primaryPhone.replace(/\s+/g, "")}`} className="font-semibold text-foreground hover:text-primary transition-colors">
-                      {primaryPhone} (Santral / Satış)
+                      {primaryPhone} {(dict.contact as any)?.switchboardSales || "(Santral / Satış)"}
                     </a>
                     <a href={`tel:${secondaryPhone.replace(/\s+/g, "")}`} className="font-medium text-foreground-muted hover:text-primary transition-colors">
-                      {secondaryPhone} (Teknik Servis)
+                      {secondaryPhone} {(dict.contact as any)?.techService || "(Teknik Servis)"}
                     </a>
                   </div>
                 </div>
@@ -122,7 +122,7 @@ export default async function ContactPage({
                 <Clock className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <div className="space-y-1">
                   <div className="font-bold text-foreground">{dict.contact.hours}</div>
-                  <div className="text-foreground-muted">{dict.contact.hoursText}</div>
+                  <div className="text-foreground-muted">{(dict.contact as any)?.workingHoursValue || dict.contact.hoursText}</div>
                 </div>
               </div>
             </div>
@@ -130,7 +130,7 @@ export default async function ContactPage({
 
             <div className="pt-2">
               <a
-                href={`https://wa.me/${whatsappNum}?text=${encodeURIComponent("Merhaba, Cebeci Medikal hakkında bilgi almak istiyorum.")}`}
+                href={`https://wa.me/${whatsappNum}?text=${encodeURIComponent((dict as any).whatsapp?.defaultMessage || (dict.contact as any)?.whatsappMessage || "Merhaba, Cebeci Medikal hakkında bilgi almak istiyorum.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20ba5a] text-white text-xs font-bold shadow-md transition-all flex items-center justify-center gap-2"

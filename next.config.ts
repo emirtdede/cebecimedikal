@@ -3,8 +3,8 @@ import path from "path";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  compress: true, // Enable gzip & brotli compression for static and SSR responses
   poweredByHeader: false, // Security: do not reveal Next.js header
-  outputFileTracingRoot: path.join(__dirname),
   images: {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [

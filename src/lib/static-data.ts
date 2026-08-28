@@ -1,3 +1,4 @@
+import { localizeSpecKey, localizeSpecValue, localizeApplication } from "./medical-translations";
 import { DEFAULT_LOCALE, Locale } from "./i18n";
 import {
   LocalizedCategory,
@@ -103,6 +104,14 @@ export interface StaticCatalogItem {
   locale: string;
   createdAt: Date;
   updatedAt: Date;
+  translations?: Record<
+    string,
+    {
+      title: string;
+      category: string;
+      description: string;
+    }
+  >;
 }
 
 export interface StaticFaqItem {
@@ -406,26 +415,126 @@ export const STATIC_SERVICES: StaticServiceItem[] = [
         title: "Biomedical Technical Service & Repair",
         shortDescription: "Rapid, component-level technical repair and maintenance service for ICU, OR, and clinical equipment.",
         description: "Cebeci Medikal delivers comprehensive technical maintenance and repair services for all critical healthcare equipment. Our qualified biomedical engineering team provides 24/7 rapid troubleshooting, component-level board repairs, genuine replacement parts, and IEC 62353 electrical safety validation.",
+        details: {
+          features: [
+            "Troubleshooting and repair for operating theater, ICU, and surgical devices",
+            "IEC 62353 certified electrical safety and biomedical leakage tests",
+            "Original or OEM certified clinical spare parts replacement",
+            "Comprehensive service report with calibrated measurement results"
+          ],
+          workflow: [
+            "Defect Notification & Rapid Onsite Assessment",
+            "Advanced Biomedical Troubleshooting & Diagnostics",
+            "Component-Level Repair & Original Parts Replacement",
+            "Electrical Safety Testing & Formal Calibration Verification",
+            "Clinical Delivery & Technical Service Sign-off"
+          ],
+          benefits: [
+            "Guaranteed rapid onsite intervention in Ankara and neighboring provinces",
+            "Minimizes clinical downtime for critical life-support systems",
+            "Full technical warranty on all replaced components and labor"
+          ]
+        }
       },
       ar: {
         title: "الخدمات الفنية الطبية الحيوية وإصلاح الأعطال",
         shortDescription: "خدمات الصيانة والإصلاح السريع على مستوى المكونات الإلكترونية لأجهزة العناية المركزة وغرف العمليات والمختبرات.",
         description: "يقدم قسم الهندسة الطبية الحيوية في شركة جبجي ميديكال خدمات صيانة فنية معتمدة وشاملة لجميع الأجهزة والمعدات الطبية الحرجة في المستشفيات والعيادات. نضمن توفير قطع الغيار الأصلية وإجراء اختبارات الأمان الكهربائي ومعايرة الأجهزة وفق المعايير العالمية.",
+        details: {
+          features: [
+            "تشخيص وإصلاح أعطال أجهزة غرف العمليات والعناية المركزة",
+            "اختبارات الأمان الكهربائي ومعايير التسريب الحيوي وفق IEC 62353",
+            "استبدال قطع الغيار بقطع أصلية معتمدة ومطابقة للمواصفات",
+            "تقرير فني شامل يوثق كافة قياسات المعايرة والاختبارات"
+          ],
+          workflow: [
+            "استلام البلاغ والتقييم الميداني الفوري",
+            "الفحص الهندسي الطبي الحيوي وتحديد الأعطال",
+            "الإصلاح المتخصص وتركيب القطع الأصلية",
+            "إجراء اختبارات السلامة الكهربائية والمعايرة الدقيقة",
+            "التسليم السريري والتشغيل التجريبي المعتمد"
+          ],
+          benefits: [
+            "استجابة طارئة سريعة وخدمة دعم فني متواصلة",
+            "تقليل فترات توقف الأجهزة الحرجة لضمان سلامة المرضى",
+            "ضمان فني شامل على كافة قطع الغيار وخدمات الصيانة"
+          ]
+        }
       },
       de: {
         title: "Biomedizinischer Kundendienst & Reparatur",
         shortDescription: "Komponentenbasierter Reparaturservice für Intensiv-, OP- und Diagnosesysteme mit Qualitätsgarantie.",
         description: "Der biomedizinische Kundendienst von Cebeci Medikal bietet medizinischen Einrichtungen zuverlässige Vor-Ort- und Werkstattreparaturen für sensible Medizintechnik. Wir führen Sicherheitsüberprüfungen nach IEC 62353 durch und stellen bei Bedarf Leihgeräte bereit.",
+        details: {
+          features: [
+            "Fehlerdiagnose und Reparatur von OP-, Intensiv- und Chirurgiegeräten",
+            "Sicherheitsprüfungen und Ableitstrommessungen nach IEC 62353",
+            "Einsatz von Original- und zertifizierten medizinischen Ersatzteilen",
+            "Detaillierter Prüfbericht mit lückenloser Messwertdokumentation"
+          ],
+          workflow: [
+            "Störungsmeldung & Schnelle Vor-Ort-Erstprüfung",
+            "Biomedizinische Fehleranalyse & Messtechnische Diagnose",
+            "Fachgerechte Reparatur & Austausch defekter Komponenten",
+            "Elektrische Sicherheitsprüfung & Kalibrierkontrolle",
+            "Klinische Übergabe & Abnahme durch autorisierte Techniker"
+          ],
+          benefits: [
+            "Schnellste Reaktionszeiten und Notfall-Einsatzbereitschaft",
+            "Vermeidung teurer Ausfallzeiten lebenswichtiger Medizingeräte",
+            "Umfassende Gewährleistung auf alle Reparaturen und Ersatzteile"
+          ]
+        }
       },
       ja: {
         title: "医用工学技術サービス・故障修理",
         shortDescription: "集中治療室・手術室・検査室向け医療機器の基板レベル修理および迅速な技術サポート。",
         description: "Cebeci Medikalのバイオメディカルエンジニアチームは、病院やクリニックの重要医療機器に対し、24時間年中無休で高品質な点検・修理サービスを提供しています。IEC 62353安全規格試験と厳格な校正プロセスを経てお届けします。",
+        details: {
+          features: [
+            "手術室機器、ICU生命維持装置および外科システムの故障診断・修理",
+            "IEC 62353規格に準拠した電気安全試験および漏れ電流測定",
+            "純正および認証済み医療機器スペアパーツによる精密交換",
+            "校正計測データを網羅した公式テクニカルサービス報告書の発行"
+          ],
+          workflow: [
+            "障害発生連絡受付と迅速な初期評価",
+            "生体医工学専門診断および精密計測テスト",
+            "基板レベル修理と純正交換部品の組み込み",
+            "電気安全耐圧試験および最終校正検証",
+            "臨床引き渡しおよび動作確認サインオフ"
+          ],
+          benefits: [
+            "迅速なオンサイト対応と緊急トラブルシューティング体制",
+            "重要生命維持管理機器のダウンタイムを最小化",
+            "すべての修理箇所および交換部品に対する安心の保証"
+          ]
+        }
       },
       zh: {
         title: "生物医学技术维护与故障维修",
         shortDescription: "针对重症监护、手术室及临床诊断设备的芯片级快速故障检修与原厂配件维保服务。",
         description: "塞贝吉医疗（Cebeci Medikal）专业生物医学工程团队为各大医院、诊所及医疗机构提供全方位的技术维护与故障急修服务。执行严格的IEC 62353电气安全检测与标准计量校准，确保临床设备稳定高效运行。",
+        details: {
+          features: [
+            "手术室设备、重症监护监护仪及麻醉机系统精密故障诊断与抢修",
+            "符合 IEC 62353 国际标准的电气安全检测与微弱漏电流测量",
+            "严选原厂及官方认证医用级高可靠性配件更换",
+            "出具完整附带校准与计量参数的官方技术服务验收报告"
+          ],
+          workflow: [
+            "报修响应与工程师现场快速勘验评估",
+            "高级生物医学工程故障检测与性能分析",
+            "专业芯片级维修与原厂精密配件替换",
+            "电气安全综合测试与计量校准终检",
+            "临床科室交付、试运行及验收签字"
+          ],
+          benefits: [
+            "全天候快速响应机制与应急上门服务",
+            "大幅降低重症医疗设备的停机停诊风险",
+            "所有维修工序及更换部件均享受完整质保支持"
+          ]
+        }
       },
     },
   },
@@ -652,7 +761,7 @@ export const STATIC_PRODUCTS: StaticProductItem[] = [
       "tr": {
         "title": "Dräger Julian Plus Anestezi Cihazı",
         "shortDescription": "Hassas solutma performansı ve entegre hasta monitörizasyonuna sahip, revizyonlu Dräger anestezi iş istasyonu.",
-        "description": "Dräger Julian Plus, modern ameliyathane koşullarında yetişkin ve pediatrik cerrahilerde yüksek güvenilirlikle kullanılan entegre anestezi iş istasyonudur. Elektronik kontrollü ventilatörü, hassas gaz mikseri ve kompakt ergonomik yapısı sayesinde klinik operasyonlarda optimum kontrol sağlar. Cihaz tüm elektriksel güvenlik testleri, kalibrasyonları ve parça revizyonları tamamlanmış olarak 1 yıl teknik servis garantisi ile sunulmaktadır."
+        "description": ""
       },
       "en": {
         "title": "Dräger Julian Plus Anesthesia Workstation",
@@ -667,7 +776,7 @@ export const STATIC_PRODUCTS: StaticProductItem[] = [
       "ar": {
         "title": "Dräger Julian Plus (جهاز طبي مجدد)",
         "shortDescription": "جهاز طبي مجدد ومضمون من شركة Dräger مع ضمان لمدة عام كامل.",
-        "description": "Dräger Julian Plus, modern ameliyathane koşullarında yetişkin ve pediatrik cerrahilerde yüksek güvenilirlikle kullanılan entegre anestezi iş istasyonudur. Elektronik kontrollü ventilatörü, hassas gaz mikseri ve kompakt ergonomik yapısı sayesinde klinik operasyonlarda optimum kontrol sağlar. Cihaz tüm elektriksel güvenlik testleri, kalibrasyonları ve parça revizyonları tamamlanmış olarak 1 yıl teknik servis garantisi ile sunulmaktadır. تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
+        "description": " تم فحص الجهاز ومعايرته بالكامل وفق معايير السلامة الحيوية مع ضمان لمدة عام."
       },
       "ja": {
         "title": "Dräger Julian Plus リファービッシュ医療機器",
@@ -3529,7 +3638,7 @@ export const STATIC_PRODUCTS: StaticProductItem[] = [
       "en": {
         "title": "Oricare V8800 Intensive Care Ventilator",
         "shortDescription": "Premium 15-inch touchscreen ICU ventilator offering comprehensive invasive and non-invasive ventilation modes.",
-        "description": "Engineered for complex respiratory conditions with advanced lung recruitment tools, PRVC, and autoclavable exhalation assembly."
+"description": "Engineered for complex respiratory conditions with advanced lung recruitment tools, PRVC, and autoclavable exhalation assembly."
       },
       "de": {
         "title": "Oricare V8800 Ventilatörü (Generalüberholt)",
@@ -3854,6 +3963,13 @@ export function getStaticProducts(
       ? cat.translations[locale] || cat.translations[DEFAULT_LOCALE] || cat.translations.tr
       : null;
 
+    const targetLocale = (locale as Locale) || DEFAULT_LOCALE;
+    const localizedSpecs: Record<string, string> = {};
+    for (const [k, v] of Object.entries(p.technicalSpecs || {})) {
+      localizedSpecs[localizeSpecKey(k, targetLocale)] = localizeSpecValue(String(v), targetLocale);
+    }
+    const localizedApps = (p.applications || []).map((app) => localizeApplication(app, targetLocale));
+
     return {
       id: p.id,
       slug: p.slug,
@@ -3865,8 +3981,8 @@ export function getStaticProducts(
       featured: p.featured,
       sortOrder: p.sortOrder,
       images: p.images,
-      technicalSpecs: p.technicalSpecs,
-      applications: p.applications,
+      technicalSpecs: localizedSpecs,
+      applications: localizedApps,
       title: t?.title || p.slug,
       shortDescription: t?.shortDescription || "",
       description: t?.description || "",
@@ -3907,6 +4023,13 @@ export function getStaticProductBySlug(
     ? cat.translations[locale] || cat.translations[DEFAULT_LOCALE] || cat.translations.tr
     : null;
 
+  const targetLocale = (locale as Locale) || DEFAULT_LOCALE;
+  const localizedSpecs: Record<string, string> = {};
+  for (const [k, v] of Object.entries(p.technicalSpecs || {})) {
+    localizedSpecs[localizeSpecKey(k, targetLocale)] = localizeSpecValue(String(v), targetLocale);
+  }
+  const localizedApps = (p.applications || []).map((app) => localizeApplication(app, targetLocale));
+
   return {
     id: p.id,
     slug: p.slug,
@@ -3918,8 +4041,8 @@ export function getStaticProductBySlug(
     featured: p.featured,
     sortOrder: p.sortOrder,
     images: p.images,
-    technicalSpecs: p.technicalSpecs,
-    applications: p.applications,
+    technicalSpecs: localizedSpecs,
+    applications: localizedApps,
     title: t?.title || p.slug,
     shortDescription: t?.shortDescription || "",
     description: t?.description || "",
@@ -4029,13 +4152,31 @@ export const STATIC_REFERENCES: StaticReferenceItem[] = [
     sortOrder: 1,
     serviceScope: "Ameliyathane & Anestezi Cihazları Periyodik Bakımı",
     translations: {
-      tr: { quote: "Ameliyathane ve yoğun bakım cihazlarımızın yıllık periyodik bakım ve kalibrasyon süreçlerinde Cebeci Medikal'in TSE HYB belgeli uzman mühendis kadrosuyla çalışmaktan son derece memnunuz. Hızlı müdahale ve güvenilir yedek parça temini operasyonlarımızın aksamamasını sağlıyor." },
-      en: { quote: "We are extremely satisfied working with Cebeci Medikal's certified engineering team for the annual preventive maintenance and calibration of our operating theatre and ICU equipment." },
-      de: { quote: "Wir sind äußerst zufrieden mit der Zusammenarbeit mit dem zertifizierten Ingenieurteam von Cebeci Medikal für die jährliche vorbeugende Wartung." },
-      ar: { quote: "نحن راضون للغاية عن العمل مع الفريق الهندسي المعتمد لشركة Cebeci Medikal في الصيانة الوقائية السنوية والمعايرة." },
-      ja: { quote: "手術室およびICU機器の年次定期保守と校正において、Cebeci Medikalの認定エンジニアチームとの協力に大変満足しています。" },
-      zh: { quote: "我们在手术室和ICU设备的年度预防性维护和校准方面与Cebeci Medikal的认证工程师团队合作非常满意。" },
-    },
+      tr: {
+        quote: "Ameliyathane ve yoğun bakım cihazlarımızın yıllık periyodik bakım ve kalibrasyon süreçlerinde Cebeci Medikal'in TSE HYB belgeli uzman mühendis kadrosuyla çalışmaktan son derece memnunuz. Hızlı müdahale ve güvenilir yedek parça temini operasyonlarımızın aksamamasını sağlıyor.",
+        projectDescription: "Özel Hastane"
+      },
+      en: {
+        quote: "We are extremely satisfied working with Cebeci Medikal's certified engineering team for the annual preventive maintenance and calibration of our operating theatre and ICU equipment. Fast response and authentic parts ensure zero surgical disruption.",
+        projectDescription: "Private Hospital"
+      },
+      de: {
+        quote: "Wir sind äußerst zufrieden mit der Zusammenarbeit mit dem zertifizierten Ingenieurteam von Cebeci Medikal für die jährliche vorbeugende Wartung und Kalibrierung unserer OP- und Intensivstationen.",
+        projectDescription: "Privatklinik"
+      },
+      ar: {
+        quote: "نحن راضون للغاية عن العمل مع الفريق الهندسي المعتمد لشركة جبيجي ميديكال في الصيانة الوقائية السنوية ومعايرة أجهزة غرف العمليات والعناية المركزة.",
+        projectDescription: "مستشفى خاص"
+      },
+      ja: {
+        quote: "手術室およびICU機器の年次定期保守と校正において、Cebeci Medikalの認定エンジニアチームとの協力に大変満足しています。迅速な対応と純正部品の供給により手術に遅延が生じません。",
+        projectDescription: "民間総合病院"
+      },
+      zh: {
+        quote: "我们在手术室和重症监护设备的年度预防性维护和校准方面与Cebeci Medikal的认证工程师团队合作非常满意，响应迅速且配件原厂可靠。",
+        projectDescription: "大型私立医院"
+      }
+    }
   },
   {
     id: "ref-2",
@@ -4048,13 +4189,31 @@ export const STATIC_REFERENCES: StaticReferenceItem[] = [
     sortOrder: 2,
     serviceScope: "EKG & Defibrilatör Revizyonu ve Kalibrasyon",
     translations: {
-      tr: { quote: "Kardiyoloji birimimizin defibrilatör ve EKG cihazlarının 2. el revizyon ve kalibrasyon testleri IEC 62353 standartlarına tam uygun olarak tamamlandı. Raporlama ve teknik dokümantasyon kalitesi takdire şayan." },
-      en: { quote: "Refurbishment and calibration testing of our cardiology unit's defibrillators and ECG devices were completed in full compliance with IEC 62353 standards." },
-      de: { quote: "Die Überholung und Kalibrierungsprüfung der Defibrillatoren und EKG-Geräte unserer kardiologischen Abteilung wurden in voller Übereinstimmung mit den IEC 62353-Standards abgeschlossen." },
-      ar: { quote: "تم الانتهاء من تجديد واختبار معايرة أجهزة إزالة الرجفان وأجهزة تخطيط القلب في وحدة أمراض القلب لدينا بما يتوافق تمامًا مع معايير IEC 62353." },
-      ja: { quote: "当院の循環器科の除細動器および心電計のオーバーホールと校正試験は、IEC 62353規格に完全準拠して完了しました。" },
-      zh: { quote: "我们心脏病科的心脏除颤器和心电图设备的翻新和校准测试完全符合IEC 62353标准。" },
-    },
+      tr: {
+        quote: "Kardiyoloji birimimizin defibrilatör ve EKG cihazlarının 2. el revizyon ve kalibrasyon testleri IEC 62353 standartlarına tam uygun olarak tamamlandı. Raporlama ve teknik dokümantasyon kalitesi takdire şayan.",
+        projectDescription: "Tıp Merkezi"
+      },
+      en: {
+        quote: "Refurbishment and calibration testing of our cardiology unit's defibrillators and ECG devices were completed in full compliance with IEC 62353 standards. Reporting quality is outstanding.",
+        projectDescription: "Cardiology Medical Center"
+      },
+      de: {
+        quote: "Die Überholung und Kalibrierungsprüfung der Defibrillatoren und EKG-Geräte unserer kardiologischen Abteilung wurden in voller Übereinstimmung mit den IEC 62353-Standards abgeschlossen.",
+        projectDescription: "Medizinisches Zentrum"
+      },
+      ar: {
+        quote: "تم الانتهاء من تجديد واختبار معايرة أجهزة إزالة الرجفان وأجهزة تخطيط القلب في وحدة أمراض القلب لدينا بما يتوافق تمامًا مع معايير IEC 62353.",
+        projectDescription: "مركز طبي متخصص"
+      },
+      ja: {
+        quote: "当院の循環器科の除細動器および心電計のオーバーホールと校正試験は、IEC 62353規格に完全準拠して完了しました。報告書の精度も極めて高いです。",
+        projectDescription: "心臓病メディカルセンター"
+      },
+      zh: {
+        quote: "我们心脏中心的心脏除颤器和心电图设备的翻新和校准测试完全符合IEC 62353标准，技术报告与数据追溯极具专业水准。",
+        projectDescription: "专科医疗中心"
+      }
+    }
   },
   {
     id: "ref-3",
@@ -4067,28 +4226,102 @@ export const STATIC_REFERENCES: StaticReferenceItem[] = [
     sortOrder: 3,
     serviceScope: "Küvöz & Fototerapi Cihazları Kurulum ve Devreye Alma",
     translations: {
-      tr: { quote: "Yenidoğan yoğun bakım ünitemize kazandırdığımız küvöz ve fototerapi sistemlerinin kurulum, montaj ve kullanıcı eğitimleri kusursuz şekilde yürütüldü. Satış sonrası 7/24 teknik destekleri bize büyük güven veriyor." },
-      en: { quote: "Installation, commissioning, and user training of incubator and phototherapy systems for our neonatal ICU were carried out flawlessly." },
-      de: { quote: "Installation, Inbetriebnahme und Benutzerschulung der Inkubator- und Phototherapiesysteme für unsere neonatale Intensivstation wurden einwandfrei durchgeführt." },
-      ar: { quote: "تم تنفيذ تركيب وتشغيل وتدريب المستخدمين على أنظمة الحاضنات والعلاج الضوئي لوحدة العناية المركزة لحديثي الولادة لدينا بشكل لا تشوبه شائبة." },
-      ja: { quote: "新生児集中治療室向けの保育器および光線治療システムの設置、立ち上げ、ユーザー教育が滞りなく実施されました。" },
-      zh: { quote: "我们新生儿重症监护室的婴儿保温箱和光疗系统的安装、调试和用户培训均顺利完成。" },
-    },
-  },
+      tr: {
+        quote: "Yenidoğan yoğun bakım ünitemize kazandırdığımız küvöz ve fototerapi sistemlerinin kurulum, montaj ve kullanıcı eğitimleri kusursuz şekilde yürütüldü. Satış sonrası 7/24 teknik destekleri bize büyük güven veriyor.",
+        projectDescription: "Doğum & Pediyatri Kliniği"
+      },
+      en: {
+        quote: "Installation, commissioning, and clinical user training of incubator and phototherapy systems for our neonatal ICU were carried out flawlessly. 24/7 support gives immense confidence.",
+        projectDescription: "Maternity & Pediatric Clinic"
+      },
+      de: {
+        quote: "Installation, Inbetriebnahme und Benutzerschulung der Inkubator- und Phototherapiesysteme für unsere neonatale Intensivstation wurden einwandfrei durchgeführt.",
+        projectDescription: "Geburts- & Kinderklinik"
+      },
+      ar: {
+        quote: "تم تنفيذ تركيب وتشغيل وتدريب المستخدمين على أنظمة الحاضنات والعلاج الضوئي لوحدة العناية المركزة لحديثي الولادة لدينا بشكل لا تشوبه شائبة.",
+        projectDescription: "عيادة التوليد وطب الأطفال"
+      },
+      ja: {
+        quote: "新生児集中治療室向けの保育器および光線治療システムの設置、立ち上げ、ユーザー教育が滞りなく実施されました。24時間サポートが心強いです。",
+        projectDescription: "産科・小児科専門クリニック"
+      },
+      zh: {
+        quote: "我们新生儿重症监护室的婴儿保温箱和光疗系统的安装、调试和医护人员培训均圆满交付，全天候技术保障令人安心。",
+        projectDescription: "妇产与儿科专科医院"
+      }
+    }
+  }
 ];
 
 export function getStaticReferences(locale: string = DEFAULT_LOCALE): LocalizedReference[] {
+  const sectorMap: Record<string, Record<string, string>> = {
+    "Özel Hastane": {
+      tr: "Özel Hastane",
+      en: "Private Hospital",
+      de: "Privatklinik",
+      ar: "مستشفى خاص",
+      ja: "民間総合病院",
+      zh: "大型私立医院",
+    },
+    "Tıp Merkezi": {
+      tr: "Tıp Merkezi",
+      en: "Medical Center",
+      de: "Medizinisches Versorgungszentrum",
+      ar: "مركز طبي متخصص",
+      ja: "メディカルセンター",
+      zh: "专科医疗中心",
+    },
+    "Doğum & Pediyatri": {
+      tr: "Doğum & Pediyatri Kliniği",
+      en: "Maternity & Pediatric Clinic",
+      de: "Geburts- & Kinderklinik",
+      ar: "عيادة التوليد وطب الأطفال",
+      ja: "産科・小児科クリニック",
+      zh: "妇产与儿科诊所",
+    },
+  };
+
+  const scopeMap: Record<string, Record<string, string>> = {
+    "Ameliyathane & Anestezi Cihazları Periyodik Bakımı": {
+      tr: "Ameliyathane & Anestezi Cihazları Periyodik Bakımı",
+      en: "Operating Theater & Anesthesia Devices Preventive Maintenance",
+      de: "Periodische Wartung für OP- und Anästhesiegeräte",
+      ar: "الصيانة الوقائية لأجهزة غرف العمليات والتخدير",
+      ja: "手術室および麻酔器の定期予防保守点検",
+      zh: "手术室与麻醉设备周期性预防性维保",
+    },
+    "EKG & Defibrilatör Revizyonu ve Kalibrasyon": {
+      tr: "EKG & Defibrilatör Revizyonu ve Kalibrasyon",
+      en: "ECG & Defibrillator Overhaul and Precision Calibration",
+      de: "Überholung und Präzisionskalibrierung für EKG und Defibrillatoren",
+      ar: "تجديد ومعايرة أجهزة تخطيط القلب ومزيلات الرجفان",
+      ja: "心電計および除細動器のオーバーホールと精密校正",
+      zh: "心电图机与除颤监护仪深度翻新及高精度计量校准",
+    },
+    "Küvöz & Fototerapi Cihazları Kurulum ve Devreye Alma": {
+      tr: "Küvöz & Fototerapi Cihazları Kurulum ve Devreye Alma",
+      en: "Incubator & Phototherapy Equipment Installation and Commissioning",
+      de: "Montage und Inbetriebnahme von Inkubatoren und Phototherapiegeräten",
+      ar: "تركيب وتشغيل حاضنات الأطفال وأجهزة العلاج الضوئي",
+      ja: "保育器および光線治療器の据付・初期立ち上げ",
+      zh: "婴儿保温箱与光疗设备专业装机与调试交付",
+    },
+  };
+
   return STATIC_REFERENCES.map((r) => {
     const t = r.translations[locale] || r.translations[DEFAULT_LOCALE] || r.translations.tr;
+    const localizedSector = sectorMap[r.sector]?.[locale] || r.sector;
+    const localizedScope = r.serviceScope ? (scopeMap[r.serviceScope]?.[locale] || r.serviceScope) : null;
     return {
       id: r.id,
       companyName: r.companyName,
       clientName: r.clientName,
       position: r.position,
-      sector: r.sector,
+      sector: localizedSector,
       city: r.city,
       rating: r.rating,
-      serviceScope: r.serviceScope,
+      serviceScope: localizedScope,
       quote: t?.quote || "",
     };
   });
@@ -4110,6 +4343,38 @@ export const STATIC_CATALOGS: StaticCatalogItem[] = [
     locale: "tr",
     createdAt: new Date("2026-01-01"),
     updatedAt: new Date("2026-01-01"),
+    translations: {
+      tr: {
+        title: "Cebeci Medikal Genel Ürün & Tıbbi Cihaz Kataloğu 2026",
+        category: "Genel Katalog",
+        description: "Ventilatörler, anestezi cihazları, defibrilatörler, hasta başı monitörleri ve cerrahi sistemleri kapsayan kapsamlı ürün kataloğu."
+      },
+      en: {
+        title: "Cebeci Medikal Comprehensive Medical Devices Catalog 2026",
+        category: "General Catalog",
+        description: "Comprehensive medical catalog featuring ventilators, anesthesia workstations, defibrillators, patient monitors, and surgical systems."
+      },
+      de: {
+        title: "Cebeci Medikal Gesamtkatalog für Medizintechnik 2026",
+        category: "Hauptkatalog",
+        description: "Umfassender Produktkatalog für Beatmungsgeräte, Anästhesie-Arbeitsplätze, Defibrillatoren, Patientenmonitore und Chirurgiesysteme."
+      },
+      ar: {
+        title: "كتالوج جبيجي ميديكال الشامل للأجهزة الطبية 2026",
+        category: "الكتالوج العام",
+        description: "كتالوج المنتجات الشامل الذي يغطي أجهزة التنفس الاصطناعي، ومحطات التخدير، وأجهزة الصدمات الكهربائية، وشاشات مراقبة المرضى."
+      },
+      ja: {
+        title: "Cebeci Medikal 総合医療機器製品カタログ 2026",
+        category: "総合カタログ",
+        description: "人工呼吸器、麻酔器、除細動器、生体情報モニターおよび手術室システムを網羅した公式製品カタログ。"
+      },
+      zh: {
+        title: "塞贝吉医疗 2026 年度医疗设备全系列综合产品目录",
+        category: "综合目录",
+        description: "全面涵盖呼吸机、麻醉工作站、除颤监护仪、多参数病人监护仪及外科手术系统的高清技术产品画册。"
+      }
+    }
   },
   {
     id: "cat-2",
@@ -4126,6 +4391,38 @@ export const STATIC_CATALOGS: StaticCatalogItem[] = [
     locale: "tr",
     createdAt: new Date("2026-01-01"),
     updatedAt: new Date("2026-01-01"),
+    translations: {
+      tr: {
+        title: "Yoğun Bakım & Anestezi Çözümleri Kataloğu",
+        category: "Yoğun Bakım & Anestezi",
+        description: "Ventilatör, anestezi cihazları, hasta monitörleri ve infüzyon/enjektör pompa sistemleri teknik şartname ve ürün kataloğu."
+      },
+      en: {
+        title: "ICU & Anesthesia Solutions Technical Catalog",
+        category: "ICU & Anesthesia",
+        description: "Technical specifications and clinical brochure for ventilators, anesthesia units, patient vital sign monitors, and infusion pumps."
+      },
+      de: {
+        title: "Intensivpflege- & Anästhesielösungen Katalog",
+        category: "Intensivpflege & Anästhesie",
+        description: "Technische Spezifikationen und Produktkatalog für Beatmungsgeräte, Anästhesiesysteme, Vitalmonitore und Infusionspumpen."
+      },
+      ar: {
+        title: "كتالوج حلول العناية المركزة والتخدير الجراحي",
+        category: "العناية المركزة والتخدير",
+        description: "المواصفات الفنية وكتالوج أجهزة التنفس الاصطناعي وأجهزة التخدير وشاشات العلامات الحيوية ومضخات الحقن الوريدي."
+      },
+      ja: {
+        title: "集中治療（ICU）＆麻酔ソリューション 技術カタログ",
+        category: "ICU＆麻酔機器",
+        description: "人工呼吸器、麻酔ワークステーション、生体情報モニターおよびシリンジポンプの仕様解説カタログ。"
+      },
+      zh: {
+        title: "重症监护 (ICU) 与麻醉手术系统技术选型目录",
+        category: "重症与麻醉专区",
+        description: "包含有创/无创呼吸机、精密麻醉工作站、高灵敏监护仪与微量输液泵系统的详细规格选型指南。"
+      }
+    }
   },
   {
     id: "cat-3",
@@ -4142,6 +4439,38 @@ export const STATIC_CATALOGS: StaticCatalogItem[] = [
     locale: "tr",
     createdAt: new Date("2026-01-01"),
     updatedAt: new Date("2026-01-01"),
+    translations: {
+      tr: {
+        title: "Biyomedikal Teknik Servis & Periyodik Bakım Kılavuzu",
+        category: "Teknik Servis",
+        description: "TSE HYB standartlarında periyodik koruyucu bakım, IEC 62353 elektriksel güvenlik testleri ve kalibrasyon hizmet kapsamı."
+      },
+      en: {
+        title: "Biomedical Technical Service & Preventive Maintenance Guide",
+        category: "Technical Services",
+        description: "Certified preventive maintenance protocols, IEC 62353 electrical safety test procedures, and biomedical calibration scope."
+      },
+      de: {
+        title: "Biomedizinischer Kundendienst & Instandhaltungsleitfaden",
+        category: "Technischer Kundendienst",
+        description: "Zertifizierte periodische Wartungsprotokolle, elektrische Sicherheitsprüfungen nach IEC 62353 und Kalibrierumfang."
+      },
+      ar: {
+        title: "دليل الخدمات الفنية الطبية الحيوية والصيانة الدورية",
+        category: "الخدمات الفنية",
+        description: "بروتوكولات الصيانة الوقائية الدورية، واختبارات الأمان الكهربائي IEC 62353، ونطاق خدمات المعايرة المعتمدة."
+      },
+      ja: {
+        title: "生体医工学テクニカルサービス＆定期保守ガイドブック",
+        category: "技術サービス",
+        description: "IEC 62353規格準拠の電気安全試験、定期予防保守点検手順および精密校正サービス案内。"
+      },
+      zh: {
+        title: "生物医学工程技术维保与定期计量校准服务指南",
+        category: "技术工程服务",
+        description: "符合 TSE HYB 标准及 IEC 62353 国际电气安全检测规范的医院设备周期性维保与计量检定说明。"
+      }
+    }
   },
   {
     id: "cat-4",
@@ -4158,7 +4487,39 @@ export const STATIC_CATALOGS: StaticCatalogItem[] = [
     locale: "tr",
     createdAt: new Date("2026-01-01"),
     updatedAt: new Date("2026-01-01"),
-  },
+    translations: {
+      tr: {
+        title: "Revizyonlu (2. El) Tıbbi Cihazlar & Garanti Kataloğu",
+        category: "2. El Cihazlar",
+        description: "Ekspertizi ve revizyonu yapılmış, 1 yıl tam garantili 2. el tıbbi cihaz envanteri ve sertifikasyon detayları."
+      },
+      en: {
+        title: "Certified Pre-Owned & Refurbished Medical Equipment Inventory",
+        category: "Refurbished Equipment",
+        description: "Inspection-verified and fully refurbished medical equipment inventory backed by an unconditional 1-year warranty."
+      },
+      de: {
+        title: "Zertifizierte Gebraucht- & Refurbished-Medizingeräte Katalog",
+        category: "Gebrauchtgeräte",
+        description: "Werkstattgeprüftes und vollständig überholtes Inventar gebrauchter Medizintechnik mit 1 Jahr voller Garantie."
+      },
+      ar: {
+        title: "كتالوج الأجهزة الطبية المجددة والمستعملة المعتمدة مع الضمان",
+        category: "الأجهزة المجددة",
+        description: "قائمة الأجهزة الطبية المفحوصة والمجددة بالكامل والمعتمدة مخبرياً مع ضمان فني شامل لمدة عام كامل."
+      },
+      ja: {
+        title: "認定リファービッシュ（高品質中古）医療機器在庫カタログ",
+        category: "認定中古機器",
+        description: "完全整備・校正試験済みで1年間のフル保証が付帯する認定再生医療機器の最新在庫一覧。"
+      },
+      zh: {
+        title: "官方认证翻新再制造（二手）医疗设备现货与质保画册",
+        category: "翻新认证专区",
+        description: "经过严格深度翻新、全项安全测试与出厂校准，附带1年整机质保的高性价比医疗设备现货清单。"
+      }
+    }
+  }
 ];
 
 export function getStaticCatalogs(locale: string = DEFAULT_LOCALE): StaticCatalogItem[] {

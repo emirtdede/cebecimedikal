@@ -60,7 +60,7 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
           <CheckCircle2 className="w-8 h-8" />
         </div>
         <h3 className="font-serif text-2xl font-bold text-foreground">
-          Mesajınız Başarıyla İletildi
+          {dict.contact?.successTitle || "Mesajınız Başarıyla İletildi"}
         </h3>
         <p className="text-sm text-foreground-muted max-w-md mx-auto leading-relaxed">
           {dict.contact.success}
@@ -82,7 +82,7 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
             }}
             className="px-5 py-2.5 rounded-xl bg-surface-2 hover:bg-surface border border-border text-xs font-semibold text-foreground transition-colors"
           >
-            Yeni Mesaj Gönder
+            {dict.contact?.sendAnother || "Yeni Mesaj Gönder"}
           </button>
         </div>
       </div>
@@ -127,7 +127,7 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
               required
               value={formData.fullName}
               onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-              placeholder="Örn: Dr. Ahmet Yılmaz"
+              placeholder={dict.contact?.fullNamePlaceholder || "Dr. / Ad Soyad"}
               className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-surface-2 border border-border text-sm text-foreground focus:outline-none focus:border-primary"
             />
           </div>
@@ -143,7 +143,7 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
               type="text"
               value={formData.company}
               onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-              placeholder="Kurum / Klinik Adı"
+              placeholder={dict.contact?.companyPlaceholder || "Kurum / Klinik Adı"}
               className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-surface-2 border border-border text-sm text-foreground focus:outline-none focus:border-primary"
             />
           </div>
@@ -160,7 +160,7 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
               required
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              placeholder="ornek@hastane.com"
+              placeholder="doktor@hastane.com"
               className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-surface-2 border border-border text-sm text-foreground focus:outline-none focus:border-primary"
             />
           </div>
@@ -177,7 +177,7 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
               required
               value={formData.phone}
               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-              placeholder="05XX XXX XX XX"
+              placeholder="+90 5XX XXX XX XX"
               className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-surface-2 border border-border text-sm text-foreground focus:outline-none focus:border-primary"
             />
           </div>
@@ -195,7 +195,7 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
             required
             value={formData.subject}
             onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-            placeholder="Mesajınızın konusu"
+            placeholder={dict.contact?.subjectPlaceholder || "Mesajınızın konusu"}
             className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-surface-2 border border-border text-sm text-foreground focus:outline-none focus:border-primary"
           />
         </div>
@@ -210,7 +210,7 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
           rows={5}
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-          placeholder="Talebinizi, teknik servis ihtiyacınızı veya iletmek istediğiniz detayları yazınız..."
+          placeholder={dict.contact?.messagePlaceholder || "Talebinizi, teknik servis ihtiyacınızı veya iletmek istediğiniz detayları yazınız..."}
           className="w-full px-4 py-3 rounded-xl bg-surface-2 border border-border text-sm text-foreground focus:outline-none focus:border-primary"
         />
         </div>

@@ -21,8 +21,18 @@ const quoteSchema = z.object({
   sessionId: z.string().optional(),
 });
 
-// Simple in-memory rate limiter per IP (5 submissions per 10 min)
+// In-memory rate limiter per IP with automatic TTL cleanup (prevents memory leak)
 const ipRateMap = new Map<string, { count: number; firstAttempt: number }>();
+const MAX_RATE_LIMIT_ENTRIES = 2000;
+
+function cleanupExpiredIpRecords(windowMs: number) {
+  const now = Date.now();
+  for (const [ip, record] of ipRateMap.entries()) {
+    if (now - record.firstAttempt > windowMs) {
+      ipRateMap.delete(ip);
+    }
+  }
+}
 
 export async function POST(req: NextRequest) {
   try {
@@ -35,6 +45,11 @@ export async function POST(req: NextRequest) {
     // Rate limit check
     const now = Date.now();
     const windowMs = 10 * 60 * 1000;
+
+    if (ipRateMap.size > MAX_RATE_LIMIT_ENTRIES) {
+      cleanupExpiredIpRecords(windowMs);
+    }
+
     const clientHistory = ipRateMap.get(ipAddress) || { count: 0, firstAttempt: now };
 
     if (now - clientHistory.firstAttempt > windowMs) {

@@ -94,7 +94,7 @@ export function Footer({
                   </svg>
                 </a>
                 <a
-                  href={`https://wa.me/${whatsappNum}?text=${encodeURIComponent("Merhaba, Cebeci Medikal hakkında bilgi almak istiyorum.")}`}
+                  href={`https://wa.me/${whatsappNum}?text=${encodeURIComponent((dict as any).whatsapp?.defaultMessage || (dict.contact as any)?.whatsappMessage || "Merhaba, Cebeci Medikal hakkında bilgi almak istiyorum.")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="WhatsApp"

@@ -10,12 +10,16 @@ export function CatalogDownloadButton({
   title,
   initialCount = 0,
   btnText = "PDF İncele & İndir",
+  openedText = "Açıldı & İndirildi",
+  directDownloadText = "Doğrudan İndir",
 }: {
   catalogId: string;
   fileUrl: string;
   title: string;
   initialCount?: number;
   btnText?: string;
+  openedText?: string;
+  directDownloadText?: string;
 }) {
   const [loading, setLoading] = useState(false);
   const [downloadCount, setDownloadCount] = useState(initialCount);
@@ -61,7 +65,7 @@ export function CatalogDownloadButton({
         ) : (
           <FileText className="w-4 h-4" />
         )}
-        <span>{opened ? "Açıldı & İndirildi" : btnText}</span>
+        <span>{opened ? openedText : btnText}</span>
       </button>
 
       <a
@@ -71,8 +75,8 @@ export function CatalogDownloadButton({
         download
         onClick={() => trackClientEvent("catalog_direct_download", { label: title })}
         className="p-2.5 rounded-xl bg-surface-2 hover:bg-surface border border-border text-foreground hover:text-primary transition-all flex items-center justify-center"
-        title="Doğrudan İndir"
-        aria-label="Doğrudan İndir"
+        title={directDownloadText}
+        aria-label={directDownloadText}
       >
         <Download className="w-4 h-4" />
       </a>

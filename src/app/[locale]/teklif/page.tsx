@@ -116,7 +116,7 @@ export default async function QuotePage({
         {/* Right: Quick Contact & Assurances Sidebar */}
         <div className="lg:col-span-4 space-y-6">
           <div className="p-8 rounded-3xl bg-surface border border-border shadow-xl space-y-6">
-            <h2 className="text-base font-bold text-foreground">Teklif Süreci Nasıl İşler?</h2>
+            <h2 className="text-base font-bold text-foreground">{dict.quote?.processTitle || "Teklif Süreci Nasıl İşler?"}</h2>
             
             <div className="space-y-4 text-xs sm:text-sm text-foreground-muted">
               <div className="flex items-start gap-3">
@@ -124,8 +124,8 @@ export default async function QuotePage({
                   1
                 </div>
                 <div>
-                  <div className="font-bold text-foreground">Formun İncelenmesi</div>
-                  <div className="text-xs mt-0.5">Talebiniz uzman biyomedikal mühendisimize yönlendirilir.</div>
+                  <div className="font-bold text-foreground">{dict.quote?.step1Title || "Formun İncelenmesi"}</div>
+                  <div className="text-xs mt-0.5">{dict.quote?.step1Desc || "Talebiniz uzman biyomedikal mühendisimize yönlendirilir."}</div>
                 </div>
               </div>
 
@@ -134,8 +134,8 @@ export default async function QuotePage({
                   2
                 </div>
                 <div>
-                  <div className="font-bold text-foreground">Şartname ve Fiyatlandırma</div>
-                  <div className="text-xs mt-0.5">Kurumunuza özel bütçe ve konfigürasyon çalışması yapılır.</div>
+                  <div className="font-bold text-foreground">{dict.quote?.step2Title || "Şartname ve Fiyatlandırma"}</div>
+                  <div className="text-xs mt-0.5">{dict.quote?.step2Desc || "Kurumunuza özel bütçe ve konfigürasyon çalışması yapılır."}</div>
                 </div>
               </div>
 
@@ -144,14 +144,14 @@ export default async function QuotePage({
                   3
                 </div>
                 <div>
-                  <div className="font-bold text-foreground">24 Saat İçinde Dönüş</div>
-                  <div className="text-xs mt-0.5">Resmi teklif dosyanız e-posta veya telefonla iletilir.</div>
+                  <div className="font-bold text-foreground">{dict.quote?.step3Title || "24 Saat İçinde Dönüş"}</div>
+                  <div className="text-xs mt-0.5">{dict.quote?.step3Desc || "Resmi teklif dosyanız e-posta veya telefonla iletilir."}</div>
                 </div>
               </div>
             </div>
 
             <div className="pt-6 border-t border-border space-y-3">
-              <div className="text-xs font-bold uppercase text-foreground">Doğrudan İletişim</div>
+              <div className="text-xs font-bold uppercase text-foreground">{dict.quote?.directContact || "Doğrudan İletişim"}</div>
               <a
                 href={`tel:${primaryPhone.replace(/\s+/g, "")}`}
                 className="flex items-center gap-2.5 text-xs text-foreground hover:text-primary transition-colors"

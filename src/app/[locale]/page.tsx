@@ -271,7 +271,7 @@ export default async function HomePage({
             <div>
               <div className="text-xs font-bold uppercase tracking-widest text-primary mb-2 flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5" />
-                <span>Yüksek Standartlı Ekipmanlar</span>
+                <span>{dict.home?.highStandardEquipment || "Yüksek Standartlı Ekipmanlar"}</span>
               </div>
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground">
                 {dict.products.featured}
@@ -360,7 +360,7 @@ export default async function HomePage({
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
             <div className="text-xs font-bold uppercase tracking-widest text-primary mb-2 flex items-center justify-center gap-1.5">
               <Wrench className="w-3.5 h-3.5" />
-              <span>Teknik & Biyomedikal Uzmanlık</span>
+              <span>{dict.home?.technicalExpertise || "Teknik & Biyomedikal Uzmanlık"}</span>
             </div>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground">
               {dict.services.title}
@@ -657,13 +657,13 @@ export default async function HomePage({
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="text-xs font-bold uppercase tracking-widest text-primary mb-2 flex items-center justify-center gap-1.5">
               <CheckCircle2 className="w-3.5 h-3.5" />
-              <span>Sıkça Sorulan Sorular</span>
+              <span>{dict.home?.faqTitle || "Sıkça Sorulan Sorular"}</span>
             </div>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground">
-              Merak Edilen Sorular & Cevaplar
+              {dict.home?.faqTitle || "Sıkça Sorulan Sorular"}
             </h2>
             <p className="text-xs sm:text-sm text-foreground-muted mt-2">
-              Tıbbi cihaz tedariki, garanti ve biyomedikal teknik servis süreçlerimiz hakkında bilgiler.
+              {dict.home?.faqSubtitle || "Tıbbi cihaz tedariki, garanti ve biyomedikal teknik servis süreçlerimiz hakkında bilgiler."}
             </p>
           </div>
 

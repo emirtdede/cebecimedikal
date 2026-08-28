@@ -122,7 +122,7 @@ export function SearchModal({
     }
   }, [isOpen]);
 
-  // Debounced search query
+  // Debounced search query with race-condition prevention (AbortController)
   useEffect(() => {
     if (!query || query.trim().length < 2) {
       setResults({ products: [], services: [], catalogs: [], pages: [] });
@@ -130,11 +130,14 @@ export function SearchModal({
       return;
     }
 
+    const controller = new AbortController();
     setLoading(true);
+
     const handler = setTimeout(async () => {
       try {
         const res = await fetch(
-          `/api/search?q=${encodeURIComponent(query)}&locale=${activeLocale}`
+          `/api/search?q=${encodeURIComponent(query)}&locale=${activeLocale}`,
+          { signal: controller.signal }
         );
         if (res.ok) {
           const data = await res.json();
@@ -147,14 +150,19 @@ export function SearchModal({
           setSelectedIndex(0);
           trackClientEvent("search", { label: query });
         }
-      } catch (err) {
-        console.error("Search error:", err);
+      } catch (err: any) {
+        if (err.name !== "AbortError") {
+          console.error("Search error:", err);
+        }
       } finally {
         setLoading(false);
       }
     }, 200);
 
-    return () => clearTimeout(handler);
+    return () => {
+      clearTimeout(handler);
+      controller.abort();
+    };
   }, [query, activeLocale]);
 
   // Filtered items based on active filter

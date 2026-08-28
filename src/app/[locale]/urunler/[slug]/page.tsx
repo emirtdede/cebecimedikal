@@ -45,9 +45,23 @@ export async function generateMetadata({
   return {
     title: product.seoTitle || product.title,
     description: product.seoDescription || product.shortDescription,
+    alternates: {
+      canonical: `https://cebecimedikal.com/${currentLocale}/urunler/${slug}`,
+      languages: {
+        tr: `https://cebecimedikal.com/tr/urunler/${slug}`,
+        en: `https://cebecimedikal.com/en/urunler/${slug}`,
+        de: `https://cebecimedikal.com/de/urunler/${slug}`,
+        ar: `https://cebecimedikal.com/ar/urunler/${slug}`,
+        ja: `https://cebecimedikal.com/ja/urunler/${slug}`,
+        zh: `https://cebecimedikal.com/zh/urunler/${slug}`,
+        "x-default": `https://cebecimedikal.com/tr/urunler/${slug}`,
+      },
+    },
     openGraph: {
       title: product.title,
       description: product.shortDescription,
+      url: `https://cebecimedikal.com/${currentLocale}/urunler/${slug}`,
+      locale: currentLocale === "tr" ? "tr_TR" : currentLocale === "en" ? "en_US" : currentLocale,
       images: product.images.length > 0 ? [product.images[0]] : [],
     },
   };
@@ -115,26 +129,26 @@ export default async function ProductDetailPage({
           href={`/${currentLocale}/urunler`}
           className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface hover:bg-surface-2 border border-border text-foreground hover:text-primary transition-all text-xs font-semibold shadow-sm group"
         >
-          <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-0.5 transition-transform" />
-          <span>Geri Dön</span>
+          <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-0.5 transition-transform rtl:rotate-180" />
+          <span>{dict.common?.back || "Geri Dön"}</span>
         </Link>
 
         <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-foreground-muted flex-wrap">
           <Link href={`/${currentLocale}`} className="hover:text-primary transition-colors">
             {dict.nav.home}
           </Link>
-          <ChevronRight className="w-3.5 h-3.5 text-foreground-muted/60" />
+          <ChevronRight className="w-3.5 h-3.5 text-foreground-muted/60 rtl:rotate-180" />
           <Link href={`/${currentLocale}/urunler`} className="hover:text-primary transition-colors">
             {dict.nav.products}
           </Link>
-          <ChevronRight className="w-3.5 h-3.5 text-foreground-muted/60" />
+          <ChevronRight className="w-3.5 h-3.5 text-foreground-muted/60 rtl:rotate-180" />
           <Link
             href={`/${currentLocale}/urunler?kategori=${product.category.slug}`}
             className="hover:text-primary transition-colors font-medium text-foreground"
           >
             {product.category.name}
           </Link>
-          <ChevronRight className="w-3.5 h-3.5 text-foreground-muted/60" />
+          <ChevronRight className="w-3.5 h-3.5 text-foreground-muted/60 rtl:rotate-180" />
           <span className="text-foreground-muted truncate max-w-xs">{product.title}</span>
         </nav>
       </div>
@@ -147,6 +161,7 @@ export default async function ProductDetailPage({
             images={product.images}
             title={product.title}
             zoomHint={dict.products.zoomHint}
+            imageAlt={dict.products.imageAlt}
           />
         </div>
 
@@ -196,8 +211,8 @@ export default async function ProductDetailPage({
               </div>
             )}
             <div className="flex justify-between py-1">
-              <span className="text-foreground-muted">Garanti & Destek:</span>
-              <span className="font-semibold text-primary">Cebeci Medikal Servis Güvencesi</span>
+              <span className="text-foreground-muted">{(dict.products as any)?.warrantyAndSupport || "Garanti & Destek"}:</span>
+              <span className="font-semibold text-primary">{(dict.products as any)?.serviceGuarantee || "Cebeci Medikal Servis Güvencesi"}</span>
             </div>
           </div>
 
@@ -208,7 +223,7 @@ export default async function ProductDetailPage({
               className="w-full py-3.5 rounded-xl bg-primary hover:bg-primary-hover text-white text-sm font-bold shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all flex items-center justify-center gap-2"
             >
               <FileText className="w-4 h-4" />
-              <span>Bu Ürün İçin Teklif İste</span>
+              <span>{dict.products?.requestQuoteForProduct || dict.products.requestQuote}</span>
             </Link>
 
             <a
@@ -218,7 +233,7 @@ export default async function ProductDetailPage({
               className="w-full py-3 rounded-xl bg-[#25D366] hover:bg-[#20ba5a] text-white text-sm font-bold shadow-md transition-all flex items-center justify-center gap-2"
             >
               <MessageCircle className="w-4 h-4 fill-current" />
-              <span>WhatsApp ile Hızlı Fiyat Al</span>
+              <span>{dict.products?.whatsappQuickPrice || "WhatsApp ile Hızlı Fiyat Al"}</span>
             </a>
           </div>
 
@@ -226,11 +241,11 @@ export default async function ProductDetailPage({
           <div className="pt-4 border-t border-border grid grid-cols-2 gap-3 text-xs text-foreground-muted">
             <div className="flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-primary flex-shrink-0" />
-              <span>Biyomedikal Kalibrasyon Onaylı</span>
+              <span>{dict.products?.biomedicalCalibrationApproved || "Biyomedikal Kalibrasyon Onaylı"}</span>
             </div>
             <div className="flex items-center gap-2">
               <Award className="w-4 h-4 text-primary flex-shrink-0" />
-              <span>Yerinde Kurulum ve Eğitim</span>
+              <span>{dict.products?.onsiteInstallationTraining || "Yerinde Kurulum ve Eğitim"}</span>
             </div>
           </div>
         </div>
@@ -241,7 +256,7 @@ export default async function ProductDetailPage({
         <div className="lg:col-span-7 space-y-8">
           <div>
             <h2 className="font-serif text-2xl font-bold text-foreground mb-4">
-              Ürün Açıklaması
+              {dict.products.description || "Ürün Açıklaması"}
             </h2>
             <div className="text-sm sm:text-base text-foreground-muted leading-relaxed space-y-4">
               <p>{product.description}</p>
@@ -301,7 +316,7 @@ export default async function ProductDetailPage({
               href={`/${currentLocale}/urunler?kategori=${product.category.slug}`}
               className="text-xs sm:text-sm font-bold text-primary hover:underline flex items-center gap-1"
             >
-              <span>Daha Fazlasını Gör</span>
+              <span>{dict.products?.seeMore || "Daha Fazlasını Gör"}</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { RefreshCw, ShieldCheck, Award, FileText, CheckCircle2, ArrowRight } from "lucide-react";
 import { Locale, isValidLocale } from "@/lib/i18n";
@@ -56,10 +57,10 @@ export default async function SecondHandPage({
             <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
               <ShieldCheck className="w-5 h-5" />
             </div>
-            <h2 className="text-base font-bold text-foreground">1 Yıl Tam Garanti</h2>
+            <h2 className="text-base font-bold text-foreground">{(dict.secondHand as any)?.warranty1Year || "1 Yıl Tam Garanti"}</h2>
           </div>
           <p className="text-xs text-foreground-muted leading-relaxed">
-            Satışa sunulan tüm revizyonlu cihazlarımız 1 yıl boyunca Cebeci Medikal parça ve servis garantisi altındadır.
+            {(dict.secondHand as any)?.warranty1YearDesc || "Satışa sunulan tüm revizyonlu cihazlarımız 1 yıl boyunca Cebeci Medikal parça ve servis garantisi altındadır."}
           </p>
         </div>
 
@@ -68,10 +69,10 @@ export default async function SecondHandPage({
             <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
               <Award className="w-5 h-5" />
             </div>
-            <h2 className="text-base font-bold text-foreground">Kalibrasyon & Güvenlik</h2>
+            <h2 className="text-base font-bold text-foreground">{(dict.secondHand as any)?.calibrationSafety || "Kalibrasyon & Güvenlik"}</h2>
           </div>
           <p className="text-xs text-foreground-muted leading-relaxed">
-            IEC 62353 elektriksel güvenlik testleri ve üretici parametrelerine uygun kalibrasyon raporları hazırlanır.
+            {(dict.secondHand as any)?.calibrationSafetyDesc || "IEC 62353 elektriksel güvenlik testleri ve üretici parametrelerine uygun kalibrasyon raporları hazırlanır."}
           </p>
         </div>
 
@@ -80,10 +81,10 @@ export default async function SecondHandPage({
             <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
               <CheckCircle2 className="w-5 h-5" />
             </div>
-            <h2 className="text-base font-bold text-foreground">%50+ Bütçe Avantajı</h2>
+            <h2 className="text-base font-bold text-foreground">{(dict.secondHand as any)?.budgetAdvantage || "%50+ Bütçe Avantajı"}</h2>
           </div>
           <p className="text-xs text-foreground-muted leading-relaxed">
-            Klinik ve hastane bütçenizi zorlamadan, sıfır cihaz kalitesinde güvenilir medikal teknolojiye erişim.
+            {(dict.secondHand as any)?.budgetAdvantageDesc || "Klinik ve hastane bütçenizi zorlamadan, sıfır cihaz kalitesinde güvenilir medikal teknolojiye erişim."}
           </p>
         </div>
       </div>
@@ -92,13 +93,13 @@ export default async function SecondHandPage({
       <div className="space-y-6">
         <div className="flex items-center justify-between">
           <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground">
-            Mevcut 2. El Cihaz Envanteri ({products.length})
+            {(dict.secondHand as any)?.inventoryTitle || "Mevcut 2. El Cihaz Envanteri"} ({products.length})
           </h2>
           <Link
             href={`/${currentLocale}/teklif?konu=2el`}
             className="text-xs sm:text-sm font-bold text-primary hover:underline flex items-center gap-1"
           >
-            <span>Özel Cihaz Talebinde Bulun</span>
+            <span>{(dict.secondHand as any)?.requestCustomDevice || "Özel Cihaz Talebinde Bulun"}</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>
@@ -111,12 +112,14 @@ export default async function SecondHandPage({
             >
               <div>
                 <div className="relative h-60 w-full overflow-hidden bg-surface-2">
-                  <img
+                  <Image
                     src={product.images[0] || "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80"}
                     alt={product.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-3 left-3">
+                  <div className="absolute top-3 left-3 z-10">
                     <span className="text-[10px] uppercase font-bold px-3 py-1 rounded-full shadow-md bg-amber-600 text-white">
                       {dict.products.secondHand}
                     </span>
@@ -139,12 +142,12 @@ export default async function SecondHandPage({
 
                   <div className="p-3 rounded-xl bg-surface-2/60 border border-border/60 text-xs space-y-1">
                     <div className="flex justify-between">
-                      <span className="text-foreground-muted">Marka & Model:</span>
+                      <span className="text-foreground-muted">{(dict.products as any)?.brandAndModel || "Marka & Model"}:</span>
                       <span className="font-semibold text-foreground">{product.brand} {product.model || ""}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-foreground-muted">Garanti Durumu:</span>
-                      <span className="font-semibold text-primary">1 Yıl Tam Garanti</span>
+                      <span className="text-foreground-muted">{(dict.products as any)?.warrantyStatus || "Garanti Durumu"}:</span>
+                      <span className="font-semibold text-primary">{(dict.secondHand as any)?.warrantyBadge || "1 Yıl Tam Garanti"}</span>
                     </div>
                   </div>
                 </div>

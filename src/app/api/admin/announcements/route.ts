@@ -1,6 +1,25 @@
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/lib/db";
-import { getCurrentUser } from "@/lib/auth";
+import { getCurrentUser, hasPermission } from "@/lib/auth";
+import { z } from "zod";
+
+const announcementSchema = z.object({
+  title: z.string().nullable().optional(),
+  message: z.string().nullable().optional(),
+  imageUrl: z.string().nullable().optional(),
+  videoUrl: z.string().nullable().optional(),
+  linkUrl: z.string().nullable().optional(),
+  linkText: z.string().nullable().optional(),
+  contentType: z.enum(["TEXT", "IMAGE", "VIDEO", "IMAGE_TEXT", "VIDEO_TEXT"]).default("TEXT"),
+  position: z.enum(["BOTTOM_LEFT", "BOTTOM_RIGHT", "TOP_BANNER", "MODAL_CENTER"]).default("BOTTOM_LEFT"),
+  isActive: z.boolean().default(true),
+  priority: z.number().int().default(0),
+  startDate: z.string().nullable().optional(),
+  endDate: z.string().nullable().optional(),
+  dismissible: z.boolean().default(true),
+  showOnce: z.boolean().default(false),
+  delaySeconds: z.number().int().min(0).default(3),
+});
 
 export async function GET() {
   try {
@@ -22,26 +41,34 @@ export async function POST(req: NextRequest) {
   try {
     const user = await getCurrentUser();
     if (!user) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    if (!hasPermission(user.role, "CONTENT_MANAGER")) {
+      return NextResponse.json({ error: "Bu işlem için yetkiniz bulunmamaktadır." }, { status: 403 });
+    }
 
     const body = await req.json();
+    const parsed = announcementSchema.safeParse(body);
+    if (!parsed.success) {
+      return NextResponse.json({ error: "Geçersiz form verisi", details: parsed.error.format() }, { status: 400 });
+    }
 
+    const data = parsed.data;
     const announcement = await db.announcement.create({
       data: {
-        title: body.title || null,
-        message: body.message || null,
-        imageUrl: body.imageUrl || null,
-        videoUrl: body.videoUrl || null,
-        linkUrl: body.linkUrl || null,
-        linkText: body.linkText || null,
-        contentType: body.contentType || "TEXT",
-        position: body.position || "BOTTOM_LEFT",
-        isActive: body.isActive ?? true,
-        priority: body.priority || 0,
-        startDate: body.startDate ? new Date(body.startDate) : new Date(),
-        endDate: body.endDate ? new Date(body.endDate) : null,
-        dismissible: body.dismissible ?? true,
-        showOnce: body.showOnce ?? false,
-        delaySeconds: body.delaySeconds ?? 3,
+        title: data.title || null,
+        message: data.message || null,
+        imageUrl: data.imageUrl || null,
+        videoUrl: data.videoUrl || null,
+        linkUrl: data.linkUrl || null,
+        linkText: data.linkText || null,
+        contentType: data.contentType,
+        position: data.position,
+        isActive: data.isActive,
+        priority: data.priority,
+        startDate: data.startDate ? new Date(data.startDate) : new Date(),
+        endDate: data.endDate ? new Date(data.endDate) : null,
+        dismissible: data.dismissible,
+        showOnce: data.showOnce,
+        delaySeconds: data.delaySeconds,
       },
     });
 

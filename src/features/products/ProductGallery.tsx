@@ -7,10 +7,12 @@ export function ProductGallery({
   images,
   title,
   zoomHint = "Büyütmek için görsele tıklayın",
+  imageAlt = "Görsel",
 }: {
   images: string[];
   title: string;
   zoomHint?: string;
+  imageAlt?: string;
 }) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -35,7 +37,7 @@ export function ProductGallery({
         >
           <img
             src={activeImage}
-            alt={`${title} - Görsel ${selectedIndex + 1}`}
+            alt={`${title} - ${imageAlt} ${selectedIndex + 1}`}
             className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
           />
           <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -63,7 +65,7 @@ export function ProductGallery({
             >
               <img
                 src={img}
-                alt={`${title} thumbnail ${idx + 1}`}
+                alt={`${title} - ${imageAlt} ${idx + 1}`}
                 className="w-full h-full object-cover"
               />
             </button>

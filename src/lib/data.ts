@@ -1,5 +1,6 @@
 import { db } from "./db";
-import { Locale, DEFAULT_LOCALE } from "./i18n";
+import { Locale, DEFAULT_LOCALE, isValidLocale } from "./i18n";
+import { localizeSpecKey, localizeSpecValue, localizeApplication } from "./medical-translations";
 import {
   STATIC_SETTINGS,
   getStaticCategories,
@@ -332,15 +333,27 @@ export async function getProductBySlug(
         images = [product.images];
       }
 
-      let technicalSpecs: Record<string, string> = {};
-      try {
-        if (product.technicalSpecs) technicalSpecs = JSON.parse(product.technicalSpecs);
-      } catch {}
+        let technicalSpecs: Record<string, string> = {};
+        try {
+          if (product.technicalSpecs) {
+            const raw = JSON.parse(product.technicalSpecs);
+            const targetLocale = isValidLocale(locale) ? (locale as Locale) : DEFAULT_LOCALE;
+            for (const [k, v] of Object.entries(raw)) {
+              const locK = localizeSpecKey(k, targetLocale);
+              const locV = localizeSpecValue(String(v), targetLocale);
+              technicalSpecs[locK] = locV;
+            }
+          }
+        } catch {}
 
-      let applications: string[] = [];
-      try {
-        if (product.applications) applications = JSON.parse(product.applications);
-      } catch {}
+        let applications: string[] = [];
+        try {
+          if (product.applications) {
+            const raw = JSON.parse(product.applications);
+            const targetLocale = isValidLocale(locale) ? (locale as Locale) : DEFAULT_LOCALE;
+            applications = (raw as string[]).map((app) => localizeApplication(app, targetLocale));
+          }
+        } catch {}
 
       return {
         id: product.id,
@@ -470,6 +483,11 @@ export async function getServices(locale: string = DEFAULT_LOCALE): Promise<Loca
           if (translation?.details) details = JSON.parse(translation.details);
         } catch {}
 
+        if (!details?.features || details.features.length === 0) {
+          const staticServ = getStaticServiceBySlug(s.slug, locale);
+          if (staticServ?.details) details = staticServ.details;
+        }
+
         return {
           id: s.id,
           slug: s.slug,
@@ -511,6 +529,11 @@ export async function getServiceBySlug(
       try {
         if (translation?.details) details = JSON.parse(translation.details);
       } catch {}
+
+      if (!details?.features || details.features.length === 0) {
+        const staticServ = getStaticServiceBySlug(service.slug, locale);
+        if (staticServ?.details) details = staticServ.details;
+      }
 
       return {
         id: service.id,

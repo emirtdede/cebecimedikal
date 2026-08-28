@@ -182,16 +182,16 @@ export function QuoteForm({
             }}
             className="px-5 py-2.5 rounded-xl bg-surface-2 hover:bg-surface border border-border text-xs font-semibold text-foreground transition-colors"
           >
-            Yeni Talep Oluştur
+            {dict.quote.newRequest || "Yeni Talep Oluştur"}
           </button>
           <a
-            href={`https://wa.me/${whatsappNum}?text=${encodeURIComponent(`Merhaba, ${quoteSuccess} referans numaralı teklif talebim hakkında bilgi almak istiyorum.`)}`}
+            href={`https://wa.me/${whatsappNum}?text=${encodeURIComponent((dict.quote.whatsappTemplate || "Merhaba, {refNo} referans numaralı teklif talebim hakkında bilgi almak istiyorum.").replace("{refNo}", quoteSuccess || ""))}`}
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20ba5a] text-white text-xs font-bold shadow-md transition-colors flex items-center gap-1.5"
           >
             <MessageCircle className="w-4 h-4 fill-current" />
-            <span>WhatsApp ile İletişime Geç</span>
+            <span>{dict.quote.chatWhatsApp || "WhatsApp ile İletişime Geç"}</span>
           </a>
         </div>
       </div>
@@ -232,7 +232,7 @@ export function QuoteForm({
               required
               value={formData.fullName}
               onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-              placeholder="Örn: Dr. Ahmet Yılmaz"
+              placeholder={dict.quote.fullNamePlaceholder || "Dr. / Ad Soyad"}
               className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-surface-2 border border-border text-sm text-foreground focus:outline-none focus:border-primary"
             />
           </div>
@@ -250,7 +250,7 @@ export function QuoteForm({
               required
               value={formData.company}
               onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-              placeholder="Örn: Şehir Hastanesi / Özel Klinik"
+              placeholder={dict.quote.institutionPlaceholder || "Hastane / Klinik Adı"}
               className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-surface-2 border border-border text-sm text-foreground focus:outline-none focus:border-primary"
             />
           </div>
@@ -268,7 +268,7 @@ export function QuoteForm({
               required
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              placeholder="ornek@hastane.com"
+              placeholder="doktor@hastane.com"
               className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-surface-2 border border-border text-sm text-foreground focus:outline-none focus:border-primary"
             />
           </div>
@@ -286,7 +286,7 @@ export function QuoteForm({
               required
               value={formData.phone}
               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-              placeholder="05XX XXX XX XX"
+              placeholder="+90 5XX XXX XX XX"
               className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-surface-2 border border-border text-sm text-foreground focus:outline-none focus:border-primary"
             />
           </div>
@@ -304,7 +304,7 @@ export function QuoteForm({
               required
               value={formData.city}
               onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-              placeholder="Örn: Ankara"
+              placeholder={dict.quote.cityPlaceholder || "Şehir"}
               className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-surface-2 border border-border text-sm text-foreground focus:outline-none focus:border-primary"
             />
           </div>
@@ -341,7 +341,7 @@ export function QuoteForm({
         {formData.topic === dict.quote.topicService || formData.topic === dict.quote.topicConsulting ? (
           <div className="space-y-1.5 sm:col-span-2">
             <label className="block text-xs font-bold text-foreground">
-              Talep Edilen Hizmet <span className="text-red-500">*</span>
+              {dict.quote.topicService} <span className="text-red-500">*</span>
             </label>
             {services.length > 0 ? (
               <select
@@ -349,20 +349,20 @@ export function QuoteForm({
                 onChange={(e) => setFormData({ ...formData, productName: e.target.value })}
                 className="w-full px-3.5 py-2.5 rounded-xl bg-surface-2 border border-border text-sm text-foreground focus:outline-none focus:border-primary"
               >
-                <option value="">-- Bir Hizmet Seçiniz --</option>
+                <option value="">{dict.quote.selectServiceDefault || "-- Bir Hizmet Seçiniz --"}</option>
                 {services.map((srv) => (
                   <option key={srv.id} value={srv.title}>
                     {srv.title}
                   </option>
                 ))}
-                <option value="Diğer / Özel Teknik Servis Talebi">Diğer / Özel Teknik Servis Talebi</option>
+                <option value="Diğer / Özel Teknik Servis Talebi">{dict.quote.selectServiceOther || "Diğer / Özel Teknik Servis Talebi"}</option>
               </select>
             ) : (
               <input
                 type="text"
                 value={formData.productName}
                 onChange={(e) => setFormData({ ...formData, productName: e.target.value })}
-                placeholder="Talep ettiğiniz teknik servis veya danışmanlık konusu"
+                placeholder={dict.quote.serviceTopicPlaceholder || "Talep ettiğiniz teknik servis veya danışmanlık konusu"}
                 className="w-full px-3.5 py-2.5 rounded-xl bg-surface-2 border border-border text-sm text-foreground focus:outline-none focus:border-primary"
               />
             )}
@@ -374,7 +374,7 @@ export function QuoteForm({
               <label className="block text-xs font-bold text-foreground flex items-center justify-between">
                 <span>{dict.quote.selectedProduct}</span>
                 <span className="text-[10px] text-foreground-muted font-normal">
-                  ({products.length} Cihaz Mevcut)
+                  ({products.length} {dict.categories.productsCount})
                 </span>
               </label>
 
@@ -384,7 +384,7 @@ export function QuoteForm({
                 className="w-full px-3.5 py-2.5 rounded-xl bg-surface-2 border border-border text-sm text-foreground hover:border-primary/50 cursor-pointer flex items-center justify-between transition-all select-none"
               >
                 <span className={formData.productName ? "text-foreground font-medium truncate" : "text-foreground-muted truncate"}>
-                  {formData.productName || "-- Listeden Bir Cihaz Seçiniz --"}
+                  {formData.productName || dict.quote.selectProductDefault || "-- Listeden Bir Cihaz Seçiniz --"}
                 </span>
                 <ChevronDown className={`w-4 h-4 text-foreground-muted transition-transform duration-200 ${isProductDropdownOpen ? "rotate-180 text-primary" : ""}`} />
               </div>
@@ -401,7 +401,7 @@ export function QuoteForm({
                         autoFocus
                         value={productSearchQuery}
                         onChange={(e) => setProductSearchQuery(e.target.value)}
-                        placeholder="Cihaz veya model ara..."
+                        placeholder={dict.search?.placeholder || "Cihaz veya model ara..."}
                         className="w-full pl-8 pr-3 py-1.5 text-xs rounded-lg bg-surface border border-border text-foreground placeholder:text-foreground-muted focus:outline-none focus:border-primary"
                         onClick={(e) => e.stopPropagation()}
                       />
@@ -462,21 +462,21 @@ export function QuoteForm({
                       })
                     ) : (
                       <div className="py-6 text-center text-xs text-foreground-muted">
-                        Aramanızla eşleşen cihaz bulunamadı.
+                        {dict.quote.noProductFound || "Aramanızla eşleşen cihaz bulunamadı."}
                       </div>
                     )}
 
                     {/* Custom device option */}
                     <div
                       onClick={() => {
-                        setFormData({ ...formData, productName: "Diğer / Listede Olmayan Özel Cihaz Talebi" });
+                        setFormData({ ...formData, productName: dict.quote.selectProductOther || "Diğer / Listede Olmayan Özel Cihaz Talebi" });
                         setIsProductDropdownOpen(false);
                         setProductSearchQuery("");
                       }}
                       className="p-2 rounded-xl flex items-center gap-2 text-xs font-semibold text-primary hover:bg-primary/10 border-t border-border/40 cursor-pointer transition-colors mt-1"
                     >
                       <HelpCircle className="w-3.5 h-3.5" />
-                      <span>Diğer / Listede Olmayan Özel Cihaz Talebi</span>
+                      <span>{dict.quote.selectProductOther || "Diğer / Listede Olmayan Özel Cihaz Talebi"}</span>
                     </div>
                   </div>
                 </div>
@@ -510,7 +510,7 @@ export function QuoteForm({
           rows={4}
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-          placeholder="Teknik şartname, cihaz konfigürasyonu veya servis detaylarını belirtiniz..."
+          placeholder={dict.quote.notesPlaceholder || "Teknik şartname, cihaz konfigürasyonu veya servis detaylarını belirtiniz..."}
           className="w-full px-4 py-3 rounded-xl bg-surface-2 border border-border text-sm text-foreground focus:outline-none focus:border-primary"
         />
       </div>

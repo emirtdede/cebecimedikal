@@ -2,8 +2,12 @@
 
 import { useState } from "react";
 import { Save, Loader2, CheckCircle2, AlertCircle, Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+import { useAdminLanguage } from "./AdminLanguageContext";
+import { getAdminUi } from "@/lib/admin-translations";
 
 export function AdminSettingsForm({ initialSettings }: { initialSettings: Record<string, string> }) {
+  const { locale, dict } = useAdminLanguage();
+  const a = dict.admin || {};
   const [settings, setSettings] = useState(initialSettings);
   const [loading, setLoading] = useState(false);
   const [saved, setSaved] = useState(false);
@@ -29,10 +33,10 @@ export function AdminSettingsForm({ initialSettings }: { initialSettings: Record
         setSaved(true);
         setTimeout(() => setSaved(false), 3000);
       } else {
-        setErrorMsg("Ayarlar kaydedilemedi.");
+        setErrorMsg("Failed to save settings.");
       }
     } catch {
-      setErrorMsg("Bağlantı hatası oluştu.");
+      setErrorMsg("Network error.");
     } finally {
       setLoading(false);
     }
@@ -43,7 +47,7 @@ export function AdminSettingsForm({ initialSettings }: { initialSettings: Record
       {saved && (
         <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs flex items-center gap-2">
           <CheckCircle2 className="w-4 h-4" />
-          <span>Ayarlar başarıyla güncellendi.</span>
+          <span>{dict.common?.success || "Updated successfully."}</span>
         </div>
       )}
 
@@ -56,7 +60,7 @@ export function AdminSettingsForm({ initialSettings }: { initialSettings: Record
 
       {/* Corporate Information */}
       <div className="p-6 rounded-3xl bg-surface border border-border space-y-6 shadow-sm">
-        <h2 className="text-base font-bold text-foreground">Kurumsal İletişim Bilgileri</h2>
+        <h2 className="text-base font-bold text-foreground">{a.settings || "Kurumsal İletişim Bilgileri"}</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div className="space-y-1.5">

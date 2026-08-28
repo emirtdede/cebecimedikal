@@ -27,11 +27,16 @@ import {
 import { Locale, LOCALE_METADATA } from "@/lib/i18n";
 import { Dictionary } from "@/lib/dictionary";
 import { ThemeToggle } from "./ThemeToggle";
+import dynamic from "next/dynamic";
 import { LanguageSelector } from "./LanguageSelector";
-import { SearchModal } from "./SearchModal";
 import { BrandLogo } from "./BrandLogo";
 import { LocalizedCategory } from "@/lib/data";
 import { getLocalizedHref } from "@/lib/routes";
+
+const SearchModal = dynamic(
+  () => import("./SearchModal").then((mod) => mod.SearchModal),
+  { ssr: false }
+);
 
 const CATEGORY_ICONS: Record<string, any> = {
   "ameliyathane-cihazlari": ShieldAlert,
@@ -261,7 +266,7 @@ export function Header({
                         className="text-xs font-bold text-primary flex items-center gap-1.5 hover:underline"
                       >
                         <RefreshCw className="w-3.5 h-3.5" />
-                        <span>{dict.nav.secondHand} Kataloğu</span>
+                        <span>{dict.nav.secondHand}</span>
                       </Link>
                       <Link
                         href={quoteHref}

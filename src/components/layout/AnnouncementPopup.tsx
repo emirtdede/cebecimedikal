@@ -1,7 +1,10 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import { usePathname } from "next/navigation";
 import { X, ExternalLink, Volume2, VolumeX, ArrowRight } from "lucide-react";
+import { Dictionary } from "@/lib/dictionary";
+import { DEFAULT_LOCALE, isValidLocale } from "@/lib/i18n";
 
 interface Announcement {
   id: string;
@@ -17,7 +20,11 @@ interface Announcement {
   delaySeconds: number;
 }
 
-export function AnnouncementPopup() {
+export function AnnouncementPopup({ dict }: { dict?: Dictionary }) {
+  const pathname = usePathname();
+  const currentLocale = pathname.split("/")[1];
+  const locale = isValidLocale(currentLocale) ? currentLocale : DEFAULT_LOCALE;
+
   const [announcements, setAnnouncements] = useState<Announcement[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
@@ -29,7 +36,7 @@ export function AnnouncementPopup() {
   useEffect(() => {
     async function fetchAnnouncements() {
       try {
-        const res = await fetch("/api/announcements");
+        const res = await fetch(`/api/announcements?locale=${locale}`);
         const data = await res.json();
 
         if (data.announcements && data.announcements.length > 0) {
@@ -125,7 +132,7 @@ export function AnnouncementPopup() {
           <button
             onClick={dismiss}
             className="absolute top-2.5 right-2.5 z-10 w-6.5 h-6.5 rounded-lg bg-bg/60 backdrop-blur-sm border border-border/40 text-foreground-muted hover:text-foreground hover:bg-bg/80 transition-all duration-200 flex items-center justify-center group cursor-pointer"
-            aria-label="Kapat"
+            aria-label={dict?.nav?.close || dict?.common?.close || "Close"}
           >
             <X className="w-3.5 h-3.5 group-hover:rotate-90 transition-transform duration-300" />
           </button>
@@ -136,7 +143,7 @@ export function AnnouncementPopup() {
           <div className="relative w-full aspect-[16/10] overflow-hidden">
             <img
               src={current.imageUrl!}
-              alt={current.title || "Bilgilendirme"}
+              alt={current.title || (dict?.common as any)?.info || "Info"}
               className="w-full h-full object-cover"
               loading="lazy"
             />
@@ -162,7 +169,7 @@ export function AnnouncementPopup() {
             <button
               onClick={() => setIsMuted(!isMuted)}
               className="absolute bottom-2.5 right-2.5 z-10 w-6.5 h-6.5 rounded-lg bg-bg/60 backdrop-blur-sm border border-border/40 text-foreground-muted hover:text-foreground transition-all flex items-center justify-center cursor-pointer"
-              aria-label={isMuted ? "Sesi aç" : "Sesi kapat"}
+              aria-label={isMuted ? "Unmute" : "Mute"}
             >
               {isMuted ? (
                 <VolumeX className="w-3.5 h-3.5" />
@@ -203,7 +210,7 @@ export function AnnouncementPopup() {
               rel={current.linkUrl?.startsWith("http") ? "noopener noreferrer" : undefined}
               className="inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:text-primary-hover transition-colors"
             >
-              <span>{current.linkText || "İncele"}</span>
+              <span>{current.linkText || (dict?.common as any)?.view || dict?.products?.viewDetails || "View"}</span>
               {current.linkUrl?.startsWith("http") ? (
                 <ExternalLink className="w-3 h-3" />
               ) : (

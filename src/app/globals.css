@@ -2,8 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap');
-
 :root,
 [data-theme="navy"] {
   --color-bg: #07141C;
@@ -60,7 +58,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
   -webkit-font-smoothing: antialiased;
@@ -77,19 +75,19 @@ body {
 
 /* Locale font families */
 html[lang="ar"] {
-  font-family: 'Noto Sans Arabic', 'Inter', system-ui, sans-serif;
+  font-family: var(--font-arabic), var(--font-inter), system-ui, sans-serif;
 }
 
 html[lang="ja"] {
-  font-family: 'Noto Sans JP', 'Inter', system-ui, sans-serif;
+  font-family: var(--font-jp), var(--font-inter), system-ui, sans-serif;
 }
 
 html[lang="zh"] {
-  font-family: 'Noto Sans SC', 'Inter', system-ui, sans-serif;
+  font-family: var(--font-sc), var(--font-inter), system-ui, sans-serif;
 }
 
 .font-serif {
-  font-family: 'DM Serif Display', Georgia, serif;
+  font-family: var(--font-serif), Georgia, serif;
 }
 
 /* Glassmorphism & Surface Utilities */

@@ -117,7 +117,19 @@
     "clearFilters": "Filtreleri Temizle",
     "sku": "Ürün Kodu",
     "zoomHint": "Büyütmek için görsele tıklayın",
-    "gallery": "Görsel Galerisi"
+    "gallery": "Görsel Galerisi",
+    "imageAlt": "{title} - Görsel {index}",
+    "technicalSpecsTitle": "Teknik Özellikler",
+    "applicationsTitle": "Klinik Kullanım Alanları",
+    "catalogSuffix": "Kataloğu",
+    "serviceGuarantee": "Cebeci Medikal Servis Güvencesi",
+    "requestQuoteForProduct": "Bu Ürün İçin Teklif Al",
+    "whatsappQuickPrice": "WhatsApp ile Hızlı Fiyat Al",
+    "biomedicalCalibrationApproved": "Biyomedikal Kalibrasyon Onaylı",
+    "onsiteInstallationTraining": "Yerinde Kurulum ve Eğitim",
+    "seeMore": "Daha Fazlasını Gör",
+    "description": "Ürün Açıklaması",
+    "warrantyAndSupport": "Garanti & Destek"
   },
   "quote": {
     "title": "Fiyat Teklifi Talep Formu",
@@ -146,7 +158,28 @@
     "successDesc": "Talebiniz uzman ekibimize iletildi. En kısa sürede sizinle iletişime geçeceğiz. Teklif Referans No:",
     "errorTitle": "Gönderim Hatası",
     "errorDesc": "Talebiniz iletilirken bir hata oluştu. Lütfen form alanlarını kontrol edip tekrar deneyiniz.",
-    "spamDetected": "İstek spam filtresine takıldı."
+    "spamDetected": "İstek spam filtresine takıldı.",
+    "selectServiceDefault": "-- Bir Hizmet Seçiniz --",
+    "selectServiceOther": "Diğer / Özel Teknik Servis Talebi",
+    "selectProductDefault": "-- Listeden Bir Cihaz Seçiniz --",
+    "selectProductOther": "Diğer / Listede Olmayan Özel Cihaz Talebi",
+    "noProductFound": "Aramanızla eşleşen cihaz bulunamadı.",
+    "newRequest": "Yeni Talep Oluştur",
+    "chatWhatsApp": "WhatsApp ile İletişime Geç",
+    "fullNamePlaceholder": "Örn: Dr. Ahmet Yılmaz",
+    "institutionPlaceholder": "Örn: Şehir Hastanesi / Özel Klinik",
+    "cityPlaceholder": "Örn: Ankara",
+    "serviceTopicPlaceholder": "Talep ettiğiniz teknik servis veya danışmanlık konusu",
+    "notesPlaceholder": "Teknik şartname, cihaz konfigürasyonu veya servis detaylarını belirtiniz...",
+    "whatsappTemplate": "Merhaba, {refNo} referans numaralı teklif talebim hakkında bilgi almak istiyorum.",
+    "processTitle": "Teklif Süreci Nasıl İşler?",
+    "step1Title": "Formun İncelenmesi",
+    "step1Desc": "Talebiniz uzman biyomedikal mühendisimize yönlendirilir.",
+    "step2Title": "Şartname ve Fiyatlandırma",
+    "step2Desc": "Kurumunuza özel bütçe ve konfigürasyon çalışması yapılır.",
+    "step3Title": "24 Saat İçinde Dönüş",
+    "step3Desc": "Resmi teklif dosyanız e-posta veya telefonla iletilir.",
+    "directContact": "Doğrudan İletişim"
   },
   "contact": {
     "title": "İletişim",
@@ -171,7 +204,18 @@
     "hoursText": "Pazartesi - Cumartesi: 08:30 - 18:30",
     "emergencySupport": "Acil Teknik Destek Hattı",
     "getDirections": "Yol Tarifi Al",
-    "openInMaps": "Google Haritalar'da Aç"
+    "openInMaps": "Google Haritalar'da Aç",
+    "successTitle": "Mesajınız Başarıyla İletildi",
+    "sendAnother": "Yeni Mesaj Gönder",
+    "fullNamePlaceholder": "Örn: Dr. Ahmet Yılmaz",
+    "companyPlaceholder": "Kurum / Klinik Adı",
+    "subjectPlaceholder": "Mesajınızın konusu",
+    "messagePlaceholder": "Talebinizi, teknik servis ihtiyacınızı veya iletmek istediğiniz detayları yazınız...",
+    "switchboardSales": "(Santral / Satış)",
+    "techService": "(Teknik Servis)",
+    "workingHoursValue": "Pazartesi - Cumartesi: 08:30 - 18:30 (Yerel Saat)",
+    "openGoogleMaps": "Google Haritalarda Aç",
+    "whatsappContact": "WhatsApp ile İletişime Geç"
   },
   "search": {
     "title": "Arama Paneli",
@@ -249,7 +293,13 @@
     "save": "Kaydet",
     "delete": "Sil",
     "edit": "Düzenle",
-    "actions": "İşlemler"
+    "actions": "İşlemler",
+    "skipToContent": "İçeriğe Atla",
+    "muteAudio": "Sesi kapat",
+    "unmuteAudio": "Sesi aç",
+    "inspect": "İncele",
+    "whatsappDefaultMessage": "Merhaba, Cebeci Medikal hakkında bilgi ve teklif almak istiyorum.",
+    "whatsappLabel": "WhatsApp İletişim"
   },
   "about": {
     "badge": "Kurumsal Medikal Çözümler",
@@ -287,6 +337,71 @@
     "size": "Boyut",
     "officialDoc": "Resmi Ürün Dokümanı",
     "viewPdf": "PDF İncele",
-    "opened": "Açıldı"
+    "opened": "Açıldı",
+    "viewAndDownload": "PDF İncele & İndir",
+    "openedAndDownloaded": "Açıldı & İndirildi",
+    "directDownload": "Doğrudan İndir"
+  },
+  "legal": {
+    "kvkkTitle": "KVKK Aydınlatma Metni",
+    "kvkkDesc": "6698 Sayılı Kanun Kapsamında Bilgilendirme",
+    "privacyTitle": "Gizlilik Politikası",
+    "privacyDesc": "Veri Güvenliği & Mahremiyet İlkeleri",
+    "cookieTitle": "Çerez (Cookie) Politikası",
+    "cookieDesc": "Çerez Türleri & Tercih Yönetimi",
+    "termsTitle": "Kullanım Koşulları",
+    "termsDesc": "Site Şartları & Hizmet Sözleşmesi",
+    "disclaimerTitle": "Yasal Uyarı & Mevzuat",
+    "disclaimerDesc": "TİTCK & Tıbbi Cihaz Satış Sorumlulukları",
+    "accessibilityTitle": "Erişilebilirlik Bildirimi",
+    "accessibilityDesc": "WCAG 2.1 AA Standartları & Uyumluluk",
+    "effectiveDate": "Yürürlük:",
+    "officialBadge": "Resmi & Güncel",
+    "sidebarTitle": "Yasal Dokümanlar & Sözleşmeler",
+    "dataControllerTitle": "Veri Sorumlusu & Şirket Bilgileri",
+    "regulatoryBadge": "TSE HYB & Sağlık Bakanlığı TİTCK Kayıtlı",
+    "requestTitle": "Yasal Başvuru ve Bilgi Talebi",
+    "requestDesc": "6698 sayılı KVKK ve ilgili mevzuat uyarınca haklarınızı kullanmak, bilgi talep etmek veya düzeltme/silme başvurusunda bulunmak için ıslak imzalı dilekçenizi şirket adresimize şahsen veya noter kanalıyla gönderebilir, ya da sistemimizde kayıtlı e-posta adresiniz üzerinden cbcmedikal@gmail.com adresine iletebilirsiniz. Başvurularınız en geç 30 (otuz) gün içerisinde ücretsiz olarak sonuçlandırılacaktır."
+  },
+  "home": {
+    "highStandardEquipment": "Yüksek Standartlı Ekipmanlar",
+    "technicalExpertise": "Teknik & Biyomedikal Uzmanlık",
+    "faqTitle": "Sıkça Sorulan Sorular",
+    "faqSubtitle": "Tıbbi cihaz tedariki, teknik servis süreçleri ve garanti koşulları hakkında merak edilenler."
+  },
+  "secondHand": {
+    "warranty1Year": "1 Yıl Tam Garanti",
+    "calibrationSafety": "Kalibrasyon & Güvenlik",
+    "budgetAdvantage": "%50+ Bütçe Avantajı",
+    "requestCustomDevice": "Özel Cihaz Talebinde Bulun",
+    "warrantyBadge": "1 Yıl Tam Garanti"
+  },
+  "admin": {
+    "title": "Yönetim Paneli",
+    "dashboard": "Kontrol Paneli",
+    "commercial": "Ticari & Ürünler",
+    "productManagement": "Ürün Yönetimi",
+    "categoryManagement": "Kategori Yönetimi",
+    "serviceManagement": "Hizmet Yönetimi",
+    "operations": "Operasyon & Müşteri",
+    "quoteRequests": "Teklif Talepleri",
+    "contactMessages": "İletişim Mesajları",
+    "references": "Referans Yönetimi",
+    "catalogs": "Katalog & Şartnameler",
+    "contentSettings": "İçerik & Ayarlar",
+    "faqs": "Sıkça Sorulan Sorular",
+    "media": "Medya Kütüphanesi",
+    "analytics": "Ziyaretçi Analitiği",
+    "searchAnalytics": "Arama Analitiği",
+    "translations": "Çoklu Dil Durumu",
+    "auditLogs": "Denetim & İşlem Günlüğü",
+    "settings": "Sistem Ayarları",
+    "logout": "Çıkış Yap",
+    "switchLang": "Panel Dili"
+  },
+  "announcement": {
+    "title": "Cebeci Medikal'e Hoş Geldiniz!",
+    "message": "Tıbbi cihaz tedariki, garantili 2. el revizyonlu cihazlar ve 7/24 biyomedikal teknik servis ihtiyaçlarınız için bize her an ulaşabilirsiniz.",
+    "buttonText": "Hızlı Fiyat Teklifi Al →"
   }
 }
