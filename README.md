@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏥 Cebeci Medikal - Biyomedikal Sistemler & Kurumsal Web Platformu
+# 🏥 Cebeci Medikal — Biyomedikal Sistemler & Kurumsal Web Platformu
 
 </div>
 
@@ -24,6 +24,8 @@
 ![Prisma](https://img.shields.io/badge/Prisma-6.4-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![SQLite](https://img.shields.io/badge/Database-SQLite%20%2F%20Postgres-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![Jose JWT](https://img.shields.io/badge/Security-Jose%20JWT-blueviolet?style=for-the-badge&logo=jsonwebtokens)
+![i18n](https://img.shields.io/badge/Localization-6%20Languages-00C853?style=for-the-badge&logo=google-translate)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
 </div>
@@ -34,35 +36,37 @@
 # English Version
 
 <div align="center">
-  <img src="public/favicon.svg" alt="Cebeci Medikal Logo" width="110" height="110" />
-  <h3>Cebeci Medikal - Biomedical Systems & Enterprise Web Platform</h3>
+  <img src="public/favicon.svg" alt="Cebeci Medikal Logo" width="120" height="120" />
+  <h3>Cebeci Medikal — Biomedical Systems & Enterprise Web Platform</h3>
   <p><em>Enterprise-Grade Medical Devices Catalog, Technical Services, Quotation Engine & 6-Language Dynamic CMS</em></p>
+  <p><strong>Developed & Maintained for <a href="https://cebecimedikal.com">Cebeci Medikal</a></strong></p>
 </div>
 
 <br>
 
 ## 💻 Project Overview
 
-**Cebeci Medikal** is an enterprise-grade digital platform engineered for medical equipment distribution, biomedical calibration, technical maintenance, hospital procurement, and corporate medical solutions. Built with Next.js 15 (App Router), React 19, TypeScript, and Prisma ORM, the platform delivers a fully dynamic, localized experience across **6 global languages** (`TR`, `EN`, `DE`, `AR`, `JA`, `ZH`) coupled with a comprehensive custom-built **Admin Management Suite**.
+**Cebeci Medikal** is an enterprise-grade digital platform engineered for medical equipment procurement, biomedical calibration, technical maintenance, hospital supply chains, and clinical healthcare engineering. Built on **Next.js 15 (App Router)**, **React 19**, **TypeScript**, and **Prisma ORM**, the platform delivers a high-performance, fully localized experience across **6 global languages** (`TR`, `EN`, `DE`, `AR`, `JA`, `ZH`), coupled with a custom-built **Administrative Management Suite (Admin CMS)**.
 
-The platform is 100% database-driven with zero hardcoded product or service data. It features real-time search, live inventory counts, quotation generation, automated translation fallbacks, audit logging, and search telemetry.
+The entire platform is **100% database-driven** with zero hardcoded product or service records. It features real-time search, live clinical device simulation loops, dynamic experience calculations, multi-step interactive quotation generation, automated translation fallback cascading, immutable security audit logging, and search query telemetry.
 
 ---
 
 ## 🚀 Key Features
 
-- **Full 6-Language Localization**: Native routing and content translation across Turkish, English, German, Arabic (RTL ready), Japanese, and Chinese with dynamic metadata and SEO optimization.
-- **Smart Translation Fallback Engine**: Flexible data architecture where non-primary translations are optional. If a translation is missing for a target language, the system cascades gracefully (`Requested` $\rightarrow$ `TR` $\rightarrow$ `EN` $\rightarrow$ `Available`) without throwing errors.
-- **100% Dynamic Medical Catalog**: 41+ biomedical device entries categorized under Operating Room, Intensive Care, Diagnostic Imaging, Laboratory, Physical Therapy, and Patient Monitoring.
-- **Interactive Quotation Builder (`/teklif`)**: Real-time multi-step quotation request system with automated quotation number generation, customer verification, and direct WhatsApp/Email dispatch.
-- **Biomedical Services Hub (`/hizmetler`)**: Dynamic maintenance, calibration, installation, and periodic biomedical technical service management with slug-based routing.
-- **Custom Admin Control Center (`/admin`)**:
+- **Full 6-Language Multi-Region Localization (i18n)**: Native App Router localization across Turkish (`tr`), English (`en`), German (`de`), Arabic (`ar` with native RTL layout support), Japanese (`ja`), and Chinese (`zh`) with dynamic metadata, hreflang tags, and SEO optimization.
+- **Smart Translation Fallback Engine**: Flexible data architecture where non-primary translations are optional. If a translation is missing for a target locale, the system cascades gracefully (`Requested` $\rightarrow$ `TR` $\rightarrow$ `EN` $\rightarrow$ `Available Record`) without throwing errors.
+- **Live Biomedical Product Loop Simulation**: Dynamic hero section featuring synchronized state-machine simulations of real clinical systems (Mindray BeneHeart D6, Dräger Primus, Spacelabs Ultraview 90369, Hamilton G5 ICU Ventilator) with real-time ECG oscilloscope waveforms and tolerance checks.
+- **Dynamic Experience & Inventory Engine**: Automated anniversary calculations (`Year - 2015`) and live published product counters reflecting exact database numbers without hardcoded figures.
+- **Interactive Quotation Builder (`/teklif`)**: Multi-step medical quotation builder with automatic quotation code generation, customer data validation, and direct WhatsApp / Email dispatch integrations.
+- **Biomedical Technical Services Hub (`/hizmetler`)**: Dynamic maintenance, calibration, installation, and periodic biomedical technical service management with slug-based routing.
+- **Custom Admin Management Suite (`/admin`)**:
   - **Product Management**: Full CRUD operations, multi-language tabbed forms, image galleries, technical specs editor, and status toggling (`PUBLISHED`, `DRAFT`, `REVIEW`).
   - **Category & Service Management**: Real-time search, status filtering, Lucide icon selectors, and relational integrity locks.
-  - **Catalog Management**: PDF upload tracking, versioning, file-size indicators, and live download analytics.
-  - **Reference & Testimonial Manager**: Hospital ratings (1-5 stars), city/sector tags, and localized quotes.
+  - **Catalog Management**: PDF brochure upload tracking, versioning, file-size indicators, and live download analytics.
+  - **Reference & Testimonial Manager**: Hospital ratings (1-5 stars), city/sector tags, and localized reviews.
   - **Contact & Quote Inboxes**: Live message viewer, quick status transitions (`NEW`, `REPLIED`, `ARCHIVED`), and instant WhatsApp/Email response shortcuts.
-  - **Media Library**: Dynamic file system explorer with instant image search, format filtering (WebP, PNG, SVG), clipboard URL copying, and resolution inspect.
+  - **Media Library**: Dynamic file system explorer with instant image search, format filtering (WebP, PNG, SVG), clipboard URL copying, and resolution inspection.
   - **Security & Audit Logs**: Immutable recording of administrative actions, user timestamps, entity IDs, and IP tracking.
   - **Search Telemetry & Analytics**: Real-time logging of user search terms, language distribution, and zero-result opportunity tracking.
 - **High-Performance Architecture**: WebP optimized graphics, dynamic SVG favicons, glassmorphism dark-mode UI, and sub-100ms response times.
@@ -73,24 +77,28 @@ The platform is 100% database-driven with zero hardcoded product or service data
 
 <div align="center">
 
-![Next.js](https://img.shields.io/badge/Next.js-15.1.7-black?style=for-the-badge&logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-6.4-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
-![Jose JWT](https://img.shields.io/badge/Jose-JWT_Auth-blueviolet?style=for-the-badge)
-![Lucide](https://img.shields.io/badge/Lucide-Icons-orange?style=for-the-badge)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js_15.1-black?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React_19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript_5.7-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma_6.4-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS_3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Jose JWT](https://img.shields.io/badge/Jose_JWT_Auth-blueviolet?style=for-the-badge)
+![Lucide](https://img.shields.io/badge/Lucide_Icons-orange?style=for-the-badge)
 
 </div>
 
-- **Framework**: Next.js 15.1.7 (React 19, App Router, Server Components & Server Actions)
-- **Language**: TypeScript 5.7.3 (Strict Mode)
-- **Database & ORM**: Prisma ORM 6.4.1 (SQLite for development, PostgreSQL-ready)
-- **Authentication**: Stateless JWT security via `jose` 6.0.8 & `bcryptjs` 3.0.2 with secure HTTP-only cookies
-- **Styling**: TailwindCSS 3.4.17 with custom HSL dark-mode theme tokens and glassmorphism styling
-- **Icons**: `lucide-react` 0.475.0
-- **Validation**: Zod 3.24.2
-- **Testing**: Vitest 3.0.5
+### Framework & Frontend (Next.js & React 19)
+- **Next.js 15.1.7**: App Router architecture, Server Components, Server Actions & Route Handlers
+- **React 19 & TypeScript 5.7**: Component-driven reactive UI with strict static typing
+- **TailwindCSS 3.4.17**: Custom HSL color design tokens, glassmorphism panel styles & responsive layouts
+- **Lucide React 0.475**: Modern, lightweight SVG iconography
+- **Google Fonts**: Inter, DM Serif Display, Noto Sans Arabic, Noto Sans JP, and Noto Sans SC
+
+### Backend, Database & Security
+- **Prisma ORM 6.4.1**: Type-safe query builder and database migrations (SQLite dev, PostgreSQL prod)
+- **Jose 6.0.8 & Bcrypt.js 3.0.2**: Stateless JWT authentication with secure HTTP-only session cookies
+- **Zod 3.24.2**: Runtime schema validation for forms, APIs, and administrative mutations
+- **Vitest 3.0.5**: Unit and integration test runner
 
 ---
 
@@ -99,20 +107,23 @@ The platform is 100% database-driven with zero hardcoded product or service data
 ```tree
 cebecimedikal/
 ├── prisma/                         # Database schema, seed datasets & SQLite migrations
+│   ├── dev.db                      # Local development SQLite database
 │   ├── schema.prisma               # Prisma data models & relations
 │   └── seed.ts                     # Initial biomedical products & multilingual seed data
-├── public/                         # Static assets, WebP images, catalogs & SVG icons
+├── public/                         # Public static assets, WebP images & brand icons
 │   ├── favicon.svg                 # White 'C' logo icon
+│   ├── Logo/                       # Brand SVG vectors & medical symbols
 │   └── images/products/            # Optimized WebP medical device images
 ├── src/
 │   ├── app/                        # Next.js 15 App Router architecture
 │   │   ├── [locale]/               # Public multilingual routing ([locale] = tr, en, de, ar, ja, zh)
-│   │   │   ├── page.tsx            # Homepage with live dynamic counters & hero sliders
+│   │   │   ├── page.tsx            # Full-viewport hero with live biomedical simulation loop
+│   │   │   ├── hakkimizda/         # Corporate about page with dynamic experience counters
 │   │   │   ├── urunler/            # Medical catalog directory & product detail pages
 │   │   │   ├── hizmetler/          # Biomedical services directory & dynamic detail pages
 │   │   │   ├── referanslar/        # Hospital references & client reviews
 │   │   │   ├── kataloglar/         # PDF product brochures & download center
-│   │   │   ├── iletisim/           # Interactive contact form & location map
+│   │   │   ├── iletisim/           # Interactive contact form & Google Maps location
 │   │   │   └── teklif/             # Multi-step medical quotation builder
 │   │   ├── admin/                  # Custom Admin CMS Suite
 │   │   │   ├── login/              # Secure administrator authentication screen
@@ -132,10 +143,10 @@ cebecimedikal/
 │   │   │   ├── contact/            # Public contact submission endpoint
 │   │   │   └── quotes/             # Public quote request intake endpoint
 │   │   ├── icon.tsx                # Dynamic browser tab icon (white 'C')
-│   │   └── layout.tsx              # Root HTML & viewport layout
+│   │   └── layout.tsx              # Root HTML, font variables & viewport layout
 │   ├── components/                 # Reusable UI & layout components
-│   │   ├── layout/                 # Navbar, Footer, Language Switcher & Quick Contact
-│   │   ├── home/                   # Hero Slider, Trust Stats, Category Grid
+│   │   ├── layout/                 # BrandLogo, Header, Footer, Language Switcher & Quick Contact
+│   │   ├── home/                   # HeroSimulationLoop, Trust Stats, Category Grid
 │   │   └── ui/                     # Form controls, Modals, Badges, Buttons
 │   ├── features/admin/             # Interactive client-side admin management tables
 │   │   ├── AdminProductsTable.tsx
@@ -153,10 +164,13 @@ cebecimedikal/
 │   │   ├── auth.ts                 # JWT token creation, verification & user context
 │   │   ├── data.ts                 # Database queries with intelligent fallback caching
 │   │   ├── db.ts                   # Prisma client singleton
+│   │   ├── dictionary.ts           # Dictionary cache and locale string resolution
 │   │   └── i18n.ts                 # 6-Language configuration & dictionary loaders
+│   ├── locales/                    # JSON dictionary translation files (tr, en, de, ar, ja, zh)
 │   └── middleware.ts               # Route protection & locale redirection middleware
-├── package.json                    # Project scripts & dependencies
-└── tsconfig.json                   # TypeScript compiler configuration
+├── package.json                    # Node dependencies & npm scripts
+├── tsconfig.json                   # TypeScript compiler configuration
+└── README.md                       # Master Documentation
 ```
 
 ---
@@ -187,8 +201,8 @@ cebecimedikal/
 ## ⚙️ Installation & Setup
 
 ### Prerequisites
-- Node.js (version 20.0.0 or higher)
-- npm or yarn package manager
+- **Node.js**: Version 20.0.0 or higher
+- **npm** or **yarn** package manager
 
 ### Step-by-Step Installation
 
@@ -198,39 +212,41 @@ cebecimedikal/
    cd cebecimedikal
    ```
 
-2. **Install Dependencies:**
+2. **Install Node Dependencies:**
    ```bash
    npm install
    ```
 
-3. **Initialize Database & Run Seed Script:**
+3. **Initialize Database & Seed Data:**
    ```bash
    npx prisma generate
    npx prisma db push
    npm run seed
    ```
 
-4. **Verify TypeScript & Build Integrity:**
+4. **Verify TypeScript & Production Build:**
    ```bash
    npx tsc --noEmit
    npm run build
    ```
 
-5. **Start Development Server:**
+5. **Start Local Development Server:**
    ```bash
    npm run dev
    ```
-   *Open browser at:* `http://localhost:3000`
+   *Open your browser at:* `http://localhost:3000`
 
-6. **Administrative Authentication:**
-   - **Admin Login Portal**: `http://localhost:3000/admin/login`
-   - *Note: Administrator and staff credentials are configured securely via environment variables in `.env` (or `.env.example`).*
+6. **Admin Portal Access:**
+   - **Login URL**: `http://localhost:3000/admin/login`
+   - *Credentials are configured securely in `.env`.*
 
 ---
 
 ## ⚖️ License
 
 Distributed under the **MIT License**. See `LICENSE` for more information.
+
+**Official Website**: [Cebeci Medikal](https://cebecimedikal.com)
 
 ---
 
@@ -242,26 +258,28 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 # Türkçe Versiyon
 
 <div align="center">
-  <img src="public/favicon.svg" alt="Cebeci Medikal Logo" width="110" height="110" />
-  <h3>Cebeci Medikal - Biyomedikal Sistemler & Kurumsal Web Platformu</h3>
+  <img src="public/favicon.svg" alt="Cebeci Medikal Logo" width="120" height="120" />
+  <h3>Cebeci Medikal — Biyomedikal Sistemler & Kurumsal Web Platformu</h3>
   <p><em>Kurumsal Düzeyde Tıbbi Cihaz Kataloğu, Biyomedikal Teknik Servis, Teklif Motoru & 6 Dilde Dinamik CMS</em></p>
+  <p><strong>Geliştirici ve Yayıncı: <a href="https://cebecimedikal.com">Cebeci Medikal</a></strong></p>
 </div>
 
 <br>
 
 ## 💻 Project Overview (Proje Genel Bakışı)
 
-**Cebeci Medikal**, tıbbi cihaz satışı, biyomedikal kalibrasyon, teknik bakım-onarım, hastane tedariki ve kurumsal medikal çözümler için özel olarak geliştirilmiş kurumsal düzeyde bir dijital web platformudur. Next.js 15 (App Router), React 19, TypeScript ve Prisma ORM teknolojileriyle inşa edilen platform; **6 global dilde** (`TR`, `EN`, `DE`, `AR`, `JA`, `ZH`) tam dinamik yerelleştirilmiş kullanıcı deneyimini, gelişmiş **Özel Yönetim Paneli (Admin CMS)** ile bir arada sunar.
+**Cebeci Medikal**, tıbbi cihaz tedariki, biyomedikal kalibrasyon, teknik bakım-onarım, hastane donanımları ve kurumsal sağlık mühendisliği çözümleri için özel olarak geliştirilmiş kurumsal düzeyde bir dijital web platformudur. **Next.js 15 (App Router)**, **React 19**, **TypeScript** ve **Prisma ORM** mimarisiyle inşa edilen platform; **6 global dilde** (`TR`, `EN`, `DE`, `AR`, `JA`, `ZH`) tam dinamik yerelleştirilmiş kullanıcı deneyimini, gelişmiş bir **Özel Yönetim Paneli (Admin CMS)** ile bir arada sunar.
 
-Sistemdeki hiçbir ürün veya hizmet verisi statik/sabit kodlanmamış olup %100 veritabanı üzerinden dinamik olarak yönetilir. Gerçek zamanlı canlı arama, canlı ürün sayaçları, çok aşamalı teklif formu, akıllı çeviri fallback (yedek dil) mekanizması ve güvenlik denetim logları içerir.
+Sistemdeki hiçbir ürün veya hizmet verisi statik kodlanmamış olup **%100 veritabanı üzerinden dinamik** olarak yönetilir. Gerçek zamanlı canlı arama, canlı biyomedikal cihaz simülasyonu, dinamik deneyim hesaplayıcısı, çok adımlı teklif formu, akıllı çeviri fallback mekanizması ve güvenlik denetim kayıtları içerir.
 
 ---
 
 ## 🚀 Key Features (Önemli Özellikler)
 
-- **6 Dilde %100 Tam Yerelleştirme**: Türkçe, İngilizce, Almanca, Arapça (RTL hazır), Japonca ve Çince dillerinde dinamik rota desteği, çeviriler ve SEO optimizasyonu.
+- **6 Dilde %100 Tam Yerelleştirme (i18n)**: Türkçe (`tr`), İngilizce (`en`), Almanca (`de`), Arapça (`ar` - tam RTL sağdan sola yerleşim desteği), Japonca (`ja`) ve Çince (`zh`) dillerinde dinamik rota desteği, çeviriler ve SEO optimizasyonu.
 - **Akıllı Çeviri Fallback Sistemi**: Admin panelinden içerik girilirken 6 dili birden doldurma zorunluluğu yoktur. Boş bırakılan diller sistem tarafından otomatik olarak kademeli biçimde (`İstenen Dil` $\rightarrow$ `TR` $\rightarrow$ `EN` $\rightarrow$ `Mevcut Çeviri`) devralınır; sayfada hiçbir kırılma veya hata oluşmaz.
-- **100% Dinamik Tıbbi Cihaz Kataloğu**: Ameliyathane, Yoğun Bakım, Fizyolojik İzleyiciler, Laboratuvar, Görüntüleme, Fizik Tedavi ve Medikal Donanım kategorilerinde 41+ cihaz.
+- **Canlı Biyomedikal Ürün Simülasyonu (Live Product Loop)**: Hero alanında gerçek klinik cihazların (Mindray BeneHeart D6, Dräger Primus, Spacelabs Ultraview 90369, Hamilton G5) test ve kalibrasyon süreçlerini birebir taklit eden, gerçek zamanlı EKG osiloskop dalga formlu canlı simülasyon konsolu.
+- **Dinamik Deneyim ve Envanter Sayacı**: Kuruluş yılından (`2015`) güncel yıla göre otomatik hesaplanan tecrübe süresi (`11+ Yıllık Deneyim`) ve yayındaki gerçek ürün sayısını yansıtan canlı sayaçlar.
 - **İnteraktif Teklif Oluşturucu (`/teklif`)**: Otomatik teklif numarası oluşturan, müşteri doğrulama ve WhatsApp/E-posta ile doğrudan iletim sağlayan çok adımlı teklif motoru.
 - **Biyomedikal Teknik Servis Portalı (`/hizmetler`)**: Periyodik bakım, kalibrasyon, arıza onarım ve montaj süreçlerinin 6 dilde detaylı yönetimi.
 - **Gelişmiş Özel Yönetim Paneli (`/admin`)**:
@@ -281,24 +299,28 @@ Sistemdeki hiçbir ürün veya hizmet verisi statik/sabit kodlanmamış olup %10
 
 <div align="center">
 
-![Next.js](https://img.shields.io/badge/Next.js-15.1.7-black?style=for-the-badge&logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-6.4-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
-![Jose JWT](https://img.shields.io/badge/Jose-JWT_Auth-blueviolet?style=for-the-badge)
-![Lucide](https://img.shields.io/badge/Lucide-Icons-orange?style=for-the-badge)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js_15.1-black?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React_19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript_5.7-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma_6.4-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS_3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Jose JWT](https://img.shields.io/badge/Jose_JWT_Auth-blueviolet?style=for-the-badge)
+![Lucide](https://img.shields.io/badge/Lucide_Icons-orange?style=for-the-badge)
 
 </div>
 
-- **Framework**: Next.js 15.1.7 (React 19, App Router mimarisi, Server Components & Server Actions)
-- **Programlama Dili**: TypeScript 5.7.3 (Strict Mode)
-- **Veritabanı & ORM**: Prisma ORM 6.4.1 (Geliştirme için SQLite, PostgreSQL uyumlu)
-- **Kimlik Doğrulama**: `jose` 6.0.8 & `bcryptjs` 3.0.2 ile durumsuz JWT ve güvenli HTTP-Only Cookie oturumu
-- **Tasarım & UI**: TailwindCSS 3.4.17, özel HSL renk tokenları, modern karanlık mod ve glassmorphism efektleri
-- **İkon Seti**: `lucide-react` 0.475.0
-- **Validasyon**: Zod 3.24.2
-- **Test**: Vitest 3.0.5
+### Çatı & Ön Yüz (Next.js & React 19)
+- **Next.js 15.1.7**: App Router mimarisi, Server Components, Server Actions & API Route Handlers
+- **React 19 & TypeScript 5.7**: Bileşen odaklı, statik tipli reaktif kullanıcı arayüzü
+- **TailwindCSS 3.4.17**: Özel HSL renk sistemi, cam efektleri (glassmorphism) ve duyarlı arayüz düzenleri
+- **Lucide React 0.475**: Modern ve tutarlı SVG ikon kütüphanesi
+- **Tipografi**: Inter, DM Serif Display, Noto Sans Arabic, Noto Sans JP ve Noto Sans SC
+
+### Arka Uç, Veritabanı ve Güvenlik
+- **Prisma ORM 6.4.1**: Tip güvenli veritabanı sorgu motoru ve şema yönetimi (Geliştirme için SQLite, canlı için PostgreSQL)
+- **Jose 6.0.8 & Bcrypt.js 3.0.2**: Durumsuz JWT oturum güvenliği ve HTTP-only çerez koruması
+- **Zod 3.24.2**: Form ve API girdileri için çalışma zamanı şema doğrulaması
+- **Vitest 3.0.5**: Birim ve entegrasyon test motoru
 
 ---
 
@@ -307,15 +329,18 @@ Sistemdeki hiçbir ürün veya hizmet verisi statik/sabit kodlanmamış olup %10
 ```tree
 cebecimedikal/
 ├── prisma/                         # Veritabanı şeması, tohum verileri ve SQLite migrasyonları
+│   ├── dev.db                      # Yerel geliştirme SQLite veritabanı
 │   ├── schema.prisma               # Prisma veri modelleri ve ilişkiler
 │   └── seed.ts                     # Tıbbi cihazlar ve çok dilli başlangıç verileri
 ├── public/                         # Statik dosyalar, WebP görselleri, kataloglar ve SVG ikonlar
 │   ├── favicon.svg                 # Düz beyaz 'C' marka ikonu
+│   ├── Logo/                       # Vektörel SVG logolar ve medikal semboller
 │   └── images/products/            # Optimize edilmiş WebP medikal cihaz görselleri
 ├── src/
 │   ├── app/                        # Next.js 15 App Router mimarisi
 │   │   ├── [locale]/               # 6 dilde halka açık sayfalar ([locale] = tr, en, de, ar, ja, zh)
-│   │   │   ├── page.tsx            # Canlı sayaçlı ana sayfa ve slider
+│   │   │   ├── page.tsx            # Canlı biyomedikal simülasyon konsollu ana sayfa
+│   │   │   ├── hakkimizda/         # Dinamik deneyim sayaçlı kurumsal sayfa
 │   │   │   ├── urunler/            # Tıbbi cihaz kataloğu ve ürün detay sayfaları
 │   │   │   ├── hizmetler/          # Biyomedikal servis listesi ve detay sayfaları
 │   │   │   ├── referanslar/        # Hastane referansları ve müşteri yorumları
@@ -340,10 +365,10 @@ cebecimedikal/
 │   │   │   ├── contact/            # İletişim formu veri alım ucu
 │   │   │   └── quotes/             # Teklif talebi kayıt ucu
 │   │   ├── icon.tsx                # Dinamik sekme simgesi (Beyaz 'C')
-│   │   └── layout.tsx              # Kök HTML ve metaveri düzeni
+│   │   └── layout.tsx              # Kök HTML, font değişkenleri ve metaveri düzeni
 │   ├── components/                 # Yeniden kullanılabilir arayüz bileşenleri
-│   │   ├── layout/                 # Navbar, Footer, Dil Seçici ve Hızlı İletişim
-│   │   ├── home/                   # Hero Slider, Güven Göstergeleri, Kategori Kartları
+│   │   ├── layout/                 # BrandLogo, Header, Footer, Dil Seçici ve Hızlı İletişim
+│   │   ├── home/                   # HeroSimulationLoop, Güven Göstergeleri, Kategori Kartları
 │   │   └── ui/                     # Form elemanları, Modallar, Rozetler, Butonlar
 │   ├── features/admin/             # İstemci taraflı interaktif yönetim bileşenleri
 │   │   ├── AdminProductsTable.tsx
@@ -361,10 +386,13 @@ cebecimedikal/
 │   │   ├── auth.ts                 # JWT token üretimi, doğrulama ve kullanıcı oturumu
 │   │   ├── data.ts                 # Akıllı fallback destekli veritabanı sorguları
 │   │   ├── db.ts                   # Prisma client tekil örneği (singleton)
+│   │   ├── dictionary.ts           # Sözlük önbelleği ve dize çözücü
 │   │   └── i18n.ts                 # 6 dil yapılandırması ve sözlük yükleyicisi
+│   ├── locales/                    # JSON dil çeviri dosyaları (tr, en, de, ar, ja, zh)
 │   └── middleware.ts               # Rota güvenliği ve dil yönlendirme ara yazılımı
 ├── package.json                    # Bağımlılıklar ve proje scriptleri
-└── tsconfig.json                   # TypeScript derleme ayarları
+├── tsconfig.json                   # TypeScript derleme ayarları
+└── README.md                       # Ana Dokümantasyon
 ```
 
 ---
@@ -395,8 +423,8 @@ cebecimedikal/
 ## ⚙️ Installation & Setup (Kurulum ve Kullanım)
 
 ### Gereksinimler
-- Node.js (20.0.0 veya üzeri)
-- npm veya yarn paket yöneticisi
+- **Node.js**: Sürüm 20.0.0 veya üzeri
+- **npm** veya **yarn** paket yöneticisi
 
 ### Adım Adım Kurulum
 
@@ -439,3 +467,5 @@ cebecimedikal/
 ## ⚖️ License (Lisans)
 
 Bu proje **MIT Lisansı** ile lisanslanmıştır. Detaylar için `LICENSE` dosyasına başvurabilirsiniz.
+
+**Resmi Web Sitesi**: [Cebeci Medikal](https://cebecimedikal.com)

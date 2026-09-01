@@ -31,7 +31,7 @@ export default async function AboutPage({
   const currentLocale = locale as Locale;
   const dict = getDictionary(currentLocale);
   const currentYear = new Date().getFullYear();
-  const experienceYears = Math.max(10, currentYear - 2015);
+  const experienceYears = Math.max(1, currentYear - 2015);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-20 space-y-20">
@@ -53,7 +53,7 @@ export default async function AboutPage({
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-6 space-y-6 text-sm sm:text-base text-foreground-muted leading-relaxed">
           <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground">
-            {dict.about.storyTitle}
+            {dict.about.storyTitle.replace("10+", `${experienceYears}+`).replace("10", `${experienceYears}`)}
           </h2>
           <p>
             {dict.about.storyP1}

@@ -29,7 +29,7 @@ import {
 import { Locale, isValidLocale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionary";
 import { getLocalizedHref } from "@/lib/routes";
-import { HeroImageSlider } from "@/components/home/HeroImageSlider";
+import { HeroSimulationLoop } from "@/components/home/HeroSimulationLoop";
 import {
   getCategories,
   getProducts,
@@ -109,12 +109,12 @@ export default async function HomePage({
   const mapsEmbed = settings.google_maps_embed || "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1527.9390696789906!2d32.5200753!3d40.0111695!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d32fe1ff03044d%3A0x95404729878581f0!2sCebeci%20Medikal!5e0!3m2!1str!2str!4v1787872118602!5m2!1str!2str";
 
   const currentYear = new Date().getFullYear();
-  const experienceYears = Math.max(10, currentYear - 2015);
+  const experienceYears = Math.max(1, currentYear - 2015);
 
   return (
-    <div className="space-y-24 sm:space-y-32 pb-20">
-      {/* 1. HERO SECTION WITH PARALLAX DEPTH */}
-      <section className="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden border-b border-border bg-gradient-to-b from-surface via-bg to-bg">
+    <div>
+      {/* 1. HERO SECTION WITH FULL VIEWPORT EXPERIENCE */}
+      <section className="relative min-h-[calc(100vh-4.5rem)] flex flex-col justify-center pt-4 pb-14 md:pt-6 md:pb-16 overflow-hidden border-b border-border bg-gradient-to-b from-surface via-bg to-bg">
         {/* Decorative Parallax Ambient Glow Orb & Medical Grid */}
         <div
           data-parallax-speed="-0.15"
@@ -122,10 +122,10 @@ export default async function HomePage({
         />
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#24404b12_1px,transparent_1px),linear-gradient(to_bottom,#24404b12_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
             {/* Hero Left Content */}
-            <div className="lg:col-span-7 space-y-6 text-left">
+            <div className="lg:col-span-6 space-y-6 text-left">
               <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-[1.15] tracking-tight">
                 {dict.hero.titlePrefix}{" "}
                 <span className="text-primary block mt-1">
@@ -157,7 +157,7 @@ export default async function HomePage({
               </div>
 
               {/* Trust Indicators Row */}
-              <div className="pt-8 border-t border-border/80 grid grid-cols-2 sm:grid-cols-4 gap-6">
+              <div className="pt-6 border-t border-border/80 grid grid-cols-2 sm:grid-cols-4 gap-6">
                 <div>
                   <div className="font-serif text-2xl sm:text-3xl font-bold text-primary">
                     {experienceYears}+
@@ -168,7 +168,7 @@ export default async function HomePage({
                 </div>
                 <div>
                   <div className="font-serif text-2xl sm:text-3xl font-bold text-foreground">
-                    {productsCount > 0 ? `${productsCount}+` : "40+"}
+                    {productsCount}+
                   </div>
                   <div className="text-xs text-foreground-muted font-medium mt-0.5">
                     {dict.hero.devices}
@@ -193,16 +193,29 @@ export default async function HomePage({
               </div>
             </div>
 
-            {/* Hero Right Visual Card with Slideshow & External Bottom Caption */}
+            {/* Hero Right Live Biomedical Product Loop Simulation */}
             <div
               data-parallax-speed="0.1"
-              className="lg:col-span-5 relative"
+              className="lg:col-span-6 relative"
             >
-              <HeroImageSlider locale={currentLocale} />
+              <HeroSimulationLoop locale={currentLocale} />
             </div>
           </div>
         </div>
+
+        {/* Scroll Down Subtle Indicator (Positioned Lower at Bottom of Viewport) */}
+        <div className="absolute bottom-3 sm:bottom-5 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1 text-[11px] font-medium text-foreground-muted opacity-70 hover:opacity-100 transition-opacity">
+          <span className="tracking-wider uppercase text-[9px] sm:text-[10px]">
+            {currentLocale === "tr" ? "Aşağı Kaydırın" : "Scroll to Explore"}
+          </span>
+          <div className="w-4 h-7 sm:w-5 sm:h-8 rounded-full border border-border/80 flex items-start justify-center p-0.5 sm:p-1">
+            <div className="w-1 h-1.5 sm:w-1.5 sm:h-2 bg-primary rounded-full animate-bounce" />
+          </div>
+        </div>
       </section>
+
+      {/* Main Content Body Below Fold */}
+      <div className="space-y-24 sm:space-y-32 pt-20 pb-20">
 
       {/* 2. PRODUCT CATEGORIES SECTION (REVEAL ON SCROLL) */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 reveal-on-scroll">
@@ -789,6 +802,7 @@ export default async function HomePage({
           </div>
         </div>
       </section>
+      </div>
     </div>
   );
 }
