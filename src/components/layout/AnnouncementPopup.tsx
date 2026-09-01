@@ -214,7 +214,7 @@ export function AnnouncementPopup({ dict }: { dict?: Dictionary }) {
               {current.linkUrl?.startsWith("http") ? (
                 <ExternalLink className="w-3 h-3" />
               ) : (
-                <ArrowRight className="w-3 h-3" />
+                <ArrowRight className="w-3 h-3 rtl:rotate-180" />
               )}
             </a>
           )}
