@@ -42,8 +42,21 @@ const nextConfig: NextConfig = {
       { source: "/de/gebrauchtgeraete", destination: "/de/2-el-tibbi-cihazlar" },
     ];
   },
+  experimental: {
+    optimizePackageImports: ["lucide-react", "clsx", "tailwind-merge"],
+  },
   async headers() {
     return [
+      {
+        // Immutable cache for static images and assets
+        source: "/:all*(svg|jpg|jpeg|png|webp|avif|ico|woff|woff2)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
       {
         // Global Security Headers for all routes
         source: "/:path*",

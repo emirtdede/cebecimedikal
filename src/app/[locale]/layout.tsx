@@ -123,8 +123,10 @@ export default async function LocaleLayout({
 
   const currentLocale = locale as Locale;
   const dict = getDictionary(currentLocale);
-  const categories = await getCategories(currentLocale);
-  const settings = await getSiteSettings();
+  const [categories, settings] = await Promise.all([
+    getCategories(currentLocale),
+    getSiteSettings(),
+  ]);
   const dir = getDirection(currentLocale);
 
   const jsonLd = {

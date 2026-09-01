@@ -1,3 +1,4 @@
+import { cache } from "react";
 import { db } from "./db";
 import { Locale, DEFAULT_LOCALE, isValidLocale } from "./i18n";
 import { localizeSpecKey, localizeSpecValue, localizeApplication } from "./medical-translations";
@@ -77,7 +78,7 @@ export interface LocalizedReference {
   quote: string;
 }
 
-export async function getSiteSettings(): Promise<Record<string, string>> {
+export const getSiteSettings = cache(async function getSiteSettings(): Promise<Record<string, string>> {
   try {
     const settings = await db.siteSetting.findMany();
     if (settings && settings.length > 0) {
@@ -91,9 +92,9 @@ export async function getSiteSettings(): Promise<Record<string, string>> {
   } catch (error) {
     return STATIC_SETTINGS;
   }
-}
+});
 
-export async function getCategories(locale: string = DEFAULT_LOCALE): Promise<LocalizedCategory[]> {
+export const getCategories = cache(async function getCategories(locale: string = DEFAULT_LOCALE): Promise<LocalizedCategory[]> {
   try {
     const categories = await db.category.findMany({
       where: { isActive: true },
@@ -129,9 +130,9 @@ export async function getCategories(locale: string = DEFAULT_LOCALE): Promise<Lo
   } catch (error) {
     return getStaticCategories(locale);
   }
-}
+});
 
-export async function getCategoryBySlug(
+export const getCategoryBySlug = cache(async function getCategoryBySlug(
   slug: string,
   locale: string = DEFAULT_LOCALE
 ): Promise<LocalizedCategory | null> {
@@ -167,9 +168,9 @@ export async function getCategoryBySlug(
   } catch (error) {
     return getStaticCategoryBySlug(slug, locale);
   }
-}
+});
 
-export async function getProducts(
+export const getProducts = cache(async function getProducts(
   locale: string = DEFAULT_LOCALE,
   options?: {
     categorySlug?: string;
@@ -284,9 +285,9 @@ export async function getProducts(
   } catch (error) {
     return getStaticProducts(locale, options);
   }
-}
+});
 
-export async function getProductsCount(): Promise<number> {
+export const getProductsCount = cache(async function getProductsCount(): Promise<number> {
   try {
     const count = await db.product.count({
       where: { status: "PUBLISHED" },
@@ -296,9 +297,9 @@ export async function getProductsCount(): Promise<number> {
   } catch (error) {
     return getStaticProducts().length;
   }
-}
+});
 
-export async function getProductBySlug(
+export const getProductBySlug = cache(async function getProductBySlug(
   slug: string,
   locale: string = DEFAULT_LOCALE
 ): Promise<LocalizedProduct | null> {
@@ -385,9 +386,9 @@ export async function getProductBySlug(
   } catch (error) {
     return getStaticProductBySlug(slug, locale);
   }
-}
+});
 
-export async function getRelatedProducts(
+export const getRelatedProducts = cache(async function getRelatedProducts(
   currentSlug: string,
   categoryId: string,
   locale: string = DEFAULT_LOCALE,
@@ -459,9 +460,9 @@ export async function getRelatedProducts(
   } catch (error) {
     return getStaticRelatedProducts(currentSlug, categoryId, locale, limit);
   }
-}
+});
 
-export async function getServices(locale: string = DEFAULT_LOCALE): Promise<LocalizedService[]> {
+export const getServices = cache(async function getServices(locale: string = DEFAULT_LOCALE): Promise<LocalizedService[]> {
   try {
     const services = await db.service.findMany({
       where: { isActive: true },
@@ -505,9 +506,9 @@ export async function getServices(locale: string = DEFAULT_LOCALE): Promise<Loca
   } catch (error) {
     return getStaticServices(locale);
   }
-}
+});
 
-export async function getServiceBySlug(
+export const getServiceBySlug = cache(async function getServiceBySlug(
   slug: string,
   locale: string = DEFAULT_LOCALE
 ): Promise<LocalizedService | null> {
@@ -551,9 +552,9 @@ export async function getServiceBySlug(
   } catch (error) {
     return getStaticServiceBySlug(slug, locale);
   }
-}
+});
 
-export async function getReferences(locale: string = DEFAULT_LOCALE): Promise<LocalizedReference[]> {
+export const getReferences = cache(async function getReferences(locale: string = DEFAULT_LOCALE): Promise<LocalizedReference[]> {
   try {
     const references = await db.reference.findMany({
       where: { isActive: true, hasPublishPermission: true },
@@ -588,9 +589,9 @@ export async function getReferences(locale: string = DEFAULT_LOCALE): Promise<Lo
   } catch (error) {
     return getStaticReferences(locale);
   }
-}
+});
 
-export async function getCatalogs(locale: string = DEFAULT_LOCALE) {
+export const getCatalogs = cache(async function getCatalogs(locale: string = DEFAULT_LOCALE) {
   try {
     const catalogs = await db.catalog.findMany({
       where: { isActive: true },
@@ -603,9 +604,9 @@ export async function getCatalogs(locale: string = DEFAULT_LOCALE) {
   } catch (error) {
     return getStaticCatalogs(locale);
   }
-}
+});
 
-export async function getFaqs(locale: string = DEFAULT_LOCALE) {
+export const getFaqs = cache(async function getFaqs(locale: string = DEFAULT_LOCALE) {
   try {
     const faqs = await db.faq.findMany({
       where: { isActive: true },
@@ -635,4 +636,4 @@ export async function getFaqs(locale: string = DEFAULT_LOCALE) {
   } catch (error) {
     return getStaticFaqs(locale);
   }
-}
+});

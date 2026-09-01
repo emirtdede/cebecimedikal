@@ -56,6 +56,11 @@
   border-color: var(--color-border);
 }
 
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
 html {
   scroll-behavior: smooth;
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;

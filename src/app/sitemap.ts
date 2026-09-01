@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { db } from "@/lib/db";
 import { LOCALES } from "@/lib/i18n";
+import { getProducts, getServices } from "@/lib/data";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://cebecimedikal.com";
@@ -38,35 +39,63 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }
 
   // Dynamic Product Pages
-  const products = await db.product.findMany({
-    where: { status: "PUBLISHED" },
-    select: { slug: true, updatedAt: true },
-  });
+  try {
+    const products = await db.product.findMany({
+      where: { status: "PUBLISHED" },
+      select: { slug: true, updatedAt: true },
+    });
 
-  for (const prod of products) {
-    for (const locale of LOCALES) {
-      sitemapEntries.push({
-        url: `${baseUrl}/${locale}/urunler/${prod.slug}`,
-        lastModified: prod.updatedAt,
-        changeFrequency: "weekly",
-        priority: 0.8,
-      });
+    for (const prod of products) {
+      for (const locale of LOCALES) {
+        sitemapEntries.push({
+          url: `${baseUrl}/${locale}/urunler/${prod.slug}`,
+          lastModified: prod.updatedAt,
+          changeFrequency: "weekly",
+          priority: 0.8,
+        });
+      }
+    }
+  } catch {
+    const staticProducts = await getProducts();
+    for (const prod of staticProducts) {
+      for (const locale of LOCALES) {
+        sitemapEntries.push({
+          url: `${baseUrl}/${locale}/urunler/${prod.slug}`,
+          lastModified: new Date(),
+          changeFrequency: "weekly",
+          priority: 0.8,
+        });
+      }
     }
   }
 
   // Dynamic Service Pages
-  const services = await db.service.findMany({
-    select: { slug: true, updatedAt: true },
-  });
+  try {
+    const services = await db.service.findMany({
+      select: { slug: true, updatedAt: true },
+    });
 
-  for (const srv of services) {
-    for (const locale of LOCALES) {
-      sitemapEntries.push({
-        url: `${baseUrl}/${locale}/hizmetler/${srv.slug}`,
-        lastModified: srv.updatedAt,
-        changeFrequency: "monthly",
-        priority: 0.8,
-      });
+    for (const srv of services) {
+      for (const locale of LOCALES) {
+        sitemapEntries.push({
+          url: `${baseUrl}/${locale}/hizmetler/${srv.slug}`,
+          lastModified: srv.updatedAt,
+          changeFrequency: "monthly",
+          priority: 0.8,
+        });
+      }
+    }
+  } catch {
+    const staticServices = await getServices();
+    for (const srv of staticServices) {
+      for (const locale of LOCALES) {
+        sitemapEntries.push({
+          url: `${baseUrl}/${locale}/hizmetler/${srv.slug}`,
+          lastModified: new Date(),
+          changeFrequency: "monthly",
+          priority: 0.8,
+        });
+      }
     }
   }
 

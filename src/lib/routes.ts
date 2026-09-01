@@ -111,6 +111,7 @@ export const REVERSE_ROUTE_MAP: Record<string, string> = {
 export const SERVICE_SLUG_MAP: Record<string, string> = {
   "technical-service": "teknik-servis",
   "preventive-maintenance": "periyodik-koruyucu-bakim",
+  "periodic-preventive-maintenance": "periyodik-koruyucu-bakim",
   "installation-commissioning": "kurulum-devreye-alma",
   "biomedical-consulting": "teknik-danismanlik",
 
