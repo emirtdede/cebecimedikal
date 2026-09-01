@@ -66,15 +66,22 @@ export async function GET(req: NextRequest) {
 
     return NextResponse.json({ announcements: defaultAnn });
   } catch (error) {
-    console.error("Error fetching announcements:", error);
+    console.error("Error fetching announcements, using localized fallback:", error);
+    const { searchParams } = new URL(req.url);
+    const localeParam = searchParams.get("locale") || DEFAULT_LOCALE;
+    const locale = isValidLocale(localeParam) ? (localeParam as Locale) : "tr";
+    const dict = getDictionary(locale);
+
     return NextResponse.json({
       announcements: [
         {
           id: "ann-welcome",
-          title: "Cebeci Medikal",
-          message: "Tıbbi Cihaz & Biyomedikal Hizmetleri",
-          linkUrl: "/tr/teklif",
-          linkText: "Teklif Al",
+          title: dict.announcement?.title || "Cebeci Medikal'e Hoş Geldiniz!",
+          message: dict.announcement?.message || "Tıbbi cihaz tedariki, garantili 2. el revizyonlu cihazlar ve 7/24 biyomedikal teknik servis ihtiyaçlarınız için bize her an ulaşabilirsiniz.",
+          imageUrl: null,
+          videoUrl: null,
+          linkUrl: `/${locale}/teklif`,
+          linkText: dict.announcement?.buttonText || "Hızlı Fiyat Teklifi Al →",
           contentType: "TEXT",
           position: "BOTTOM_LEFT",
           isActive: true,
